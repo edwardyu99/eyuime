@@ -1,0 +1,122 @@
+﻿http://vicid603.pixnet.net/blog/post/36920963-gcin
+附錄：下方為.cin檔的基本格式（引用自gcin同好會的資料，更詳細資訊請參考該網頁）：
+
+%gen_inp # 可有可無
+%ename demo # 這裡只能用英文
+%cname 範例（或 %prompt 範例） # 這裡可以隨便打，不限中英文
+%selkey 123456789 # 有重覆字時的選擇鍵，可設定 > 10 個按鍵，也可以用 asdfghjk 之類作為選擇鍵 
+%dupsel 9 # 設定每頁重複字數量
+%endkey abc # 當按下這些鍵時就開始組字，不用再按空白鍵，例如注音可設為 3467，這樣選了音調就不用再按空白鍵
+%space_style 2 # 1 是空白鍵自動上字，一般用 2 或 4 即可
+%keep_key_case # 如果想區分大小寫，或想用 ~!@#$%^&()_+|{}:"<> 等符號，就要設定這個
+%symbol_kbm # 顯示螢幕小鍵盤
+%phase_auto_skip_endkey # 配合最新版的「由詞庫自動選擇字」
+%keyname begin # keyname 目前最多 55 組
+a a
+b b
+c c
+%keyname end
+%quick begin # 目前只有行列在用，其它輸入法用不著
+%quick end
+%chardef begin
+a 蘋果
+b 香蕉
+c 櫻桃
+%chardef end # 可有可無 
+ 
+----------------------------------------------------
+http://blog.dabinn.net/gcin%E7%9A%84cin%E5%8F%83%E6%95%B8gtab%E9%81%B8%E9%A0%85%E6%95%B4%E7%90%86/
+gcin的cin參數(gtab選項)整理
+
+ 2016-02-19  dabinn  電腦網路
+給打算自己作gtab的人參考
+
+資料來源：
+這篇討論
+http://hyperrate.com/thread.php?tid=29969
+和gcin的changelog
+http://ftp.twaren.net/local-distfiles/gcin/Changelog.html
+
+gtab專用 
+預覽/預選字 (全部符合才顯示)
+%flag_disp_full_match ：啟用
+預選列中顯示部份符合的字 (部份符合即顯示 )
+%flag_disp_partial_match ：啟用
+垂直選擇
+%flag_vertical_selection ：啟用
+按滿自動送字
+%flag_press_full_auto_send：啟用
+由詞庫自動選擇字
+%flag_auto_select_by_phrase ：啟用
+空白鍵選項
+%space_style ：1~4 #數字代表的意義如右，1: 嘸蝦米、大易； 2:倉頡 ；4:行列輸入法
+唯一選擇時自動送出
+%flag_unique_auto_send ：啟用
+其它
+%keep_key_case ： #讓gcin區分大小寫，啟用這個選項後同一英文字的大寫與小寫可代表不同的字根
+%phase_auto_skip_endkey ： 行列用的，好像是解決endkey和字根打架問題
+%flag_keypad_input_key：給需要使用 keypad 當輸入鍵的輸 入法
+
+一般CIN 
+%gen_inp #eliu兄說這句沒用，可以不寫
+%ename cj543 #此輸入法的英文名稱
+%cname 五四三倉頡 #此輸入法的中文名稱
+%selkey 1234567890 #要設哪些按鍵為候選字的選字鍵
+%endkey `\,'[]/.-;,./1234567890-()~!: #告訴gcin這些字元是拆字結尾，直接送出
+%keyname begin # %keyname begin與end之間的資料定義了鍵盤上的按鍵與字根的對應
+a 日
+b 月
+c 金
+d 木
+e 水
+(其他恕刪)
+%keyname end
+%chardef begin # %chardef begin 與 end之間的資料定義了字根組合與輸出字元的對應
+a 日
+a 曰
+aa 昌
+aa 昍
+aaa 晶
+aamh 暘
+aaph 晹
+(其他恕刪)
+%chardef end
+--------------------------------------------
+
+http://ftp.twaren.net/local-distfiles/gcin/Changelog.html
+
+------------------------------------------------
+http://hyperrate.com/thread.php?tid=29969
+Guest先生提到的OpenVanilla 資料裡頭已經寫得很詳細，和osxchat上的資料大致一樣，
+以五四三倉頡為例說明各個項目的功能（紅色部份應是gcin專屬的定義）：
+
+%gen_inp #eliu兄說這句沒用，可以不寫
+%ename cj543 #此輸入法的英文名稱
+%cname 五四三倉頡 #此輸入法的中文名稱
+%selkey 1234567890 #要設哪些按鍵為候選字的選字鍵
+%endkey `\,'[]/.-;,./1234567890-()~!: #告訴gcin這些字元是拆字結尾，直接送出
+%space_style 4 #數字代表的意義如右，1: 嘸蝦米、大易； 2:倉頡  ；4:行列輸入法（參考資料：gcin使用手冊）
+%keep_key_case #讓gcin區分大小寫，啟用這個選項後同一英文字的大寫與小寫可代表不同的字根（參考資料：gcin使用手冊）
+%flag_auto_select_by_phrase #預設啟用「由詞庫自動選字」（等同於「gcin設定→倉頡行列嘸蝦米大易→由詞庫自動選字」）
+%flag_vertical_selection #預設啟用「垂直選擇」（等同於「gcin設定→倉頡行列嘸蝦米大易→垂直選擇」）
+%keyname begin # %keyname begin與end之間的資料定義了鍵盤上的按鍵與字根的對應
+a 日
+b 月
+c 金
+d 木
+e 水
+(其他恕刪)
+%keyname end
+%chardef begin # %chardef begin 與 end之間的資料定義了字根組合與輸出字元的對應
+a 日
+a 曰
+aa 昌
+aa 昍
+aaa 晶
+aamh 暘
+aaph 晹
+(其他恕刪)
+%chardef end
+
+
+

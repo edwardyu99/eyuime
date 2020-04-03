@@ -1,0 +1,15 @@
+﻿Q:請問僅桌面是什麼意思？基本上在win10用不到呢
+A:僅桌面(destop only)是說輸入法只能用在傳統的桌面程式，
+如notepad,chrome/firefox,facebook。
+因為余氏輸入法是舊式的ime，所以不支持微軟的edge/ie網頁
+或office365網上app。但chrome/firefox冇問題。
+舊式的office桌面版也ok。如你一定要用edge/ie/office365，
+只好用notepad打字然後copy&paste了。
+Q:不過我在notepad及chrome也用不到...
+A:你可能要在安裝完余氏輸入法之後在win10系統設定，新增余氏輸入法。
+請用cmd去執行RUNSHELL.BAT(最新的setupRenee64.ZIP內附有)。
+Q:when i type shell:::{BF782CC9-5A52-4A17-806C-2A894FFEEAC5} 
+this come out, what should I do ?
+A:剛找到原因：最新的win10 1809不支持用shell:::{}去安裝輸入法:-
+‎請參考[教學] 在 Windows 10 RS3 / RS4 / RS5 (1709 / 1803 / 1809 版) 下找回 ㄅ半 輸入法
+http://www.fox-saying.com/blog/post/45397797

@@ -1,0 +1,37 @@
+﻿https://answers.microsoft.com/zh-hant/windows/forum/windows_10-ime/windows-10/2bcabc3f-65ca-4dd7-a5bf-8670e83e1c33?auth=1
+
+問題
+windows 10 如何安裝內碼輸入法? 
+請問：
+系統更新至 Windows 10 ，該如何設定內碼輸入法？
+
+Answer_Man 已回覆於  十二月 8, 2015
+Microsoft 支援工程師
+試試看以下步驟操作，能否使用?
+
+此為 64 bit 的內碼輸入法 ,從 windows server 2003 64 R2 中取得
+http://www.mediafire.com/download/d8cyd7zufz3ue2d/WINIME.IME
+非一般常見的 xp 32位元版
+
+必須用系統管理員身份執行命令提示字元
+copy 到 c:\windows\system32
+
+
+要安裝在win7 以上的需要匯入這個 reg 檔
+http://www.mediafire.com/download/2xa2vcf504q6eps/%E5%85%A7%E7%A2%BC.reg
+
+或是複製以下幾行存檔再匯入
+
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layouts\E0040404]
+"Layout Display Name"="中文 (正體) - BIG5碼"
+"IME File"="winime.ime"
+"Layout Text"="中文 (正體) - BIG5碼"
+"Layout File"="KBDUS.DLL"
+
+http://www.mediafire.com/download/2xa2vcf504q6eps/%E5%85%A7%E7%A2%BC.reg
+
+http://www.mediafire.com/download/d8cyd7zufz3ue2d/WINIME.IME
+論壇是網友們熱心回覆的建議或答案而且是免錢的，並不保證任何的解決方法一定有效，如果要有效的解法，請購買合約喔!
+辛苦回答問題的人一個肯定~

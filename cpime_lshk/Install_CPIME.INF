@@ -1,0 +1,58 @@
+[version]
+signature="$CHICAGO$"
+SetupClass=BASE
+
+
+[DefaultInstall]
+CopyFiles=cpime.ime.install, cpime.chm.install
+AddReg=cpime_registry
+
+[DefaultInstall.nt]
+CopyFiles=cpime.ime.install, cpime.chm.install
+AddReg=cpime_registry_nt
+
+[DefaultInstall.ntamd64]
+CopyFiles=cpime.ime.install.ntamd64, cpime.chm.install, cpime.ime.install.syswow64, cpime.chm.install.syswow64
+AddReg=cpime_registry_nt
+
+
+[cpime.ime.install]
+cpime.ime,x86\cpime.ime
+
+[cpime.ime.install.syswow64]
+cpime.ime,x86\cpime.ime
+
+[cpime.ime.install.ntamd64]
+cpime.ime,x64\cpime.ime
+
+
+[cpime.chm.install]
+cpime.chm
+
+[cpime.chm.install.syswow64]
+cpime.chm
+
+
+[DestinationDirs]
+cpime.ime.install=11
+cpime.ime.install.syswow64=16425
+cpime.ime.install.ntamd64=11
+cpime.chm.install=11
+cpime.chm.install.syswow64=16425
+
+
+[cpime_registry]
+HKLM,"system\currentcontrolset\control\keyboard layouts\E03D0C04","layout file",,KBDUS.DLL
+HKLM,"system\currentcontrolset\control\keyboard layouts\E03D0C04","layout text",,"Cantonese Phonetic IME (CPIME) Jyutping"
+HKLM,"system\currentcontrolset\control\keyboard layouts\E03D0C04","IME file",,"cpime.ime"
+
+[cpime_registry_nt]
+HKLM,"system\currentcontrolset\control\keyboard layouts\E03D0C04","layout file",,KBDUS.DLL
+HKLM,"system\currentcontrolset\control\keyboard layouts\E03D0C04","layout text",,"Cantonese Phonetic IME (CPIME) Jyutping"
+HKLM,"system\currentcontrolset\control\keyboard layouts\E03D0C04","IME file",,"cpime.ime"
+
+
+[SourceDisksNames]
+55="CPIME Upgrade","",1
+
+

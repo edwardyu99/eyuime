@@ -1,0 +1,11 @@
+★★★更新： 20181226：有網友報告windows10的新增鍵盤-->新增余氏輸入法的IME為灰色，不能按下。解決的方法為執行RUNXML.BAT(最新的setupRenee64.zip內附有):-
+control.exe intl.cpl,,/f:".\renee.xml"
+<gs:GlobalizationServices xmlns:gs="urn:longhornGlobalizationUnattend">
+    <gs:UserList>
+        <gs:User UserID="Current" CopySettingsToDefaultUserAcct="true" CopySettingsToSystemAcct="true"/> 
+    </gs:UserList>
+    <gs:InputPreferences>
+        <gs:InputLanguageID Action="add" ID="0404:E0200404"/>
+        <gs:InputLanguageID Action="add" ID="0C04:E0200C04"/>
+    </gs:InputPreferences>
+</gs:GlobalizationServices>

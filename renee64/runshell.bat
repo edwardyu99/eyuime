@@ -1,0 +1,2 @@
+start shell:::{BF782CC9-5A52-4A17-806C-2A894FFEEAC5}
+pause

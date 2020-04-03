@@ -1,0 +1,12 @@
+本輸入法適用於繁體中文視窗95/98。
+請到本網頁 輸入法下載 區下載檔案eywin98.zip。
+
+解壓後，執行半自動安裝程式 eywin98.exe。
+
+然後到視窗->->開始->設定-> 控制台->輸入法->新增-> 余氏。
+以後便可如常使用 ctrl-shift 啟動選擇余氏輸入法。
+
+當安裝時，如遇有呼叫插入光碟檔案 kbdus.kbd 時，請瀏覽 c:\windows\system 或 c:\windows\temp。
+
+快速鍵Ｆ11：本安裝過程已將輸入法之「重送結果字串」快速鍵由 ctrl-alt-G 變成 Ｆ11。這樣，疊字可用快速鍵Ｆ11 輸入。
+

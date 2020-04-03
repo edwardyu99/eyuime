@@ -1,0 +1,4 @@
+https://www.regular-expressions.info/duplicatelines.html
+
+find    ^(.*)(\r?\n\1)+$ 
+replace \1

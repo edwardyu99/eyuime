@@ -1,0 +1,94 @@
+﻿余氏輸入法粵語拼音方案
+======================
+余氏輸入法單字粵語拼音容許多種拼法。為了余氏輸入法的廣東話詞庫的推出，
+有必要用一種單一的拼法，以減少詞庫數量。本方案以實用為主，所以
+儘量接近香港人所熟悉的拼法，而不考慮學術性如香港語言學學會方案和萬國音標。
+
+註：
+(1) 港式聲母
+
+聲母對照表
+
+語言學會 耶魯 耶魯(正統) 黃錫凌 萬國音標 廣州  劉錫祥 余氏
+b  把	b	b	b	p	b	b	b
+c  差	ch	ch	ts	t'	c	ch	ch (1)
+d  打	d	d	d	t	d	d	d
+f  花	f	f	f	f	f	f	f
+g  加	g	g	g	k	g	g	g
+gw 掛	gw	gw	gw	kw	gu	gw	gw (2)
+h  下	h	h	h	h	h	h	h
+j  也	y	y	j	j	y	y	y
+k  卡	k	k	k	k'	k	k	k
+kw 誇 	kw	kw	kw	kw'	ku	kw	kw (2)
+l  啦	l	l	l	l	l	l	l
+m  嗎	m	m	m	m	m	m	m
+n  那	n	n	n	n	n	n	n
+ng 五	ng	ng			ng	ng	ng
+p  怕	p	p	p	p'	p	p	p
+s  沙	s	s	s		s	s	s,sh(3)
+t  他	t	t	t	t'	t	t	t
+w  話	w	w	w	w	w	w	w
+z  渣	j	j	dz	t	z	j	j  (1)
+
+
+韻母對照表
+
+語言學會 耶魯 耶魯(正統) 黃錫凌 萬國音標 廣州  劉錫祥 余氏
+aa  阿	a	a	a	a	a	a	a
+aai 埃	aai	aai	ai	ai	ai	aai	i,ai (4)
+aau 拗	aau	aau	au	au	ao	aau	ao,au(5)
+aam 啱	aam	aam	am	am	am	aam	am
+aan 晏	aan	aan	an	an	an	aan	an	
+aang罌	aang	aang	a	a	ang	aang	ang
+aap 鴨	aap	aap	ap	ap	ab	aap	ap
+aat 壓	aat	aat	at	at	ad	aat	at
+aak 呃	aak	aak	ak	ak	ag	aak	ak
+ai  矮	ai	ai	i	i	ei	ai	ai 
+au  歐	au	au	u	u	eo	au	au 
+am  庵	am	am	m	m	em	am	um,am(6)
+an  奀	an	an	n	n	en	an	un,an(6)
+ang 鶯	ang	ang			eng	ang	ang
+ap  噏	ap	ap	p	p	eb	ap	up,ap(6)
+at  兀	at	at	t	t	ed	at	ut,at(6)
+ak  握	ak	ak	k	k	eg	ak	ak
+e   些	e	e				e	e
+ei  四	ei	ei	ei	ei	i	ei	ei
+eu	 	 	 	u	 	 
+em	 	 	 	m	 	 
+eng 腥	eng	eng			ng	eng	eng
+ep  	 	 	 	p	 	 
+ek  石	ek	ek	k	k	g	ek	ek
+i   師	i	i	i	i	i	i	i
+iu  小	iu	iu	iu	iu	iu	iu	iu
+im  閃	im	im	im	im	im	im	im
+in  先	in	in	in	in	in	in	in
+ing 成	ing	ing	i	I	ing	ing	ing
+ip  攝	ip	ip	ip	ip	ib	ip	ip
+it  洩	it	it	it	it	id	it	it
+ik  式	ik	ik	ik	Ik	ig	ik	ik
+o   所	o	o			o	oh	or (7)
+oi  腮	oi	oi	i	i	oi	oi	oi
+ou  好何ou	ou	ou	ou	ou	o	o  (7)
+on  安	on	on	n	n	on	on	on
+ong 爽	ong	ong			ong	ong	ong
+ot  喝	ot	ot	t	t	od	ot	ot
+ok  索	ok	ok	k	k	og	ok	ok
+oe  靴	eu	eu				euh     euh	
+oeng上	eung	eung			ng	eung	eung
+oek 削	euk	euk	k	k	g	euk	euk
+eoi 水	eui	eui	y	y	u	ui	ui
+eon 信	eun	eun	n	n	n	un	un (8)
+eot 術	eut	eut	t	t	d	ut	ut
+u   夫	u	u	u	u	u	oo	u
+ui  灰	ui	ui	ui	ui	ui	ooi	ui
+un  歡	un	un	un	un	un	oon	oon(8)
+ung 風	ung	ung	u		ung	ung	ung
+ut  闊	ut	ut	ut	ut	ud	oot	oot 
+uk  屋	uk	uk	uk	k	ug	uk	uk
+yu  於	yu	yu	y	y		ue	u  
+yun 原	yun	yun	yn	yn	n	uen	uen
+yut 月	yut	yut	yt	yt	d	uet	uet
+m   唔	m	m			m	m	ng 
+ng  五	ng	ng			ng	ng	ng
+
+

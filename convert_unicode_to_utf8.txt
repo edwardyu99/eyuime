@@ -1,0 +1,2 @@
+﻿powershell
+gc -en unicode reneeyu.txt | Out-File -en utf8 reneeyuutf8.txt

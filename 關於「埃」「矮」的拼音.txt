@@ -1,0 +1,37 @@
+﻿關於「埃」「矮」的拼音
+===================
+★★★20180728 新增「埃i」音。例：bi拜，di大，fi快，gi階，gwi怪，hi嗨，mi買，ngi崖，pi派，ti太，wi歪
+對於「埃」「矮」的拼音，不同的拼音方案用不同的字母：
+http://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/
+(按左側的[韻母]對照表: 聲母, [韻母], 聲調)
+
+韻母對照表
+語言學會 耶魯 正統 黃錫凌 萬國 廣州 劉錫祥 [余氏*]
+aa  阿　 a　　a　　a　　 a　　 a　　 a　　　a
+aai 埃*　aai　aai　ai　　ai　　ai　　aai　　i,ai 
+aau 拗　 aau　aau　au　　au　　ao　　aau　　ao,au
+aam 啱　 aam　aam　am　　am　　am　　aam　　am
+aan 晏　 aan　aan　an　　an　　an　　aan　　an　　
+aang罌　 aang aang　a　　a　　ang　　aang　 ang
+aap 鴨　 aap　aap　ap　　ap　　ab　　aap　　ap
+aat 壓　 aat　aat　at　　at　　ad　　aat　　at
+aak 呃　 aak　aak　ak　　ak　　ag　　aak　　ak
+ai  矮*　ai　 ai　　i　　i　　ei　　ai　　　ai 
+au  歐　 au　 au　　u　　u　　eo　　au　　　au 
+am  庵　 am　 am　　m　　m　　em　　am　　　um,am
+an  奀　 an　 an　　n　　n　　en　　an　　　un,an
+ang 鶯　 ang　ang　　　　　　eng　　ang　　 ang
+ap  噏　 ap　 ap　　p　　p　　eb　　ap　　　up,ap
+at  兀　 at　 at　　t　　t　　ed　　at　　　ut,at
+ak  握　 ak　 ak　　k　　k　　eg　　ak　　　ak
+
+*註：左側[埃矮...]字和最右側[余氏*]為本人所加
+
+余氏輸入法用的是「埃i」和「矮ai」，原因是比較接近英文的拼法。
+單字容許多種拼法，所以都可拼成：bi拜，bai拜，bai閉。
+詞庫要分bi拜，bai閉。
+註：因為chi此，ji資，si師，yi衣 的i音為衣，所以「埃i」音不適
+用，要用回[ai]。例：chai猜，jai齋，sai曬。
+另外ki，li，ni[埃i]音不常用，所以用回[ai]。例：kai楷**，lai拉，nai乃
+**辭庫用gi楷，例：digi大楷，jinggi正楷
+

@@ -1,0 +1,84 @@
+﻿❤余氏輸入法廣東話版的再優化❤
+
+自從上次ji,si,yi,yu的優化後，為減少輸入時的選字和按鍵，廣東話版的再優化如下：
+註：這些優化只是加入新的組字方法，不會取代原來的拼音。
+(1) c=ch 
+    大部份香港廣東話拼音ch都可以簡化為c，例如：chan陳=can陳，cheung長=ceung長
+    今次優化除了cha，che，chi，cho，chu外，一律加入c=ch的拼音。
+
+(2) s=sh
+    這個優化以前已有了，如：shan山=san山，sheung上=seung上。
+
+(3) e=ei
+    如：bei比=be比，fei非=fe非，mei美=me美
+
+    註: 為增加同音選字的選擇，原來的ei拼音排列改為第二個同音字：
+        be 比 bei 被
+        de 地 dei 哋
+        fe 非 fei 飛
+        ge 機 gei 幾
+        he 起 hei 喜
+        ke 其 kei 期
+        le 裡 lei 你
+        me 美 mei 尾
+        pe 皮 pei 彼 
+
+(4) u=oo
+
+    如： fu 苦 foo 附
+         gu 故 goo 股
+         ku 顧 koo 古
+         wu 胡 woo 烏  
+
+(5) u=ue
+
+    如： shu書 shue輸  sue樹
+         yu 於 yue 余   
+
+(6) 對a,e,i,o,u同音字(第四聲)加z
+
+    註：這個優化是ji,si,yi,ju的伸延，如覺得太複雜可略過。
+
+    ba 把   baz 吧
+    da 打   daz 咑
+    fa 花   faz 化
+    ga 加   gaz 價
+    ha 夏   haz 霞
+    ka 家   kaz 卡
+    la 啦   laz 拿
+    ma 嗎   maz 馬
+    pa 怕   paz 爬
+------------------------------
+    be 比   bez 備
+    de 地   dez 哋
+    fe 非   fez 肥
+    ge 機   gez 技
+    he 起   hez 氣
+    ke 其   kez 奇
+    le 裡   lez 離
+    me 美   mez 微
+    pe 皮   pez 疲
+--------------------------------------
+   chi 知   ciz 此   cizz 次   cizzz 詞
+    ji 資   jiz 子   jizz 至   jizzz 自
+    si 師   siz 使   sizz 試   sizzz 時
+    yi 議   yiz 倚   yizz 意   yizzz 兒
+    yu 於   yuz 與   yuzz 預   yuzzz 如
+--------------------------------------
+    bo 部   boz 步
+    do 到   doz 道
+    go 告   goz 過
+    ho 何   hoz 河
+    ko 高   koz 個
+    lo 勞   loz 路
+    mo 毛   moz 無
+    po 報   poz 袍
+    so 蘇   soz 數
+    to 圖   toz 徒
+    wo 和   woz 禍
+-------------------------------
+    fu 苦   fuz 乎
+    gu 故   guz 固
+    ku 顧   kuz 僱
+    shu書   shuz殊
+    wu 胡   wuz 湖   

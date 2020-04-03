@@ -1,0 +1,27 @@
+﻿http://www.mandarintools.com/javaconverter.html
+
+Chinese Encoding Converter
+
+First, download the actual program (Last updated June 5, 2004). Unzip it to get the file zhcode.jar. Get and install the Java Runtime Environment 2.
+After installation, you can set up a short cut on the desktop to the zhcode.jar file or add it to your start menu. Now you can click on it. It can also be started from the command line by typing "javaw -jar zhcode.jar".
+
+After starting the program, a small window should appear that will allow you to choose the encoding and name of the file you want to convert and the encoding and name of the converted file. After selecting these, click on "Convert File" and the file will be converted.
+
+There is also a way to run the converter from the command line.
+
+Usage: java zhcode -[gbc8ui2nk][gbc8uts2nk] in_file out_file
+g = GB2312, b = Big5, c = CNS11643, 8 = UTF-8, u = Unicode,
+t = Unicode (traditional characters), h = HZ,
+s = Unicode (simplified characters),
+i = ISO-2022-CN, 2 = ISO-2022-CN-GB, n = ISO-2022-CN-CNS,
+k = GBK
+So to convert a file from UTF-8 to Unicode (UTF-16)
+
+java -cp zhcode.jar zhcode -8u infile.txt outfile.txt
+
+You can also download the source code for the converter. The compiled and source code version of zhcode are free for non-commercial use. Commercial use requires a license. Contact me as indicated below for more information.
+
+Please visit my contact page with questions or comments.
+
+----------------------
+Usage: java -jar zhcode.jar

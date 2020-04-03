@@ -1,0 +1,6 @@
+Q:請問win10 1903版如何移除余氏中文輸入法?
+
+A:請下載 https://sites.google.com/site/eykmime/reneeremove.zip?attredirects=0&d=1
+解壓後用右鍵admin執行reneeremove.bat
+然後重啟windows
+	

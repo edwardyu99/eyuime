@@ -1,0 +1,1 @@
+ %systemroot%\syswow64\regedit.exe /s simyusim.reg

@@ -1,0 +1,30 @@
+﻿
+2018年11月29日 上午1:55
+Irwin Ting
+when i type shell:::{BF782CC9-5A52-4A17-806C-2A894FFEEAC5} this come out, what should I do ?
+
+2018年11月29日 上午9:35
+余氏中文輸入法
+請用cmd去執行RUNSHELL.BAT(最新的setupRenee64.zip內附有):-
+start shell:::{BF782CC9-5A52-4A17-806C-2A894FFEEAC5}
+Irwin Ting
+
+余氏中文輸入法
+剛找到原因：最新的win10 1809不支持用shell:::{}去安裝輸入法:-
+‎Pat Chan‎ 發文到 余氏中文輸入法
+https://www.youtube.com/watch?v=Drzrj81F9y8&fbclid=IwAR18EaGIZ9zVMHETr3eAkF9_o717U6ycfPhXUsNPw4njyBEE0_DG1wANDSE
+11月6日上午11:24 · 
+windows 1809 要這樣安裝
+把<gs:InputLanguageID Action="add" ID="0C04:E03D0C04"/> 
+改為
+<gs:InputLanguageID Action="add" ID="0404:E0200404"/>
+教學 - 安裝 CPIME 廣東話拼音輸入法 - Windows 1809 可用
+How to install Cantonese Pinyin Input Software on windows 1809 需要去我的網頁抄code Please head to my website to copy the extra code http://uccoffee.kunstkammer.com ...
+youtube.com
+余氏中文輸入法
+另外你可以試試以下的方法： http://www.fox-saying.com/blog/post/45397797-%5B%E6%95%99%E5%AD%B8%5D-%E5%9C%A8-windows-10-rs3---rs4---rs5-%281709---1803---1809-
+[教學] 在 Windows 10 RS3 / RS4 / RS5 (1709 / 1803 / 1809 版) 下找回 ㄅ半 輸入法 @ 傻瓜狐狸的雜碎物品 :: 痞客邦 ::
+這篇本來我不想寫的，因為幫大家找回 ㄅ半輸入法的人不是我而是米卡大大 所以大家在開始看這一篇貼文時，請記得點一下下面的連結來支持一下 Mika 大大 Windows 10 新增ㄅ半注音輸入法 2分鐘輕
+fox-saying.com
+Irwin Ting
+可以了 ~ thx!!

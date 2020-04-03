@@ -1,0 +1,36 @@
+
+How to delete registry subkeys and values by using a registration entries (.reg) file?
+
+
+RESOLUTION
+
+
+To delete a registry path with all the subkeys or a single subkey from the registry using a reg file, use a hyphen (-) before the registry path to delete the complete path, or after the equal sign fro subkey to delete a single subkey.
+
+ 
+
+Sample registry path with subkeys:
+
+[HKEY_LOCAL_MACHINE\Software\Test]
+
+"testkey1"=dword:00000004
+
+"testkey2"="testkey"
+
+ 
+
+To delete a registry path with all the subkeys, put a hyphen (-) in from of the registry path in the .reg file.
+
+[-HKEY_LOCAL_MACHINE\Software\Test]
+
+ 
+
+To delete a single subkey put a hyphen (-) after the equals sign following the DataItemName in the .reg file.
+
+For example to delete "testkey1" add a hyphen (-) after the equal sign for "testkey1":
+
+[HKEY_LOCAL_MACHINE\Software\Test]
+
+"testkey1"=-
+
+

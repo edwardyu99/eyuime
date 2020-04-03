@@ -1,0 +1,22 @@
+﻿❤各位好！我做了一個廣東話輸入法練習網頁，各位可以一面聽歌，一面輸入，請慢慢欣賞！
+ https://sites.google.com/site/eykmime/poem_input
+
+
+阿勤兄，好久不見！
+我剛註冊這論壇，但不能上傳頭像，所以不能留言。
+現借這裡跟各位發佈一下：
+
+❤各位老師、同學，各位網友，免費的余氏中文輸入法 (廣東話版) 又回來了！
+
+我已開通余氏中文輸入法facebook粉絲專頁： 
+http://www.facebook.com/eyuime/
+
+為使網友更容易安裝windows 10版的余氏輸入法，現用 inno setup簡化64bits 輸入法的安裝。(32bits輸入法安裝方法不變)
+請再重新下載及安裝：
+http://sites.google.com/site/eykmime/eywin98
+歡迎到以上facebook或來電郵 eykm@yahoo.com 討論，謝謝！ 
+
+余氏中文輸入法
+http://edwardyu2011.blogspot.com
+http://sites.google.com/site/eykmime/
+https://www.facebook.com/eyuime/

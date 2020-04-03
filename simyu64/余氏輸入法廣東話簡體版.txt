@@ -1,0 +1,10 @@
+﻿余氏輸入法廣東話簡體版
+QQ空間日誌 https://user.qzone.qq.com/1449059993/blog/1508991831
+下載連接 https://share.weiyun.com/79858a1c68c296629d1499975f72ec01
+安裝方法：1) 下載  setupSimyu64.ZIP (已包含32bits simyu32.exe 的安裝)
+                  2) 解壓 setupSimyu64.ZIP 得 setupSimyu64.EXE
+                               用滑鼠右鍵，以系統管理員執行 setupSimyu64.EXE 
+                    3) 另外要在windows 10 的時間及語言設定，中文(中华人民共和國)，增加簡余輸入法。                           
+                   4) 重啟WINDOWS 
+另有繁體版在： Edward Yu's Home Page - 余氏中文輸入法 https://sites.google.com/site/eykmime
+歡迎 !  請到我的blog或余氏中文輸入法 www.facebook.com/eyuime 看看及留言！
