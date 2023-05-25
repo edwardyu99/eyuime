@@ -1,0 +1,11 @@
+Q:請問如何輸入標點符號？🙏🏼
+A:最簡單是打"x"。
+「x」=標點、，。．.... 「bra」=括號（）「」《》【】『』....
+本輸入法為加快輸入，特指定「竹(h),廿(t)」為「，,。」
+註：竹(h)為倉頡碼的「撇」，與「，」型似。
+    廿(t)T字手勢為STOP，聯想為fullstop「。」
+其他標點簡碼為：ul(！) uq(？) us(；) uy(：) 
+ua「 ub」 uc（ ud） ue『 uf』 ug《 uh》 ui【 uj】
+dot=・ dots=… hyph=－ hyps=——
+
+https://sites.google.com/site/eykmime/余氏輸入法3-3拼音組詞方案說明

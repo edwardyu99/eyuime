@@ -1,0 +1,15 @@
+20220306 - 雙字詞編碼改為3+3。對a,e,i,o,u加聲調如下(合併第3,5聲)：
+
+	例：ga加, gaa假, gah價
+
+		se些,seh寫, seh卸社, seh蛇, seh射
+
+		si師, sii使,see試市, sis時, siz是
+
+   		sia嘥, sia徙, sia晒
+
+   		gi階, gia解, gii介, mi埋, miz賣
+
+		so蘇,soa數, sou訴, mos巫, moz務
+
+		su書 ,sua鼠,suu恕, sus殊, suz樹	

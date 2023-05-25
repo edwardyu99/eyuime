@@ -1,0 +1,22 @@
+版本：二０二二年五月八日
+
+😍母親節余氏輸入法更新❤
+「emface」😄😍
+「emhand」🖐✌️👍👎🙏
+為了港式習慣和減少重碼，粵拼韻母aan和an分別拼成an和un。例如：山san 新sun。
+今次更新增加了「親cen 真珍jen 文問蚊men」六個單字和「 因恩欣……yen」一組字。
+原本拼法是 chan jan man yan。(註：「民聞敏……man」字保留常用拼法)
+另外也增加韻母eung的第一聲調五組字：
+「昌ceo 香heo 將jeo 相seo 央yeo」。
+原本拼法是cheong heung jeung sheung yeung。
+以下也加了七個韻母at第一聲調的常用單字：
+「不bet 七cet 忽fet 質jet 乜met 失set 一yet」。
+原本拼法是 bat chat fat jat mat sat yat。
+增加了ak韻母->ek第一聲調常用單字一個：「北bek」
+以上拼法只適用於3+3詞庫編碼。例如：一日yetyat。
+單字拼法保留混合多重拼法：yat日一溢逸。
+當然新拼法的選字排列會將次序優化：yet一。
+例如：man民文問萬晚慢聞敏曼 (混合man/men音，按字頻)
+men文民問聞敏吻閩蚊刎 (只men音)
+
+

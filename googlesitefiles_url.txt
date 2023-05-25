@@ -1,0 +1,35 @@
+https://drive.google.com/file/d/1sX_LT3wXjeUWwPAErsG_pkvGJz5i-nnk/view?usp=sharing   setupReneeRime.zip
+
+https://drive.google.com/file/d/1KhdtUtDe_C_05Pct81nU3Ce-wzpFnrLa/view?usp=sharing   rennee.gtab
+
+https://drive.google.com/file/d/1zT72c5mt4TPkt_5SI40CVQh8nu0NhY86/view?usp=sharing   androidReneeRimeCan.zip
+
+
+最新消息：
+
+20220611 【下載：余氏輸入法(android同文輸入法版)】
+安裝方法：
+1. 用手機firefox app(因android chrome/edge 不能下載) 下載androidReneeRimeCan.zip： 
+   https://drive.google.com/uc?export=download&id=1zT72c5mt4TPkt_5SI40CVQh8nu0NhY86
+   到手機的 download folder。
+   也可用pc 下載 androidReneeRimeCan.zip 到pc的onedrive 或googledrive，
+   然後用手機的onedrive或googledrive app 下載到手機的 download folder。
+2. 從google play下載及安裝Files by Google app https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.files&hl=zh_HK&gl=US
+   解壓手機的 download 資料夾(folder)中的androidReneeRimeCan.zip，得到以下檔案：
+       default.custom.yaml        
+       default.yaml
+       installation.yaml
+       renee.prism.bin
+       renee.reverse.bin
+       renee.schema.yaml
+       renee.table.bin
+       rime.tw同文輸入法_url.txt
+       Trime-20200909.apk
+       trime.yaml
+       user.yaml
+3. 安裝及設定「同文輸入法」Trime-20200909.apk
+   參考 https://cantonesenotes.home.blog/2019/07/31/rime-trime-cantonese-edition-ime-help/
+4. 因「同文輸入法」內沒有余氏輸入法的設定，所以要將解壓後的download/androidReneeRimeCan/ 資料夾中的檔案
+   default.custom.yaml，renee.schema.yaml 複製到手機的資料夾/rimeCan/，
+   及將renee.prism.bin，renee.reverse.bin 和renee.table.bin複製到手機的資料夾/rimeCan/build/
+   然後再部署「同文輸入法」

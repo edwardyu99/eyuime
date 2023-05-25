@@ -1,0 +1,30 @@
+3+3拼音編碼說明
+
+原來的余氏詞庫雙字詞拼音是4+2，例如ping+yu(m)=拼音。在104329雙字詞中，重碼49421，重碼率47%。
+而3+3編碼的重碼為29626，重碼率28%。但3+3方案需要利用三碼簡化和粵語聲調以減少重碼，以下是詳細說明。
+
+(一) 三碼簡化
+1. 通常取頭三碼，例：本boon-->boo，原yuen-->yue
+2. ang,ing,ung簡化為ag,ig,ug，例：等dang-->dag，定ding-->dig，動dung-->dug
+3. uet-->ut，例：月yuet-->yut
+4. ch和sh簡化為c和s，但以下保留頭三碼：che=長，she=上，shi=成，shu=信
+5. (藝額暗眼咬外岳)ngxx-->xx, e.g.藝ngai-->ai  例外：銀ngan-->un, (牛偶)ngau--ngu
+6. 香港姓氏及常用字取頭三碼。e.g.陳cha(n)，張che(ung)，蔣chi(ang)，葉ip，金kam，高ko，郭國kwo(k)，
+   關軍君kwa(n)，百pak，德tak，鄧tan(g)，曾tsa(ng)，謝tse，蔡tso(i)，徐tsu(i)
+
+20220420 簡化聲調，重碼率29%
+(二) 粵語聲調
+  對a,e(合併23456聲加h)：
+1. ga加，gah假價; ha哈，hah吓霞夏
+2. se些，seh寫卸蛇社射  
+  對i[ai音]不加調，
+3. bi拜擺敗，di大獃歹帶，fi快，gi街介，hi嗨蟹鞋械，li拉，mi買埋，pi派排，ti太軚泰，wi歪壞懷
+   cai猜踩柴，jai齋債寨，sai嘥徙晒; gai解 lai賴 mai賣 pai牌
+  對i[ee音]，合併235聲不加調，第4聲加s，第6聲加z：
+4. cee雌, chi始賜似, cis詞  (特例：cii次)    (ca差ce車ci此co草cu處)
+   jee之, ji只至,   jiz自   (特例：jii子志)      
+   see師, si使試,   sis時, siz是 (特例：sii市) 
+   yee衣, yi倚議以, yis而, yiz二 (特例：yii意)
+  對o,u，合併1235聲不加調，第4聲加s，第6聲加z：
+5. so蘇嫂訴，mos巫，moz務  (特例：bou保 dou到 hou好 lou老 mou冇 sou數) 
+6. su書鼠恕，sus殊, suz樹  (特例：fuu苦 guu古 juu主 yuu雨) 

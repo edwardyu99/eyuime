@@ -1,0 +1,2 @@
+★20220101 - 為減少重碼，四或以上廣東音編碼簡化為三碼如下：
+   ch=c, sh=s (ch[sh]eung=ch[sh]e, shun=shu), gw=q,  kw=k,q  ang,ing,ung=ag,ig,ug, eng,ong=en,on

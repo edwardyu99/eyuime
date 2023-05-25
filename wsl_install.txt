@@ -1,0 +1,69 @@
+https://github.com/microsoft/wslg
+From a command prompt with administrator privileges
+wsl --install -d Ubuntu
+wsl --list -v
+wsl --list --online
+wsl --update
+wsl --shutdown
+
+## Update list of available packages
+sudo apt update
+
+## Gedit
+sudo apt install gedit -y
+
+## GIMP
+sudo apt install gimp -y
+
+## Nautilus
+sudo apt install nautilus -y
+
+## VLC
+sudo apt install vlc -y
+
+## X11 apps
+sudo apt install x11-apps -y
+
+## Google Chrome
+cd /tmp
+sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb 
+sudo apt install --fix-broken -y
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+## Microsoft Teams
+cd /tmp
+sudo curl -L -o "./teams.deb" "https://teams.microsoft.com/downloads/desktopurl?env=production&plat=linux&arch=x64&download=true&linuxArchiveType=deb"
+sudo apt install ./teams.deb -y
+
+## Microsoft Edge Browser
+sudo curl https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/microsoft-edge-dev_93.0.946.1-1_amd64.deb -o /tmp/edge.deb
+sudo apt install /tmp/edge.deb -y
+------------------------------
+Once these applications are installed, you'll find them in your start menu under the distro name. For example Ubuntu -> Microsoft Edge. You can also launch these from your terminal window using the commands:
+
+xcalc, xclock, xeyes
+gimp
+gedit ~/.bashrc
+nautilus
+vlc
+google-chrome
+teams
+microsoft-edge
+
+
+http://hyperrate.com/thread.php?tid=28044
+Ubuntu 20.04/18.04/16.04/ 安裝最新的 gcin 中文輸入的完整步驟
+$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 835AB0E3
+$ software-properties-gtk 
+$ sudo apt-get install gcin
+
+$ cd /mnt/c/Users/yipvi
+$ cp renee.cin ~/
+$ cd ~/
+$ gcin2tab renee
+$ gcin2tab renee.cin renee.gtab (fedora)
+$ ll
+
+cp renee.gtab /mnt/c/Users/yipvi/renee.gtab
+https://drive.google.com/uc?export=download&id=<fileid in googlesitefiles>

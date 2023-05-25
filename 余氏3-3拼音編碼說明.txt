@@ -1,0 +1,39 @@
+3+3拼音編碼說明
+
+原來的余氏詞庫雙字詞拼音是4+2，例如ping+yu(m)=拼音。在104329雙字詞中，重碼49421，重碼率47%。
+而3+3編碼的重碼為29626，重碼率28%。但3+3方案需要利用三碼簡化和粵語聲調以減少重碼，以下是詳細說明。
+
+(一) 三碼簡化
+1. 通常取頭三碼，例：本boon-->boo，原yuen-->yue
+2. ang,ing,ung簡化為ag,ig,ug，例：等dang-->dag，定ding-->dig，動dung-->dug
+3. uet-->ut，例：月yuet-->yut
+4. ch和sh簡化為c和s，但以下保留頭三碼：che=長，she=上，shi=成，shu=信
+5. (藝額暗眼咬外岳)ngxx-->xx, e.g.藝ngai-->ai  例外：銀ngan-->un, (牛偶)ngau--ngu
+6. 香港姓氏及常用字取頭三碼。e.g.陳cha(n)，張che(ung)，蔣chi(ang)，葉ip，金kam，高ko，郭國kwo(k)，
+   關軍君kwa(n)，百pak，德tak，鄧tan(g)，曾tsa(ng)，謝tse，蔡tso(i)，徐tsu(i)
+
+(二) 粵語聲調
+   對a,e,i,o,u加聲調如下(合併第3,5聲)：
+1. ga加, gah假, gah價, ha哈, hah吓霞夏 (a,ah)
+2. se些, seh寫, seh卸社, seh蛇, seh射  (e,eh)
+3. gi階, gih解, gih介,   mih埋, mih賣  (i,ih)
+4. so蘇, soh數, sou訴,   mos巫, moz務  (o,oh,ou,os,oz)
+5. su書 ,suh鼠, suu恕,   sus殊, suz樹  (u,uh,uu,us,uz)
+6. chi雌, ci此, cii次似, cis詞 	       (chi,ci,cii,cis)     猜跴柴 (cih)
+   jee之, ji子, jii志,          jiz自  (jee,ji,jii,_,jiz)   齋債   (jih)
+   see師, si使, sii試市, sis時, siz是  (see,si,sii,sis,siz) 嘥徙晒 (sih)
+   yee衣, yi倚, yii意,   yis而, yiz二  (yee,yi,yii,yis,yiz) 
+
+heart  emhapp
+❤❤❤ 😄😄😄
+ui poem uj sosik
+【定風波】 蘇軾
+
+mokten cuelam da ipsig h hofon yumsiu ceh tsuhag t
+莫聽   穿林   打 葉聲 ， 何妨  吟嘯   且  徐行  。
+jukjeu monhih higsig ma h suipa uq yatsor yinyuu yam pigsag t
+竹杖   芒鞋   輕勝   馬 ，誰怕  ？ 一蓑   煙雨   任  平生   。
+liuciu cunfug cui jausig h meilag ul santau cehjiu kek sheyig t
+料峭   春風   吹  酒醒  ， 微冷   ！ 山頭   斜照   卻  相迎   。
+wuisau heuloi siusat cu h gwahui us yamo fugyuu yamo cig t
+回首   向來   蕭瑟   處 ，歸去   ； 也無 風雨   也無 晴  。

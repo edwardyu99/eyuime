@@ -103,3 +103,28 @@ print('cnt=', cnt, ',cntout=', cntout)
 print('cntout2=', cntout2, ',cnterr2=', cnterr2)
 print('cntout3=', cntout3, ',cnterr3=', cnterr3)
 print('cntout4=', cntout4, ',cnterr4=', cnterr4)
+# sort fo examples
+#linux: sort shopping.txt -o shopping.txt 
+#shopping = open('shopping.txt')
+#lines = shopping.readlines()
+#lines.sort()
+#shopping.close()
+#
+#lines = sorted(shopping.readlines())
+'''
+fn = fileout # 'filename.txt'
+sorted_fn = 'sorted_filename.txt'
+
+with open(fn,'r') as first_file:
+    rows = first_file.readlines()
+    sorted_rows = sorted(rows) #, key=lambda x: int(x.split()[0]), reverse=False)
+    with open(sorted_fn,'w') as second_file:
+        for row in sorted_rows:
+            second_file.write(row)
+'''
+with open(fileout, 'r+',encoding="utf-16") as f:
+    sorted_contents=''.join(sorted(f.readlines())) #, key = lambda x: int(x.split(' ')[0])))
+    f.seek(0)
+    f.truncate()
+    f.write(sorted_contents)
+print(fileout,' sorted OK')
