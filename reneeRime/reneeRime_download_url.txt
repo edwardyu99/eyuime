@@ -1,0 +1,23 @@
+余氏輸入法(小狼毫版)
+https://sites.google.com/site/eykmime/setupReneeRime.zip?attredirects=0&d=1
+https://drive.google.com/file/d/1jcAyuzLmDzkl8VJjozegUa6oOCgkSV9g/view?usp=sharing
+
+
+【小狼毫】Rime for Windows (Rime中州韻輸入法引擎官網：)
+https://rime.im
+
+Rime 輸入方案設計書
+https://github.com/rime/home/wiki/RimeWithSchemata
+
+Schema.yaml 詳解
+https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/Rime_description.md
+
+Rime 输入法指北
+https://jiz4oh.com/2020/10/how-to-use-rime/
+
+喺windows安裝rime小狼毫打粵拼
+https://www.howtostudycantonese.com/jyut/%E5%96%BAwindows%E5%AE%89%E8%A3%9Drime%E5%B0%8F%E7%8B%BC%E6%AF%AB%E6%89%93%E7%B2%B5%E6%8B%BC/
+
+中州韻小狼毫粵語輸入法使用說明（Rime Weasel Cantonese Edition IME Help）
+https://cantonesenotes.home.blog/2019/07/31/rime-weasel-cantonese-edition-ime-help/
+前往下載頁： https://cantonesenotes.home.blog/download-keyboard/

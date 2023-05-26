@@ -1,0 +1,192 @@
+### File header must not be modified
+### This file must be encoded into UTF-8.
+### This table under LGPL
+### comments start with ### not single #
+### Derive from the format of SCIM Table, so you can modify the table from
+### scim-tables' table
+SCIM_Generic_Table_Phrase_Library_TEXT
+VERSION_1_0
+
+### Begin Table definition.
+BEGIN_DEFINITION
+
+### License
+### LICENSE = LGPL
+LICENSE = Table source: LGPL. Renee.db and icon: Freely redistributable without restriction
+
+### An unique id to distinguish this table among others.
+### Use uuidgen to generate this kind of id.
+### UUID = c9851827-0abe-12ed-8db5-010b9d51ffed
+UUID = 727b2996-b0ea-42d5-aa63-e0aecbf7ee7b
+
+### A unique number indicates the version of this file.
+### For example the last modified date of this file.
+### This number must be less than 2^32.
+### Just make your table version-able
+### SERIAL_NUMBER = 20090218
+SERIAL_NUMBER = 20180525
+
+### ICON can be any format as long as your pygtk can recognized
+### the most widely ones are "png" and "svg", letter one is recommended
+### ICON = ibus-table.svg
+ICON = renee.svg
+
+### The symbol to be displayed in IM switchers
+### SYMBOL = 码
+SYMBOL = 余
+
+### The default name of this table, this is needed
+### NAME = Table
+NAME = Renee
+
+### The local names of this table, this is optional
+NAME.zh_CN = 余氏
+NAME.zh_HK = 余氏
+NAME.zh_TW = 余氏
+
+### Description
+### DESCRIPTION = This is a template engine table for IBus Table.
+DESCRIPTION = 余氏中文輸入法--廣東話詞庫版(for IBus Table)
+
+### Supported languages of this table
+### sigle "zh_CN" just be recognized as zh_CN,
+### but "zh_CN, zh_HK" or more zh_XX will be recognized as zh;
+### and "en_US, zh_CN" will be just ignored.
+LANGUAGES = zh_TW,zh_HK,zh_CN,zh_SG
+
+### The author of this table
+### AUTHOR = Yu Yuwei <acevery@gmail.com> 
+AUTHOR = Edward Yu <eykm@yahoo.com> 
+
+### Prompt string to be displayed in the status area, CN will be replaced by
+### the gettext tools in runtime as 中.
+STATUS_PROMPT = 余
+
+### If true then the phrases' frequencies will be adjusted dynamically. (TRUE for cangjie)
+DYNAMIC_ADJUST = FALSE
+
+### If true then the first candidate phrase
+### will be selected automatically during inputing. 
+### AUTO_SELECT = TRUE
+
+### If true then a multi wildcard will be appended
+### at the end of inputing string automatically.
+### AUTO_WILDCARD = TRUE
+
+### If true then the result string will be committed to client automatically.
+### This should be used with AUTO_SELECT = TRUE.  (used by cantonhk)
+### AUTO_COMMIT = TRUE
+
+### If true then the inputted string will be automatically splitted during inputing. (cantonhk)
+### AUTO_SPLIT = FALSE
+
+### If true then the preedit area will be filled up by the current candidate phrase automatically.
+### AUTO_FILL = FALSE
+
+### If true then the lookup table will always be shown if there is any candidate phrase.
+### Otherwise the lookup table won't be shown unless the user requires it by moving the preedit caret left.
+### ALWAYS_SHOW_LOOKUP = TRUE
+
+### If true then discard invalid key
+### DISCARD_INVALID_KEY = FALSE
+
+### Use full width punctuation by default
+DEF_FULL_WIDTH_PUNCT = FALSE
+
+### Use full width letter by default
+DEF_FULL_WIDTH_LETTER = FALSE
+
+### The maxmium length of a key.
+MAX_KEY_LENGTH = 6
+
+### Show key prompt if true
+### SHOW_KEY_PROMPT = FALSE
+
+### Discard invalude key if true
+### DISCARD_INVALID_KEY = FALSE
+
+### Valid input chars.
+VALID_INPUT_CHARS = abcdefghijklmnopqrstuvwxyz
+
+### Whether support PinYin Mode, default is true.
+### this feature is just for Chinese, set it to False if your IM is not
+### Chinese.
+PINYIN_MODE = TRUE
+
+### Whether user are allow to define phrase, default is true
+### You have to define the word construction rules below.
+### For input methods which do not input phrases, set this to False
+USER_CAN_DEFINE_PHRASE = FALSE
+
+### Whether the first candidate will be committed when number of combination
+### keys reach the maximum of this input method. Defualt is true.
+AUTO_COMMIT = FALSE
+
+LAYOUT = us
+
+### Single wildcard char, can have multiple chars.
+### SINGLE_WILDCARD_CHAR = ?
+
+### Multi wildcard char.    (used by cantonhk)
+### MULTI_WILDCARD_CHAR = *
+
+### The key strokes to split inputted string.
+### SPLIT_KEYS = Return
+
+### The key strokes to commit the convert result to client. (used by cantonhk)
+### COMMIT_KEYS = space
+
+### The key strokes to forward the inputted string to client.
+### FORWARD_KEYS = space
+
+### The key strokes to select candidiate phrases.
+### SELECT_KEYS = 1,2,3,4,5,6,7,8,9
+
+### The key strokes to page up the lookup table.
+### PAGE_UP_KEYS = Shift+less,Page_Up,comma,minus
+
+### The key strokes to page down the lookup table.
+### PAGE_DOWN_KEYS = Shift+greater,Page_Down,period,equal,space
+
+### Define the prompts of each valid input char.
+BEGIN_CHAR_PROMPTS_DEFINITION
+a a
+b b
+c c
+d d
+e e
+f f
+g g
+h h
+i i
+j j
+k k
+l l
+m m
+n n
+o o
+p p
+q q
+r r
+s s
+t t
+u u
+v v
+w w
+x x
+y y
+z z
+END_CHAR_PROMPTS_DEFINITION
+END_DEFINITION
+
+### Begin Table data.
+### Format of every line whose formated in "input_keys\tphrase\tfreq\n" is an
+### entry.
+### From left to right, the 1st column are the input key combination that you
+### entered via keyboard; the 2nd column are presented character or phrase of
+### the key combination you want; the 3rd column are frequency of the character
+### or phrase.
+### input_keys	aim_chars	freq
+BEGIN_TABLE
+
+END_TABLE

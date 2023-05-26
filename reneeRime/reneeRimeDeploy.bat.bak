@@ -1,0 +1,3 @@
+start "" %APPDATA%\Rime\weasel_server.lnk
+"C:\Program Files (x86)\Rime\weasel-0.14.3\WeaselDeployer.exe" /deploy
+pause

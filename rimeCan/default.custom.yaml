@@ -1,0 +1,11 @@
+customization:
+  distribution_code_name: ""
+  distribution_version: ""
+  generator: "Rime::SwitcherSettings"
+  modified_time: "Mon May  9 01:04:47 2022"
+  rime_version: 1.5.3
+patch:
+  schema_list:
+    - {schema: renee}
+#    - {schema: quick5}
+#  "menu/page_size": 9

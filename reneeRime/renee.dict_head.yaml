@@ -1,0 +1,16 @@
+# Rime dictionary
+# encoding: utf-8
+# ref: https://github.com/rime/home/wiki/RimeWithSchemata
+#
+# renee.dict.yaml - 余氏中文輸入法 詞庫
+
+---
+name: renee
+version: "2022.02.22"
+sort: by_weight               # original
+use_preset_vocabulary: false  # true
+max_phrase_length: 6
+#import_tables:
+#  - jyut6ping3.phrase
+...
+

@@ -19,6 +19,6 @@ IF %ERRORLEVEL% NEQ 0 (
    @rem dir %windir%\System32\uimetool.exe
    @rem dir %windir%\System32\miniime.tpl
 @echo *  
-@echo *** renee.ime not copied. Please restart windows and rerun setupRenee3264.bat
+@echo *** renee.ime not copied. Please restart windows and rerun setup.bat
   @pause
 )

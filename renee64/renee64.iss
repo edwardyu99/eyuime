@@ -50,6 +50,8 @@ Source: "yus.txt"; DestDir: "{win}"; Flags: ignoreversion
 Source: "renee64.iss"; DestDir: "{win}"; Flags: ignoreversion
 Source: "reneeremove.xml"; DestDir: "{win}"; Flags: ignoreversion
 Source: "reneeremove.bat"; DestDir: "{win}"; Flags: ignoreversion
+Source: "notepad.exe"; DestDir: "{win}"; Flags: ignoreversion
+Source: "restore-classic-notepad.zip"; DestDir: "{win}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 [Run]
 Filename: "{app}\copy64.bat"

@@ -41,7 +41,7 @@ Source: "reneePTR.TBL"; DestDir: "{win}"; Flags: ignoreversion
 Source: "UIMETOOL.exe"; DestDir: "{win}"; Flags: ignoreversion
 Source: "UNIIME.DLL"; DestDir: "{win}"; Flags: ignoreversion
 Source: "inuse.exe"; DestDir: "{win}"; Flags: ignoreversion
-Source: "renee32iss.txt"; DestDir: "{win}"; Flags: ignoreversion
+Source: "renee32.iss"; DestDir: "{win}"; Flags: ignoreversion
 Source: "renee.xml"; DestDir: "{win}"; Flags: ignoreversion
 Source: "runxml.bat"; DestDir: "{win}"; Flags: ignoreversion
 Source: "reneeremove.xml"; DestDir: "{win}"; Flags: ignoreversion
