@@ -31,6 +31,15 @@ engine:
   translators:
     - punct_translator
     - table_translator
+ascii_composer:
+  good_old_caps_lock: false # origin true
+  switch_key:
+    Caps_Lock: clear
+    Control_L: noop
+    Control_R: noop
+    Eisu_toggle: clear
+    Shift_L: inline_ascii
+    Shift_R: commit_text
 key_binder:
   bindings:
     - {accept: "Control+p", send: Up, when: composing}
@@ -63,6 +72,7 @@ key_binder:
     - {accept: "Control+Shift+numbersign", toggle: full_shape, when: always}
     - {accept: "Control+Shift+dollar", toggle: simplification, when: always}
     - {accept: "Control+Shift+percent", toggle: extended_charset, when: always}
+    - {accept: "Control+space", toggle: ascii_mode, when: always}
     - {accept: Return, send: space, when: has_menu}  # 20220302
   import_preset: default
 menu:
@@ -161,7 +171,7 @@ speller:
   # use_space: false # default false 以空格作輸入碼
 switches:
   - name: ascii_mode
-    reset: 0
+    reset: 0 # default 0=中文 1=西文
     states: ["中文", "西文"]
   - name: full_shape
     states: ["半角", "全角"]

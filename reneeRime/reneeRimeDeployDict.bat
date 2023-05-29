@@ -7,4 +7,5 @@ copy /Y .\renee.schema.yaml %APPDATA%\Rime\renee.schema.yaml
 copy /Y %APPDATA%\Rime\build\renee.*.bin .\*
 del %APPDATA%\Rime\renee.dict.yaml
 copy /Y %APPDATA%\Rime\build\renee.*.bin ..\rimeCan\*
+copy /Y %APPDATA%\Rime\build\renee.schema.yaml ..\rimeCan\*
 @pause
