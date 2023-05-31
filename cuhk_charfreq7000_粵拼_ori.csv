@@ -673,7 +673,7 @@ ch,rank,jyutpi
 獨,0672,duk6  
 令,0673,ling6 
 限,0674,haan6 
-阿,0675,aa3   
+阿,0675,aa1   
 宣,0676,syun1 
 環,0677,waan4 
 雙,0678,soeng1
@@ -762,7 +762,7 @@ ch,rank,jyutpi
 核,0761,hat6  
 散,0762,saan3 
 侵,0763,cam1  
-吧,0764,baa1  
+吧,0764,baa6  
 甲,0765,gaap3 
 久,0766,gau2  
 菜,0767,coi3  
@@ -798,7 +798,7 @@ ch,rank,jyutpi
 嗎,0797,maa1  
 針,0798,zam1  
 劉,0799,lau4  
-啊,0800,aa1   
+啊,0800,aa3   
 急,0801,gap1  
 唱,0802,coeng3
 訓,0803,fan3  
@@ -835,7 +835,7 @@ ch,rank,jyutpi
 討,0834,tou2  
 晚,0835,maan5 
 佈,0836,bou3  
-粒,0837,lap1  
+粒,0837,nap1  
 亂,0838,lyun6 
 燃,0839,jin4  
 矛,0840,maau4 
@@ -1085,7 +1085,7 @@ ch,rank,jyutpi
 忙,1084,mong4 
 獻,1085,hin3  
 銅,1086,tung4 
-硬,1087,ngaang  
+硬,1087,ngang4  
 予,1088,jyu5  
 削,1089,soek3 
 卷,1090,gyun2 
@@ -1736,7 +1736,7 @@ ch,rank,jyutpi
 鴻,1735,hung4 
 吏,1736,lei6  
 旦,1737,daan3 
-拜,1738,baai3 
+拜,1738,baai1 
 狗,1739,gau2  
 輥,1740,gwan2 
 掩,1741,jim2  
@@ -2365,7 +2365,7 @@ ch,rank,jyutpi
 攀,2364,paan1 
 溢,2365,jat6  
 甫,2366,pou2  
-凹,2367,lap1  
+凹,2367,nap1  
 拱,2368,gung2 
 攜,2369,kwai4 
 晰,2370,sik1  
@@ -3655,7 +3655,7 @@ ch,rank,jyutpi
 靡,3654,mei5  
 鴿,3655,gap3  
 凋,3656,diu1  
-坳,3657,aau1  
+坳,3657,aau3  
 墟,3658,heoi1 
 恝,3659,aat3  
 缽,3660,but3  
@@ -7525,4 +7525,15 @@ ch,rank,jyutpi
 瘉,7524,jyu6  
 癒,7525,jyu6  
 Ｙ,7526,yx1   
-Ｚ,7527,zx1   
+Ｚ,7527,zx1
+边,7528,bin1
+辺,7529,bin1
+酖,7530,daam1
+㩒,7531,gam6
+冏,7532,gwing2
+廌,7533,zi6
+摨,7534,zi6
+暸,7535,liu5
+餸,7536,sung3
+劏,7537,tong1
+駅,7538,yik6
