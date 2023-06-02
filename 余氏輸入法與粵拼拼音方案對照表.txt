@@ -33,17 +33,17 @@
 拗    [aːu]    aau     aau       ao     [註2]
 啱    [aːm]    aam     aam       am     [註2]
 晏    [aːn]    aan     aan       an     [註2]
-罌    [aːŋ]    aang    aang      ang    [註2]
-鴨    [aːp]    aap     aap       ap     [註2]
-壓    [aːt]    aat     aat       at     [註2]   
-軛    [aːk]    aak     aak       ak     [註2]   
+罌    [aːŋ]    aang    aang      ang    
+鴨    [aːp]    aap     aap       ap     
+壓    [aːt]    aat     aat       at       
+軛    [aːk]    aak     aak       ak        
 矮    [ɐi]     ai      ai        ai
 歐    [ɐu]     au      au        au
 庵    [ɐm]     am      am        um     [註3]
 奀    [ɐn]     an      an        an/un/en  [註3] 
 鶯    [ɐŋ]     ang     ang       ang
 噏    [ɐp]     ap      ap        up     [註3]
-兀    [ɐt]     at      at        at   
+兀    [ɐt]     at      at        at/et  [註3]   
 扼    [ɐk]     ak      ak        ak   
 些    [ɛː]     e       e         e
 四    [ei]     ei      ei        ei
@@ -89,14 +89,13 @@
 吳    [ŋ̩]      ng      ng        ng
 
 [註2]：aa,a長短音的分別。余氏輸入法跟隨港式習慣，將長音aa簡化為a。短音a變為e。
-       例如：沙sa，街gi (*)，交gao (*)，三sam，山san，生sang，圾sap，殺sat，格gak
-       (*) 因要分開：計gai，久gau
-       另外請參考《關於「埃」「矮」的拼音》 https://www.facebook.com/eyuime/posts/474379549655661
-[註3]：am,an,at,ap,ak短音的處理。余氏輸入法跟隨港式習慣，有些a*短音和長音不分，例：萬文man。
+       例如：沙sa，街gi/雞gai(*)，交gao/久gau，三sam，山san，生sang，圾sap，殺sat，格gak
+       (*)另外請參考《關於「埃」「矮」的拼音》 https://www.facebook.com/eyuime/posts/474379549655661
+[註3]：am,an,ap,at短音的處理。余氏輸入法跟隨港式習慣，有些a*短音和長音不分，例：萬文man。
        但通常am->um，an->un，ap->up。例：心sum，新sun，十sup
-       為減少重碼，第一聲an/un->en。例：賓ben，分fen，根gen，真jen，身sen，溫wen，因yen。
-[註4]：衣(i) 音的處理。i/ee 可互用。i音以字頻排列，ee音較港式及以第一聲排列。
-       例：yi 以已而二意…， yee 衣依伊醫意兒… 
+       為減少重碼，第一聲短音an/un->en。例：分fen。第一聲短音at->et。例：不bet
+[註4]：衣(i) 音的處理。i/ee 可互用，ee音較港式及以第一聲排列。
+       例：yi 衣倚意而以二…， yee 衣依伊醫意兒… 
 [註5]：柯(or) 音余氏一律用or，但保留oh共用。例：波bor，波boh。
 [註6]：奧(o)  音余氏也用o，但缺聲母的[奧澳]字拼成oh。例：oh啊柯奧澳…，bo部保報步…
 [註7]：碗(un) 音余氏一般用oon，但門音用mun。例：boon本半般…，mun們門滿悶…
@@ -112,7 +111,7 @@
 陽上    憤   ˩˧      5       5    h h - u u  u   ch似  -  市 以  
 陽去    份   ˨      6       6    h h - u u  z      -  自 是 二  z
 
-[註9]：余氏單字拼音一般不分聲調。但為了減低重碼，余氏3+3組詞方案用了聲調字母  ahsuz(啞氣時雨二) (助記憶)。
+[註9]：余氏單字拼音一般不分聲調。但為了減低重碼，余氏3+3組詞方案用了聲調字母-ahsuz(一啞氣時雨二) (194056:助記憶1-6聲)。
     單字拼音也可加入聲調以減少選字。例：yee衣依伊醫，yis而兒移宜儀，yiz二義議易異 
 [註10]： ci ji si yi yu 因重碼字太多，要特別處理。但若不用3+3組詞方案，可略過。
        請參考《3+3拼音編碼說明》 https://www.facebook.com/eyuime/posts/1353966178363656
