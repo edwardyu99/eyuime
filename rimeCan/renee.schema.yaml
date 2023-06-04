@@ -8,7 +8,7 @@ __build_info:
     punctuation: 1561218646
     punctuation.custom: 0
     renee.custom: 0
-    renee.schema: 1685329252
+    renee.schema: 1685876350
 ascii_composer:
   good_old_caps_lock: false
   switch_key:
@@ -16,8 +16,8 @@ ascii_composer:
     Control_L: noop
     Control_R: noop
     Eisu_toggle: clear
-    Shift_L: inline_ascii
-    Shift_R: commit_text
+    Shift_L: noop
+    Shift_R: noop
 engine:
   filters:
     - simplifier
@@ -195,7 +195,7 @@ schema:
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
   auto_select: true
-  auto_select_pattern: ".{4,}"
+  auto_select_pattern: ".{3,}"
   auto_select_unique_candidate: true
   max_code_length: 6
 switches:

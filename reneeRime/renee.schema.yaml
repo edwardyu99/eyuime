@@ -38,8 +38,8 @@ ascii_composer:
     Control_L: noop
     Control_R: noop
     Eisu_toggle: clear
-    Shift_L: inline_ascii
-    Shift_R: commit_text
+    Shift_L: noop # inline_ascii
+    Shift_R: noop # commit_text
 key_binder:
   bindings:
     - {accept: "Control+p", send: Up, when: composing}
@@ -167,7 +167,7 @@ speller:
   max_code_length: 6
   auto_select: true
   auto_select_unique_candidate: true # 无重码自动上屏
-  auto_select_pattern: .{4,}         # 4字或以上
+  auto_select_pattern: ".{3,}"         # 4字或以上 20230603->3
   # use_space: false # default false 以空格作輸入碼
 switches:
   - name: ascii_mode
