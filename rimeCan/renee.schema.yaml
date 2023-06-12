@@ -1,5 +1,5 @@
 __build_info:
-  rime_version: 1.5.3
+  rime_version: 1.8.5
   timestamps:
     default: 1671607766
     default.custom: 1671607764
@@ -8,7 +8,7 @@ __build_info:
     punctuation: 1561218646
     punctuation.custom: 0
     renee.custom: 0
-    renee.schema: 1685876350
+    renee.schema: 1686489090
 ascii_composer:
   good_old_caps_lock: false
   switch_key:
@@ -188,7 +188,8 @@ schema:
   description: |
     余氏中文輸入法--廣東話詞庫版(for Windows 10 Rime【小狼毫】)
     https://www.facebook.com/eyuime/
-    
+
+  icon: renee.ico
   name: "余氏中文輸入法"
   schema_id: renee
   version: 2022.03.01

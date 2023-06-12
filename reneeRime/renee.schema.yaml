@@ -162,6 +162,8 @@ schema:
   name: "余氏中文輸入法"
   schema_id: renee
   version: 2022.03.01
+  icon: "renee.ico"
+  # ascii_icon: "renee.ico
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
   max_code_length: 6

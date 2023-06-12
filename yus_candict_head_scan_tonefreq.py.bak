@@ -2,7 +2,7 @@ import codecs
 import os
 #filepath = 'yus_candict_head_scan.txt'  
 filepath = 'reneeyu_head.txt' 
-print(f'** scan {filepath} for first tonefreq')
+print(f'** yus_candict_head_scan_tonefreq.py scan {filepath} for tonefreq')
 #cheung 張
 fileout  = 'yus_candict_head_scan_freq.txt'
 #cheung 19999張
@@ -190,7 +190,8 @@ with open(filepath,'r', encoding='utf-16') as fp:
      tone_value = tone_dict.get(key_ch, 'x')
      if tone_value == 'x':
      	tone_value = '1' # default '6' for char not in dict
-     	print(f"{filepath} key: {key_ch} not found, default tone = 6")
+     	dictcsv='cuhk_charfreq7000_粵拼_ori.csv'
+     	print(f"{filepath} {line} key: {key_ch} not found in {dictcsv} , default tone = 1")
      # lineout = line[0:3] + '    ' + line[7:] 
      lineout = line[0:6] + ' ' + tone_value + ' ' + line[6:10] + ' ' + line[10:12] + '\n'  #key tone freq ch
      fo.write(lineout)
@@ -216,8 +217,8 @@ ah     3 3310 氬
 how to sort in asc key+tone+freq+ch ?
 '''
 # Read the input file
-input_file = 'yus_candict_head_scan_tonefreq.txt'
 ''' just scan no need to sort
+input_file = 'yus_candict_head_scan_tonefreq.txt'
 # Sort the lines - 
 # sorted_lines = sorted(open(input_file, 'r', encoding='utf-16'), key=lambda x: (x[0:6], x[7], x[9:13], x[14:16]))
 
@@ -248,7 +249,7 @@ import os
 import re
 
 # Read the input file
-#input_file = 'yus_candict_head_scan_tonefreqsort.txt'
+input_file = 'yus_candict_head_scan_tonefreq.txt'
 output_file = 'yus_candict_head_scan_tonegroup.txt'
 if os.path.exists(output_file):
     os.remove(output_file)
@@ -282,16 +283,19 @@ with open(input_file, 'r', encoding='utf-16') as fin, open(output_file, 'w', enc
             #	seq = 1
             prev_tone = 0
         
-        '''if tone == prev_tone:
-        	  tone += 1
-        	  if tone > 6: 
-        	  	tone = 1
-        '''   
+        oseq = seq
+        if freq < '1000':
+            oseq = 0
+            tone = '1'
+        if freq > '1500' and tone1 != '2':
+        	  oseq = seq + 1
+        #if seq == 0 and tone == 2:
+        #    oseq = 0
         
-        fout.write(line + ' ' + str(tone) + str(seq).zfill(2) + '\n')
-        tone += 1
-        if tone > 9:
-        	tone = 9
+        fout.write(line + ' ' + str(oseq).zfill(2) + str(tone) + '\n')
+        #tone += 1
+        #if tone > 9:
+        #	tone = 9
         seq += 1
         #if (tone > 3):
         #	seq += 1
@@ -329,49 +333,27 @@ ai     3 4066 縊 401
 ai     3 5036 嗌 502
 ai     3 6197 翳 603
 01234567890123456789
-'''
+
+# just scan no need to sort
+
 # Read the input file
 input_file = 'yus_candict_head_scan_tonegroup.txt'
-''' just scan no need to sort
+
 # Sort the lines
-sorted_lines = sorted(open(input_file, 'r', encoding='utf-16'), key=lambda x: (x[0:6], x[17:19])) # x[17:20]))
+sorted_lines = sorted(open(input_file, 'r', encoding='utf-16'), key=lambda x: (x[0:6], x[16:19])) # x[17:20]))
 
 # Write the sorted lines to a new file
 output_file = 'yus_candict_head_scan_tonegroupsort.txt'
 with open(output_file, 'w', encoding='utf-16') as f:
     f.writelines(sorted_lines)
 print(input_file,' sorted in asc key tonecycleseq to ', output_file, ' OK')
-#----------------------------------------------------
-# remove extra fields after sort
-
-filepath = 'yus_candict_head_scan_tonegroupsort.txt'
-fileout  = 'yus_candict_head_scan_tonefinal.txt'
-if os.path.exists(fileout):
-    os.remove(fileout)
-fo = open(fileout,'a+', encoding='utf-16') 
-#linein = 'kug9999功' 
-#ai     3 6197 翳 603
-#01234567890123456789
-lineout = 'kug    功' 
-with open(filepath,'r', encoding='utf-16') as fp:  
-   line = fp.readline()
-   cnt = 0
-   cntout = 0
-   
-   while line:
-       lineout = line[0:7] + line[14:15] + '\n'
-       fo.write(lineout)
-       cntout += 1  
-       line = fp.readline()
-       cnt += 1
-fp.close()
-fo.close()
-
-print('cnt=', cnt, ',cntout=', cntout)
-
-print(filepath,' remove tone freqrank to ', fileout, ' OK')
 '''
+
+
 #---20230605 - scan first line at key break
+
+# input_file = 'yus_candict_head_scan_tonegroupsort.txt' # just scan no need to sort
+input_file = 'yus_candict_head_scan_tonegroup.txt'
 fileout  = 'yus_candict_head_scan_keybreak.txt'
 scanout  = 'yus_candict_head_scan_except.txt'
 if os.path.exists(fileout):
@@ -401,7 +383,8 @@ with open(input_file,'r', encoding='utf-16') as fp:
        #if line[7] != '1' and int(line[9:13]) > 1500:
        #	 #print(line)
        #	 fe.write(line)
-       if tone == '1' and freqrank > '1500':
+       if tone != '1' and freqrank > '1800':
+       #if freqrank > '1000':
        	 #print(line)
        	 fe.write(line)
        	 scanout += 1
@@ -414,3 +397,32 @@ fe.close()
 print(f'cnt={cnt}, cntout={cntout}, scanout={scanout}')
 
 print(input_file,' scan keybreak [0:6] to ', fileout, ' OK')
+#----------------------------------------------------
+# remove extra fields after sort
+
+filepath = 'yus_candict_head_scan_tonegroupsort.txt'
+fileout  = 'yus_candict_head_scan_tonefinal.txt'
+if os.path.exists(fileout):
+    os.remove(fileout)
+fo = open(fileout,'a+', encoding='utf-16') 
+#linein = 'kug9999功' 
+#ai     3 6197 翳 603
+#01234567890123456789
+lineout = 'kug    功' 
+with open(filepath,'r', encoding='utf-16') as fp:  
+   line = fp.readline()
+   cnt = 0
+   cntout = 0
+   
+   while line:
+       lineout = line[0:7] + line[14:15] + '\n'
+       fo.write(lineout)
+       cntout += 1  
+       line = fp.readline()
+       cnt += 1
+fp.close()
+fo.close()
+
+print('cnt=', cnt, ',cntout=', cntout)
+
+print(filepath,' remove tone freqrank to ', fileout, ' OK')

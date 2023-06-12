@@ -5,7 +5,7 @@ if not exist %APPDATA%\Rime\ mkdir %APPDATA%\Rime\
 if not exist %APPDATA%\Rime\build\ mkdir %APPDATA%\Rime\build\
 @rem copy /Y .\default.custom.yaml %APPDATA%\Rime\*
 @rem copy /Y .\renee.schema.yaml %APPDATA%\Rime\*
-%APPDATA%\Rime\weasel-0.14.3.0-installer.exe
+%APPDATA%\Rime\weasel-0.15.0.0-installer.exe
 
 @rem copy /Y .\renee.prism.bin %APPDATA%\Rime\build\*
 @rem copy /Y .\renee.reverse.bin %APPDATA%\Rime\build\*

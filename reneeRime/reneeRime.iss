@@ -48,20 +48,22 @@ Source: "reneeRimeDeploy.bat"; DestDir: "{app}"; Flags: ignoreversion
 ; Source: "Trime-20200909.apk"; DestDir: "{app}"; Flags: ignoreversion
 Source: "renee.rimecan.sh"; DestDir: "{app}"; Flags: ignoreversion
 Source: "default.yaml"; DestDir: "{app}"; Flags: ignoreversion
+Source: "renee.ico"; DestDir: "{app}"; Flags: ignoreversion
 ; https://rime.im/download/ 
-Source: "weasel_0chinese_lnk.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "weasel_1user_folder.lnk"; DestDir: "{app}"; Flags: ignoreversion
-Source: "weasel_2dict_manager.lnk"; DestDir: "{app}"; Flags: ignoreversion
-Source: "weasel_3sync.lnk"; DestDir: "{app}"; Flags: ignoreversion
-Source: "weasel_4setup_option.lnk"; DestDir: "{app}"; Flags: ignoreversion
-Source: "weasel_5deplloy.lnk"; DestDir: "{app}"; Flags: ignoreversion
-Source: "weasel_6APPDATA.lnk"; DestDir: "{app}"; Flags: ignoreversion
-Source: "weasel_7readme.lnk"; DestDir: "{app}"; Flags: ignoreversion
-Source: "weasel_8input_option.lnk"; DestDir: "{app}"; Flags: ignoreversion
-Source: "weasel_9update.lnk"; DestDir: "{app}"; Flags: ignoreversion
-Source: "weasel_server.lnk"; DestDir: "{app}"; Flags: ignoreversion
-Source: "weasel_uninstall.lnk"; DestDir: "{app}"; Flags: ignoreversion
-Source: "weasel-0.14.3.0-installer.exe"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "weasel_0chinese_lnk.txt"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "weasel_1user_folder.lnk"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "weasel_2dict_manager.lnk"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "weasel_3sync.lnk"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "weasel_4setup_option.lnk"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "weasel_5deplloy.lnk"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "weasel_6APPDATA.lnk"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "weasel_7readme.lnk"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "weasel_8input_option.lnk"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "weasel_9update.lnk"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "weasel_server.lnk"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "weasel_uninstall.lnk"; DestDir: "{app}"; Flags: ignoreversion
+Source: "weasel-0.15.0.0-installer.exe"; DestDir: "{app}"; Flags: ignoreversion
+; 0.14.3.0
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 [Registry]
 Root: HKCU; Subkey: "Software\Microsoft\Windows\CurrentVersion\RunOnce"; \
