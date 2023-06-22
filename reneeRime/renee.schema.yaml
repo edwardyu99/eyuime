@@ -34,7 +34,7 @@ engine:
 ascii_composer:
   good_old_caps_lock: false # origin true
   switch_key:
-    Caps_Lock: clear
+    Caps_Lock: noop # clear
     Control_L: noop
     Control_R: noop
     Eisu_toggle: clear
@@ -58,6 +58,10 @@ key_binder:
     - {accept: ISO_Left_Tab, send: "Shift+Left", when: composing}
     - {accept: "Shift+Tab", send: "Shift+Left", when: composing}
     - {accept: Tab, send: "Shift+Right", when: composing}
+    - {accept: bracketleft, send: Page_Up, when: has_menu}     # 20230622
+    - {accept: bracketright, send: Page_Down, when: has_menu}  # 20230622
+    - {accept: bracketleft, send: Page_Up, when: paging}       # 20230622
+    - {accept: bracketright, send: Page_Down, when: paging}    # 20230622 
     - {accept: minus, send: Page_Up, when: has_menu}
     - {accept: equal, send: Page_Down, when: has_menu}
     - {accept: comma, send: Page_Up, when: paging}

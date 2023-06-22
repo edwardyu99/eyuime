@@ -436,7 +436,7 @@ import os
 # convshiftcanph2345freqmerge.py
 # remove left 2 columns and middle 6 columns freq after sort by ultraedit
 
-filepath = 'reneeyu_canph2345out_freqmerge.txt'  
+filefreqmerge = 'reneeyu_canph2345out_freqmerge.txt'  
 fileout  = 'reneeyu_canph2345ori.txt'
 fileout9 = 'reneeyu_canph2345ori9.txt'  # 9999 only
 #fileouts = 'reneeyu_canph2345oris.txt'  # subtract 9999
@@ -453,7 +453,7 @@ f9 = open(fileout9,'w', encoding='utf-16') #a+
 #fs = open(fileouts,'a+', encoding='utf-16') 
 #linein = '02kungfu9999999功夫' 
 lineout = 'kungfu 功夫' 
-with open(filepath,'r', encoding='utf-16') as fp:  
+with open(filefreqmerge,'r', encoding='utf-16') as fp:  
    line = fp.readline()
    cnt = 0
    cntout = 0
@@ -495,7 +495,7 @@ print('cntout2=', cntout2, ',cnterr2=', cnterr2)
 #print('cntout4=', cntout4, ',cnterr4=', cnterr4)
 print('cntout9=', cntout9)
 #print('cntouts=', cntouts)
-print(filepath,' shifted to ', fileout, ' OK')
+print(filefreqmerge,' shifted to ', fileout, ' OK')
 #------------------------------------------------------
 ''' 20220606 remove oris
 # check oris dup cnt
@@ -771,3 +771,10 @@ print('cntout7=', cntout7)
 print(filepath,'convert to', fileout, 'OK')
 #-----
 '''
+#--------------------
+os.remove(fileout9)
+os.remove(filefilter)
+os.remove(filedup)
+os.remove(file999999)
+os.remove(filefreqmerge)
+print(f'***remove {fileout9}, {filefilter}, {filedup}, {file999999}, {filefreqmerge}')

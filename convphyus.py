@@ -419,14 +419,14 @@ import codecs
 import os
 # convshiftph2345freqmerge.py
 # remove left 2 columns and middle 6 columns freq after sort by ultraedit
-filepath = 'reneeyu_ph2345out_freqmerge.txt'  
+filefreqmerge = 'reneeyu_ph2345out_freqmerge.txt'  
 fileout  = 'reneeyu_ph2345ori.txt'
 if os.path.exists(fileout):
     os.remove(fileout)
 fo = open(fileout,'a+', encoding='utf-16') 
 #linein = '02kungfu9999999功夫' 
 lineout = 'kungfu 功夫' 
-with open(filepath,'r', encoding='utf-16') as fp:  
+with open(filefreqmerge,'r', encoding='utf-16') as fp:  
    line = fp.readline()
    cnt = 0
    cntout = 0
@@ -449,7 +449,7 @@ print('cnt=', cnt, ',cntout=', cntout)
 print('cntout2=', cntout2, ',cnterr2=', cnterr2)
 print('cntout3=', cntout3, ',cnterr3=', cnterr3)
 print('cntout4=', cntout4, ',cnterr4=', cnterr4)
-print(filepath,' shifted to ', fileout, ' OK')
+print(filefreqmerge,' shifted to ', fileout, ' OK')
 #--------------------
 print("***concat reneeyu_head.txt, reneeyu_canph2345ori.txt, reneeyu_ph2345ori.txt to reneeyu.txt")
 filehead  = 'reneeyu_head.txt'
@@ -477,3 +477,8 @@ with open(filetxt,'w+', encoding='utf-16') as outfile:
             contents = infile.read()
             outfile.write(contents)
 '''
+#--------------------
+os.remove(filedup)
+os.remove(file999999)
+os.remove(filefreqmerge)
+print(f'***remove {filedup}, {file999999}, {filefreqmerge}')
