@@ -17,4 +17,4 @@ cd %APPDATA%\Rime\
 "C:\Program Files (x86)\Rime\weasel-0.15.0\WeaselServer.exe"
 "C:\Program Files (x86)\Rime\weasel-0.15.0\WeaselDeployer.exe" /deploy
 
-pause
+@pause
