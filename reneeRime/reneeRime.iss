@@ -62,7 +62,7 @@ Source: "renee.ico"; DestDir: "{app}"; Flags: ignoreversion
 ;Source: "weasel_9update.lnk"; DestDir: "{app}"; Flags: ignoreversion
 ;Source: "weasel_server.lnk"; DestDir: "{app}"; Flags: ignoreversion
 ;Source: "weasel_uninstall.lnk"; DestDir: "{app}"; Flags: ignoreversion
-Source: "weasel-0.15.0.0-installer.exe"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "weasel-0.15.0.0-installer.exe"; DestDir: "{app}"; Flags: ignoreversion
 ; 0.14.3.0
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 [Registry]

@@ -34,14 +34,15 @@ engine:
 ascii_composer:
   good_old_caps_lock: false # origin true
   switch_key:
-    Caps_Lock: noop # clear
+    Caps_Lock: clear
     Control_L: noop
     Control_R: noop
     Eisu_toggle: clear
-    Shift_L: noop # inline_ascii
-    Shift_R: noop # commit_text
+    Shift_L: inline_ascii
+    Shift_R: commit_text
 key_binder:
   bindings:
+    - {accept: "Control+space", toggle: ascii_mode, when: always}
     - {accept: "Control+p", send: Up, when: composing}
     - {accept: "Control+n", send: Down, when: composing}
     - {accept: "Control+b", send: Left, when: composing}
@@ -76,7 +77,6 @@ key_binder:
     - {accept: "Control+Shift+numbersign", toggle: full_shape, when: always}
     - {accept: "Control+Shift+dollar", toggle: simplification, when: always}
     - {accept: "Control+Shift+percent", toggle: extended_charset, when: always}
-    - {accept: "Control+space", toggle: ascii_mode, when: always}
     - {accept: Return, send: space, when: has_menu}  # 20220302
   import_preset: default
 menu:
@@ -165,7 +165,7 @@ schema:
     https://www.facebook.com/eyuime/
   name: "余氏中文輸入法"
   schema_id: renee
-  version: 2022.03.01
+  version: 2023.07.01
   icon: "renee.ico" #renee.ico 
   # ascii_icon: "reneeyu.png"
 speller:
@@ -173,7 +173,7 @@ speller:
   max_code_length: 6
   auto_select: true
   auto_select_unique_candidate: true # 无重码自动上屏
-  auto_select_pattern: ".{3,}"         # 4字或以上 20230603->3
+  auto_select_pattern: ".{4,}"         # 4字或以上 20230603->3
   # use_space: false # default false 以空格作輸入碼
 switches:
   - name: ascii_mode
