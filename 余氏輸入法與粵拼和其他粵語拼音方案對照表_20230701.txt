@@ -1,0 +1,244 @@
+余氏輸入法與粵拼和其他粵語拼音方案對照表
+版本：二０二三年七月一日
+
+參考：https://jyutping.org/blog/table/
+
+本文列出余氏輸入法與目前常見嘅粵拼和劉錫祥呢兩種粵語拼音方案嘅對比，幫助讀者釐清佢哋嘅分別，方便更好噉學習同使用余氏輸入法。
+
+
+聲母對照表 (按英文字母排列)
+
+例字  IPA      粵拼    劉錫祥    余氏
+
+巴    [p]      b       b         b
+
+差    [tsʰ]    c       ch        c / ch 
+
+打    [t]      d       d         d
+
+花    [f]      f       f         f
+
+家    [k]      g       g         g
+
+瓜    [kʷ]     gw      gw        gw
+
+哈    [h]      h       h         h
+
+渣    [ts]     z       j         j  [註1]
+
+卡    [kʰ]     k       k         k
+
+夸    [kʷʰ]    kw      kw        kw
+
+啦    [l]      l       l         l
+
+媽    [m]      m       m         m
+
+拿    [n]      n       n         n
+
+牙    [ŋ]      ng      ng        ng
+
+趴    [pʰ]     p       p         p
+
+沙    [s]      s       s         s / sh  
+
+他    [tʰ]     t       t         t
+
+蛙    [w]      w       w         w
+
+也    [j]      j       y         y  [註1]
+
+
+[註1]：雖然粵拼(jyutping)好似"官方"，但喺香港人唔習慣，尤其是"渣ja、也ya"音變成"z、j"音，粵(yuet)變成粵(jyut)。
+
+
+韻母對照表
+
+例字  IPA      粵拼    劉錫祥    余氏
+
+啊    [aː]     aa      a         a      [註2]
+
+挨    [aːi]    aai     aai       ai / i [註2] 
+
+拗    [aːu]    aau     aau       ao     [註2]
+
+啱    [aːm]    aam     aam       am     [註2]
+
+晏    [aːn]    aan     aan       an     [註2]
+
+罌    [aːŋ]    aang    aang      ang    
+
+鴨    [aːp]    aap     aap       ap     
+
+壓    [aːt]    aat     aat       at       
+
+軛    [aːk]    aak     aak       ak     
+
+矮    [ɐi]     ai      ai        ai
+
+歐    [ɐu]     au      au        au
+
+庵    [ɐm]     am      am        um     [註3]
+
+奀    [ɐn]     an      an        an/en/un  [註3] 
+
+鶯    [ɐŋ]     ang     ang       ang
+
+噏    [ɐp]     ap      ap        up     [註3]
+
+兀    [ɐt]     at      at        at/et  [註3]   
+
+扼    [ɐk]     ak      ak        ak   
+
+些    [ɛː]     e       e         e
+
+四    [ei]     ei      ei        ei
+
+掉*   [ɛːu]    eu     (eu)        -  
+
+舐*   [ɛːm]    em     (em)      (em)
+
+𨋍*   [ɛːn]    en     (en)      (en) 
+
+贏    [ɛːŋ]    eng     eng       eng
+
+夾*   [ɛːp]    ep     (ep)      (ep)
+
+坺*   [ɛːt]    et     (et)      (et)
+
+尺    [ɛːk]    ek      ek        ek
+
+衣    [iː]     i       i         i/ee   [註4]  
+
+腰    [iːu]    iu      iu        iu
+
+淹    [iːm]    im      im        im
+
+煙    [iːn]    in      in        in
+
+英    [ɪŋ] / [eŋ] ing  ing       ing
+
+葉    [iːp]    ip      ip        ip
+
+熱    [iːt]    it      it        it
+
+益    [ɪk] / [ek] ik   ik        ik
+
+柯    [ɔː]     o       oh        or/oh [註5]
+
+哀    [ɔːi]    oi      oi        oi
+
+奧    [ou]     ou      o         o   [註6]  
+
+安    [ɔːn]    on      on        on
+
+骯    [ɔːŋ]    ong     ong       ong
+
+喝    [ɔːt]    ot      ot        ot
+
+惡    [ɔːk]    ok      ok        ok
+
+烏    [uː]     u       oo        u
+
+煨    [uːi]    ui      ooi       ui   
+
+碗    [uːn]    un      oon       oon/un [註7]
+
+瓮    [ʊŋ] / [oŋ] ung  ung       ung
+
+活    [uːt]    ut      oot       ut   
+
+屋    [ʊk] / [ok] uk   uk        uk
+
+靴    [œː]     oe      euh       euh
+
+央    [œːŋ]    oeng    eung      eung
+
+約    [œːk]    oek     euk       euk   
+
+𠰲*   [œːt]    oet    (eut)     (ut)
+
+銳    [ɵy]     eoi     ui        ui
+
+閏    [ɵn]     eon     un        un 
+
+律    [ɵt]     eot     ut        ut
+
+於    [yː]     yu      ue        u   [註8]
+
+冤    [yːn]    yun     uen       uen *第4聲，yun=元 
+
+月    [yːt]    yut     uet       uet 
+
+唔    [m̩]      m       m         ng   
+
+吳    [ŋ̩]      ng      ng        ng
+
+
+[註2]：aa,a長短音的分別。余氏輸入法跟隨港式習慣，將長音aa簡化為a。短音a變為e。
+
+       例如：沙sa，街gi/雞gai(*)，交gao/久gau，三sam，山san，生sang，圾sap，殺sat，格gak
+
+       (*)另外請參考《關於「埃」「矮」的拼音》 https://www.facebook.com/eyuime/posts/474379549655661
+
+[註3]：am,an,ap,at短音的處理。余氏輸入法跟隨港式習慣，有些a*短音和長音不分，例：萬文man。
+
+       但通常am->um，an->en，ap->up，at->et。例：心sum，身sen，十sup，不bet
+
+       常用單字an/en/un共用。例：分fen->fun，新sen->sun
+
+       
+
+[註4]：衣(i) 音的處理。i/ee 可互用，ee音較港式及以第一聲排列。
+
+       例：yi 衣倚意而以二…， yee 衣依伊醫意兒… 
+
+[註5]：柯(or) 音余氏用or。單字保留oh共用。例：波bor，波boh。
+
+[註6]：奧(o)  音余氏也用o，但缺聲母的[奧澳]字拼成oh。例：oh啊柯奧澳…，bo部保報步…
+
+[註7]：碗(un) 音余氏一般用oon，單字保留un共用。例：boon般本，bun半伴…，mun們門滿悶…
+
+[註8]：烏[uː]、於[yː]音余氏合併為(u)。例：胡wu，語yu   
+
+
+聲調對照表
+
+調類  例字   IPA    粵拼  劉錫祥  余氏[註9]        [註10] (衣) 
+
+                               a e i o u or yu  ci ji si yi 
+
+陰平    分   ˥˧ / ˥  1       1    - - - - - or     雌 之 師 衣 ee       
+
+陰上    粉   ˧˥      2       2    - - - - - or     此 指 使 倚 
+
+陰去    訓   ˧      3       3    h h - u u oh   ch次 至 試 意  
+
+陽平    墳   ˨˩      4       4    h h - u u oh s   持 -  時 而 s
+
+陽上    憤   ˩˧      5       5    h h - u u oh u ch似 -  市 以 
+
+陽去    份   ˨      6       6    h h - u u oh z   -  自 是 二 z
+
+
+[註9]：余氏單字拼音一般不分聲調。但為了減低重碼，余氏3+3組詞方案用了聲調23456字母ahsuz(啞氣時雨二),(助記憶)。
+
+       a,e[亞些]，第12聲不加調，其餘加h。例：ga加假，gah價; ha哈吓，hah霞夏; se些寫，seh卸蛇社射 
+
+       i[挨]不加調。
+
+       o,u[奧烏]，第12聲不加調，其餘加u。
+
+       or[柯]，(第12聲用or，3-6聲用oh)：cor初楚，coh錯鋤坐，joh座。
+
+       yu[於]，第12聲不加調，第4聲加s; 第35聲加u; 第六聲加z。
+
+       例：於是yu+siz，如何yus+ho，雨聲yuu+sig，預備yuz+bei。(語yu不加調，例：粵語yut+yu)
+
+       單字拼音也可加入聲調以減少選字。例：yee衣依伊醫，yis而兒移宜儀，yiz二義議易異 
+
+[註10]： ci ji si yi 因重碼字太多，要特別處理。但若不用3+3組詞方案，可略過。
+
+       請參考《3+3拼音編碼說明》 https://www.facebook.com/eyuime/posts/1353966178363656
+
+余氏輸入法與粵拼和其他粵語拼音方案對照表
