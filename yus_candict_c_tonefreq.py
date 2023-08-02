@@ -273,6 +273,7 @@ ai 64097詣
 ai 64994睨
 ai 65714囈
 '''
+
 # Read the input file
 input_file = 'yus_candict_c_tonefreqsort.txt'
 
