@@ -49,6 +49,7 @@ Source: "reneeRimeDeploy.bat"; DestDir: "{app}"; Flags: ignoreversion
 Source: "renee.rimecan.sh"; DestDir: "{app}"; Flags: ignoreversion
 Source: "default.yaml"; DestDir: "{app}"; Flags: ignoreversion
 Source: "renee.ico"; DestDir: "{app}"; Flags: ignoreversion
+Source: "weasel.custom.yaml"; DestDir: "{app}"; Flags: ignoreversion
 ; https://rime.im/download/ 
 ;Source: "weasel_0chinese_lnk.txt"; DestDir: "{app}"; Flags: ignoreversion
 ;Source: "weasel_1user_folder.lnk"; DestDir: "{app}"; Flags: ignoreversion
