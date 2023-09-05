@@ -774,7 +774,7 @@ print(filepath,'convert to', fileout, 'OK')
 #--------------------
 os.remove(fileout9)
 os.remove(filefilter)
-os.remove(filedup)
 os.remove(file999999)
 os.remove(filefreqmerge)
-print(f'***remove {fileout9}, {filefilter}, {filedup}, {file999999}, {filefreqmerge}')
+# os.remove(filedup)
+print(f'***remove {fileout9}, {filefilter}, {file999999}, {filefreqmerge}') #, {filedup}
