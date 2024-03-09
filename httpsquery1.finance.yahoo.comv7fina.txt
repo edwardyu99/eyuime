@@ -1,0 +1,3 @@
+https://query1.finance.yahoo.com/v7/finance/download/2800.HK?period1=1674810772&period2=1706346772&interval=1d&events=history&includeAdjustedClose=true
+
+https://www.google.com/finance/quote/2800:HKG?window=1M
