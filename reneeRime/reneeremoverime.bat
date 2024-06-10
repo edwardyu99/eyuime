@@ -11,7 +11,7 @@ del %APPDATA%\Rime\renee.schema*.yaml
 
 @rem del %APPDATA%\Rime\build\renee.table.bin
 del %APPDATA%\Rime\build\renee.*.bin
-del .\weasel-0.15.0.0-installer.exe
+del .\weasel-0.16.1.0-installer.exe
 
 @rem IF %ERRORLEVEL% NEQ 0 (   
 @rem   @echo *
