@@ -1,4 +1,4 @@
-@echo off
+@rem echo off
 cd %~dp0
 copy /Y .\renee.dict.yaml %APPDATA%\Rime\renee.dict.yaml
 @rem copy /Y .\renee.schema.yaml %APPDATA%\Rime\renee.schema.yaml

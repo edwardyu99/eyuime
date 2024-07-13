@@ -111,5 +111,6 @@ deploybat = "reneeRimeDeployDict.bat"
 os.chdir("./reneeRime/")
 #os.system(r"C:\Program Files (x86)\Rime\weasel-0.14.3\WeaselDeployer.exe /deploy")
 os.startfile(deploybat)
+print("os.startfile", deploybat)
 os.chdir("../")
 #os.system(r"D:\xxx1\xxx2XMLnew\otr.bat")
