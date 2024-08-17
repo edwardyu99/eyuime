@@ -9,7 +9,7 @@ https://cantonesenotes.home.blog/2019/07/31/rime-trime-cantonese-edition-ime-hel
 20220611 【下載：余氏輸入法(android同文輸入法版)】
 安裝方法：
 1. 用手機firefox app(因android chrome/edge 不能下載) 下載androidReneeRimeCan.zip： 
-   https://drive.google.com/uc?export=download&id=1zT72c5mt4TPkt_5SI40CVQh8nu0NhY86
+   https://drive.google.com/uc?export=download&id=1HBH_fyNBDv1prFFfx9KEh4W0hWTbC5GV
    到手機的 download folder。
    也可用pc 下載 androidReneeRimeCan.zip 到pc的onedrive 或googledrive，
    然後用手機的onedrive或googledrive app 下載到手機的 download folder。
