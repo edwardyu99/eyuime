@@ -1,5 +1,12 @@
 ﻿import codecs
 import os
+import sys
+import sys
+print(sys.version)
+print(sys.version_info)
+import platform
+print(platform.system())
+
 ### convcanph2345cms.py - c+merge+shift --> reneeyu_canph2345ori.txt 
 ### convcanph2345c.py - conv canph2345ori using yus_candict_c.txt
 filepath = 'reneeyu_canph2345ori.txt' 

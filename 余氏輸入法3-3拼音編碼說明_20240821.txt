@@ -1,0 +1,64 @@
+余氏輸入法3+3拼音編碼說明
+版本：二０二四年八月廿一日
+余氏詞庫雙字詞拼音是3+3編碼。在103953雙字詞中，重碼27289，重碼率26%。方案需要利用以下三碼簡化和粵語聲調以減少重碼。
+(一) 三碼簡化
+1. 通常取頭三碼，例：本boon-->boo，原yuen-->yue，廣gwong-->gwo，歸gwai-->gwa，骨gwet-->gwe，葵kwai-->kwa，困kwun-->kwu
+2. ang,eng,ing,ong,ung簡化為ag,eg,ig,og,ug，例：等dang->dag，病beng->beg，定ding-->dig，劏tong-->tog，動dung-->dug。
+   *第1聲ong-->og，其餘ong-->on。例：劏房(togfon)。 常用字：光kog
+3. uet-->ut，例：月yuet-->yut
+4. ch和sh簡化為c和s，但以下用頭三碼：茶查cha，長詳che，曹cho，廚chu，sha沙，上常she，成承shi，數sho，信shu 
+   *第1聲eung-->eo(ng)。例：昌ceo，將jeo，香heo，相seo   相信(seoshu) 
+5. (藝額暗眼咬外岳)ngxx-->xx, e.g.藝ngai-->ai  例外：銀ngan-->un, (牛偶)ngau--ngu
+6. 香港姓氏及常用字取頭三碼。e.g.陳cha(n)，李lee，張che(ung)，黃won(g)，何ho，歐au，周cho(w)，
+胡wu，馬ma，麥mak，史sze，廖liu，林lam，白bak，蔡tso(i)，鄭che(ng)，蔣chi(ang)，朱chu，
+崔chu(i)，鍾chu(ng)，葉ip，金kam，郭國kwo(k)，關軍君kwa(n)，施sze，鄧tan(g)，曾tsa(ng)，謝tse，徐tsu(i)
+仔cha(i)，chi子，記kee，德tak，達tat，青tsi(ng)，荃tsu(en)，慈tsz
+7. 兩碼/常用字：(ca差ce車ci此co操cu處) (ka家ke騎ki奇ko高ku古) 
+   (ha下je這者se寫) (bi拜di大fi快mi買ni奶pi派ti太wi歪) (bo保寶部jo組mo毛無po普to土) (yu與語)
+8. aa,a長短音的分別。余氏輸入法跟隨港式習慣，將長音aa簡化為a。短音a變為e或u。
+   am,an,ap,at變為um,en/un(*),up,et。    
+   例如：三sam/心sum，山san/神sen，圾sap/十sup，八bat/不拔bet，殺sat/失set，灣患wan/溫運wen，因忍印yen
+   (*)短音常用字跟隨港式習慣，例：民文man 雲wan 人仁yan，日逸yat。fgs第1聲：分婚fun，根斤gun，新身sun
+9. 街gi/雞gai，交gao/久gau，短音常用字：北bek，一yet，
+
+
+(二) 粵語聲調
+調類  例字   余氏[註9]        [註10] (衣) 
+             a e i o u or yu   ci ji si yi 
+陰平 1  分   - - - - - or      雌 之 師 衣 ee       
+陰上 2  粉   - - - - - oh u    此 指 使 倚 
+陰去 3  訓   h h - u u oh u  ch次 至 試 意  
+陽平 4  墳   h h - u u oh s    持 -  時 而 s
+陽上 5  憤   h h - u u oh u  ch似 -  市 以 
+陽去 6  份   h h - u u oh z    -  自 是 二 z
+[註9,10]：余氏單字拼音一般不分聲調。但為了減低重碼，余氏3+3組詞方案用了聲調3456字母hsuz(氣時雨二),(助記憶)。
+例：師使試時市是  書鼠恕殊-樹  夫苦富乎婦父：
+1. a,e(1聲a,e，23456聲ah,eh)：ce車ceh且，ga加gah假價，ha哈hah吓霞夏，se些seh捨舍卸蛇社射
+   (兩碼/常用字：ka家ha下je這者se寫)
+2. i[i挨音](1聲及常用字用i，其餘用ie)。
+   bi拜bie擺敗，di大獃die歹帶，fi快，gi街gie解介，hi嗨hie鞋孩械，li拉lie瀨，mi買mie賣埋，ni奶nie乃，
+   pi派pie牌排，ti太呔tie泰，wi歪wie淮懷壞
+   (cjs不分調，用拼法ie: cie猜踩柴，jie齋債寨，sie嘥徙晒) 
+3. cjsy[i衣音]，1聲ee，235聲i，4聲is，6聲iz：
+   cee雌, ci此始, chi次賜似, cis詞  (35聲chi)  常用字：ci此
+   jee之, ji只至,   jiz自        常用字：chi子
+   see師, si使試市, sis時, siz是 
+   yee衣, yi倚意議以, yis而, yiz二
+4. o，(1聲o，23456聲ou) bo煲，bou補報步。(兩碼/常用字：bo保寶部jo組mo毛無po普to土)
+   *缺聲母的[奧澳]字拼成oh。
+5, u，(1聲u，23456聲uu)：fu夫，fuu苦富乎婦父。
+6. or[柯]，(第1用or，23456聲用oh)：cor初，coh楚錯鋤坐。(常用字：jor左咗 hor可 sor所)
+7. y[u]，(1聲u，235聲uu，4聲us，6聲uz)。例：yu於，yuu瘀雨，yus如，yuz預。(兩碼/常用字：yu與語)
+8. oo(n)不分調 (常用字：mun門)
+
+ui poem uj sosik
+【定風波】 蘇軾
+moktig cuelam da ipsig h hofon yumsiu ceh tsuhag t
+莫聽   穿林   打 葉聲 ， 何妨  吟嘯   且  徐行  。
+jukjeu moghi  higsig ma h suipa uq yetsor yinyuu yam pigsag t
+竹杖   芒鞋   輕勝   馬 ，誰怕  ？ 一蓑   煙雨   任  平生   。
+liuciu cunfug cui jausig h meilag ul santau cehjiu kek seoyig t
+料峭   春風   吹  酒醒  ， 微冷   ！ 山頭   斜照   卻  相迎   。
+wuisau heuloi siuset cu h gwahui us yamo fugyuu yamo cig t
+回首   向來   蕭瑟   處 ，歸去   ； 也無 風雨   也無 晴  。
+

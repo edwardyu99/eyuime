@@ -1,5 +1,6 @@
 ﻿import codecs
 import os
+print(sys.version_info)
 ### convcanph2345cms.py - c+merge+shift --> reneeyu_canph2345ori.txt 
 ### convcanph2345c.py - conv canph2345ori using yus_candict_c.txt
 filepath = 'reneeyu_canph2345ori.txt' 
@@ -773,7 +774,8 @@ print(filepath,'convert to', fileout, 'OK')
 '''
 #--------------------
 os.remove(fileout9)
-os.remove(filedup)
+os.remove(filefilter)
 os.remove(file999999)
 os.remove(filefreqmerge)
-print(f'***remove {fileout9}, {filedup}, {file999999}, {filefreqmerge}')
+# os.remove(filedup)
+print(f'***remove {fileout9}, {filefilter}, {file999999}, {filefreqmerge}') #, {filedup}
