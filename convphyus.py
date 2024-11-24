@@ -478,7 +478,8 @@ with open(filetxt,'w+', encoding='utf-16') as outfile:
             outfile.write(contents)
 '''
 #--------------------
-os.remove(filedup)
+#os.remove(filedup)
 os.remove(file999999)
 os.remove(filefreqmerge)
-print(f'***remove {filedup}, {file999999}, {filefreqmerge}')
+#print(f'***remove {filedup}, {file999999}, {filefreqmerge}')
+print(f'***remove {file999999}, {filefreqmerge}')
