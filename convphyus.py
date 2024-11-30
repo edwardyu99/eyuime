@@ -4,7 +4,7 @@ print('**convph2345yus.py - conv from canori to phout using yus_quickdict')
 #20221118 print("***concat reneeyu_head.txt, reneeyu_canph2345ori.txt, reneeyu_ph2345ori.txt to reneeyu.txt")
 ### use canph2345 as ori.txt to gen quick ph2,3,4,5..7
 filepath = 'reneeyu_canph2345ori.txt'  
-###filepath = 'reneeyu_ph2345ori.txt'  
+#filepath = 'reneeyu_ph2345ori.txt'  
 fileout  = 'reneeyu_ph2345out.txt'
 filedup  = 'reneeyu_ph2345outdup.txt'
 # keypath  = 'reneeyu_ph2key.txt'
@@ -420,7 +420,7 @@ import os
 # convshiftph2345freqmerge.py
 # remove left 2 columns and middle 6 columns freq after sort by ultraedit
 filefreqmerge = 'reneeyu_ph2345out_freqmerge.txt'  
-fileout  = 'reneeyu_ph2345ori.txt'
+fileout  = 'reneeyu_ph2345orixz.txt'
 if os.path.exists(fileout):
     os.remove(fileout)
 fo = open(fileout,'a+', encoding='utf-16') 
@@ -451,10 +451,10 @@ print('cntout3=', cntout3, ',cnterr3=', cnterr3)
 print('cntout4=', cntout4, ',cnterr4=', cnterr4)
 print(filefreqmerge,' shifted to ', fileout, ' OK')
 #--------------------
-print("***concat reneeyu_head.txt, reneeyu_canph2345ori.txt, reneeyu_ph2345ori.txt to reneeyu.txt")
+print("***concat reneeyu_head.txt, reneeyu_canph2345ori.txt, reneeyu_ph2345orixz.txt to reneeyu.txt")
 filehead  = 'reneeyu_head.txt'
 filecan  = 'reneeyu_canph2345ori.txt'
-fileph   = 'reneeyu_ph2345ori.txt'
+fileph   = 'reneeyu_ph2345orixz.txt'
 filetxt  = 'reneeyu.txt'
 import shutil
 #import glob

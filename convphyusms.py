@@ -451,16 +451,18 @@ print('cntout3=', cntout3, ',cnterr3=', cnterr3)
 print('cntout4=', cntout4, ',cnterr4=', cnterr4)
 print(filefreqmerge,' shifted to ', fileout, ' OK')
 #--------------------
-print("***concat reneeyu_head.txt, reneeyu_canph2345ori.txt, reneeyu_ph2345ori.txt to reneeyu.txt")
+#print("***concat reneeyu_head.txt, reneeyu_canph2345ori.txt, reneeyu_ph2345ori.txt to reneeyu.txt")
 filehead  = 'reneeyu_head.txt'
 filecan  = 'reneeyu_canph2345ori.txt'
 fileph   = 'reneeyu_ph2345ori.txt'
+fileph2xz= 'reneeyu_ph2orixz.txt'   #20241129
 filetxt  = 'reneeyu.txt'
+
 import shutil
 #import glob
 
-filenames = [filehead, filecan, fileph]
-
+filenames = [filehead, filecan, fileph, fileph2xz]  #20241129
+print("***concat ",f'{filehead},{filecan},{fileph},{fileph2xz} into {filetxt}')
 #filenames = glob.glob("*.txt")  # or "file*.txt"
 #with open(filetxt, "wb") as outfile:
 with open(filetxt,'w+', encoding='utf-16') as outfile:
