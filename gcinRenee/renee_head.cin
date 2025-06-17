@@ -1,7 +1,7 @@
-﻿%gen_inp
+%gen_inp
 %ename renee
 %cname 余氏
-%selkey 123456789
+%selkey 1234567890
 %space_style 2
 %flag_press_full_auto_send
 %flag_unique_auto_send 
