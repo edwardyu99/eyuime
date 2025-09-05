@@ -1,0 +1,40 @@
+{
+  "name": "shapjs",
+  "version": "0.35.0",
+  "description": "Web based visualizations of SHAP explanations.",
+  "main": "build/index.js",
+  "files": [
+    "build/index.js",
+    "visualizers"
+  ],
+  "scripts": {
+    "test": "jest --verbose ./tests",
+    "dev": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production",
+    "pub": "npm run build && npm publish"
+  },
+  "author": "Scott Lundberg",
+  "repository": "https://github.com/shap/shap",
+  "license": "MIT",
+  "dependencies": {
+    "d3": "^7",
+    "lodash": "^4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-react": "^7.22.5",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.2.0",
+    "babel-jest": "^30.0.2",
+    "babel-loader": "^10.0.0",
+    "jest": "^30.0.3",
+    "jest-environment-jsdom": "^30.0.2",
+    "react-test-renderer": "^19.0.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.0.2"
+  }
+}

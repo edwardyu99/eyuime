@@ -18,12 +18,12 @@ backtesting
 beautifulsoup4
 bleach
 bokeh
-borutashap
 bottleneck
 bs4
 certifi
 cffi
 charset-normalizer
+choreographer
 click
 clikit
 cloudpickle
@@ -63,7 +63,6 @@ httpcore
 httpstan
 httpx
 huggingface-hub
-icecream
 idna
 immutabledict
 importlib-resources
@@ -80,6 +79,7 @@ jsonpointer
 jsonschema
 jsonschema-specifications
 jupyter
+jupyter-bokeh
 jupyter-client
 jupyter-console
 jupyter-core
@@ -96,13 +96,13 @@ kaleido
 keras
 keras-core
 keras-cv
-keras-cv-attention-models
-keras-hub
 keras-tuner
 kiwisolver
 kt-legacy
+lark
 libclang
 llvmlite
+logistro
 markdown
 markdown-it-py
 markupsafe
@@ -140,6 +140,7 @@ nvidia-nvjitlink-cu12
 nvidia-pyindex
 opt-einsum
 optree
+orjson
 outcome
 overrides
 packaging
@@ -164,6 +165,7 @@ protobuf
 psutil
 ptyprocess
 pure-eval
+py
 pyaml
 pyarrow
 pycparser
@@ -184,8 +186,10 @@ qtpy
 referencing
 regex
 requests
+retry
 rfc3339-validator
 rfc3986-validator
+rfc3987-syntax
 rich
 rpds-py
 safetensors
@@ -198,6 +202,7 @@ send2trash
 setuptools
 shap
 simple-parsing
+simplejson
 six
 slicer
 sniffio
@@ -209,14 +214,12 @@ statsmodels
 stockstats
 ta
 ta-lib==0.4.28
-tb-nightly
 tenacity
 tensorboard
 tensorboard-data-server
 tensorflow
 tensorflow-datasets
 tensorflow-metadata
-tensorflow-text
 termcolor
 terminado
 threadpoolctl
@@ -226,7 +229,6 @@ toml
 tornado
 tqdm
 traitlets
-transformers
 trio
 trio-websocket
 types-python-dateutil
