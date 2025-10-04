@@ -66,6 +66,7 @@ huggingface-hub
 idna
 immutabledict
 importlib-resources
+iniconfig
 ipykernel
 ipython
 ipython-pygments-lexers
@@ -156,6 +157,7 @@ pip
 platformdirs
 plotext
 plotly
+pluggy
 prometheus-client
 promise
 prompt-toolkit
@@ -175,6 +177,8 @@ pyparsing
 pysimdjson
 pysocks
 pystan==3.10.0
+pytest
+pytest-timeout
 python-dateutil
 python-dotenv
 python-json-logger

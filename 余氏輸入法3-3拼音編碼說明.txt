@@ -1,64 +1,174 @@
-����ݔ�뷨3+3ƴ�����a�f��
-�汾�������������������
-�����~���p���~ƴ����3+3���a����103953�p���~�У��شa27289���شa��26%��������Ҫ�����������a�����ͻ��Z�{�Ԝp���شa��
-(һ) ���a����
-1. ͨ��ȡ�^���a��������boon-->boo��ԭyuen-->yue���Vgwong-->gwo���wgwai-->gwa����gwet-->gwe����kwai-->kwa����kwun-->kwu
-2. ang,eng,ing,ong,ung������ag,eg,ig,og,ug��������dang->dag����beng->beg����ding-->dig����tong-->tog����dung-->dug��
-   *��1ong-->og�����Nong-->on����������(togfon)�� �����֣���kog
-3. uet-->ut��������yuet-->yut
-4. ch��sh������c��s�����������^���a�����cha���LԔche����cho���Nchu��shaɳ���ϳ�she���ɳ�shi����sho����shu 
-   *��1eung-->eo(ng)��������ceo����jeo����heo����seo   ����(seoshu) 
-5. (ˇ�~����ҧ����)ngxx-->xx, e.g.ˇngai-->ai  ���⣺�yngan-->un, (ţż)ngau--ngu
-6. ������ϼ�������ȡ�^���a��e.g.�cha(n)����lee����che(ung)���Swon(g)����ho���Wau����cho(w)��
-��wu���Rma����mak��ʷsze����liu����lam����bak����tso(i)����che(ng)���Ychi(ang)����chu��
-��chu(i)���Rchu(ng)���~ip����kam������kwo(k)���P܊��kwa(n)��ʩsze����tan(g)����tsa(ng)���xtse����tsu(i)
-��cha(i)��chi�ӣ�ӛkee����tak���_tat����tsi(ng)����tsu(en)����tsz
-7. �ɴa/�����֣�(ca��ce܇ci��co��cu̎) (ka��ke�Tki��ko��ku��) 
-   (ha��je�@��se��) (bi��di��fi��mi�Ini��pi��ti̫wi��) (bo������jo�Mmoë�opo��to��) (yu�c�Z)
-8. aa,a�L�����ķքe������ݔ�뷨���S��ʽ���T�����L��aa������a������a׃��e��u��
-   am,an,ap,at׃��um,en/un(*),up,et��    
-   ���磺��sam/��sum��ɽsan/��sen����sap/ʮsup����bat/����bet����sat/ʧset������wan/���\wen������ӡyen
-   (*)���������ָ��S��ʽ���T����������man �wan ����yan������yat��fgs��1���ֻ�fun������gun������sun
-9. ��gi/�ugai����gao/��gau�����������֣���bek��һyet��
+余氏輸入法3+3拼音編碼說明
+版本：二０二五年十月四日
+余氏詞庫雙字詞拼音是3+3編碼。在103850雙字詞中，重碼27645，重碼率26%。方案需要利用以下三碼簡化和粵語聲調以減少重碼。
+聲母
+例字  余氏
+巴    b
+差    c / ch 
+打    d
+花    f
+家    g
+瓜    gw
+哈    h
+渣    j  [註1]
+卡    k
+夸    kw
+啦    l
+媽    m
+拿    n
+牙    ng
+趴    p
+沙    s / sh  
+他    t
+蛙    w
+也    y  [註1]
+[註1]：余氏"渣ja、也ya"音保留港式習慣，與粵拼"z、j/jy"音不同。
+
+    聲 b             c             d             f             g             gw            h             j
+  韻調 1 2 3 4 5 6
+啊  a  巴把霸爸吧罷  差叉詫茶查搽  打杳柏槽楷桓  花化華嘗糟熾  加假錯錩鉑鍺  瓜寡掛呱剮卦  下哈吓霞蝦夏  抓者炸楂蜡咱 
+挨  ai                                                         街解界                       
+矮  ai 拜擺閉跛蔽敗  差踩制齊滯劑  低底帝帶大第  揮快琿吠輝費  雞偈計繼髻佳  歸軌貴櫃硅鬼  揩喺蟹孩駭係  劑仔制製濟滯
+啱  am               參慘杉        擔膽澹啖淡氮
+晏  an    
+罌  ang  
+拗  ao    
+鴨  ap     
+壓  at       
+軛  ak     
+歐  au
+庵  um     [註3]
+奀  an/en/un  [註3] 
+鶯  ang
+噏  ap/up     [註3]
+兀  at/et  [註3]   
+扼  ak   
+些  e
+四  ei
+贏  eng
+夾* ep
+坺* et
+尺  ek
+衣  i/ee   [註4]
+挨  i/ie                          
+腰  iu
+淹  im
+煙  in
+英  ing
+葉  ip
+熱  it
+益  ik
+柯  or/oh [註5]
+哀  oi
+奧  o   [註6]  
+安  on
+骯  ong
+喝  ot
+惡  ok
+烏  u
+煨  ui 
+銳  ui  
+碗  oon/un [註7]
+閏  un 
+瓮  ung
+噏  up
+活  ut   
+屋  uk
+靴  euh
+央  eung
+約  euk   
+出* ut
+劣* ut
+律  ut
+於  u   [註8]
+冤  uen/un 
+月  uet [註1]
+唔  ng   
+吳  ng
+[註2]：aa,a長短音的分別。余氏輸入法跟隨港式習慣，將長音aa簡化為a。短音a變為ai。
+       例如：沙sa，西sai/嘥sie/街gi(*)，交gao/久gau，三sam，山san，生sang，圾sap，殺sat，格gak
+       (*)挨(i)音單字ai/i/ie共用。
+[註3]：am,an,ap,at短音的處理。余氏輸入法跟隨港式習慣，有些a*短音和長音不分，例：萬文man。
+       但通常am->um，an->en，ap->up，at->et。例：心sum，身sen，十sup，不bet    
+[註4]：衣(i) 音的處理。i/ee 可互用，ee音是港式及以第一聲排列。
+       例：yi 衣倚意而以二…， yee 衣依伊醫… 
+[註5]：柯(or) 音余氏用or。單字保留oh共用。例：波bor，波boh。
+[註6]：奧(o)  音余氏也用o，但缺聲母的[奧澳]字拼成oh。例：oh啊柯奧澳…，bo部保報步…
+[註7]：碗(un) 音余氏一般用oon，例：boon般本。例外：mun們門滿悶…
+[註8]：烏[uː]、於[yː]音余氏合併為(u)。例：胡wu，語yu   
+聲調對照表
+調類  例字   IPA    粵拼  劉錫祥  余氏[註9]        [註10] (衣音) 
+                                a e i o u or yu  ci   ji   si   yi 
+陰平    分   ˥˧ / ˥  1      1    - - - - - or     雌ee 之ee 師ee 衣ee
+陰上    粉   ˧˥     2       2    h h e a a oh     此   指   使   倚
+陰去    訓   ˧      3       3    h h e u u oh    次chi 至   試   意  
+陽平    墳   ˨˩     4       4    h h e u u oh yue 持s       時s  而yee
+陽上    憤   ˩˧     5       5    h h e u u oh     似chi     市   以 
+陽去    份   ˨      6       6    h h e u u oh yuu      自z  是z  二z 
+[註9]：余氏單字拼音一般不分聲調。但為了減低重碼，余氏3+3組詞方案用了聲調23456字母ahsuz(啞氣時雨二),(助記憶)。     
+       單字拼音也可加入聲調以減少選字。例：yee衣依伊醫，yis而兒移宜儀，yiz二義議易異 
+[註10]： ci ji si yi 因重碼字太多，要特別處理。但若不用3+3組詞方案，可略過。
 
 
-(��) ���Z�{
-�{�  ����   ����[�]9]        [�]10] (��) 
+
+(一) 三碼簡化
+1. 通常取頭三碼，例：本boon-->boo，原yuen-->yue，廣gwong-->gwo，歸gwai-->gwa，骨gwet-->gwe，葵kwai-->kwa，困kwun-->kwu
+2. ang,eng,ing,ong,ung簡化為ag,eg,ig,og,ug，例：等dang->dag，病beng->beg，定ding-->dig，劏tong-->tog，動dung-->dug。
+   *第1聲ong-->og，其餘ong-->on。例：劏房(togfon)。 常用字：光kog
+3. uet-->ut，例：月yuet-->yut
+4. ch和sh簡化為c和s，但以下用頭三碼：茶查cha，長詳che，曹cho，廚chu，sha沙，上常she，成承shi，數sho，信shu 
+   *第1聲eung-->eo(ng)。例：昌ceo，將jeo，香heo，相seo   相信(seoshu) 
+5. (藝額暗眼咬外岳)ngxx-->xx, e.g.藝ngai-->ai  例外：銀ngan-->un, (牛偶)ngau--ngu
+6. 香港姓氏及常用字取頭三碼。e.g.陳cha(n)，李lee，張che(ung)，黃won(g)，何ho，歐au，周cho(w)，
+胡wu，馬ma，麥mak，史sze，廖liu，林lam，白bak，蔡tso(i)，鄭che(ng)，蔣chi(ang)，朱chu，
+崔chu(i)，鍾chu(ng)，葉ip，金kam，郭國kwo(k)，關軍君kwa(n)，施sze，鄧tan(g)，曾tsa(ng)，謝tse，徐tsu(i)
+仔cha(i)，chi子，記kee，德tak，達tat，青tsi(ng)，荃tsu(en)，慈tsz
+7. 兩碼/常用字：(ca差ce車ci此co操cu處) (ka家ke騎ki奇ko高ku古) 
+   (ha下je這者se寫) (bi拜di大fi快mi買ni奶pi派ti太wi歪) (bo保寶部jo組mo毛無po普to土) (yu與語)
+8. aa,a長短音的分別。余氏輸入法跟隨港式習慣，將長音aa簡化為a。短音a變為e或u。
+   am,an,ap,at變為um,en/un(*),up,et。    
+   例如：三sam/心sum，山san/神sen，圾sap/十sup，八bat/不拔bet，殺sat/失set，灣患wan/溫運wen，因忍印yen
+   (*)短音常用字跟隨港式習慣，例：民文man 雲wan 人仁yan，日逸yat。fgs第1聲：分婚fun，根斤gun，新身sun
+9. 街gi/雞gai，交gao/久gau，短音常用字：北bek，一yet，
+
+
+(二) 粵語聲調
+調類  例字   余氏[註9]        [註10] (衣) 
              a e i o u or yu   ci ji si yi 
-�ƽ 1  ��   - - - - - or      �� ֮ �� �� ee       
-��� 2  ��   - - - - - oh u    �� ָ ʹ �� 
-�ȥ 3  Ӗ   h h - u u oh u  ch�� �� ԇ ��  
-�ƽ 4  ��   h h - u u oh s    �� -  �r �� s
-��� 5  ��   h h - u u oh u  ch�� -  �� �� 
-�ȥ 6  ��   h h - u u oh z    -  �� �� �� z
-[�]9,10]�����φ���ƴ��һ�㲻���{�������˜p���شa������3+3�M�~���������{3456��ĸhsuz(��r���),(��ӛ��)��
-������ʹԇ�r����  ����ˡ��-��  ��฻���D����
-1. a,e(1a,e��23456ah,eh)��ce܇ceh�ң�ga��gah�كr��ha��hah��ϼ�ģ�seЩseh����ж������
-   (�ɴa/�����֣�ka��ha��je�@��se��)
-2. i[i����](1����������i�����N��ie)��
-   bi��bie�[����di��ydie������fi�죬gi��gie��飬hi��hieЬ��е��li��lie�|��mi�Imie�u��ni��nie�ˣ�
-   pi��pie���ţ�ti̫߾tie̩��wi��wie���щ�
-   (cjs�����{����ƴ��ie: cie�²Ȳ�jie�S��կ��sie�T��ɹ) 
-3. cjsy[i����]��1ee��235i��4is��6iz��
-   cee��, ci��ʼ, chi���n��, cis�~  (35chi)  �����֣�ci��
-   jee֮, jiֻ��,   jiz��        �����֣�chi��
-   see��, siʹԇ��, sis�r, siz�� 
-   yee��, yi�����h��, yis��, yiz��
-4. o��(1o��23456ou) bo�ң�bou�a�󲽡�(�ɴa/�����֣�bo������jo�Mmoë�opo��to��)
-   *ȱĸ��[�W��]��ƴ��oh��
-5, u��(1u��23456uu)��fu��fuu�฻���D����
-6. or[��]��(��1��or��23456��oh)��cor����coh���e�z����(�����֣�jor��� hor�� sor��)
-7. y[u]��(1u��235uu��4us��6uz)������yu춣�yuu���꣬yus�磬yuz�A��(�ɴa/�����֣�yu�c�Z)
-8. oo(n)�����{ (�����֣�mun�T)
+陰平 1  分   - - - - - or      雌 之 師 衣 ee       
+陰上 2  粉   - - - - - oh u    此 指 使 倚 
+陰去 3  訓   h h - u u oh u  ch次 至 試 意  
+陽平 4  墳   h h - u u oh s    持 -  時 而 s
+陽上 5  憤   h h - u u oh u  ch似 -  市 以 
+陽去 6  份   h h - u u oh z    -  自 是 二 z
+[註9,10]：余氏單字拼音一般不分聲調。但為了減低重碼，余氏3+3組詞方案用了聲調3456字母hsuz(氣時雨二),(助記憶)。
+例：師使試時市是  書鼠恕殊-樹  夫苦富乎婦父：
+1. a,e(1聲a,e，23456聲ah,eh)：ce車ceh且，ga加gah假價，ha哈hah吓霞夏，se些seh捨舍卸蛇社射
+   (兩碼/常用字：ka家ha下je這者se寫)
+2. i[i挨音](1聲及常用字用i，其餘用ie)。
+   bi拜bie擺敗，di大獃die歹帶，fi快，gi街gie解介，hi嗨hie鞋孩械，li拉lie瀨，mi買mie賣埋，ni奶nie乃，
+   pi派pie牌排，ti太呔tie泰，wi歪wie淮懷壞
+   (cjs不分調，用拼法ie: cie猜踩柴，jie齋債寨，sie嘥徙晒) 
+3. cjsy[i衣音]，1聲ee，235聲i，4聲is，6聲iz：
+   cee雌, ci此始, chi次賜似, cis詞  (35聲chi)  常用字：ci此
+   jee之, ji只至,   jiz自        常用字：chi子
+   see師, si使試市, sis時, siz是 
+   yee衣, yi倚意議以, yis而, yiz二
+4. o，(1聲o，23456聲ou) bo煲，bou補報步。(兩碼/常用字：bo保寶部jo組mo毛無po普to土)
+   *缺聲母的[奧澳]字拼成oh。
+5, u，(1聲u，23456聲uu)：fu夫，fuu苦富乎婦父。
+6. or[柯]，(第1用or，23456聲用oh)：cor初，coh楚錯鋤坐。(常用字：jor左咗 hor可 sor所)
+7. y[u]，(1聲u，235聲uu，4聲us，6聲uz)。例：yu於，yuu瘀雨，yus如，yuz預。(兩碼/常用字：yu與語)
+8. oo(n)不分調 (常用字：mun門)
 
 ui poem uj sosik
-�����L���� �K�Y
+【定風波】 蘇軾
 moktig cuelam da ipsig h hofon yumsiu ceh tsuhag t
-Ī    ����   �� �~ �� �η�  ���[   ��  ����  ��
+莫聽   穿林   打 葉聲 ， 何妨  吟嘯   且  徐行  。
 jukjeu moghi  higsig ma h suipa uq yetsor yinyuu yam pigsag t
-����   âЬ   �p��   �R ���l��  �� һ��   ����   ��  ƽ��   ��
+竹杖   芒鞋   輕勝   馬 ，誰怕  ？ 一蓑   煙雨   任  平生   。
 liuciu cunfug cui jausig h meilag ul santau cehjiu kek seoyig t
-����   ���L   ��  ����  �� ΢��   �� ɽ�^   б��   �s  ��ӭ   ��
+料峭   春風   吹  酒醒  ， 微冷   ！ 山頭   斜照   卻  相迎   。
 wuisau heuloi siuset cu h gwahui us yamo fugyuu yamo cig t
-����   ���   ʒɪ   ̎ ���wȥ   �� Ҳ�o �L��   Ҳ�o ��  ��
+回首   向來   蕭瑟   處 ，歸去   ； 也無 風雨   也無 晴  。
 
