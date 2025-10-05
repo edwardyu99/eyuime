@@ -1,0 +1,119 @@
+余氏輸入法3+3拼音編碼說明
+版本：二０二五年十月五日
+余氏詞庫雙字詞拼音是3+3編碼。在103850雙字詞中，重碼27741，重碼率26%。方案利用以下三碼簡化、韻母和聲調變化以減少重碼。
+(一) 三碼簡化
+1. 通常取頭三碼，例：本boon-->boo，原yuen-->yue，廣gwong-->gwo，歸gwai-->gwa，骨gwet-->gwe，葵kwai-->kwa，困kwun-->kwu
+2. ang,eng,ing,ong,ung簡化為ag,eg,ig,on*,ug，例：等dang->dag，病beng->beg，定ding-->dig，劏tong-->tog，動dung-->dug。
+   *第1聲ong-->og，其餘ong-->on。例：劏房(togfon)。 常用字：光kog
+3. uet-->ut，例：月yuet-->yut
+4. ch和sh簡化為c和s，但以下用頭三碼：茶查cha，長詳che，曹cho，廚chu，sha沙，上常she，成承shi，數sho，信shu 
+   *第1聲eung-->eo(ng)。例：昌ceo，將jeo，香heo，相seo   相信(seoshu) 
+5. (藝額暗眼咬外岳)ngxx-->xx, e.g.藝ngai-->ai  例外：銀ngan-->un, (牛偶)ngau--ngu
+6. 香港姓氏及常用字取頭三碼。e.g.陳cha(n)，李lee，張che(ung)，黃won(g)，何ho，歐au，周cho(w)，
+   胡wu，馬ma，麥mak，史sze，廖liu，林lam，白bak，蔡tso(i)，鄭che(ng)，蔣chi(ang)，朱chu，
+   鍾chu(ng)，葉ip，金kam，郭國kwo(k)，關軍君kwa(n)，施sze，鄧tan(g)，曾tsa(ng)，謝tse，崔tsu(i)，徐tsu(i)
+   仔cha(i)，chi子，記kee，德tak，達tat，青tsi(ng)，荃tsu(en)，慈tsz
+7. 兩碼/常用字：(ca差ce車ci此co操cu處) (ka家ke騎ki奇ko高ku古) 
+   (ha下) (je這者se寫) (bi拜di大fi快mi買ni奶pi派ti太wi歪) (bo保寶部jo組mo毛無po普to土) (gu股)
+       
+(二) 韻母
+啊#1 a       矮#1 ai     
+挨#2 ai/i
+啱   am      庵   um     
+晏#3 an      奀#3 an/en/un   
+罌   ang     贏   eng
+鶯   ang
+拗   ao      歐   au
+鴨   ap      噏   ap/up
+壓   at      兀   at/et   
+軛   ak      扼   ak/et   
+些   e
+四   ei
+尺   ek   
+約   euk/ek
+靴   euh
+央   eung
+衣#4 i/ee
+腰   iu
+淹   im
+煙   in
+英   ing
+葉   ip
+熱   it
+益   ik
+奧#6 o 
+柯#5 or/oh 
+哀   oi    
+安   on
+骯   ong
+喝   ot
+惡   ok
+烏#7 u       於#7 u 
+煨   ui 
+銳   ui  
+屋   uk
+碗#8 oon/un  冤#8 uen/un
+閏   un 
+瓮   ung
+活   ut   
+出   ut
+劣   ut
+律   ut
+月   uet/ut 
+唔   ng      吳   ng
+
+[#1]：aa,a長短音的分別。余氏輸入法跟隨港式習慣，將長音[啊]aa簡化為a。短音a變為[矮]ai。
+      例如：沙sa，西sai
+[#2]：因[挨]ai變為[矮]ai，原ai仍可單字與i/ie共用。例：拜bai/bi 
+      為減少重碼，余氏用i/ie：(cjsy字不分調，例: cie猜踩柴，jie齋債寨，sie嘥徙晒) 
+      非cjsy字1聲用i，其餘2-6聲用ie。
+      例：bi拜bie擺敗，di大die歹帶，fi快，gi街gie解介，hi嗨hie鞋孩械，li拉lie瀨，mi買mie賣埋，
+          ni奶nie乃，pi派pie牌排，ti太呔tie泰，wi歪wie淮懷壞
+[#3]：am,an,ao,ap,at,ak長短音的處理。余氏輸入法跟隨港式習慣，通常am->um，an->en，ao->au，ap->up，at->et。
+      例：三sam心sum，山san身sen，交gao九gau，圾sap十sup，察cat七cet*，八bat不bet*一yet*，百bak北bek *常用字
+          殺sat/失set，灣患wan/溫運wen，因忍印yen
+      短音常用字跟隨港式習慣，例：民文man 雲wan 人仁yan，日逸yat。
+[#4]：衣(i)音的處理。單字i/ee可互用。為減少重碼，余氏3+3碼用聲調字母ee,ee,iz(代替1,4,6聲)。ci4聲用chi。
+      例：cee黐ci此次似chi持  jee之ji只志jiz自  see師si使試市sis時siz是  yee衣yi倚意以yee而yiz二
+[#5]：柯(or) 音余氏用or。單字保留oh共用。例：波bor，波boh。
+[#6]：奧(o)  音余氏也用o，但缺聲母的[奧澳]字拼成oh。例：oh啊柯奧澳，bo保寶報部
+[#7]：烏(uː)、於(u)ː音余氏合併為(u)。例：胡wu，語yu 
+[#8]：碗(un) 音余氏一般用oon，例：goon官 boon般本胖，moon們滿悶。例外：mun門
+      冤(un) 音余氏一般用uen，例：guen捐 yuen冤院怨遠願。例外：yun元完原員園潤閏圓源
+
+(三) 聲調
+余氏單字拼音一般不分聲調。但為了減低重碼，余氏3+3組詞方案用了聲調146字母(e衣e兒z二)。
+調類  例字   #9 #10 #11 #12 #13 #14 (衣) [#4,#15]
+             a e i  o u un  or yu   ci    ji    si    yi 
+陰平 1  分   - - -  - - -   -  -    雌cee 之jee 師see 衣yee       
+陰上 2  粉   h h ie u u en  oh -    此    指    使    倚 
+陰去 3  訓   h h ie u u en  oh -    次    至    試    意  
+陽平 4  焚   h h ie u u en  oh ue   持chi -     時sis 而yee
+陽上 5  憤   h h ie u u en  oh -    似    -     市    以 
+陽去 6  份   h h ie u u en  oh uu   -     自jiz 是siz 二yiz
+
+[#9]  a,e(1聲a,e，23456聲ah,eh)：ce車ceh且，ga加gah假價，ha哈hah吓霞夏，se些seh捨舍卸蛇社射
+      (兩碼/常用字：ka家ha下je這者se寫)
+[#10] i[i挨音](1聲用i，其餘用ie)。
+      bi拜bie擺敗，di大獃die歹帶，fi快，gi街gie解介，hi嗨hie鞋孩械，li拉lie瀨，mi買mie賣埋，ni奶nie乃，
+      pi派pie牌排，ti太呔tie泰，wi歪wie淮懷壞
+      (cjs不分調，用ie: cie猜踩柴，jie齋債寨，sie嘥徙晒) 
+[#11] o奧  (1聲o，23456聲ou) bo煲，bou補報步。(兩碼/常用字：bo保寶部jo組mo毛無po普to土)
+          *缺聲母的[奧澳]字拼成oh。
+      u烏  (1聲u，23456聲uu)：fu夫，fuu苦富乎婦父。
+[#12] un奀 (fgs第1聲un，其他en) 例：fun分/fen粉訓焚憤份，gun根/gen緊近，sun新/sen呻神慎，ben奔品殯笨 hen很痕恨
+[#13] or柯 (1聲or，23456聲oh)：cor初，coh楚錯鋤坐。(常用字：jor左咗 hor可 sor所)
+[#14] yu於 (1235聲yu，4聲yue，6聲yuu)。例：yu於瘀語雨，yue如，yuu預。
+[#15] cjsyi衣 (14聲ee，235聲i，6聲iz，ci4聲chi。時sis
+
+ui poem uj sosik
+【定風波】 蘇軾
+moktig cuelam da ipsig h hofon yumsiu ceh tsuhag t
+莫聽   穿林   打 葉聲 ， 何妨  吟嘯   且  徐行  。
+jukjeu moghi  higsig ma h suipa uq yetsor yinyuu yam pigsag t
+竹杖   芒鞋   輕勝   馬 ，誰怕  ？ 一蓑   煙雨   任  平生   。
+liuciu cunfug cui jausig h meilag ul santau cehjiu kek seoyig t
+料峭   春風   吹  酒醒  ， 微冷   ！ 山頭   斜照   卻  相迎   。
+wuisau heuloi siuset cu h gwahui us yamo fugyuu yamo cig t
+回首   向來   蕭瑟   處 ，歸去   ； 也無 風雨   也無 晴  。
+
