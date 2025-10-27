@@ -1,25 +1,30 @@
-@rem @echo off
-cd %~dp0
+@echo off
+@rem cd %~dp0
+cd /d "%~dp0"
+echo Current directory is now: %CD%
 @rem cd %APPDATA%\Rime\
 
 if not exist %APPDATA%\Rime\ mkdir %APPDATA%\Rime\
 if not exist %APPDATA%\Rime\build\ mkdir %APPDATA%\Rime\build\
 
-inuse .\renee.table.bin %APPDATA%\Rime\build\* /Y 
+@rem copy /Y .\renee.schema.yaml %APPDATA%\Rime\build\*
+copy /Y .\renee.ico %APPDATA%\Rime\build\*
+copy /Y .\renee.dict.head.yaml %APPDATA%\Rime\renee.dict.yaml
+@rem copy /Y .\default.custom.yaml %APPDATA%\Rime\*
+@rem copy /Y .\installation.yaml %APPDATA%\Rime\*
+@rem copy /Y .\weasel.custom.yaml %APPDATA%\Rime\*
+@rem copy /Y .\user.yaml %APPDATA%\Rime\*
 
-copy /Y .\renee.table.bin %APPDATA%\Rime\build\*
-
+@rem --- Deploy using the dynamic path with a wildcard ---
+set "WeaselDir=C:\Program Files\Rime"
+for /d %%i in ("%WeaselDir%\weasel*") do "%%i\WeaselDeployer.exe" /deploy
+@rem "C:\Program Files\Rime\weasel-0.17.4\WeaselDeployer.exe" /deploy
 copy /Y .\renee.prism.bin %APPDATA%\Rime\build\*
 copy /Y .\renee.reverse.bin %APPDATA%\Rime\build\*
-copy /Y .\renee.schema.yaml %APPDATA%\Rime\build\*
-copy /Y .\renee.ico %APPDATA%\Rime\build\*
-copy /Y .\default.custom.yaml %APPDATA%\Rime\build\*
-copy /Y .\weasel.custom.yaml %APPDATA%\Rime\build\*
-@rem if not exist "C:\Program Files (x86)\Rime\weasel-0.16.3\WeaselDeployer.exe"   %APPDATA%\Rime\weasel-0.16.3.0-installer.exe
-if not exist "C:\Program Files (x86)\Rime\weasel-0.17.4\WeaselDeployer.exe"   %APPDATA%\Rime\weasel-0.17.4.0-installer.exe
+@rem inuse .\renee.table.bin %APPDATA%\Rime\build\* /Y 
+copy /Y .\renee.table.bin %APPDATA%\Rime\build\*
 
-cd %APPDATA%\Rime\
-@rem "C:\Program Files (x86)\Rime\weasel-0.15.0\WeaselServer.exe"
-@rem "C:\Program Files (x86)\Rime\weasel-0.15.0\WeaselDeployer.exe" /deploy
+
+
 
 @pause

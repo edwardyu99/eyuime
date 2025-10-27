@@ -212,7 +212,8 @@ stanio
 statsmodels
 stockstats
 ta
-ta-lib==0.4.24
+ta-lib
+#ta-lib==0.4.24
 #ta-lib==0.4.28
 tenacity
 tensorboard

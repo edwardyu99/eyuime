@@ -3,8 +3,10 @@
 ; 20230803 "weasel-0.15.0.0-installer.exe" no longer provided here because of google virus check.
 ;          Please download and install latest version of weasel from https://rime.im/
 ; 20240609 update rime from 0.15.0 to 0.16.1
+; 20251027 update rime from 0.16.3 to 0.17.4 (use wildcard in batch)
+
 #define MyAppName "余氏中文輸入法 (小狼毫版)"
-#define MyAppVersion "64bits windows 10 (RIME小狼毫版)"
+#define MyAppVersion "64bits windows 11/10 (RIME小狼毫版)"
 #define MyAppPublisher "Edward Yu"
 #define MyAppURL "https://sites.google.com/site/eykmime"
 #define MyAppExeName "MyProg.exe"
@@ -51,7 +53,12 @@ Source: "reneeRimeDeploy.bat"; DestDir: "{app}"; Flags: ignoreversion
 Source: "renee.rimecan.sh"; DestDir: "{app}"; Flags: ignoreversion
 Source: "default.yaml"; DestDir: "{app}"; Flags: ignoreversion
 Source: "renee.ico"; DestDir: "{app}"; Flags: ignoreversion
+
+; Source: "renee.dict_yaml"; DestDir: "{app}"; Flags: ignoreversion
+Source: "installation.yaml"; DestDir: "{app}"; Flags: ignoreversion
 Source: "weasel.custom.yaml"; DestDir: "{app}"; Flags: ignoreversion
+Source: "user.yaml"; DestDir: "{app}"; Flags: ignoreversion
+
 ; https://rime.im/download/ 
 ;Source: "weasel_0chinese_lnk.txt"; DestDir: "{app}"; Flags: ignoreversion
 ;Source: "weasel_1user_folder.lnk"; DestDir: "{app}"; Flags: ignoreversion
@@ -65,7 +72,7 @@ Source: "weasel.custom.yaml"; DestDir: "{app}"; Flags: ignoreversion
 ;Source: "weasel_9update.lnk"; DestDir: "{app}"; Flags: ignoreversion
 ;Source: "weasel_server.lnk"; DestDir: "{app}"; Flags: ignoreversion
 ;Source: "weasel_uninstall.lnk"; DestDir: "{app}"; Flags: ignoreversion
-;Source: "weasel-0.15.0.0-installer.exe"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "weasel-0.17.4.0-installer.exe"; DestDir: "{app}"; Flags: ignoreversion
 ; 0.14.3.0
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 [Registry]
