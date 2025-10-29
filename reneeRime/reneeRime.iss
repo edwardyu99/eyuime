@@ -4,6 +4,7 @@
 ;          Please download and install latest version of weasel from https://rime.im/
 ; 20240609 update rime from 0.15.0 to 0.16.1
 ; 20251027 update rime from 0.16.3 to 0.17.4 (use wildcard in batch)
+; 20251028 use renee.dict_yaml in reneecopyrime.bat
 
 #define MyAppName "余氏中文輸入法 (小狼毫版)"
 #define MyAppVersion "64bits windows 11/10 (RIME小狼毫版)"
@@ -43,21 +44,22 @@ Source: "reneecopyrime.bat"; DestDir: "{app}"; Flags: ignoreversion
 Source: "reneeremoverime.bat"; DestDir: "{app}"; Flags: ignoreversion
 Source: "default.custom.yaml"; DestDir: "{app}"; Flags: ignoreversion
 Source: "reneeRime.iss"; DestDir: "{app}"; Flags: ignoreversion
-Source: "renee.prism.bin"; DestDir: "{app}"; Flags: ignoreversion
-Source: "renee.reverse.bin"; DestDir: "{app}"; Flags: ignoreversion
-Source: "renee.schema.yaml"; DestDir: "{app}"; Flags: ignoreversion
-Source: "renee.dict_head.yaml"; DestDir: "{app}"; Flags: ignoreversion
-Source: "renee.table.bin"; DestDir: "{app}"; Flags: ignoreversion
+; Source: "renee.prism.bin"; DestDir: "{app}"; Flags: ignoreversion
+; Source: "renee.reverse.bin"; DestDir: "{app}"; Flags: ignoreversion
+; Source: "renee.table.bin"; DestDir: "{app}"; Flags: ignoreversion
 Source: "reneeRimeDeploy.bat"; DestDir: "{app}"; Flags: ignoreversion
 ; Source: "Trime-20200909.apk"; DestDir: "{app}"; Flags: ignoreversion
 Source: "renee.rimecan.sh"; DestDir: "{app}"; Flags: ignoreversion
 Source: "default.yaml"; DestDir: "{app}"; Flags: ignoreversion
 Source: "renee.ico"; DestDir: "{app}"; Flags: ignoreversion
 
-; Source: "renee.dict_yaml"; DestDir: "{app}"; Flags: ignoreversion
-Source: "installation.yaml"; DestDir: "{app}"; Flags: ignoreversion
-Source: "weasel.custom.yaml"; DestDir: "{app}"; Flags: ignoreversion
-Source: "user.yaml"; DestDir: "{app}"; Flags: ignoreversion
+Source: "renee.dict.yaml"; DestDir: "{app}"; Flags: ignoreversion
+Source: "renee.schema.yaml"; DestDir: "{app}"; Flags: ignoreversion
+Source: "renee.dict_head.yaml"; DestDir: "{app}"; Flags: ignoreversion
+; Source: "installation.yaml"; DestDir: "{app}"; Flags: ignoreversion
+; Source: "weasel.custom.yaml"; DestDir: "{app}"; Flags: ignoreversion
+; Source: "user.yaml"; DestDir: "{app}"; Flags: ignoreversion
+; Source: "reneeRimeDeployDict.bat"; DestDir: "{app}"; Flags: ignoreversion
 
 ; https://rime.im/download/ 
 ;Source: "weasel_0chinese_lnk.txt"; DestDir: "{app}"; Flags: ignoreversion

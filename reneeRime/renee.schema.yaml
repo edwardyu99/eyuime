@@ -1,14 +1,23 @@
 __build_info:
-  rime_version: 1.5.3
+  rime_version: 1.13.1
   timestamps:
-    default: 1561218646
-    default.custom: 1645691245
+    default: 1671607766
+    default.custom: 1671607765
     key_bindings: 1561218646
     key_bindings.custom: 0
     punctuation: 1561218646
     punctuation.custom: 0
     renee.custom: 0
-    renee.schema: 1645691315
+    renee.schema: 1761630286
+ascii_composer:
+  good_old_caps_lock: false
+  switch_key:
+    Caps_Lock: clear
+    Control_L: noop
+    Control_R: noop
+    Eisu_toggle: clear
+    Shift_L: inline_ascii
+    Shift_R: commit_text
 engine:
   filters:
     - simplifier
@@ -31,17 +40,68 @@ engine:
   translators:
     - punct_translator
     - table_translator
-ascii_composer:
-  good_old_caps_lock: false # origin true
-  switch_key:
-    Caps_Lock: clear
-    Control_L: noop
-    Control_R: noop
-    Eisu_toggle: clear
-    Shift_L: inline_ascii
-    Shift_R: commit_text
 key_binder:
   bindings:
+    - {accept: "Control+p", send: Up, when: composing}
+    - {accept: "Control+n", send: Down, when: composing}
+    - {accept: "Control+b", send: Left, when: composing}
+    - {accept: "Control+f", send: Right, when: composing}
+    - {accept: "Control+a", send: Home, when: composing}
+    - {accept: "Control+e", send: End, when: composing}
+    - {accept: "Control+d", send: Delete, when: composing}
+    - {accept: "Control+k", send: "Shift+Delete", when: composing}
+    - {accept: "Control+h", send: BackSpace, when: composing}
+    - {accept: "Control+g", send: Escape, when: composing}
+    - {accept: "Control+bracketleft", send: Escape, when: composing}
+    - {accept: "Alt+v", send: Page_Up, when: composing}
+    - {accept: "Control+v", send: Page_Down, when: composing}
+    - {accept: ISO_Left_Tab, send: "Shift+Left", when: composing}
+    - {accept: "Shift+Tab", send: "Shift+Left", when: composing}
+    - {accept: Tab, send: "Shift+Right", when: composing}
+    - {accept: minus, send: Page_Up, when: has_menu}
+    - {accept: equal, send: Page_Down, when: has_menu}
+    - {accept: comma, send: Page_Up, when: paging}
+    - {accept: period, send: Page_Down, when: has_menu}
+    - {accept: "Control+Shift+1", select: .next, when: always}
+    - {accept: "Control+Shift+2", toggle: ascii_mode, when: always}
+    - {accept: "Control+Shift+3", toggle: full_shape, when: always}
+    - {accept: "Control+Shift+4", toggle: simplification, when: always}
+    - {accept: "Control+Shift+5", toggle: extended_charset, when: always}
+    - {accept: "Control+Shift+exclam", select: .next, when: always}
+    - {accept: "Control+Shift+at", toggle: ascii_mode, when: always}
+    - {accept: "Control+Shift+numbersign", toggle: full_shape, when: always}
+    - {accept: "Control+Shift+dollar", toggle: simplification, when: always}
+    - {accept: "Control+Shift+percent", toggle: extended_charset, when: always}
+    - {accept: "Control+p", send: Up, when: composing}
+    - {accept: "Control+n", send: Down, when: composing}
+    - {accept: "Control+b", send: Left, when: composing}
+    - {accept: "Control+f", send: Right, when: composing}
+    - {accept: "Control+a", send: Home, when: composing}
+    - {accept: "Control+e", send: End, when: composing}
+    - {accept: "Control+d", send: Delete, when: composing}
+    - {accept: "Control+k", send: "Shift+Delete", when: composing}
+    - {accept: "Control+h", send: BackSpace, when: composing}
+    - {accept: "Control+g", send: Escape, when: composing}
+    - {accept: "Control+bracketleft", send: Escape, when: composing}
+    - {accept: "Alt+v", send: Page_Up, when: composing}
+    - {accept: "Control+v", send: Page_Down, when: composing}
+    - {accept: ISO_Left_Tab, send: "Shift+Left", when: composing}
+    - {accept: "Shift+Tab", send: "Shift+Left", when: composing}
+    - {accept: Tab, send: "Shift+Right", when: composing}
+    - {accept: minus, send: Page_Up, when: has_menu}
+    - {accept: equal, send: Page_Down, when: has_menu}
+    - {accept: comma, send: Page_Up, when: paging}
+    - {accept: period, send: Page_Down, when: has_menu}
+    - {accept: "Control+Shift+1", select: .next, when: always}
+    - {accept: "Control+Shift+2", toggle: ascii_mode, when: always}
+    - {accept: "Control+Shift+3", toggle: full_shape, when: always}
+    - {accept: "Control+Shift+4", toggle: simplification, when: always}
+    - {accept: "Control+Shift+5", toggle: extended_charset, when: always}
+    - {accept: "Control+Shift+exclam", select: .next, when: always}
+    - {accept: "Control+Shift+at", toggle: ascii_mode, when: always}
+    - {accept: "Control+Shift+numbersign", toggle: full_shape, when: always}
+    - {accept: "Control+Shift+dollar", toggle: simplification, when: always}
+    - {accept: "Control+Shift+percent", toggle: extended_charset, when: always}
     - {accept: "Control+space", toggle: ascii_mode, when: always}
     - {accept: "Control+p", send: Up, when: composing}
     - {accept: "Control+n", send: Down, when: composing}
@@ -59,10 +119,10 @@ key_binder:
     - {accept: ISO_Left_Tab, send: "Shift+Left", when: composing}
     - {accept: "Shift+Tab", send: "Shift+Left", when: composing}
     - {accept: Tab, send: "Shift+Right", when: composing}
-    - {accept: bracketleft, send: Page_Up, when: has_menu}     # 20230622
-    - {accept: bracketright, send: Page_Down, when: has_menu}  # 20230622
-    - {accept: bracketleft, send: Page_Up, when: paging}       # 20230622
-    - {accept: bracketright, send: Page_Down, when: paging}    # 20230622 
+    - {accept: bracketleft, send: Page_Up, when: has_menu}
+    - {accept: bracketright, send: Page_Down, when: has_menu}
+    - {accept: bracketleft, send: Page_Up, when: paging}
+    - {accept: bracketright, send: Page_Down, when: paging}
     - {accept: minus, send: Page_Up, when: has_menu}
     - {accept: equal, send: Page_Down, when: has_menu}
     - {accept: comma, send: Page_Up, when: paging}
@@ -77,7 +137,7 @@ key_binder:
     - {accept: "Control+Shift+numbersign", toggle: full_shape, when: always}
     - {accept: "Control+Shift+dollar", toggle: simplification, when: always}
     - {accept: "Control+Shift+percent", toggle: extended_charset, when: always}
-    - {accept: Return, send: space, when: has_menu}  # 20220302
+    - {accept: Return, send: space, when: has_menu}
   import_preset: default
 menu:
   page_size: 9
@@ -150,7 +210,6 @@ punctuator:
     "}": ["』", "〗", "｝"]
     "~": ["~", "～"]
   import_preset: default
-  # use_space: true  # default true 是否使用空格顶字
 recognizer:
   import_preset: default
   patterns:
@@ -163,21 +222,20 @@ schema:
   description: |
     余氏中文輸入法--廣東話詞庫版(for Windows 10 Rime【小狼毫】)
     https://www.facebook.com/eyuime/
+
+  icon: renee.ico
   name: "余氏中文輸入法"
   schema_id: renee
   version: 2023.07.01
-  icon: "renee.ico" #renee.ico 
-  # ascii_icon: "reneeyu.png"
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
-  max_code_length: 6
   auto_select: true
-  auto_select_unique_candidate: true # 无重码自动上屏
-  auto_select_pattern: ".{4,}"         # 4字或以上 20230603->3
-  # use_space: false # default false 以空格作輸入碼
+  auto_select_pattern: ".{4,}"
+  auto_select_unique_candidate: true
+  max_code_length: 6
 switches:
   - name: ascii_mode
-    reset: 0 # default 0=中文 1=西文
+    reset: 0
     states: ["中文", "西文"]
   - name: full_shape
     states: ["半角", "全角"]
@@ -188,7 +246,7 @@ switches:
 translator:
   dictionary: renee
   disable_user_dict_for_patterns: false
-  enable_completion: true # true for auto_select_unique_candidate
+  enable_completion: true
   enable_encoder: false
   enable_sentence: false
   enable_user_dict: false
