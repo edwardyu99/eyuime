@@ -1,5 +1,5 @@
 余氏輸入法3+3拼音編碼說明
-版本：二０二五年十月六日
+版本：二０二六年二月十五日
 余氏詞庫雙字詞拼音是3+3編碼。在103850雙字詞中，重碼27741，重碼率26%。方案利用以下三碼簡化、韻母和聲調變化以減少重碼。
 (一) 三碼簡化
 1. 通常取頭三碼，例：本boon-->boo，原yuen-->yue，廣gwong-->gwo，歸gwai-->gwa，骨gwet-->gwe，葵kwai-->kwa，困kwun-->kwu
@@ -42,9 +42,8 @@
       例：三sam心sum，山san身sen，交gao九gau，圾sap十sup，察cat七cet*，八bat不bet*一yet*，百bak北bek *常用字
           殺sat/失set，灣患wan/溫運wen，因忍印yen
       短音常用字跟隨港式習慣，例：民文man 雲wan 人仁yan，日逸yat。
-[#4]：衣(i)音的處理。單字i/ee可互用。為減少重碼，余氏3+3碼用聲調字母ee,ee,iz(代替1,4,6聲)。
-      cjsyi衣 (14聲ee，235聲i，6聲iz，4聲chi持、時sis
-      例：cee黐ci此次似chi持  jee之ji只志jiz自  see師si使試市sis時siz是  yee衣yi倚意以yee而yiz二
+[#4]：衣(i)音的處理。單字i/ee可互用。為減少重碼，余氏3+3碼用聲調字母ee,ee,iz(代替1,4,6聲)。(特例：sze師施司，yi衣依醫)
+      例：cee黐ci此次似chi持  jee之ji只志jiz自  sze師si使試市see時siz是  yi衣倚意以yee而yiz二
 [#5]：柯(or) 音余氏用or。單字保留oh共用。例：波bor，波boh。
 [#6]：奧(o)  音余氏也用o，但缺聲母的[奧澳]字拼成oh。例：oh啊柯奧澳，bo保寶報部
 [#7]：烏(uː)、於(u)ː音余氏合併為(u)。例：胡wu，語yu 
@@ -55,12 +54,12 @@
 余氏單字拼音一般不分聲調。但為了減低重碼，余氏3+3組詞方案cjsy用了聲調146字母(e衣e兒z二)。
 調類  例字   #9 #10 #11 #12 #13 #14 衣(i)[#4]
              a e i  o u un  or  yu  ci    ji    si    yi 
-陰平 1  分   - - -  - - -   -  -    雌cee 之jee 師see 衣yee       
-陰上 2  粉   h h ie u u en  oh -    此    指    使    倚 
-陰去 3  訓   h h ie u u en  oh -    次    至    試    意  
-陽平 4  焚   h h ie u u en  oh ue   持chi -     時sis 而yee
-陽上 5  憤   h h ie u u en  oh -    似    -     市    以 
-陽去 6  份   h h ie u u en  oh uu   -     自jiz 是siz 二yiz
+陰平 1  分   - - -  - - -   -   -   雌cee 之jee 師sze 衣yi      
+陰上 2  粉   h h ie u u en  oh  -   此    指    使    倚 
+陰去 3  訓   h h ie u u en  oh  -   次    至    試    意  
+陽平 4  焚   h h ie u u en  oh  ue  持chi -     時see 而yee
+陽上 5  憤   h h ie u u en  oh  -   似    -     市    以 
+陽去 6  份   h h ie u u en  oh  uu   -    自jiz 是siz 二yiz
 
 [#9]  a,e(1聲a,e，23456聲ah,eh)：ce車ceh且，ga加gah假價，ha哈hah吓霞夏，se些seh捨舍卸蛇社射
       (兩碼/常用字：ka家ha下je這者se寫)

@@ -2,4 +2,4 @@
 source ~/miniconda3/etc/profile.d/conda.sh
 conda activate py312
 ./uvall.sh
-jupyter lab
+jupyter lab --notebook-dir=/mnt/c/Ai
