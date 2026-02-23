@@ -55,6 +55,7 @@ ftfy
 gast
 google-pasta
 googleapis-common-protos
+gputil
 grpcio
 h11
 h5py
