@@ -1,6 +1,6 @@
 余氏輸入法3+3拼音編碼說明
-版本：二０二六年三月十六日
-余氏詞庫雙字詞拼音是3+3編碼。在103850雙字詞中，重碼26397，重碼率25%。方案利用以下三碼簡化、韻母和聲調變化以減少重碼。
+版本：二０二六年三月十八日
+余氏詞庫雙字詞拼音是3+3編碼。在103850雙字詞中，重碼26226，重碼率25%。方案利用以下三碼簡化、韻母和聲調變化以減少重碼。
 (一) 三碼簡化
 1. 通常取頭三碼，例：本boon-->boo，原yuen-->yue，廣gwong-->gwo，歸gwai-->gwa，骨gwet-->gwe，葵kwai-->kwa，困kwun-->kwu
 2. ang,eng,ing,ong,ung簡化為ag,eg,ig,on*,ug，例：等dang->dag，病beng->beg，定ding-->dig，劏tong-->tog，動dung-->dug。
@@ -43,9 +43,9 @@
           殺sat/失set，灣患wan/溫運wen，因忍印yen
       短音常用字跟隨港式習慣，例：民文man 雲wan 人仁yan，日逸yat。
 [#4]：衣(i)音的處理。單字i/ee可互用。為減少重碼，余氏3+3碼用聲調字母ee,iz(代替4,6聲)。
-      例：ci雌此chi次似cee持  ji之jie只jee志jiz自  si思shi使試see時shi市siz是  yi衣倚意yee兒yie已以yiz二
+      例：ci雌此chi次似cee持  ji之jie只jee志jiz自  si師shi使試see時shi市siz是  yi衣倚意yee兒yie已以yiz二
 [#5]：柯(or) 音余氏用or。單字保留oh共用。例：波bor，波boh。
-[#6]：奧(o)  音余氏也用o，但缺聲母的[奧澳]字拼成oh。例：oh啊柯奧澳，bo保寶報部
+[#6]：奧(o)  音余氏也用o，但缺聲母的[奧澳]字拼成oh。例：oh啊柯奧澳
 [#7]：烏(uː)、於(u)ː音余氏合併為(u)。例：胡wu，語yu 
 [#8]：碗(un) 音余氏一般用oon，例：goon官 boon般本胖，moon們滿悶。例外：mun門
       冤(un) 音余氏一般用uen，例：guen捐 yuen冤院怨遠願。例外：yun元完原員園潤閏圓源
@@ -54,7 +54,7 @@
 余氏單字拼音一般不分聲調。但為了減低重碼，余氏3+3組詞方案用了聲調字母e兒,z二(代替4,6聲)。
 調類  例字   #9 #10 #11  #12 #13 #14  衣(i)[#4]
              a e i  o  u  un  or  yu  ci    ji    si    yi 
-陰平 1  分   - - -  -  -  un  or  -   痴    之    思    衣     
+陰平 1  分   - - -  -  -  un  or  -   痴    之    師    衣     
 陰上 2  粉   h h ie ou uu en  oh  uu  此ci  只jie 使shi 倚yi 
 陰去 3  訓   h h ie ou uu en  oh  uu  次chi 志jee 試shi 意yi  
 陽平 4  焚   h h ie oe ue en  oh  ue  持cee -     時see 兒yee
