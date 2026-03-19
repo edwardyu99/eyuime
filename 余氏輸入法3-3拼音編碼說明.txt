@@ -1,6 +1,6 @@
 余氏輸入法3+3拼音編碼說明
-版本：二０二六年三月十八日
-余氏詞庫雙字詞拼音是3+3編碼。在103850雙字詞中，重碼26226，重碼率25%。方案利用以下三碼簡化、韻母和聲調變化以減少重碼。
+版本：二０二六年三月十九日
+余氏詞庫雙字詞拼音是3+3編碼。在103850雙字詞中，重碼26213，重碼率25%。方案利用以下三碼簡化、韻母和聲調變化以減少重碼。
 (一) 三碼簡化
 1. 通常取頭三碼，例：本boon-->boo，原yuen-->yue，廣gwong-->gwo，歸gwai-->gwa，骨gwet-->gwe，葵kwai-->kwa，困kwun-->kwu
 2. ang,eng,ing,ong,ung簡化為ag,eg,ig,on*,ug，例：等dang->dag，病beng->beg，定ding-->dig，劏tong-->tog，動dung-->dug。
@@ -14,7 +14,7 @@
    鍾chu(ng)，葉ip，金kam，郭國kwo(k)，關軍君kwa(n)，施史司sze，鄧tan(g)，曾tsa(ng)，謝tse，徐tsu(i)
    仔cha(i)，chi子，記kee，德tak，達tat，青tsi(ng)，荃tsu(en)，慈tsz
 7. 兩碼/常用字：(ca差ce車ci此co操cu處) (ka家ke騎ki奇ko高ku古) 
-   (ha下) (je這者se寫) (bi拜di大fi快mi買ni奶pi派ti太wi歪) (bo保寶部jo組mo毛無po普to土) (gu股)
+   (ha下ya也) (je這者se寫ye夜) (bi拜di大fi快mi買ni奶pi派ti太wi歪) (bo保寶jo組lo勞mo毛無po普to土) (fu府苦gu股)
        
 (二) 韻母
 啊#1 a       矮#1 ai      些   e         衣#4 i/ee    奧#6 o      烏於#7 u
@@ -67,9 +67,9 @@
       bi拜bie擺敗，di大獃die歹帶，fi快，gi街gie解介，hi嗨hie鞋孩械，li拉lie瀨，mi買mie賣埋，ni奶nie乃，
       pi派pie牌排，ti太呔tie泰，wi歪wie淮懷壞
       (cjs不分調，用ie: cie猜踩柴，jie齋債寨，sie嘥徙晒) 
-[#11] o奧  (1聲o，2356聲ou) bo煲，bou補報，poe葡toe圖，boz部步。(兩碼/常用字：bo保寶jo組mo毛無po普to土)
+[#11] o奧  (1聲o，235聲ou，4聲oe，6聲oz) bo煲，bou補報，poe葡toe圖，lou老，boz部步。
           *缺聲母的[奧澳]字拼成oh。
-      u烏  (1聲u，23456聲uu)：fu夫，fuu苦富乎婦父。
+      u烏  (1聲u，235聲uu，4聲ue，6聲uz)：fu夫，fuu虎富婦，fue乎，fuz父。
 [#12] un奀 (fgs第1聲un，其他en) 例：fun分/fen粉訓焚憤份，gun根/gen緊近，sun新/sen呻神慎，ben奔品殯笨 hen很痕恨
 [#13] or柯 (1聲or，23456聲oh)：cor初，coh楚錯鋤坐，sor疏，soh鎖傻。(常用字：jor左 hor可 sor所) 
 [#14] yu於 (1聲yu，235聲yuu，4聲yue，6聲yuz)。例：yu於，yuu瘀宇雨，yue如，yuz預。
