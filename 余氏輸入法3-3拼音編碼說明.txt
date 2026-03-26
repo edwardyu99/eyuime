@@ -1,12 +1,12 @@
 余氏輸入法3+3拼音編碼說明
-版本：二０二六年三月十九日
-余氏詞庫雙字詞拼音是3+3編碼。在103850雙字詞中，重碼26213，重碼率25%。方案利用以下三碼簡化、韻母和聲調變化以減少重碼。
+版本：二０二六年三月廿六日
+余氏詞庫雙字詞拼音是3+3編碼。在103850雙字詞中，重碼26106，重碼率25%。方案利用以下三碼簡化、韻母和聲調變化以減少重碼。
 (一) 三碼簡化
 1. 通常取頭三碼，例：本boon-->boo，原yuen-->yue，廣gwong-->gwo，歸gwai-->gwa，骨gwet-->gwe，葵kwai-->kwa，困kwun-->kwu
 2. ang,eng,ing,ong,ung簡化為ag,eg,ig,on*,ug，例：等dang->dag，病beng->beg，定ding-->dig，劏tong-->tog，動dung-->dug。
    *第1聲ong-->og，其餘ong-->on。例：劏房(togfon)。 常用字：光kog
 3. uet-->ut，例：月yuet-->yut
-4. ch和sh簡化為c和s，但以下用頭三碼：茶查cha，長詳che，曹cho，廚chu，sha沙，上常she，使試市shi(成shg)，數sho，信shu 
+4. ch和sh簡化為c和s，但以下常用字保留ch/sh成三碼：茶查cha，長詳che，子chi(情chg)，曹cho，廚chu，sha沙，上常she，使試市shi(成shg)，數sho，信shu 
    *第1聲eung-->eo(ng)。例：昌ceo，將jeo，香heo，相seo   相信(seoshu) 
 5. (藝額暗眼咬外岳)ngxx-->xx, e.g.藝ngai-->ai  例外：銀ngan-->un, (牛偶)ngau--ngu
 6. 香港姓氏及常用字取頭三碼。e.g.陳cha(n)，李lee，張che(ung)，黃won(g)，何ho，歐au，周cho(w)，
@@ -69,7 +69,7 @@
       (cjs不分調，用ie: cie猜踩柴，jie齋債寨，sie嘥徙晒) 
 [#11] o奧  (1聲o，235聲ou，4聲oe，6聲oz) bo煲，bou補報，poe葡toe圖，lou老，boz部步。
           *缺聲母的[奧澳]字拼成oh。
-      u烏  (1聲u，235聲uu，4聲ue，6聲uz)：fu夫，fuu虎富婦，fue乎，fuz父。
+      u烏  (1聲u，235聲uu，4聲ue，6聲uz)：fu夫，fuu虎富婦，fue乎，fuz父。su書suu鼠恕sue殊suz樹
 [#12] un奀 (fgs第1聲un，其他en) 例：fun分/fen粉訓焚憤份，gun根/gen緊近，sun新/sen呻神慎，ben奔品殯笨 hen很痕恨
 [#13] or柯 (1聲or，23456聲oh)：cor初，coh楚錯鋤坐，sor疏，soh鎖傻。(常用字：jor左 hor可 sor所) 
 [#14] yu於 (1聲yu，235聲yuu，4聲yue，6聲yuz)。例：yu於，yuu瘀宇雨，yue如，yuz預。
