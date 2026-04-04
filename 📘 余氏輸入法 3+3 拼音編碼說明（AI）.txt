@@ -1,0 +1,168 @@
+📘 余氏輸入法 3+3 拼音編碼說明
+
+版本：2026年3月26日
+
+余氏輸入法的雙字詞採用「3+3」編碼，即每字取三碼拼合。在收錄的103,850個雙字詞中，重碼有26,106組，重碼率約25%。為降低重碼，方案引入三碼簡化、韻母調整及聲調變化等規則。
+
+────────────────────────────────
+
+🔤 （一）三碼簡化
+
+🔹 1. 一般情況  
+   取頭三個字母  
+   例：本 boon → boo，原 yuen → yue，廣 gwong → gwo，歸 gwai → gwa，骨 gwet → gwe，葵 kwai → kwa，困 kwun → kwu
+
+🔹 2. ang、eng、ing、ong、ung 簡化  
+   改為 ag、eg、ig、on、ug  
+   例：等 dang → dag，病 beng → beg，定 ding → dig，劏 tong → tog，動 dung → dug  
+   第1聲 ong → og，其餘 ong → on  例：劏房（tog fon）。常用字拼法例外：光（kog）
+
+🔹 3. uet 簡化為 ut  
+   例：月 yuet → yut
+
+🔹 4. 聲母 ch、sh 簡化為 c、s，但以下常用字保留原形以維持三碼  
+   茶查 cha，長詳 che，子 chi（情 chg），曹 cho，廚 chu  
+   sha 沙，上常 she，使試市 shi（成 shg），數 sho，信 shu  
+   第1聲 eung 改為 eo（-ng 省略）  
+   例：昌 ceo，將 jeo，香 heo，相 seo → 相信（seo shu）
+
+🔹 5. ng- 聲母簡化  
+   藝、額、暗、眼、咬、外、岳等字的 ng- 省略  
+   例：藝 ngai → ai  
+   例外：銀 ngan → un，牛、偶 ngau → ngu
+
+🔹 6. 香港姓氏及常用字取頭三碼  
+   例：陳 cha(n)，李 lee，張 che(ung)，黃 won(g)，何 ho，歐 au，周 cho(w)，胡 wu，馬 ma，麥 mak，史 sze，廖 liu，林 lam，白 bak，蔡 tso(i)，鄭 che(ng)，蔣 chi(ang)，朱 chu，崔 chu(i)，鍾 chu(ng)，葉 ip，金 kam，郭、國 kwo(k)，關、軍、君 kwa(n)，施、史、司 sze，鄧 tan(g)，曾 tsa(ng)，謝 tse，徐 tsu(i)，仔 cha(i)，子 chi，記 kee，德 tak，達 tat，青 tsi(ng)，荃 tsu(en)，慈 tsz，任 yam
+
+🔹 7. 兩碼常用字  
+    ca 差、ce 車、ci 此、co 操、cu 處  
+    ka 家、ke 騎、ki 奇、ko 高、ku 古  
+    ha 下、ya 也  
+    je 這、者、se 寫、ye 夜  
+    bi 拜、di 大、fi 快、mi 買、ni 奶、pi 派、ti 太、wi 歪  
+    bo 保、寶、jo 組、lo 勞、mo 毛、無、po 普、to 土  
+    fu 府、苦、gu 股
+
+────────────────────────────────
+
+🎵 （二）韻母處理
+
+余氏輸入法在韻母上根據港式發音習慣作了對應調整，重點如下：
+┌─────┬──────┬─────┬─────┬──────┬──────┐
+│ 啊#1 a   │ 矮#1 ai    │ 些   e   │ 衣#4 i/ee│ 奧#6 o     │ 烏於#7 u   │
+│ 挨#2 ai/i│            │ 四   ei  │ 腰   iu  │ 柯#5 or/oh │ 煨   ui    │
+│ 啱   am  │ 庵   um    │ 尺   ek  │ 淹   im  │ 哀   oi    │ 銳   ui    │
+│ 晏#3 an  │ 奀#3 en/un │ 約 euk/ek│ 煙   in  │ 安   on    │ 屋   uk    │
+│ 罌   ang │ 贏   eng   │ 靴   euh │ 英   ing │ 骯   ong   │ 碗#8 oon/un│
+│ 鶯   ang │            │ 央  eung │ 葉   ip  │ 喝   ot    │ 冤#8 uen/un│
+│ 拗   ao  │ 歐   au    │          │ 熱   it  │ 惡   ok    │ 閏   un    │
+│          │            │          │ 益   ik  │            │ 瓮   ung   │
+│ 鴨   ap  │ 噏 ap/up   │          │          │            │ 活   ut    │
+│ 壓   at  │ 兀 at/et   │          │          │            │ 出   ut    │
+│ 軛   ak  │ 扼 ak/et   │          │          │            │ 劣   ut    │
+│          │            │          │          │            │ 律   ut    │
+│ 唔   ng  │ 吳   ng    │          │          │            │ 月 uet/ut  │
+└─────┴──────┴─────┴─────┴──────┴──────┘
+
+🔹 長短音 a  
+   長音「啊」簡寫為 a，短音「矮」保留 ai  
+   例：沙 sa，西 sai
+
+🔹 ai（挨）音  
+   可與 i / ie 共用，按聲調及字類分流  
+   - c、j、s 聲母字不分調，統一用 ie：cie 猜／踩／柴，jie 齋／債／寨，sie 嘥／徙／晒  
+   - 其他聲母：第1聲用 i，第2至6聲用 ie  
+     例：bi 拜，bie 擺／敗；di 大，die 歹／帶；gi 街，gie 解／介
+
+🔹 am、an、ao、ap、at、ak 短音化  
+   港式習慣轉為 um、en、au、up、et、ek  
+   例：三 sam → 心 sum，山 san → 身 sen，交 gao → 九 gau，圾 sap → 十 sup，察 cat → 七 cet，八 bat → 不 bet，百 bak → 北 bek
+
+🔹 i（衣）音  
+   i 與 ee 可互用，3+3 編碼中用 ee 或 iz 區分聲調  
+   例：ci 雌／此，chi 次／似，cee 持；ji 之，jie 只，jee 志，jiz 自
+
+🔹 or（柯）音  
+   第1聲用 or，第2至6聲用 oh  
+   例：波bor / 播boh / poh頗破婆  
+
+🔹 o（奧）音  
+   用 o，無聲母的「奧澳」拼為 oh
+
+🔹 u（烏）與 yu（於）  
+   合併為 u  
+   例：胡 wu，語 yu
+
+🔹 un（碗）音  
+   一般用 oon  
+   例：goon 官，boon 般／本／胖，moon 們／滿／悶  
+   例外：mun 門
+
+🔹 uen（冤）音  
+   一般用 uen  
+   例：guen 捐，yuen 冤／院／怨／遠／願  
+   例外：yun(4聲) 元／完／原／員／園／潤／閏／圓／源
+
+────────────────────────────────
+
+🎚️ （三）聲調標示
+
+余氏單字拼音一般不標聲調，但在 3+3 組詞中，為減少重碼，引入 e（兒）與 z（二）分別代表第4聲及第6聲。
+
+┌────┬───┬────────────────────┐
+│ 調類   │ 例字 │ 標示方式（以 i 音為例）                │
+├────┼───┼────────────────────┤
+│ 陰平 1 │ 分   │ ci  痴、ji  之、si  師、yi 衣          │
+│ 陰上 2 │ 粉   │ ci  此、jie 只、shi 使、yi 倚          │
+│ 陰去 3 │ 訓   │ chi 次、jee 志、shi 試、yi 意          │
+│ 陽平 4 │ 焚   │ cee 持、        see 時、yee 兒         │
+│ 陽上 5 │ 憤   │ chi 似、        shi 市、yie 已         │
+│ 陽去 6 │ 份   │         jiz 自、siz 是、yiz 二         │
+└────┴───┴────────────────────┘
+
+其他韻母的聲調引入 h (2至6聲)，及 u (2,3,5聲)。
+標示方式如下
+
+🔹 a / e 音  
+   第1聲用 a / e，第2至6聲用 ah / eh  
+   例：ce 車，ceh 且/斜；ga 加，gah 假／價
+
+🔹 i（挨）音  
+   第1聲用 i，第2至6聲用 ie  
+   例：bi 拜，bie 擺／敗
+
+🔹 o（奧）音  
+   第1聲用 o，第2、3、5聲用 ou，第4聲用 oe，第6聲用 oz  
+   例：bo 煲，bou 補／報，poe 葡，toe 圖，boz 部／步
+
+🔹 u（烏／於）音  
+   第1聲用 u，第2、3、5聲用 uu，第4聲用 ue，第6聲用 uz  
+   例：fu 夫，fuu 虎／富／婦，fue 乎，fuz 父
+
+🔹 un（奀）音  
+   f、g、s 聲母第1聲用 un，其餘用 en  
+   例：fun 分，fen 粉／訓／焚／憤／份
+
+🔹 or（柯）音  
+   第1聲用 or，第2至6聲用 oh  
+   例：cor 初，coh 楚／錯／鋤／坐
+
+────────────────────────────────
+
+📖 附：示例 ——《定風波》蘇軾
+
+以下為以余氏輸入法編碼標示的粵語拼音示例，方便對照理解實際應用：
+
+莫聽   穿林   打 葉聲 ， 何妨  吟嘯   且  徐行  。  
+moktig cuelam da ipsig h hofon yumsiu ceh tsuhag t
+ 
+竹杖   芒鞋   輕勝   馬， 誰怕 ？  一蓑   煙雨   任  平生  。  
+jukjeu moghie higsig ma h suipa uq yetsor yinyuu yam pigsag t
+
+料峭   春風   吹  酒醒  ， 微冷  ！  山頭   斜照   卻  相迎  。  
+liuciu cunfug cui jausig h meilag ul santau cehjiu kek seoyig t
+
+回首   向來   蕭瑟   處， 歸去  ；  也無 風雨   也無 晴 。  
+wuisau heuloi siuset cu h gwahui us yamo fugyuu yamo cig t
+
+────────────────────────────────

@@ -131,6 +131,7 @@ networkx
 notebook
 notebook-shim
 numexpr
+numpy
 nvidia-cublas-cu12
 nvidia-cuda-cccl-cu12
 nvidia-cuda-cupti-cu12
@@ -163,6 +164,8 @@ pandocfilters
 parso
 patsy
 pexpect
+pillow
+pillow
 plotext
 plotille
 plotly
