@@ -22,6 +22,7 @@ bottleneck
 bs4
 build
 cffi
+charset-normalizer
 choreographer
 click
 cloudpickle
