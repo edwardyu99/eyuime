@@ -1,6 +1,6 @@
 📘 余氏輸入法 3+3 拼音編碼說明
 
-版本：2026年3月26日
+版本：2026年4月14日  
 
 余氏輸入法的雙字詞採用「3+3」編碼，即每字取三碼拼合。在收錄的103,850個雙字詞中，重碼有26,106組，重碼率約25%。為降低重碼，方案引入三碼簡化、韻母調整及聲調變化等規則。
 
@@ -32,7 +32,7 @@
    例外：銀 ngan → un，牛、偶 ngau → ngu
 
 🔹 6. 香港姓氏及常用字取頭三碼  
-   例：陳 cha(n)，李 lee，張 che(ung)，黃 won(g)，何 ho，歐 au，周 cho(w)，胡 wu，馬 ma，麥 mak，史 sze，廖 liu，林 lam，白 bak，蔡 tso(i)，鄭 che(ng)，蔣 chi(ang)，朱 chu，崔 chu(i)，鍾 chu(ng)，葉 ip，金 kam，郭、國 kwo(k)，關、軍、君 kwa(n)，施、史、司 sze，鄧 tan(g)，曾 tsa(ng)，謝 tse，徐 tsu(i)，仔 cha(i)，子 chi，記 kee，德 tak，達 tat，青 tsi(ng)，荃 tsu(en)，慈 tsz，任 yam
+   例：陳 cha(n)，李 lee，張 che(ung)，黃 won(g)，何 ho，歐 au，周 cho(w)，胡 wu，馬 ma，麥 mak，史 sze，廖 liu，林 lam，白 bak，蔡 tso(i)，包 bau，鄭 che(ng)，蔣 chi(ang)，朱 chu，崔 chu(i)，鍾 chu(ng)，葉 ip，金 kam，郭、國 kwo(k)，關、軍、君 kwa(n)，施、史、司 sze，鄧 tan(g)，曾 tsa(ng)，謝 tse，徐 tsu(i)，仔 cha(i)，子 chi，記 kee，德 tak，達 tat，青 tsi(ng)，荃 tsu(en)，慈 tsz，任 yam
 
 🔹 7. 兩碼常用字  
     ca 差、ce 車、ci 此、co 操、cu 處  
@@ -40,7 +40,7 @@
     ha 下、ya 也  
     je 這、者、se 寫、ye 夜  
     bi 拜、di 大、fi 快、mi 買、ni 奶、pi 派、ti 太、wi 歪  
-    bo 保、寶、jo 組、lo 勞、mo 毛、無、po 普、to 土  
+    bo 保、寶、部、jo 組、lo 勞、mo 毛、無、po 普、to 土  
     fu 府、苦、gu 股
 
 ────────────────────────────────
@@ -132,15 +132,15 @@
    例：bi 拜，bie 擺／敗
 
 🔹 o（奧）音  
-   第1聲用 o，第2、3、5聲用 ou，第4聲用 oe，第6聲用 oz  
-   例：bo 煲，bou 補／報，poe 葡，toe 圖，boz 部／步
+   第1聲用 o，第2至6聲用 ou
+   例：bo 煲，bou 補／報／步
 
-🔹 u（烏／於）音  
-   第1聲用 u，第2、3、5聲用 uu，第4聲用 ue，第6聲用 uz  
-   例：fu 夫，fuu 虎／富／婦，fue 乎，fuz 父
+🔹 u（烏／於yu）音  
+   第1聲用 u，第2至6聲用 uu。(於yu音：第4聲yue，第4聲yuz)
+   例：fu 夫，fuu 虎／富／婦乎父
 
 🔹 un（奀）音  
-   f、g、s 聲母第1聲用 un，其餘用 en  
+   f、g、s 聲母第1聲用 un，第2至6聲用 en  
    例：fun 分，fen 粉／訓／焚／憤／份
 
 🔹 or（柯）音  
@@ -151,7 +151,7 @@
 
 📖 附：示例 ——《定風波》蘇軾
 
-以下為以余氏輸入法編碼標示的粵語拼音示例，方便對照理解實際應用：
+以下為以余氏輸入法編碼標示的粵語拼音示例：
 
 莫聽   穿林   打 葉聲 ， 何妨  吟嘯   且  徐行  。  
 moktig cuelam da ipsig h hofon yumsiu ceh tsuhag t
