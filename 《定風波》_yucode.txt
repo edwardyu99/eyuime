@@ -1,0 +1,20 @@
+{	{
+title: "定風波",	t i t l e :   " dig fugbor " ,
+author: "蘇軾",	a u t h o r :   " sosik " ,
+sentences: [	s e n t e n c e s :   [
+{ text: "莫聽穿林打葉聲，何妨吟嘯且徐行。	{   t e x t :   " moktig cuelam da ipsig ， hofon yumsiu ceh tsuhag 。
+", yucode: "dugfug yefon fa cin suu" },	" ,   y u c o d e :   " d u g f u g   y e f o n   f a   c i n   s u u "   } ,
+{ text: "竹杖芒鞋輕勝馬，誰怕？	{   t e x t :   " jukjeu moghie higsig ma ， suipa ？
+", yucode: "gag cuilok sig yueyuu" },	" ,   y u c o d e :   " g a g   c u i l o k   s i g   y u e y u u "   } ,
+{ text: "一蓑煙雨任平生。	{   t e x t :   " yetsor yinyuu yam pigsag 。
+", yucode: "boma diu ce heo moolou" },	" ,   y u c o d e :   " b o m a   d i u   c e   h e o   m o o l o u "   } ,
+{ text: "料峭春風吹酒醒，微冷！	{   t e x t :   " liuciu cunfug cui jausig ， meilag ！
+", yucode: "fugsiu sigdug yukwuu kogjue" },	" ,   y u c o d e :   " f u g s i u   s i g d u g   y u k w u u   k o g j u e "   } ,
+{ text: "山頭斜照卻相迎。	{   t e x t :   " santau cehjiu kek seoyig 。
+", yucode: "yetye yuelug mou" },	" ,   y u c o d e :   " y e t y e   y u e l u g   m o u "   } ,
+{ text: "回首向來蕭瑟處，歸去；	{   t e x t :   " wuisau heuloi siuset cu ， gwahui ；
+", yucode: "ngoyee sutlau wonkam lau" },	" ,   y u c o d e :   " n g o y e e   s u t l a u   w o n k a m   l a u "   } ,
+{ text: "也無風雨也無晴。	{   t e x t :   " yamo fugyuu yamo cig 。
+", yucode: "siuyu yigyig umheo hui" },	" ,   y u c o d e :   " s i u y u   y i g y i g   u m h e o   h u i "   } ,
+]	]
+},	} ,

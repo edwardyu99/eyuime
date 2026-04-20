@@ -75,13 +75,14 @@
         <label for="poemSelector">選擇練習曲目：</label>
         <select id="poemSelector">
             <option value="0">青玉案 · 元夕</option>
-            <option value="1">水調歌頭</option>
-            <option value="2">相見歡</option>
-            <option value="3">登高</option>
-            <option value="4">靜夜思</option>
-            <option value="5">花妖</option>
-            <option value="6">翩翩</option>
-            <option value="7">羅剎海市</option>
+	    <option value="1">定風波</option>
+            <option value="2">水調歌頭</option>
+            <option value="3">相見歡</option>
+            <option value="4">登高</option>
+            <option value="5">靜夜思</option>
+            <option value="6">花妖</option>
+            <option value="7">翩翩</option>
+            <option value="8">羅剎海市</option>
         </select>
     </div>
 
@@ -102,363 +103,426 @@
 
 <script>
     // --- 數據庫：在這裡新增或修改詩詞 ---
-    const allLibrary = [
-        {
-            title: "青玉案 · 元夕",
-            author: "辛棄疾",
-            sentences: [
-                { text: "東風夜放花千樹，", yucode: "dugfug yefon fa cin suu" },
-                { text: "更吹落、星如雨。", yucode: "gag cuilok sig yueyuu" },
-                { text: "寶馬雕車香滿路。", yucode: "boma diu ce heo moolou" },
-                { text: "鳳簫聲動，玉壺光轉，", yucode: "fugsiu sigdug yukwuu kogjue" },
-                { text: "一夜魚龍舞。", yucode: "yetye yuelug mou" },
-                { text: "蛾兒雪柳黃金縷，", yucode: "ngoyee sutlau wonkam lau" },
-                { text: "笑語盈盈暗香去。", yucode: "siuyu yigyig umheo hui" },
-                { text: "眾裏尋他千百度，", yucode: "juglct" },
-                { text: "驀然回首，那人卻在，", yucode: "makyin wuisau nayan kekjoi" },
-                { text: "燈火闌珊處。", yucode: "dagfo lansan cu" }
-            ]
-        },
-
-
-    {
-        "title": "水調歌頭",
-        "author": "蘇軾",
-        "sentences": [
-            {
-                "text": "明月幾時有？把酒問青天。",
-                "yucode": "mig yut gei see yau uq ba jau men tsi tin t"
-            },
-            {
-                "text": "不知天上宮闕，今夕是何年。",
-                "yucode": "bet ji tin she gug kut h gum jik siz ho nin t"
-            },
-            {
-                "text": "我欲乘風歸去，又恐瓊樓玉宇，",
-                "yucode": "ngo yuk sig fug gwa hui h yau hug kig lau yuk yuu h"
-            },
-            {
-                "text": "高處不勝寒。",
-                "yucode": "ko cu bet sig hon t"
-            },
-            {
-                "text": "起舞弄清影，何似在人間。",
-                "yucode": "hei mou lug cig yig h ho chi joi yan gan t"
-            },
-            {
-                "text": "轉朱閣，低綺戶，照無眠。",
-                "yucode": "jue chu gok h dai yi wuu h jiu mo min t"
-            },
-            {
-                "text": "不應有恨，何事長向別時圓？",
-                "yucode": "bet yig yau hen h ho siz che heu bit see yun uq"
-            },
-            {
-                "text": "人有悲歡離合，月有陰晴圓缺，",
-                "yucode": "yan yau bei foo lei hap h yut yau yum cig yun kut h"
-            },
-            {
-                "text": "此事古難全。",
-                "yucode": "ci siz ku nan cue t"
-            },
-            {
-                "text": "但願人長久，千里共嬋娟。",
-                "yucode": "dan yue yan che gau h cin lei gug sim gue t"
-            }
-        ]
-    },
-    {
-        "title": "相見歡",
-        "author": "李煜",
-        "sentences": [
-            {
-                "text": "無言獨上西樓，月如鉤。",
-                "yucode": "mo yin duk she sai lau h yut yue au t"
-            },
-            {
-                "text": "寂寞梧桐深院鎖清秋。",
-                "yucode": "jik mok ng tug sum yue sor cig cau t"
-            },
-            {
-                "text": "剪不斷，理還亂，是離愁。",
-                "yucode": "jin bet due h lei wan lue h siz lei sau t"
-            },
-            {
-                "text": "別是一般滋味在心頭。",
-                "yucode": "bit siz yet boo ji mei joi sum tau t"
-            }
-        ]
-    },
-    {
-        "title": "登高",
-        "author": "杜甫",
-        "sentences": [
-            {
-                "text": "風急天高猿嘯哀，",
-                "yucode": "fug gup tin ko yun siu oi h"
-            },
-            {
-                "text": "渚清沙白鳥飛迴。",
-                "yucode": "渚 cig sha bak niu fei wui t"
-            },
-            {
-                "text": "無邊落木蕭蕭下，",
-                "yucode": "mo bin lok muk siu siu ha h"
-            },
-            {
-                "text": "不盡長江滾滾來。",
-                "yucode": "bet jun che gog gwu gwu loi t"
-            },
-            {
-                "text": "萬里悲秋常作客，",
-                "yucode": "man lei bei cau she jok hak h"
-            },
-            {
-                "text": "百年多病獨登臺。",
-                "yucode": "bak nin dor beg duk dag toi t"
-            },
-            {
-                "text": "艱難苦恨繁霜鬢，",
-                "yucode": "gan nan fu hen fan seo ben h"
-            },
-            {
-                "text": "潦倒新停濁酒杯。",
-                "yucode": "liu dou sun tig juk jau bui t"
-            }
-        ]
-    },
-    {
-        "title": "靜夜思",
-        "author": "李白",
-        "sentences": [
-            {
-                "text": "床前明月光，",
-                "yucode": "con cin mig yut kog h"
-            },
-            {
-                "text": "疑是地上霜。",
-                "yucode": "yee siz dei she seo t"
-            },
-            {
-                "text": "舉頭望明月，",
-                "yucode": "gui tau mon mig yut h"
-            },
-            {
-                "text": "低頭思故鄉。",
-                "yucode": "dai tau si guu heo t"
-            }
-        ]
-    },
-    {
-        "title": "花妖",
-        "author": "刀郎",
-        "sentences": [
-            {
-                "text": "我是那年輪上流浪的眼淚，",
-                "yucode": "ngo siz na nin lun she lau lon dik an lui h"
-            },
-            {
-                "text": "妳仍然能聞到風中的胭脂味。",
-                "yucode": "nei yig yin nag men dou fug jug dik yin ji mei t"
-            },
-            {
-                "text": "我若是將諾言刻在那江畔上，",
-                "yucode": "ngo yek siz jeo nok yin hak joi na gog boo she h"
-            },
-            {
-                "text": "一江水冷月光滿城的汪洋。",
-                "yucode": "yet gog sui lag yut kog moo sig dik wog yeu t"
-            },
-            {
-                "text": "我在時間的樹下等了妳很久，",
-                "yucode": "ngo joi see gan dik suu ha dag liu nei hen gau h"
-            },
-            {
-                "text": "塵凡兒纏我謗我笑我白了頭。",
-                "yucode": "can fan yee cin ngo pon ngo siu ngo bak liu tau t"
-            },
-            {
-                "text": "妳看那天邊追逐落日的紙鳶，",
-                "yucode": "nei hon na tin bin jui juk lok yat dik jie yue h"
-            },
-            {
-                "text": "像一盞回首道別夤夜的風燈。",
-                "yucode": "jeu yet jan wui sau dou bit yen ye dik fug dag t"
-            },
-            {
-                "text": "我的心似流沙放逐在車轍旁，",
-                "yucode": "ngo dik sum chi lau sha fon juk joi ce cit pon h"
-            },
-            {
-                "text": "他日妳若再返必顛沛在世上。",
-                "yucode": "ta yat nei yek joi fan bit din pui joi sai she t"
-            },
-            {
-                "text": "若遇那秋夜雨倦鳥也淋淋，",
-                "yucode": "yek yuz na cau ye yuu gue niu ya lum lum h"
-            },
-            {
-                "text": "那卻是花墻下彌留的枯黃。",
-                "yucode": "na kek siz fa 墻 ha nei lau dik fu won t"
-            },
-            {
-                "text": "君住在錢塘東，妾在臨安北。",
-                "yucode": "kwa juu joi cin ton dug h cip joi lum on bek t"
-            },
-            {
-                "text": "君去時褐衣紅，小奴家腰上黃。",
-                "yucode": "kwa hui see hot yi hug h siu nou ka yiu she won t"
-            },
-            {
-                "text": "尋差了羅盤經，錯投在泉亭。",
-                "yucode": "cum ca liu law poo gig h coh tau joi cue tig t"
-            },
-            {
-                "text": "奴輾轉到杭城，君又生余杭。",
-                "yucode": "nou jin jue dou hog sig h kwa yau sag yue hog t"
-            }
-        ]
-    },
-    {
-        "title": "翩翩",
-        "author": "刀郎",
-        "sentences": [
-            {
-                "text": "誰不是錯過了四下報更的鼓聲，",
-                "yucode": "sui bet siz coh gwo liu sei ha bou gag dik guu sig h"
-            },
-            {
-                "text": "總有人偷偷撥弄鏡月的指針。",
-                "yucode": "jug yau yan tau tau but lug geg yut dik jie jum t"
-            },
-            {
-                "text": "罌缶的酒瓶化來綺紈與樓閣，",
-                "yucode": "ang fau dik jau pig fah loi yi yun yu lau gok h"
-            },
-            {
-                "text": "綠芭蕉紅櫻桃孑然一身的過來人。",
-                "yucode": "luk ba jiu hug yig tou kit yin yet sun dik gwo loi yan t"
-            },
-            {
-                "text": "未曾走到絕境路彼岸花不開，",
-                "yucode": "mei tsa jau dou jut gig lou pei on fa bet hoi h"
-            },
-            {
-                "text": "辛酸只為長安遠倒臥在瓊臺。",
-                "yucode": "sun sue jie wai che on yue dou ngo joi kig toi t"
-            },
-            {
-                "text": "小心那流射的海市售賣開花杖，",
-                "yucode": "siu sum na lau seh dik hoi shi sau mie hoi fa jeu h"
-            },
-            {
-                "text": "遼遙的天河啊紛紛流淌的挽歌郎。",
-                "yucode": "liu yiu dik tin hoh ah fun fun lau ton dik wan gor lon t"
-            },
-            {
-                "text": "藍採和啊，醉酒當歌，",
-                "yucode": "lam coi wo ah h jui jau dog gor h"
-            },
-            {
-                "text": "紅顏易老轉眼桑田泛清波。",
-                "yucode": "hug an yiz lou jue an sog tin fan cig bor t"
-            },
-            {
-                "text": "她也曾是越過了銀河萬裏的荒原，",
-                "yucode": "ta ya tsa siz yut gwo liu un hoh man lui dik fog yun h"
-            },
-            {
-                "text": "他也曾是劃破了絢爛流落在人間。",
-                "yucode": "ta ya tsa siz wak poh liu hue lan lau lok joi yan gan t"
-            },
-            {
-                "text": "唯有那不眠的憑欄與情仇依捨，",
-                "yucode": "wai yau na bet min dik pag lan yu chg sau yi seh h"
-            },
-            {
-                "text": "是雲搖是雨散都在同一個搖籃。",
-                "yucode": "siz wan yiu siz yuu san do joi tug yet goh yiu lam t"
-            },
-            {
-                "text": "邯鄲夢啊古今同，",
-                "yucode": "hon dan mug ah ku gum tug h"
-            },
-            {
-                "text": "榮華易去青山處處英雄冢。",
-                "yucode": "wig wah yiz hui tsi san cu cu yig hug cug t"
-            }
-        ]
-    },
-    {
-        "title": "羅剎海市",
-        "author": "刀郎",
-        "sentences": [
-            {
-                "text": "羅剎國向東兩萬六千里，",
-                "yucode": "law sat kwo heu dug leu man luk cin lei h"
-            },
-            {
-                "text": "過七沖越焦海三寸的黃泥地。",
-                "yucode": "gwo cet cug yut jiu hoi sam cue dik won nai dei t"
-            },
-            {
-                "text": "只為那有一條一丘河，河水流過苟苟營。",
-                "yucode": "jie wai na yau yet tiu yet yau hoh h hoh sui lau gwo gau gau yig t"
-            },
-            {
-                "text": "苟苟營當家的叉桿兒喚作馬戶。",
-                "yucode": "gau gau yig dog ka dik ca gon yee woo jok ma wuu t"
-            },
-            {
-                "text": "她兩耳傍肩三孔鼻，未曾開言先轉腚。",
-                "yucode": "ta leu yie bon gin sam hug bei h mei tsa hoi yin sin jue dig t"
-            },
-            {
-                "text": "那馬戶不知道他是一頭驢，",
-                "yucode": "na ma wuu bet ji dou ta siz yet tau lou h"
-            },
-            {
-                "text": "那又鳥不知道他是一隻雞。",
-                "yucode": "na yau niu bet ji dou ta siz yet jek gai t"
-            },
-            {
-                "text": "勾欄從來扮高雅，自古公公好威名。",
-                "yucode": "au lan cug loi ban ko nga h jiz ku gug gug ho wai mig t"
-            },
-            {
-                "text": "打西邊來了一個小夥兒他叫馬驥。",
-                "yucode": "da sai bin loi liu yet goh siu for yee ta giu ma kei t"
-            },
-            {
-                "text": "只為他人海泛舟搏風打浪，龍遊險灘流落惡地。",
-                "yucode": "jie wai ta yan hoi fan jau bok fug da lon h lug yau him tan lau lok ok dei t"
-            },
-            {
-                "text": "他見這羅剎國裏常顛倒，馬戶愛聽那又鳥的曲。",
-                "yucode": "ta gin je law sat kwo lui she din dou h ma wuu oi tig na yau niu dik kuk t"
-            },
-            {
-                "text": "它紅描翅那個黑畫皮，綠繡雞冠金鑲蹄。",
-                "yucode": "ta hug miu chi na goh hak wah pei h luk sau gai goo kam seo tai t"
-            },
-            {
-                "text": "可是那從來煤蛋兒生來就黑，不管妳咋樣洗呀那也是個臟東西。",
-                "yucode": "hor siz na cug loi mui dan yee sag loi jau hak h bet goo nei jah yeu sai nga na ya siz goh jon dug sai t"
-            },
-            {
-                "text": "愛字有心心有好歹，百樣愛也有千樣的壞。",
-                "yucode": "oi jiz yau sum sum yau ho die h bak yeu oi ya yau cin yeu dik wie t"
-            },
-            {
-                "text": "西邊的歐鋼有老闆，生兒維特根斯坦。",
-                "yucode": "sai bin dik au gog yau lou ban h sag yee wai dak gun si tan t"
-            },
-            {
-                "text": "那馬戶又鳥，是我們人類根本的問題。",
-                "yucode": "na ma wuu yau niu h siz ngo moo yan lui gun boo dik men tai t"
-            }
-        ]
-    }
+    const allLibrary = 
+[
+  {
+    "title": "青玉案 · 元夕",
+    "author": "辛棄疾",
+    "sentences": [
+      {
+        "text": "東風夜放花千樹，",
+        "yucode": "dugfug yefon fa cin suu h"
+      },
+      {
+        "text": "更吹落、星如雨。",
+        "yucode": "gag cuilok 、 sig yueyuu t"
+      },
+      {
+        "text": "寶馬雕車香滿路。",
+        "yucode": "boma diu ce heo moolou t"
+      },
+      {
+        "text": "鳳簫聲動，玉壺光轉，",
+        "yucode": "fugsiu sigdug h yukwuu kogjue h"
+      },
+      {
+        "text": "一夜魚龍舞。",
+        "yucode": "yetye yuelug mou t"
+      },
+      {
+        "text": "蛾兒雪柳黃金縷，",
+        "yucode": "ngoyee sutlau wonkam lau h"
+      },
+      {
+        "text": "笑語盈盈暗香去。",
+        "yucode": "siuyu yigyig umheo hui t"
+      },
+      {
+        "text": "眾裏尋他千百度，",
+        "yucode": "juglct h"
+      },
+      {
+        "text": "驀然回首，那人卻在，",
+        "yucode": "makyws h nayan kekjoi h"
+      },
+      {
+        "text": "燈火闌珊處。",
+        "yucode": "dagfo lansan cu t"
+      }
+    ]
+  },
+  {
+    "title": "定風波",
+    "author": "蘇軾",
+    "sentences": [
+      {
+        "text": "莫聽穿林打葉聲，何妨吟嘯且徐行。",
+        "yucode": "moktig cuelam da ipsig h hofon yumsiu ceh tsuhag t"
+      },
+      {
+        "text": "竹杖芒鞋輕勝馬，誰怕？",
+        "yucode": "jukjeu moghie higsig ma h suipa uq"
+      },
+      {
+        "text": "一蓑煙雨任平生。",
+        "yucode": "yetsor yinyuu yam pigsag t"
+      },
+      {
+        "text": "料峭春風吹酒醒，微冷！",
+        "yucode": "liuciu cunfug cui jausig h meilag ul"
+      },
+      {
+        "text": "山頭斜照卻相迎。",
+        "yucode": "santau cehjiu kek seoyig t"
+      },
+      {
+        "text": "回首向來蕭瑟處，歸去；",
+        "yucode": "wuisau heuloi siuset cu h gwahui us"
+      },
+      {
+        "text": "也無風雨也無晴。",
+        "yucode": "yamo fugyuu yamo cig t"
+      }
+    ]
+  },
+  {
+    "title": "水調歌頭",
+    "author": "蘇軾",
+    "sentences": [
+      {
+        "text": "明月幾時有？把酒問青天。",
+        "yucode": "migyut geisy uq bajau men tsitin t"
+      },
+      {
+        "text": "不知天上宮闕，今夕是何年。",
+        "yucode": "betji tinshe gugkut h gumjik siz honin t"
+      },
+      {
+        "text": "我欲乘風歸去，又恐瓊樓玉宇，",
+        "yucode": "ngoyuk sigfug gwahui h yauhug kiglyy h"
+      },
+      {
+        "text": "高處不勝寒。",
+        "yucode": "kocbsh t"
+      },
+      {
+        "text": "起舞弄清影，何似在人間。",
+        "yucode": "heimou lugcig yig h hochi joi yangan t"
+      },
+      {
+        "text": "轉朱閣，低綺戶，照無眠。",
+        "yucode": "jue chugok h dai yiwuu h jiu momin t"
+      },
+      {
+        "text": "不應有恨，何事長向別時圓？",
+        "yucode": "betyig yauhen h hosiz cheheu bitsee yun uq"
+      },
+      {
+        "text": "人有悲歡離合，月有陰晴圓缺，",
+        "yucode": "yanyau beiflh h yutyau yumcyk h"
+      },
+      {
+        "text": "此事古難全。",
+        "yucode": "cisiz ku nancue t"
+      },
+      {
+        "text": "但願人長久，千里共嬋娟。",
+        "yucode": "danyue yan chegau h cinlei gug simgue t"
+      }
+    ]
+  },
+  {
+    "title": "相見歡",
+    "author": "李煜",
+    "sentences": [
+      {
+        "text": "無言獨上西樓，月如鉤。",
+        "yucode": "moyin dukshe sailau h yut yueau t"
+      },
+      {
+        "text": "寂寞梧桐深院鎖清秋。",
+        "yucode": "jikmok ngtug sum yue sor cigcau t"
+      },
+      {
+        "text": "剪不斷，理還亂，是離愁。",
+        "yucode": "jin betdue h lei wan lue h siz leisau t"
+      },
+      {
+        "text": "別是一般滋味在心頭。",
+        "yucode": "bitsiz yetboo jimei joist t"
+      }
+    ]
+  },
+  {
+    "title": "登高",
+    "author": "杜甫",
+    "sentences": [
+      {
+        "text": "風急天高猿嘯哀，",
+        "yucode": "fug gup tinko yun siu oi h"
+      },
+      {
+        "text": "渚清沙白鳥飛迴。",
+        "yucode": "渚 cig sha bak niu fei wui t"
+      },
+      {
+        "text": "無邊落木蕭蕭下，",
+        "yucode": "mobin lok muk siusiu ha h"
+      },
+      {
+        "text": "不盡長江滾滾來。",
+        "yucode": "betjun chegog gwugwu loi t"
+      },
+      {
+        "text": "萬里悲秋常作客，",
+        "yucode": "manlei bei cau she jokhak h"
+      },
+      {
+        "text": "百年多病獨登臺。",
+        "yucode": "baknin dorbeg duk dag toi t"
+      },
+      {
+        "text": "艱難苦恨繁霜鬢，",
+        "yucode": "gannan fu hen fan seoben h"
+      },
+      {
+        "text": "潦倒新停濁酒杯。",
+        "yucode": "liudou sun tig jukjau bui t"
+      }
+    ]
+  },
+  {
+    "title": "靜夜思",
+    "author": "李白",
+    "sentences": [
+      {
+        "text": "床前明月光，",
+        "yucode": "concin migyut kog h"
+      },
+      {
+        "text": "疑是地上霜。",
+        "yucode": "yeesiz deishe seo t"
+      },
+      {
+        "text": "舉頭望明月，",
+        "yucode": "guitau monmig yut h"
+      },
+      {
+        "text": "低頭思故鄉。",
+        "yucode": "daitau si guuheo t"
+      }
+    ]
+  },
+  {
+    "title": "花妖",
+    "author": "刀郎",
+    "sentences": [
+      {
+        "text": "我是那年輪上流浪的眼淚，",
+        "yucode": "ngosiz nanin lun shelau lon dik anlui h"
+      },
+      {
+        "text": "妳仍然能聞到風中的胭脂味。",
+        "yucode": "nei yigyin nag mendou fugjug dik yinji mei t"
+      },
+      {
+        "text": "我若是將諾言刻在那江畔上，",
+        "yucode": "ngoyek siz jeo nokyin hak joina gog boo she h"
+      },
+      {
+        "text": "一江水冷月光滿城的汪洋。",
+        "yucode": "yet gogsui lag yutkog moosig dik wogyeu t"
+      },
+      {
+        "text": "我在時間的樹下等了妳很久，",
+        "yucode": "ngojoi seegan dik suuha dagliu nei hengau h"
+      },
+      {
+        "text": "塵凡兒纏我謗我笑我白了頭。",
+        "yucode": "can fan yee cin ngo pon ngo siungo bak liu tau t"
+      },
+      {
+        "text": "妳看那天邊追逐落日的紙鳶，",
+        "yucode": "nei hon natin bin juijuk lokyat dik jieyue h"
+      },
+      {
+        "text": "像一盞回首道別夤夜的風燈。",
+        "yucode": "jeu yet jan wuisau doubit yenye dik fug dag t"
+      },
+      {
+        "text": "我的心似流沙放逐在車轍旁，",
+        "yucode": "ngods chi lausha fonjuk joi ce cit pon h"
+      },
+      {
+        "text": "他日妳若再返必顛沛在世上。",
+        "yucode": "tayat nei yekjoi fan bit din pui joisai she t"
+      },
+      {
+        "text": "若遇那秋夜雨倦鳥也淋淋，",
+        "yucode": "yek yuz na cau ye yuu gue niu ya lum lum h"
+      },
+      {
+        "text": "那卻是花墻下彌留的枯黃。",
+        "yucode": "na kek siz fa 墻 ha neilau dik fuwon t"
+      },
+      {
+        "text": "君住在錢塘東，妾在臨安北。",
+        "yucode": "kwa juujoi cinton dug h cip joi lum on bek t"
+      },
+      {
+        "text": "君去時褐衣紅，小奴家腰上黃。",
+        "yucode": "kwa hui see hot yi hug h siu nouka yiu she won t"
+      },
+      {
+        "text": "尋差了羅盤經，錯投在泉亭。",
+        "yucode": "cum ca liu lawpoo gig h coh tau joi cue tig t"
+      },
+      {
+        "text": "奴輾轉到杭城，君又生余杭。",
+        "yucode": "nou jinjue dou hog sig h kwa yau sag yue hog t"
+      }
+    ]
+  },
+  {
+    "title": "翩翩",
+    "author": "刀郎",
+    "sentences": [
+      {
+        "text": "誰不是錯過了四下報更的鼓聲，",
+        "yucode": "sui betsiz cohgl seiha bougag dik guusig h"
+      },
+      {
+        "text": "總有人偷偷撥弄鏡月的指針。",
+        "yucode": "jugyau yan tautau butlug geg yut dik jiejum t"
+      },
+      {
+        "text": "罌缶的酒瓶化來綺紈與樓閣，",
+        "yucode": "angfau dik jaupig fah loi yiyun yu laugok h"
+      },
+      {
+        "text": "綠芭蕉紅櫻桃孑然一身的過來人。",
+        "yucode": "luk bajiu hug yigtou kityys dik gwoly t"
+      },
+      {
+        "text": "未曾走到絕境路彼岸花不開，",
+        "yucode": "meitsa jaudou jutgig lou peion fa bethoi h"
+      },
+      {
+        "text": "辛酸只為長安遠倒臥在瓊臺。",
+        "yucode": "sunsue jie wai cheon yue doungo joi kig toi t"
+      },
+      {
+        "text": "小心那流射的海市售賣開花杖，",
+        "yucode": "siusum na lau seh dik hoishi sau mie hoifa jeu h"
+      },
+      {
+        "text": "遼遙的天河啊紛紛流淌的挽歌郎。",
+        "yucode": "liu yiu dik tinhoh ah funfun lauton dik wangor lon t"
+      },
+      {
+        "text": "藍採和啊，醉酒當歌，",
+        "yucode": "lam coi wo ah h juijau dog gor h"
+      },
+      {
+        "text": "紅顏易老轉眼桑田泛清波。",
+        "yucode": "hugan yizlou juean sogtin fan cigbor t"
+      },
+      {
+        "text": "她也曾是越過了銀河萬裏的荒原，",
+        "yucode": "taya tsa siz yutgwo liu unhoh man lui dik fogyun h"
+      },
+      {
+        "text": "他也曾是劃破了絢爛流落在人間。",
+        "yucode": "taya tsa siz wakpoh liu huelan laulok joi yangan t"
+      },
+      {
+        "text": "唯有那不眠的憑欄與情仇依捨，",
+        "yucode": "waiyau nabet min dik pag lan yu chgsau yi seh h"
+      },
+      {
+        "text": "是雲搖是雨散都在同一個搖籃。",
+        "yucode": "siz wan yiu siz yuu san dojoi tugyg yiulam t"
+      },
+      {
+        "text": "邯鄲夢啊古今同，",
+        "yucode": "hondan mug ah kugum tug h"
+      },
+      {
+        "text": "榮華易去青山處處英雄冢。",
+        "yucode": "wigwah yizhui tsisan cucu yighug cug t"
+      }
+    ]
+  },
+  {
+    "title": "羅剎海市",
+    "author": "刀郎",
+    "sentences": [
+      {
+        "text": "羅剎國向東兩萬六千里，",
+        "yucode": "lawsat kwo heudug leuman lukcin lei h"
+      },
+      {
+        "text": "過七沖越焦海三寸的黃泥地。",
+        "yucode": "gwo cet cug yut jiu hoi samcue dik wonnai dei t"
+      },
+      {
+        "text": "只為那有一條一丘河，河水流過苟苟營。",
+        "yucode": "jie wai na yauyt yet yau hoh h hohsui laugwo gau gau yig t"
+      },
+      {
+        "text": "苟苟營當家的叉桿兒喚作馬戶。",
+        "yucode": "gau gau yig dogka dik ca gon yee woo jok ma wuu t"
+      },
+      {
+        "text": "她兩耳傍肩三孔鼻，未曾開言先轉腚。",
+        "yucode": "ta leu yie bon gin sam hug bei h meitsa hoiyin sin juedig t"
+      },
+      {
+        "text": "那馬戶不知道他是一頭驢，",
+        "yucode": "nama wuu betjd tasy tau lou h"
+      },
+      {
+        "text": "那又鳥不知道他是一隻雞。",
+        "yucode": "na yau niu betjd tasy jek gai t"
+      },
+      {
+        "text": "勾欄從來扮高雅，自古公公好威名。",
+        "yucode": "aulan cugloi ban konga h jizku guggug ho waimig t"
+      },
+      {
+        "text": "打西邊來了一個小夥兒他叫馬驥。",
+        "yucode": "dasai bin loi liu yetgoh siu for yee tagiu ma kei t"
+      },
+      {
+        "text": "只為他人海泛舟搏風打浪，龍遊險灘流落惡地。",
+        "yucode": "jie waita yanhoi fanjau bok fug da lon h lug yau himtan laulok ok dei t"
+      },
+      {
+        "text": "他見這羅剎國裏常顛倒，馬戶愛聽那又鳥的曲。",
+        "yucode": "tagin je lawsat kwo lui she dindou h ma wuu oitig na yau niu dik kuk t"
+      },
+      {
+        "text": "它紅描翅那個黑畫皮，綠繡雞冠金鑲蹄。",
+        "yucode": "ta hug miu chi nagoh hak wahpei h luk sau gaigoo kam seo tai t"
+      },
+      {
+        "text": "可是那從來煤蛋兒生來就黑，不管妳咋樣洗呀那也是個臟東西。",
+        "yucode": "horsiz na cugloi muidan yee sagloi jau hak h betgoo nei jahyeu sai nga nays goh jon dugsai t"
+      },
+      {
+        "text": "愛字有心心有好歹，百樣愛也有千樣的壞。",
+        "yucode": "oi jiz yausum sum yauho die h bakyeu oi yayau cinyeu dik wie t"
+      },
+      {
+        "text": "西邊的歐鋼有老闆，生兒維特根斯坦。",
+        "yucode": "saibin dik au gog yau louban h sag yee waidgs t"
+      },
+      {
+        "text": "那馬戶又鳥，是我們人類根本的問題。",
+        "yucode": "nama wuu yau niu h siznm yanlui gunboo dik mentai t"
+      }
+    ]
+  }
 ]
     let currentPoem = allLibrary[0];
     let userAnswers = {};

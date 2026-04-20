@@ -1,0 +1,36 @@
+[
+    {
+        "title": "定風波",
+        "author": "蘇軾",
+        "sentences": [
+            {
+                "text": "莫聽穿林打葉聲，何妨吟嘯且徐行。",
+                "yucode": "moktig cuelam da ipsig h hofon yumsiu ceh tsuhag t"
+            },
+            {
+                "text": "竹杖芒鞋輕勝馬，誰怕？",
+                "yucode": "jukjeu moghie higsig ma h suipa uq"
+            },
+            {
+                "text": "一蓑煙雨任平生。",
+                "yucode": "yetsor yinyuu yam pigsag t"
+            },
+            {
+                "text": "料峭春風吹酒醒，微冷！",
+                "yucode": "liuciu cunfug cui jausig h meilag ul"
+            },
+            {
+                "text": "山頭斜照卻相迎。",
+                "yucode": "santau cehjiu kek seoyig t"
+            },
+            {
+                "text": "回首向來蕭瑟處，歸去；",
+                "yucode": "wuisau heuloi siuset cu h gwahui us"
+            },
+            {
+                "text": "也無風雨也無晴。",
+                "yucode": "yamo fugyuu yamo cig t"
+            }
+        ]
+    }
+]

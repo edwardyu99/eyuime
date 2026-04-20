@@ -159,6 +159,7 @@ optree
 orjson
 outcome
 overrides
+packaging
 panda
 pandas
 pandocfilters
@@ -167,6 +168,7 @@ patsy
 pexpect
 pillow
 pillow
+platformdirs
 plotext
 plotille
 plotly
@@ -275,4 +277,5 @@ wsproto
 xgboost
 xyzservices
 yarl
+zipp
 zstandard

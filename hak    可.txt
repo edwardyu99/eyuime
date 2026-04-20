@@ -1,0 +1,14 @@
+hak    可
+ho     可
+woo    惡
+wu     惡
+
+C:\Users\Dad\OneDrive\eyuime>python yus_sort_code_special.py yus_reneeyu_head.txt
+--------------------------------------------------
+TONE 表： jyutping.txt
+RANK 表： cuhk_ch_rank_7000i.txt
+輸入   (code char)                   : yus_reneeyu_head.txt  (12201 字)
+輸出 1 (code char tone rank)：yus_reneeyu_head_special.txt   (12201 字)
+輸出 2 (簡潔版)：yus_reneeyu_head_special2.txt
+排序邏輯：全局跨組聲調掃描 (1,2,3,4,5,6,1,2,3) 循環
+--------------------------------------------------

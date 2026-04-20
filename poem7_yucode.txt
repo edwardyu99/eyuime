@@ -1,0 +1,230 @@
+{	{
+"title": "水調歌頭",	" t i t l e " :   " suidgt " ,
+"author": "蘇軾",	" a u t h o r " :   " sosik " ,
+"sentences": [	" s e n t e n c e s " :   [
+{ "text": "明月幾時有？把酒問青天。	{   " t e x t " :   " migyut geisy ？ bajau men tsitin 。
+", "yucode": "mig yut gei see yau ba jau men tsi tin" },	" ,   " y u c o d e " :   " m i g   y u t   g e i   s e e   y a u   b a   j a u   m e n   t s i   t i n "   } ,
+{ "text": "不知天上宮闕，今夕是何年。	{   " t e x t " :   " betji tinshe gugkut ， gumjik siz honin 。
+", "yucode": "bet zi tin she gug kut gum jik siz ho nin" },	" ,   " y u c o d e " :   " b e t   z i   t i n   s h e   g u g   k u t   g u m   j i k   s i z   h o   n i n "   } ,
+{ "text": "我欲乘風歸去，又恐瓊樓玉宇，	{   " t e x t " :   " ngo
+", "yucode": "ngo yuk sig	yuk sigfug gwahui ， yauhu
+fug gwa hui yau hug kig	g kiglyy ， " ,   " y u c
+lau yukyuu" },	o d e " :   " n g o   y u
+{ "text": "高處不勝寒。	{   " t e x t " :   " kocbsh 。
+", "yucode": "ko cu bet sig hon" },	" ,   " y u c o d e " :   " k o   c u   b e t   s i g   h o n "   } ,
+{ "text": "起舞弄清影，何似在人間。	{   " t e x t " :   " heimou lugcig yig ， hochi joi yangan 。
+", "yucode": "hei mou lug cig jig ho chi zoi jan aa" },	" ,   " y u c o d e " :   " h e i   m o u   l u g   c i g   j i g   h o   c h i   z o i   j a n   a a "   } ,
+{ "text": "轉朱閣，低綺戶，照無眠。	{   " t e x t " :   " jue chugok ， dai yiwuu ， jiu momin 。
+", "yucode": "jue chu gok dai yi wu ziu mou min" },	" ,   " y u c o d e " :   " j u e   c h u   g o k   d a i   y i   w u   z i u   m o u   m i n "   } ,
+{ "text": "不應有恨，何事長向別時圓？	{   " t e x t " :   " betyig yauhen ， hosiz cheheu bitsee yun ？
+", "yucode": "bet yig yau han ho siz che heu bit see yun" },	" ,   " y u c o d e " :   " b e t   y i g   y a u   h a n   h o   s i z   c h e   h e u   b i t   s e e   y u n "   } ,
+{ "text": "人有悲歡離合，月有陰晴圓缺，	{   " t e x t " :   " yan
+", "yucode": "jan yau bei	yau beiflh ， yutyau yumcy
+fun lei hap yut yau yum	k ， " ,   " y u c o d e "
+cig yun kut" },	:   " j a n   y a u   b
+{ "text": "此事古難全。	{   " t e x t " :   " cisiz ku nancue 。
+", "yucode": "ci siz ku nan cue" },	" ,   " y u c o d e " :   " c i   s i z   k u   n a n   c u e "   } ,
+{ "text": "但願人長久，千里共嬋娟。	{   " t e x t " :   " danyue yan chegau ， cinlei gug simgue 。
+", "yucode": "dan yue jan che gau cin lei gug sim gue" }	" ,   " y u c o d e " :   " d a n   y u e   j a n   c h e   g a u   c i n   l e i   g u g   s i m   g u e "   }
+]	]
+},	} ,
+{	{
+"title": "相見歡",	" t i t l e " :   " seogin foo " ,
+"author": "李煜",	" a u t h o r " :   " lee yuk " ,
+"sentences": [	" s e n t e n c e s " :   [
+{ "text": "無言獨上西樓，月如鉤。	{   " t e x t " :   " moyin dukshe sailau ， yut yueau 。
+", "yucode": "mo yin duk she sai lau yut yue au" },	" ,   " y u c o d e " :   " m o   y i n   d u k   s h e   s a i   l a u   y u t   y u e   a u "   } ,
+{ "text": "寂寞梧桐深院鎖清秋。	{   " t e x t " :   " jikmok ngtug sum yue sor cigcau 。
+", "yucode": "jik mok ng tug sum yue soh cig cau" },	" ,   " y u c o d e " :   " j i k   m o k   n g   t u g   s u m   y u e   s o h   c i g   c a u "   } ,
+{ "text": "剪不斷，理還亂，是離愁。	{   " t e x t " :   " jin betdue ， lei wan lue ， siz leisau 。
+", "yucode": "jin bet due lei wan lue siz lei sau" },	" ,   " y u c o d e " :   " j i n   b e t   d u e   l e i   w a n   l u e   s i z   l e i   s a u "   } ,
+{ "text": "別是一般滋味在心頭。	{   " t e x t " :   " bitsiz yetboo jimei joist 。
+", "yucode": "bit siz yet boo ji mei joi sum tau" }	" ,   " y u c o d e " :   " b i t   s i z   y e t   b o o   j i   m e i   j o i   s u m   t a u "   }
+]	]
+},	} ,
+{	{
+"title": "登高",	" t i t l e " :   " dagko " ,
+"author": "杜甫",	" a u t h o r " :   " doufuu " ,
+"sentences": [	" s e n t e n c e s " :   [
+{ "text": "風急天高猿嘯哀，", "yu	{   " t e x t " :   " fug
+code": "fug gep tin ko yu	gup tinko yun siu oi ， "
+n siu oi" },	,   " y u c o d e " :
+{ "text": "渚清沙白鳥飛迴。	{   " t e x t " :   " 渚 cig sha bak niu fei wui 。
+", "yucode": "juu cig sha bak niu fei wui" },	" ,   " y u c o d e " :   " j u u   c i g   s h a   b a k   n i u   f e i   w u i "   } ,
+{ "text": "無邊落木蕭蕭下，", "yu	{   " t e x t " :   " mob
+code": "mou bin lok muk s	in lok muk siusiu ha ， "
+iu siu hah" },	,   " y u c o d e " :   "
+{ "text": "不盡長江滾滾來。	{   " t e x t " :   " betjun chegog gwugwu loi 。
+", "yucode": "bet jun che gog gwu gwu loi" },	" ,   " y u c o d e " :   " b e t   j u n   c h e   g o g   g w u   g w u   l o i "   } ,
+{ "text": "萬里悲秋常作客，", "yu	{   " t e x t " :   " man
+code": "man lei bei cau s	lei bei cau she jokhak ，
+he jok hak" },	" ,   " y u c o d e " :
+{ "text": "百年多病獨登臺。	{   " t e x t " :   " baknin dorbeg duk dag toi 。
+", "yucode": "bak nin dor beg duk dag toi" },	" ,   " y u c o d e " :   " b a k   n i n   d o r   b e g   d u k   d a g   t o i "   } ,
+{ "text": "艱難苦恨繁霜鬢，", "yu	{   " t e x t " :   " gan
+code": "gan nan fu hen fa	nan fu hen fan seoben ， "
+n seo ben" },	,   " y u c o d e " :
+{ "text": "潦倒新停濁酒杯。	{   " t e x t " :   " liudou sun tig jukjau bui 。
+", "yucode": "liu dou sun tig juk jau bui" }	" ,   " y u c o d e " :   " l i u   d o u   s u n   t i g   j u k   j a u   b u i "   }
+]	]
+},	} ,
+{	{
+"title": "靜夜思",	" t i t l e " :   " jigye si " ,
+"author": "李白",	" a u t h o r " :   " leebak " ,
+"sentences": [	" s e n t e n c e s " :   [
+{ "text": "床前明月光，", "yuco	{   " t e x t " :   " con
+de": "cog cin mig yut kog	cin migyut kog ， " ,   "
+" },	y u c o d e " :   " c o g
+{ "text": "疑是地上霜。	{   " t e x t " :   " yeesiz deishe seo 。
+", "yucode": "yee siz dei she seo" },	" ,   " y u c o d e " :   " y e e   s i z   d e i   s h e   s e o "   } ,
+{ "text": "舉頭望明月，", "yuco	{   " t e x t " :   " gui
+de": "gui tau mon mig yut	tau monmig yut ， " ,   "
+" },	y u c o d e " :   " g u i
+{ "text": "低頭思故鄉。	{   " t e x t " :   " daitau si guuheo 。
+", "yucode": "dai tau si guu heo" }	" ,   " y u c o d e " :   " d a i   t a u   s i   g u u   h e o "   }
+]	]
+},	} ,
+{	{
+"title": "花妖",	" t i t l e " :   " fayiu " ,
+"author": "刀郎",	" a u t h o r " :   " dolon " ,
+"sentences": [	" s e n t e n c e s " :   [
+{ "text": "我是那年輪上流浪的眼淚，",	{   " t e x t " :   " ngo
+"yucode": "ngo siz naa n	siz nanin lun shelau lon
+in lun she lau log dik ga	dik anlui ， " ,   " y u c
+n lui" },	o d e " :   " n g o   s
+{ "text": "妳仍然能聞到風中的胭脂味。	{   " t e x t " :   " nei yigyin nag mendou fugjug dik yinji mei 。
+", "yucode": "nei jig jin nag mun dou fug zug dik jin zi mei" },	" ,   " y u c o d e " :   " n e i   j i g   j i n   n a g   m u n   d o u   f u g   z u g   d i k   j i n   z i   m e i "   } ,
+{ "text": "我若是將諾言刻在那江畔上，"	{   " t e x t " :   " ngo
+, "yucode": "ngo ye siz z	yek siz jeo nokyin hak jo
+og nok jin hak zoi naa go	ina gog boo she ， " ,   "
+g bun she" },	y u c o d e " :   " n g
+{ "text": "一江水冷月光滿城的汪洋。	{   " t e x t " :   " yet gogsui lag yutkog moosig dik wogyeu 。
+", "yucode": "jet gog sui lag yut kog mun sig dik vog yog" },	" ,   " y u c o d e " :   " j e t   g o g   s u i   l a g   y u t   k o g   m u n   s i g   d i k   v o g   y o g "   } ,
+{ "text": "我在時間的樹下等了妳很久，"	{   " t e x t " :   " ngo
+, "yucode": "ngo zoi see	joi seegan dik suuha dagl
+gan dik syu hah dag liu n	iu nei hengau ， " ,   " y
+ei han jau" },	u c o d e " :   " n g o
+{ "text": "塵凡兒纏我謗我笑我白了頭。	{   " t e x t " :   " can fan yee cin ngo pon ngo siungo bak liu tau 。
+", "yucode": "cen fan yi cin ngo bog ngo siu ngo bak liu tau" },	" ,   " y u c o d e " :   " c e n   f a n   y i   c i n   n g o   b o g   n g o   s i u   n g o   b a k   l i u   t a u "   } ,
+{ "text": "妳看那天邊追逐落日的紙鳶，"	{   " t e x t " :   " nei
+, "yucode": "nei hon naa	hon natin bin juijuk lok
+tin bin jui zuk lok jet d	yat dik jieyue ， " ,   "
+ik zi jin" },	y u c o d e " :   " n e i
+{ "text": "像一盞回首道別夤夜的風燈。	{   " t e x t " :   " jeu yet jan wuisau doubit yenye dik fug dag 。
+", "yucode": "zog jet zan wui sau dou bit jan ye dik fug deg" },	" ,   " y u c o d e " :   " z o g   j e t   z a n   w u i   s a u   d o u   b i t   j a n   y e   d i k   f u g   d e g "   } ,
+{ "text": "我的心似流沙放逐在車轍旁，"	{   " t e x t " :   " ngo
+, "yucode": "ngo dik sum	ds chi lausha fonjuk joi
+chi lau sha fog zuk zoi c	ce cit pon ， " ,   " y u
+e cit pog" },	c o d e " :   " n g o   d
+{ "text": "他日妳若再返必顛沛在世上。	{   " t e x t " :   " tayat nei yekjoi fan bit din pui joisai she 。
+", "yucode": "ta jet nei ye zoi fan bit din pui zoi sai she" },	" ,   " y u c o d e " :   " t a   j e t   n e i   y e   z o i   f a n   b i t   d i n   p u i   z o i   s a i   s h e "   } ,
+{ "text": "若遇那秋夜雨倦鳥也淋淋，",	{   " t e x t " :   " yek
+"yucode": "ye yyu naa ca	yuz na cau ye yuu gue ni
+u ye yyu gyu niu ya lum l	u ya lum lum ， " ,   " y
+um" },	u c o d e " :   " y e   y
+{ "text": "那卻是花墻下彌留的枯黃。	{   " t e x t " :   " na kek siz fa 墻 ha neilau dik fuwon 。
+", "yucode": "naa ke siz faa ceg hah mei lau dik fu vog" },	" ,   " y u c o d e " :   " n a a   k e   s i z   f a a   c e g   h a h   m e i   l a u   d i k   f u   v o g "   } ,
+{ "text": "君住在錢塘東，妾在臨安北。	{   " t e x t " :   " kwa juujoi cinton dug ， cip joi lum on bek 。
+", "yucode": "gwan juz zoi cin tog dug cip zoi lum on bak" },	" ,   " y u c o d e " :   " g w a n   j u z   z o i   c i n   t o g   d u g   c i p   z o i   l u m   o n   b a k "   } ,
+{ "text": "君去時褐衣紅，小奴家腰上黃。	{   " t e x t " :   " kwa hui see hot yi hug ， siu nouka yiu she won 。
+", "yucode": "gwan hui see hat yi hug siu nou gaa jiu she vog" },	" ,   " y u c o d e " :   " g w a n   h u i   s e e   h a t   y i   h u g   s i u   n o u   g a a   j i u   s h e   v o g "   } ,
+{ "text": "尋差了羅盤經，錯投在泉亭。	{   " t e x t " :   " cum ca liu lawpoo gig ， coh tau joi cue tig 。
+", "yucode": "cum caa liu lo pun gig co tau zoi cyu tig" },	" ,   " y u c o d e " :   " c u m   c a a   l i u   l o   p u n   g i g   c o   t a u   z o i   c y u   t i g "   } ,
+{ "text": "奴輾轉到杭城，君又生余杭。	{   " t e x t " :   " nou jinjue dou hog sig ， kwa yau sag yue hog 。
+", "yucode": "nou zin zyu dou hog sig gwan yau sag yyu hog" }	" ,   " y u c o d e " :   " n o u   z i n   z y u   d o u   h o g   s i g   g w a n   y a u   s a g   y y u   h o g "   }
+]	]
+},	} ,
+{	{
+"title": "翩翩",	" t i t l e " :   " pinpin " ,
+"author": "刀郎",	" a u t h o r " :   " dolon " ,
+"sentences": [	" s e n t e n c e s " :   [
+{ "text": "誰不是錯過了四下報更的鼓聲，	{   " t e x t " :   " sui
+", "yucode": "sui bet siz	betsiz cohgl seiha bouga
+coh gwo liu sei hah bou	g dik guusig ， " ,   " y
+geg dik gu sig" },	u c o d e " :   " s u i
+{ "text": "總有人偷偷撥弄鏡月的指針。	{   " t e x t " :   " jugyau yan tautau butlug geg yut dik jiejum 。
+", "yucode": "zug yau jan tau tau but lug gig yut dik zi zum" },	" ,   " y u c o d e " :   " z u g   y a u   j a n   t a u   t a u   b u t   l u g   g i g   y u t   d i k   z i   z u m "   } ,
+{ "text": "罌缶的酒瓶化來綺紈與樓閣，"	{   " t e x t " :   " ang
+, "yucode": "ag fau dik j	fau dik jaupig fah loi yi
+au pig faa loi yi yuu yu	yun yu laugok ， " ,   " y
+lau gok" },	u c o d e " :   " a g
+{ "text": "綠芭蕉紅櫻桃孑然一身的過來人。	{   " t e x t " :   " luk bajiu hug yigtou kityys dik gwoly 。
+", "yucode": "luk baa jiu hug jig tou kit jin jet sen dik gwo loi jan" },	" ,   " y u c o d e " :   " l u k   b a a   j i u   h u g   j i g   t o u   k i t   j i n   j e t   s e n   d i k   g w o   l o i   j a n "   } ,
+{ "text": "未曾走到絕境路彼岸花不開，"	{   " t e x t " :   " mei
+, "yucode": "mei cag zau	tsa jaudou jutgig lou pei
+dou yut gig lou bei ngon	on fa bethoi ， " ,   " y
+faa bet hoi" },	u c o d e " :   " m e i
+{ "text": "辛酸只為長安遠倒臥在瓊臺。	{   " t e x t " :   " sunsue jie wai cheon yue doungo joi kig toi 。
+", "yucode": "sen syu zi wai che on yue dou ngo zoi kig toi" },	" ,   " y u c o d e " :   " s e n   s y u   z i   w a i   c h e   o n   y u e   d o u   n g o   z o i   k i g   t o i "   } ,
+{ "text": "小心那流射的海市售賣開花杖，	{   " t e x t " :   " siu
+", "yucode": "siu sum naa	sum na lau seh dik hoishi
+lau se dik hoi siz sau m	sau mie hoifa jeu ， " ,
+ai hoi faa zog" },	" y u c o d e " :   " s
+{ "text": "遼遙的天河啊紛紛流淌的挽歌郎。	{   " t e x t " :   " liu yiu dik tinhoh ah funfun lauton dik wangor lon 。
+", "yucode": "liu yiu dik tin ho ah fen fen lau tog dik wan go log" },	" ,   " y u c o d e " :   " l i u   y i u   d i k   t i n   h o   a h   f e n   f e n   l a u   t o g   d i k   w a n   g o   l o g "   } ,
+{ "text": "藍採和啊，醉酒當歌，", "	{   " t e x t " :   " lam
+yucode": "lam coi wo ah j	coi wo ah ， juijau dog g
+ui jau dog go" },	or ， " ,   " y u c o d e
+{ "text": "紅顏易老轉眼桑田泛清波。	{   " t e x t " :   " hugan yizlou juean sogtin fan cigbor 。
+", "yucode": "hug gan yi lou zyu gan sog tin fan cig bo" },	" ,   " y u c o d e " :   " h u g   g a n   y i   l o u   z y u   g a n   s o g   t i n   f a n   c i g   b o "   } ,
+{ "text": "她也曾是越過了銀河萬裏的荒原	{   " t e x t " :   " tay
+，", "yucode": "ta ya cag	a tsa siz yutgwo liu unho
+siz yut gwo liu gen ho ma	h man lui dik fogyun ， "
+n lei dik fog yue" },	,   " y u c o d e " :   "
+{ "text": "他也曾是劃破了絢爛流落在人間。	{   " t e x t " :   " taya tsa siz wakpoh liu huelan laulok joi yangan 。
+", "yucode": "ta ya cag siz wak po liu hyu lan lau lok zoi jan gan" },	" ,   " y u c o d e " :   " t a   y a   c a g   s i z   w a k   p o   l i u   h y u   l a n   l a u   l o k   z o i   j a n   g a n "   } ,
+{ "text": "唯有那不眠的憑欄與情仇依捨，	{   " t e x t " :   " wai
+", "yucode": "wai yau naa	yau nabet min dik pag lan
+bet min dik pag lan yu c	yu chgsau yi seh ， " ,
+ig cau yi se" },	" y u c o d e " :   " w
+{ "text": "是雲搖是雨散都在同一個搖籃。	{   " t e x t " :   " siz wan yiu siz yuu san dojoi tugyg yiulam 。
+", "yucode": "siz wan yiu siz yyu san dou zoi tug jet go yiu lam" },	" ,   " y u c o d e " :   " s i z   w a n   y i u   s i z   y y u   s a n   d o u   z o i   t u g   j e t   g o   y i u   l a m "   } ,
+{ "text": "邯鄲夢啊古今同，", "yu	{   " t e x t " :   " hon
+code": "hon dan mug ah gu	dan mug ah kugum tug ， "
+gum tug" },	,   " y u c o d e " :   "
+{ "text": "榮華易去青山處處英雄冢。	{   " t e x t " :   " wigwah yizhui tsisan cucu yighug cug 。
+", "yucode": "vig waa yi hui cig san cu cu yig hug cug" }	" ,   " y u c o d e " :   " v i g   w a a   y i   h u i   c i g   s a n   c u   c u   y i g   h u g   c u g "   }
+]	]
+},	} ,
+{	{
+"title": "羅剎海市",	" t i t l e " :   " lawshs " ,
+"author": "刀郎",	" a u t h o r " :   " dolon " ,
+"sentences": [	" s e n t e n c e s " :   [
+{ "text": "羅剎國向東兩萬六千里，",	{   " t e x t " :   " law
+"yucode": "lo cat gok heu	sat kwo heudug leuman luk
+dug leg man luk cin lei"	cin lei ， " ,   " y u c o
+},	d e " :   " l o   c a t
+{ "text": "過七沖越焦海三寸的黃泥地。	{   " t e x t " :   " gwo cet cug yut jiu hoi samcue dik wonnai dei 。
+", "yucode": "gwo cat cug yut jiu hoi sam cyu dik vog nai dei" },	" ,   " y u c o d e " :   " g w o   c a t   c u g   y u t   j i u   h o i   s a m   c y u   d i k   v o g   n a i   d e i "   } ,
+{ "text": "只為那有一條一丘河，河水流過苟苟營。	{   " t e x t " :   " jie wai na yauyt yet yau hoh ， hohsui laugwo gau gau yig 。
+", "yucode": "zi wai naa yau jet tiu jet jau ho ho sui lau gwo gau gau yig" },	" ,   " y u c o d e " :   " z i   w a i   n a a   y a u   j e t   t i u   j e t   j a u   h o   h o   s u i   l a u   g w o   g a u   g a u   y i g "   } ,
+{ "text": "苟苟營當家的叉桿兒喚作馬戶。	{   " t e x t " :   " gau gau yig dogka dik ca gon yee woo jok ma wuu 。
+", "yucode": "gau gau yig dog gaa dik caa gon yi wu jok ma wu" },	" ,   " y u c o d e " :   " g a u   g a u   y i g   d o g   g a a   d i k   c a a   g o n   y i   w u   j o k   m a   w u "   } ,
+{ "text": "她兩耳傍肩三孔鼻，未曾開言先轉腚。	{   " t e x t " :   " ta leu yie bon gin sam hug bei ， meitsa hoiyin sin juedig 。
+", "yucode": "ta leg yi bog gin sam hug bei mei cag hoi jin sin zyu deg" },	" ,   " y u c o d e " :   " t a   l e g   y i   b o g   g i n   s a m   h u g   b e i   m e i   c a g   h o i   j i n   s i n   z y u   d e g "   } ,
+{ "text": "那馬戶不知道他是一頭驢，",	{   " t e x t " :   " nam
+"yucode": "naa ma wu bet	a wuu betjd tasy tau lou
+zi dou ta siz jet tau lu	， " ,   " y u c o d e " :
+i" },	" n a a   m a   w u
+{ "text": "那又鳥不知道他是一隻雞。	{   " t e x t " :   " na yau niu betjd tasy jek gai 。
+", "yucode": "naa yau niu bet zi dou ta siz jet zek gai" },	" ,   " y u c o d e " :   " n a a   y a u   n i u   b e t   z i   d o u   t a   s i z   j e t   z e k   g a i "   } ,
+{ "text": "勾欄從來扮高雅，自古公公好威名。	{   " t e x t " :   " aulan cugloi ban konga ， jizku guggug ho waimig 。
+", "yucode": "ngau lan cug loi ban ko ngaa zi gu gug gug hou wai mig" },	" ,   " y u c o d e " :   " n g a u   l a n   c u g   l o i   b a n   k o   n g a a   z i   g u   g u g   g u g   h o u   w a i   m i g "   } ,
+{ "text": "打西邊來了一個小夥兒他叫馬驥。	{   " t e x t " :   " dasai bin loi liu yetgoh siu for yee tagiu ma kei 。
+", "yucode": "da sai bin loi liu jet go siu fo yi ta giu ma gei" },	" ,   " y u c o d e " :   " d a   s a i   b i n   l o i   l i u   j e t   g o   s i u   f o   y i   t a   g i u   m a   g e i "   } ,
+{ "text": "只為他人海泛舟搏風打浪，龍遊險灘流落惡地。	{   " t e x t " :   " jie waita yanhoi fanjau bok fug da lon ， lug yau himtan laulok ok dei 。
+", "yucode": "zi wai ta jan hoi fan zau bok fug da log lug yau him tan lau lok ok dei" },	" ,   " y u c o d e " :   " z i   w a i   t a   j a n   h o i   f a n   z a u   b o k   f u g   d a   l o g   l u g   y a u   h i m   t a n   l a u   l o k   o k   d e i "   } ,
+{ "text": "他見這羅剎國裏常顛倒，馬戶愛聽那又鳥的曲。	{   " t e x t " :   " tagin je lawsat kwo lui she dindou ， ma wuu oitig na yau niu dik kuk 。
+", "yucode": "ta gin je lo cat gok lui she din dou ma wu oi tig naa yau niu dik kuk" },	" ,   " y u c o d e " :   " t a   g i n   j e   l o   c a t   g o k   l u i   s h e   d i n   d o u   m a   w u   o i   t i g   n a a   y a u   n i u   d i k   k u k "   } ,
+{ "text": "它紅描翅那個黑畫皮，綠繡雞冠金鑲蹄。	{   " t e x t " :   " ta hug miu chi nagoh hak wahpei ， luk sau gaigoo kam seo tai 。
+", "yucode": "ta hug miu ci naa go hak wak pei luk sau gai gun gum seg tai" },	" ,   " y u c o d e " :   " t a   h u g   m i u   c i   n a a   g o   h a k   w a k   p e i   l u k   s a u   g a i   g u n   g u m   s e g   t a i "   } ,
+{ "text": "可是那從來煤蛋兒生來就黑，不管妳咋樣洗呀那也是個臟東西。	{   " t e x t " :   " horsiz na cugloi muidan yee sagloi jau hak ， betgoo nei jahyeu sai nga nays goh jon dugsai 。
+", "yucode": "ho siz naa cug loi mui dan yi sag loi jau hak bet gun nei zaa yog sai ah naa ya siz go zog dug sai" },	" ,   " y u c o d e " :   " h o   s i z   n a a   c u g   l o i   m u i   d a n   y i   s a g   l o i   j a u   h a k   b e t   g u n   n e i   z a a   y o g   s a i   a h   n a a   y a   s i z   g o   z o g   d u g   s a i "   } ,
+{ "text": "愛字有心心有好歹，百樣愛也有千樣的壞。	{   " t e x t " :   " oi jiz yausum sum yauho die ， bakyeu oi yayau cinyeu dik wie 。
+", "yucode": "oi zi yau sum sum yau hou dai bak yog oi ya yau cin yog dik wai" },	" ,   " y u c o d e " :   " o i   z i   y a u   s u m   s u m   y a u   h o u   d a i   b a k   y o g   o i   y a   y a u   c i n   y o g   d i k   w a i "   } ,
+{ "text": "西邊的歐鋼有老闆，生兒維特根斯坦。	{   " t e x t " :   " saibin dik au gog yau louban ， sag yee waidgs 。
+", "yucode": "sai bin dik au gog yau lou ban sag yi wai tak gen si tan" },	" ,   " y u c o d e " :   " s a i   b i n   d i k   a u   g o g   y a u   l o u   b a n   s a g   y i   w a i   t a k   g e n   s i   t a n "   } ,
+{ "text": "那馬戶又鳥，是我們人類根本的問題。	{   " t e x t " :   " nama wuu yau niu ， siznm yanlui gunboo dik mentai 。
+", "yucode": "naa ma wu yau niu siz ngo mun jan lui gen bun dik mun tai" }	" ,   " y u c o d e " :   " n a a   m a   w u   y a u   n i u   s i z   n g o   m u n   j a n   l u i   g e n   b u n   d i k   m u n   t a i "   }
+]	]
+}	}
