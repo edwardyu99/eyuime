@@ -1,8 +1,8 @@
 余氏輸入法3+3拼音編碼說明
-版本：二０二六年四月十四日
-余氏詞庫雙字詞拼音是3+3編碼。在103850雙字詞中，重碼26106，重碼率25%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
+版本：二０二六年四月廿一日
+余氏詞庫雙字詞拼音是3+3編碼。在103800雙字詞中，重碼27388，重碼率26%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
 (一) 三碼簡化
-1. 通常取頭三碼，例：本boon-->boo，原yuen-->yue，廣gwong-->gwo，歸gwai-->gwa，骨gwet-->gwe，葵kwai-->kwa，困kwun-->kwu
+1. 通常取頭三碼，例：本boon-->boo，村cuen-->cue (特：原yuen-->yun)，廣gwong-->gwo，歸gwai-->gwa，骨gwet-->gwe，葵kwai-->kwa，困kwun-->kwu
 2. ang,eng,ing,ong,ung簡化為ag,eg,ig,on*,ug，例：等dang->dag，病beng->beg，定ding-->dig，劏tong-->tog，動dung-->dug。
    *第1聲ong-->og，其餘ong-->on。例：劏房(togfon)。 常用字：光kog
 3. uet-->ut，例：月yuet-->yut
@@ -22,7 +22,7 @@
 │ 挨#2 ai/i│            │ 四   ei  │ 腰   iu  │ 柯#5 or/oh │ 煨   ui    │
 │ 啱   am  │ 庵   um    │ 尺   ek  │ 淹   im  │ 哀   oi    │ 銳   ui    │
 │ 晏#3 an  │ 奀#3 en/un │ 約 euk/ek│ 煙   in  │ 安   on    │ 屋   uk    │
-│ 罌   ang │ 贏   eng   │ 靴   euh │ 英   ing │ 骯   ong   │ 碗#8 oon/un│
+│ 罌   ang │ 贏   eng   │ 靴   euh │ 英   ing │ 骯   ong   │ 碗#8 oon   │
 │ 鶯   ang │            │ 央  eung │ 葉   ip  │ 喝   ot    │ 冤#8 uen/un│
 │ 拗   ao  │ 歐   au    │          │ 熱   it  │ 惡   ok    │ 閏   un    │
 │          │            │          │ 益   ik  │            │ 瓮   ung   │
