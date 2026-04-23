@@ -1,5 +1,5 @@
 余氏輸入法3+3拼音編碼說明
-版本：二０二六年四月廿一日
+版本：二０二六年四月廿三日
 余氏詞庫雙字詞拼音是3+3編碼。在103800雙字詞中，重碼27388，重碼率26%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
 (一) 三碼簡化
 1. 通常取頭三碼，例：本boon-->boo，村cuen-->cue (特：原yuen-->yun)，廣gwong-->gwo，歸gwai-->gwa，骨gwet-->gwe，葵kwai-->kwa，困kwun-->kwu
@@ -61,7 +61,7 @@
 陰去 3  訓  h h ie ou uu   yuu en  oh  次chi 志jee 試shi 意yi  
 陽平 4  焚  h h ie ou uu 余yue en  oh  持cee -     時see 兒yee
 陽上 5  憤  h h ie ou uu 雨yuu en  oh  似chi -     市shi 已yie 
-陽去 6  份  h h ie ou uu 預yuz en  oh   -    自jiz 是siz 二yiz
+陽去 6  份  h h ie ou uu 預yuu en  oh   -    自jiz 是siz 二yiz
 
 [#9]  a,e(2至6聲ah,eh)：ce車ceh且，ga加gah假價，ha哈hah吓霞夏，se些seh捨舍卸蛇社射
       (兩碼/常用字：ka家ha下je這者se寫)
@@ -73,7 +73,7 @@
           *缺聲母的[奧澳]字拼成oh。
 [#7]  u烏/yu於 (2至6聲uu，yu:4聲yue，6聲yuz)
       fu夫，fuu虎富乎婦父。su書suu鼠恕殊樹。
-      yu於，yuu瘀宇雨，yue如，yuz預。
+      yu於，yuu瘀宇雨，yue如，yuu預。
 [#12] un奀 (fgs第1聲un，其他en) 例：fun分/fen粉訓焚憤份，gun根/gen緊近，sun新/sen呻神慎，ben奔品殯笨 hen很痕恨
 [#13] or柯 (1聲or，23456聲oh)：cor初，coh楚錯鋤坐，sor疏，soh鎖傻。(常用字：jor左 hor可 sor所) 
 
