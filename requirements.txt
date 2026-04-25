@@ -21,6 +21,8 @@ bokeh
 bottleneck
 bs4
 build
+certifi
+certifi
 cffi
 charset-normalizer
 choreographer
@@ -270,6 +272,7 @@ webencodings
 websocket-client
 websockets
 werkzeug
+wheel
 wheel
 widgetsnbextension
 wrapt
