@@ -1,8 +1,10 @@
 import codecs
+import sys  # 新增：用於讀取命令列參數
 
-def analyze_duplicate_codes(file_path, uncommon_rank_threshold=3000):
+def analyze_duplicate_codes(file_path, uncommon_rank_threshold=2000, diff_threshold=500):
     code_groups = {}
 
+    # 讀取並分類數據[cite: 1]
     with codecs.open(file_path, 'r', encoding='utf-16') as f:
         for line in f:
             line = line.strip()
@@ -20,9 +22,28 @@ def analyze_duplicate_codes(file_path, uncommon_rank_threshold=3000):
     for code, chars in code_groups.items():
         if len(chars) < 2:
             continue
+
+        try:
+            all_ranks = []
+            for c in chars:
+                try:
+                    all_ranks.append(int(c['rank']))
+                except ValueError:
+                    all_ranks.append(9999)
+            
+            first_rank = all_ranks[0]
+            min_rank_in_group = min(all_ranks)
+            
+            # 判斷邏輯：如果第一碼已是最小或差距在門檻內，則跳過[cite: 1]
+            if first_rank <= min_rank_in_group or (first_rank - min_rank_in_group) < diff_threshold:
+                continue
+        except Exception:
+            pass
+
         first = chars[0]
         reasons = []
 
+        # 檢查常用字門檻[cite: 1]
         if first['rank'] == '9999':
             reasons.append("rank為9999（無頻率數據）")
         else:
@@ -33,6 +54,7 @@ def analyze_duplicate_codes(file_path, uncommon_rank_threshold=3000):
             except ValueError:
                 reasons.append(f"rank無法解析 ({first['rank']})")
 
+        # 檢查聲調[cite: 1]
         try:
             tone_num = int(first['tone'])
             if tone_num < 1 or tone_num > 6:
@@ -45,39 +67,55 @@ def analyze_duplicate_codes(file_path, uncommon_rank_threshold=3000):
             for i, c in enumerate(chars):
                 marker = "【第一重碼】" if i == 0 else ""
                 all_chars_info.append(f"{marker}{c['char']}(聲調{c['tone']}, rank{c['rank']})")
+            
             results.append({
                 'code': code,
                 'first_char': first['char'],
                 'reason': '；'.join(reasons),
+                'diff': first_rank - min_rank_in_group,
                 'all_chars': all_chars_info,
                 'total': len(chars)
             })
 
     results.sort(key=lambda x: x['code'])
 
+    # 輸出分析結果[cite: 1]
     print("=" * 80)
-    print(f"第一重碼字非常用分析 (rank 門檻: {uncommon_rank_threshold})")
+    print(f"分析報告：第一重碼優化分析")
+    print(f"- 常用字判定門檻 (rank): {uncommon_rank_threshold}")
+    print(f"- 容許排序誤差 (diff): {diff_threshold}")
     print("=" * 80)
-    print(f"共找到 {len(results)} 個符合條件的字組\n")
+    print(f"共找到 {len(results)} 個符合條件的編碼組\n")
 
     for i, entry in enumerate(results, 1):
-        if entry['total'] > 9:
-            print(f"{i}. 編碼: {entry['code']}")
-            print(f"   第一重碼字: {entry['first_char']}")
-            print(f"   原因: {entry['reason']}")
-            print(f"   重碼總數: {entry['total']}")
-            print(f"   所有重碼字:")
-            for char_str in entry['all_chars']:
-            	print(f"     - {char_str}")
-            print()
-
-    print("=" * 80)
-    print("統計摘要")
-    print("=" * 80)
-    print(f"總編碼數: {len(code_groups)}")
-    multi = sum(1 for c in code_groups.values() if len(c) >= 2)
-    print(f"有重碼的編碼數: {multi}")
-    print(f"第一重碼為非常用字的編碼數: {len(results)}")
+        print(f"{i}. 編碼: {entry['code']}")
+        print(f"   第一重碼字: {entry['first_char']}")
+        print(f"   原因: {entry['reason']} (與最優字差距: {entry['diff']})")
+        print(f"   重碼總數: {entry['total']}")
+        print(f"   所有重碼字:")
+        for char_str in entry['all_chars']:
+            print(f"     - {char_str}")
+        print()
 
 if __name__ == "__main__":
-    analyze_duplicate_codes("reneeyu_head_az_out.txt", uncommon_rank_threshold=2500)
+    # 預設值
+    u_threshold = 2000
+    d_threshold = 1000
+    
+    # 讀取命令列參數：sys.argv[0] 是檔名，[1] 是第一個參數，[2] 是第二個參數
+    if len(sys.argv) > 1:
+        try:
+            u_threshold = int(sys.argv[1])
+        except ValueError:
+            print(f"警告: 無法解析門檻參數 '{sys.argv[1]}', 使用預設值 {u_threshold}")
+            
+    if len(sys.argv) > 2:
+        try:
+            d_threshold = int(sys.argv[2])
+        except ValueError:
+            print(f"警告: 無法解析差距參數 '{sys.argv[2]}', 使用預設值 {d_threshold}")
+
+    # 執行分析
+    analyze_duplicate_codes("reneeyu_head_az_out.txt", 
+                            uncommon_rank_threshold=u_threshold, 
+                            diff_threshold=d_threshold)
