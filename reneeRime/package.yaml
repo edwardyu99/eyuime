@@ -1,0 +1,12 @@
+# package.yaml
+name: eyuime
+version: "20260502"
+description: "余氏中文輸入法 (小狼毫版) 套件"
+
+files:
+  - renee.schema.yaml
+  - renee.dict.yaml
+  - renee.dict_head.yaml
+  - default.yaml
+  - default.custom.yaml
+  - renee.ico
