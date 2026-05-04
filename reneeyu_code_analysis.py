@@ -99,8 +99,8 @@ def analyze_duplicate_codes(file_path, uncommon_rank_threshold=2000, diff_thresh
 
 if __name__ == "__main__":
     # 預設值
-    u_threshold = 2000
-    d_threshold = 1000
+    u_threshold = 2500
+    d_threshold = 2000
     
     # 讀取命令列參數：sys.argv[0] 是檔名，[1] 是第一個參數，[2] 是第二個參數
     if len(sys.argv) > 1:
