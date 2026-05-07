@@ -28,11 +28,12 @@ def analyze_duplicate_codes(file_path, uncommon_rank_threshold=2000, diff_thresh
             # 將同一編碼下的所有字及其屬性加入列表
             code_groups[code].append({'char': char, 'tone': tone, 'rank': rank})
 
-    results = []  # 存放需要優化的編碼組結果
+    results = []         # 存放需要優化的編碼組結果
+    skipped_tone1 = []   # 存放因第一重碼聲調為 1 而跳過的編碼組資訊
 
     for code, chars in code_groups.items():
-        # 只有一個候選字的不算重碼，跳過
-        if len(chars) < 2:
+        # 跳過重碼數少於 10 的編碼（可依需求調整）
+        if len(chars) < 10:
             continue
 
         try:
@@ -57,6 +58,20 @@ def analyze_duplicate_codes(file_path, uncommon_rank_threshold=2000, diff_thresh
 
         # 從列表取得第一重碼資訊
         first = chars[0]
+
+        # 若第一重碼字的聲調為 1，則記錄並跳過分析
+        try:
+            if int(first['tone']) == 1:
+                skipped_tone1.append({
+                    'code': code,
+                    'char': first['char'],
+                    'tone': first['tone'],
+                    'rank': first['rank']
+                })
+                continue
+        except ValueError:
+            pass  # 聲調無法解析時，仍繼續分析
+
         reasons = []  # 儲存需要優化的原因
 
         # 檢查常用字門檻：rank 為 9999 表示完全無頻率數據
@@ -105,6 +120,7 @@ def analyze_duplicate_codes(file_path, uncommon_rank_threshold=2000, diff_thresh
 
     # 依照編碼排序，讓輸出井然有序
     results.sort(key=lambda x: x['code'])
+    skipped_tone1.sort(key=lambda x: x['code'])
 
     # 開啟記錄檔，準備寫入報告
     with open('reneeyu_tonerank_analysis_log.txt', 'w', encoding='utf-8') as log_file:
@@ -131,10 +147,20 @@ def analyze_duplicate_codes(file_path, uncommon_rank_threshold=2000, diff_thresh
                 log(f"     - {char_str}")
             log("")  # 空行分隔各組
 
+        # 輸出因第一重碼聲調為 1 而跳過的編碼清單
+        if skipped_tone1:
+            log("=" * 80)
+            log(f"以下編碼因第一重碼聲調為 1，已跳過分析（共 {len(skipped_tone1)} 組）：")
+            for entry in skipped_tone1:
+                log(f"  編碼: {entry['code']}, 字: {entry['char']}, 聲調: {entry['tone']}, rank: {entry['rank']}")
+            log("")
+        else:
+            log("沒有因第一重碼聲調為 1 而跳過的編碼組。")
+
 if __name__ == "__main__":
     # 預設的門檻值，可透過命令列參數覆蓋
-    u_threshold = 2500   # 常用字 rank 上限
-    d_threshold = 2000   # 允許的 rank 差距
+    u_threshold = 1000   # 常用字 rank 上限（預設 1000）
+    d_threshold = 500    # 允許的 rank 差距（預設 500）
     
     # 讀取命令列參數：sys.argv[0] 是程式本身，[1] 是第一參數（常用字門檻），[2] 是第二參數（允許差距）
     if len(sys.argv) > 1:
