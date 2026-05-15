@@ -1,11 +1,11 @@
 ﻿import codecs
 import os
 import sys
-import platform
+#import platform
 
 # 顯示系統資訊
-print(f"Python 版本: {sys.version}")
-print(f"操作系統: {platform.system()}")
+#print(f"Python 版本: {sys.version}")
+#print(f"操作系統: {platform.system()}")
 
 # --- 定義全局文件名，防止 NameError ---
 filepath = 'reneeyu_canph2345ori.txt'   

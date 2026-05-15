@@ -263,6 +263,7 @@ typing-extensions
 tzdata
 undetected-chromedriver
 uri-template
+urllib3
 uv
 wcwidth
 webargs
