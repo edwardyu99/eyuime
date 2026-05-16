@@ -100,25 +100,24 @@
 🔹 6. 香港姓氏及常用字取頭三碼  
    例：陳 cha(n)，李 lee，張 che(ung)，黃 won(g)，何 ho，歐 au，周 cho(w)，胡 wu，馬 ma，麥 mak，史 sze，廖 liu，林 lam，白 bak，蔡 tso(i)，鄭 che(ng)，蔣 chi(ang)，朱 chu，崔 chu(i)，鍾 chu(ng)，葉 ip，金 kam，郭、國 kwo(k)，關、軍、君 kwa(n)，施、史、司 sze，鄧 tan(g)，曾 tsa(ng)，謝 tse，徐 tsu(i)，仔 cha(i)，子 chi，記 kee，德 tak，達 tat，青 tsi(ng)，荃 tsu(en)，慈 tsz，任 yam
 
-🔹 7. 兩碼常用字（聲母加韻母首字母）
-       a e i o u
-    ba 巴啤拜保    *bo=寶
-    ca 差車此操處  
-    da 打爹大都
-    fa 花啡快火夫  *fu=府苦
-    ga 加嘅街告股
-    ha 下  嗨何
-    ja 抓這之組主
-    ka 家騎奇高古
-    la 啦哩拉勞
-    ma 馬咩買無    *mo=毛
-    na 那呢奶腦
-    pa 爸啤派普
-    sa 沙些師蘇書
-    ta 他  太土
-    wa 話we歪和胡   *we=我們
-    ya 也夜衣yo於   *yo=你 
-    
+🔹 7. 兩碼常用字(聲母加韻母首字母，不一定1聲)：
+      a e i o u
+    b 巴啤拜保    bo=寶
+    c 差車此操處  
+    d 打爹大都
+    f 花啡快火夫  fu=府苦
+    g 加嘅街告股
+    h 下  嗨何
+    j 抓這之組主
+    k 家騎奇高古
+    l 啦哩拉勞
+    m 馬咩買無    mo=毛
+    n 那呢奶腦
+    p 怕啤派普
+    s 砂些師蘇書  sha=沙
+    t 他  太土
+    w 話  歪和胡   
+    y 也夜衣  於
 
 ────────────────────────────────
 
