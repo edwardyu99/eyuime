@@ -1,0 +1,639 @@
+C:\Users\Dad\OneDrive\eyuime>convcancms.py
+2026-06-09 17:31:37.682449
+Python 3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]
+Name of the operating system: Windows nt
+**convering canph2...
+**convering canph3...
+**convering canph4...
+**converting canph5...
+**converting canph6,7...
+cnt= 128008 ,cntout= 128008
+cntout2= 85893 ,cnterr2= 0  cntdup2= 3300
+cntout3= 11490 ,cnterr3= 0
+cntout4= 28953 ,cnterr4= 0
+cntout5= 1661 ,cnterr5= 0
+cntout6= 4
+cntout7= 7
+reneeyu_canph2345ori.txt convert to reneeyu_canph2345out.txt OK
+階段一完成：共處理 128008 行，輸出 128008 個詞組。
+階段二完成：詞頻合併與排序成功。
+File         : reneeyu_canph2345out_freqmerge.txt
+Input lines  : 128,008
+Output lines : 128,008
+Duplicates removed : 0
+階段三完成：最終碼表已更新至 reneeyu_canph2345ori.txt，暫存檔已保留供 Debug 使用。
+
+--- 開始分析雙字詞重碼情況 ---
+分析完成：
+1. 雙字詞總數：85893
+2. 使用的獨立編碼數：82593
+3. 不重碼的雙字詞數：79296
+4. 發生重碼的雙字詞數：6597
+5. 雙字詞重碼率：7.68%
+6. 雙字詞編碼數重碼率：3.84%
+   詳細重碼清單已寫入：reneeyu_canph2345outdup.txt
+
+=====================================================================
+執行總結：輸入與輸出檔案資訊
+=====================================================================
+[輸入檔案]
+  • yus_candict_c.txt              :     5947 行 (編碼字典)
+  • merge_ph2.txt                  :   172246 行 (雙字詞頻率表)
+  • reneeyu_canph2345ori.txt       :   128008 行 (程式執行初期的原始行數)
+
+[輸出檔案]
+  • reneeyu_canph2345ori.txt       :   128008 行 (最終更新碼表 - 已過濾缺字)
+  • reneeyu_canph2345outdup.txt    :     3305 行 (重碼分析報告)
+
+[暫存檔案 (保留供 Debug)]
+  • reneeyu_canph2345out.txt       :   128008 行
+  • reneeyu_canph2345out_freqmerge.txt :   128008 行
+=====================================================================
+C:\Users\Dad\OneDrive\eyuime>convcancms.py
+2026-06-08 13:31:41.652448
+Python 3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]
+Name of the operating system: Windows nt
+**convering canph2...
+**convering canph3...
+**convering canph4...
+**converting canph5...
+**converting canph6,7...
+cnt= 128289 ,cntout= 128289
+cntout2= 86174 ,cnterr2= 0  cntdup2= 3572
+cntout3= 11490 ,cnterr3= 0
+cntout4= 28953 ,cnterr4= 0
+cntout5= 1661 ,cnterr5= 0
+cntout6= 4
+cntout7= 7
+reneeyu_canph2345ori.txt convert to reneeyu_canph2345out.txt OK
+階段一完成：共處理 128289 行，輸出 128289 個詞組。
+階段二完成：詞頻合併與排序成功。
+File         : reneeyu_canph2345out_freqmerge.txt
+Input lines  : 128,289
+Output lines : 128,289
+Duplicates removed : 0
+階段三完成：最終碼表已更新至 reneeyu_canph2345ori.txt，暫存檔已保留供 Debug 使用。
+
+--- 開始分析雙字詞重碼情況 ---
+分析完成：
+1. 雙字詞總數：86174
+2. 使用的獨立編碼數：82594
+3. 不重碼的雙字詞數：79017
+4. 發生重碼的雙字詞數：7157
+5. 雙字詞重碼率：8.31%
+6. 雙字詞編碼數重碼率：4.15%
+   詳細重碼清單已寫入：reneeyu_canph2345outdup.txt
+
+=====================================================================
+執行總結：輸入與輸出檔案資訊
+=====================================================================
+[輸入檔案]
+  • yus_candict_c.txt              :     5947 行 (編碼字典)
+  • merge_ph2.txt                  :   172246 行 (雙字詞頻率表)
+  • reneeyu_canph2345ori.txt       :   128289 行 (程式執行初期的原始行數)
+
+[輸出檔案]
+  • reneeyu_canph2345ori.txt       :   128289 行 (最終更新碼表 - 已過濾缺字)
+  • reneeyu_canph2345outdup.txt    :     3585 行 (重碼分析報告)
+
+[暫存檔案 (保留供 Debug)]
+  • reneeyu_canph2345out.txt       :   128289 行
+  • reneeyu_canph2345out_freqmerge.txt :   128289 行
+=====================================================================
+C:\Users\Dad\OneDrive\eyuime>convcancms.py
+2026-06-06 20:44:13.737401
+Python 3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]
+Name of the operating system: Windows nt
+**convering canph2...
+**convering canph3...
+**convering canph4...
+**converting canph5...
+**converting canph6,7...
+cnt= 129193 ,cntout= 129193
+cntout2= 87083 ,cnterr2= 0  cntdup2= 4427
+cntout3= 11487 ,cnterr3= 0
+cntout4= 28951 ,cnterr4= 0
+cntout5= 1661 ,cnterr5= 0
+cntout6= 4
+cntout7= 7
+reneeyu_canph2345ori.txt convert to reneeyu_canph2345out.txt OK
+階段一完成：共處理 129193 行，輸出 129193 個詞組。
+階段二完成：詞頻合併與排序成功。
+File         : reneeyu_canph2345out_freqmerge.txt
+Input lines  : 129,193
+Output lines : 129,193
+Duplicates removed : 0
+階段三完成：最終碼表已更新至 reneeyu_canph2345ori.txt，暫存檔已保留供 Debug 使用。
+
+--- 開始分析雙字詞重碼情況 ---
+分析完成：
+1. 雙字詞總數：87083
+2. 使用的獨立編碼數：82655
+3. 不重碼的雙字詞數：78227
+4. 發生重碼的雙字詞數：8856
+5. 雙字詞重碼率：10.17%
+6. 雙字詞編碼數重碼率：5.08%
+   詳細重碼清單已寫入：reneeyu_canph2345outdup.txt
+
+=====================================================================
+執行總結：輸入與輸出檔案資訊
+=====================================================================
+[輸入檔案]
+  • yus_candict_c.txt              :     5947 行 (編碼字典)
+  • merge_ph2.txt                  :   172246 行 (雙字詞頻率表)
+  • reneeyu_canph2345ori.txt       :   129193 行 (程式執行初期的原始行數)
+
+[輸出檔案]
+  • reneeyu_canph2345ori.txt       :   129193 行 (最終更新碼表 - 已過濾缺字)
+  • reneeyu_canph2345outdup.txt    :     4436 行 (重碼分析報告)
+
+[暫存檔案 (保留供 Debug)]
+  • reneeyu_canph2345out.txt       :   129193 行
+  • reneeyu_canph2345out_freqmerge.txt :   129193 行
+=====================================================================
+C:\Users\Dad\OneDrive\eyuime>convcancms.py
+2026-06-06 15:20:43.620011
+Python 3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]
+Name of the operating system: Windows nt
+**convering canph2...
+**convering canph3...
+**convering canph4...
+**converting canph5...
+**converting canph6,7...
+cnt= 129256 ,cntout= 129256
+cntout2= 87146 ,cnterr2= 0  cntdup2= 4491
+cntout3= 11487 ,cnterr3= 0
+cntout4= 28951 ,cnterr4= 0
+cntout5= 1661 ,cnterr5= 0
+cntout6= 4
+cntout7= 7
+reneeyu_canph2345ori.txt convert to reneeyu_canph2345out.txt OK
+階段一完成：共處理 129256 行，輸出 129256 個詞組。
+階段二完成：詞頻合併與排序成功。
+File         : reneeyu_canph2345out_freqmerge.txt
+Input lines  : 129,256
+Output lines : 129,256
+Duplicates removed : 0
+階段三完成：最終碼表已更新至 reneeyu_canph2345ori.txt，暫存檔已保留供 Debug 使用。
+
+--- 開始分析雙字詞重碼情況 ---
+分析完成：
+1. 雙字詞總數：87146
+2. 使用的獨立編碼數：82655
+3. 不重碼的雙字詞數：78164
+4. 發生重碼的雙字詞數：8982
+5. 雙字詞重碼率：10.31%
+6. 雙字詞編碼數重碼率：5.15%
+   詳細重碼清單已寫入：reneeyu_canph2345outdup.txt
+
+=====================================================================
+執行總結：輸入與輸出檔案資訊
+=====================================================================
+[輸入檔案]
+  • yus_candict_c.txt              :     5947 行 (編碼字典)
+  • merge_ph2.txt                  :   172246 行 (雙字詞頻率表)
+  • reneeyu_canph2345ori.txt       :   129256 行 (程式執行初期的原始行數)
+
+[輸出檔案]
+  • reneeyu_canph2345ori.txt       :   129256 行 (最終更新碼表 - 已過濾缺字)
+  • reneeyu_canph2345outdup.txt    :     4499 行 (重碼分析報告)
+
+[暫存檔案 (保留供 Debug)]
+  • reneeyu_canph2345out.txt       :   129256 行
+  • reneeyu_canph2345out_freqmerge.txt :   129256 行
+=====================================================================
+C:\Users\Dad\OneDrive\eyuime>convcancms.py
+2026-06-06 11:57:19.853270
+Python 3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]
+Name of the operating system: Windows nt
+**convering canph2...
+**convering canph3...
+**convering canph4...
+**converting canph5...
+**converting canph6,7...
+cnt= 129444 ,cntout= 129444
+cntout2= 87334 ,cnterr2= 0  cntdup2= 4679
+cntout3= 11487 ,cnterr3= 0
+cntout4= 28951 ,cnterr4= 0
+cntout5= 1661 ,cnterr5= 0
+cntout6= 4
+cntout7= 7
+reneeyu_canph2345ori.txt convert to reneeyu_canph2345out.txt OK
+階段一完成：共處理 129444 行，輸出 129444 個詞組。
+階段二完成：詞頻合併與排序成功。
+File         : reneeyu_canph2345out_freqmerge.txt
+Input lines  : 129,444
+Output lines : 129,444
+Duplicates removed : 0
+階段三完成：最終碼表已更新至 reneeyu_canph2345ori.txt，暫存檔已保留供 Debug 使用。
+
+--- 開始分析雙字詞重碼情況 ---
+分析完成：
+1. 雙字詞總數：87334
+2. 使用的獨立編碼數：82655
+3. 不重碼的雙字詞數：77976
+4. 發生重碼的雙字詞數：9358
+5. 雙字詞重碼率：10.72%
+6. 雙字詞編碼數重碼率：5.36%
+   詳細重碼清單已寫入：reneeyu_canph2345outdup.txt
+
+=====================================================================
+執行總結：輸入與輸出檔案資訊
+=====================================================================
+[輸入檔案]
+  • yus_candict_c.txt              :     5947 行 (編碼字典)
+  • merge_ph2.txt                  :   172246 行 (雙字詞頻率表)
+  • reneeyu_canph2345ori.txt       :   129444 行 (程式執行初期的原始行數)
+
+[輸出檔案]
+  • reneeyu_canph2345ori.txt       :   129444 行 (最終更新碼表 - 已過濾缺字)
+  • reneeyu_canph2345outdup.txt    :     4687 行 (重碼分析報告)
+
+[暫存檔案 (保留供 Debug)]
+  • reneeyu_canph2345out.txt       :   129444 行
+  • reneeyu_canph2345out_freqmerge.txt :   129444 行
+=====================================================================
+
+C:\Users\Dad\OneDrive\eyuime>convcancms_geminifilter.py
+2026-06-05 11:32:40.634667
+Python 3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]
+Name of the operating system: Windows nt
+
+=====================================================================
+啟動實驗方案確認：
+  👉 MAX_NCHAR_PER_CODE = 2
+  👉 RANK_THRESHOLD     = 50000
+=====================================================================
+
+**convering canph2...
+**convering canph3...
+**convering canph4...
+**converting canph5...
+**converting canph6,7...
+cnt= 130573 ,cntout= 130573
+cntout2= 88463 ,cnterr2= 0  cntdup2= 5807
+cntout3= 11487 ,cnterr3= 0
+cntout4= 28951 ,cnterr4= 0
+cntout5= 1661 ,cnterr5= 0
+cntout6= 4
+cntout7= 7
+reneeyu_canph2345ori.txt convert to reneeyu_canph2345out.txt OK
+階段一完成：共處理 130573 行，輸出 130573 個詞組。
+階段二完成：詞頻合併與排序成功。
+File         : reneeyu_canph2345out_freqmerge.txt
+Input lines  : 130,573
+Output lines : 130,573
+Duplicates removed : 0
+階段三完成：最終碼表已動態過濾並更新至 reneeyu_canph2345ori_final.txt，被淘汰的雙字詞已輸出至 reneeyu_canph2345_discard-2-50000.txt。
+
+--- 開始分析雙字詞重碼情況 ---
+分析完成：
+1. 雙字詞總數：86735
+2. 使用的獨立編碼數：82656
+3. 不重碼的雙字詞數：78577
+4. 發生重碼的雙字詞數：8158
+5. 雙字詞重碼率：9.41%
+6. 雙字詞編碼數重碼率：4.70%
+   詳細重碼清單已寫入：reneeyu_canph2345outdup.txt
+
+=====================================================================
+執行總結：輸入與輸出檔案資訊
+=====================================================================
+📢 成功將最終檔案更名為: reneeyu_canph2345ori_2_50000_final_128845.txt
+
+[當前執行參數設定]
+  ★ 最大同碼允許詞數 (MAX_NCHAR_PER_CODE) : 2 碼
+  ★ 罕用詞淘汰詞頻門檻 (RANK_THRESHOLD)   : 50000 名
+---------------------------------------------------------------------
+[輸入檔案]
+  • yus_candict_c.txt              :     5947 行 (編碼字典)
+  • merge_ph2.txt                  :   172246 行 (雙字詞頻率表)
+  • reneeyu_canph2345ori.txt       :   130573 行 (原始大碼表)
+
+[輸出檔案]
+  • reneeyu_canph2345ori_2_50000_final_128845.txt :   128845 行 (最終篩選碼表)
+  • reneeyu_canph2345_discard-2-50000.txt :     1731 行 (已淘汰雙字詞清單)
+  • reneeyu_canph2345outdup.txt    :     4087 行 (重碼分析報告)
+
+[暫存檔案 (保留供 Debug)]
+  • reneeyu_canph2345out.txt       :   130573 行
+  • reneeyu_canph2345out_freqmerge.txt :   130573 行
+=====================================================================
+
+
+C:\Users\Dad\OneDrive\eyuime>convcancms.py
+2026-06-05 11:26:10.918118
+Python 3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]
+Name of the operating system: Windows nt
+**convering canph2...
+**convering canph3...
+**convering canph4...
+**converting canph5...
+**converting canph6,7...
+cnt= 130573 ,cntout= 130573
+cntout2= 88463 ,cnterr2= 0  cntdup2= 5807
+cntout3= 11487 ,cnterr3= 0
+cntout4= 28951 ,cnterr4= 0
+cntout5= 1661 ,cnterr5= 0
+cntout6= 4
+cntout7= 7
+reneeyu_canph2345ori.txt convert to reneeyu_canph2345out.txt OK
+階段一完成：共處理 130573 行，輸出 130573 個詞組。
+階段二完成：詞頻合併與排序成功。
+File         : reneeyu_canph2345out_freqmerge.txt
+Input lines  : 130,573
+Output lines : 130,573
+Duplicates removed : 0
+階段三完成：最終碼表已更新至 reneeyu_canph2345ori.txt，暫存檔已保留供 Debug 使用。
+
+--- 開始分析雙字詞重碼情況 ---
+分析完成：
+1. 雙字詞總數：88463
+2. 使用的獨立編碼數：82656
+3. 不重碼的雙字詞數：76849
+4. 發生重碼的雙字詞數：11614
+5. 雙字詞重碼率：13.13%
+6. 雙字詞編碼數重碼率：6.56%
+   詳細重碼清單已寫入：reneeyu_canph2345outdup.txt
+
+=====================================================================
+執行總結：輸入與輸出檔案資訊
+=====================================================================
+[輸入檔案]
+  • yus_candict_c.txt              :     5947 行 (編碼字典)
+  • merge_ph2.txt                  :   172246 行 (雙字詞頻率表)
+  • reneeyu_canph2345ori.txt       :   130573 行 (程式執行初期的原始行數)
+
+[輸出檔案]
+  • reneeyu_canph2345ori.txt       :   130573 行 (最終更新碼表 - 已過濾缺字)
+  • reneeyu_canph2345outdup.txt    :     5815 行 (重碼分析報告)
+
+[暫存檔案 (保留供 Debug)]
+  • reneeyu_canph2345out.txt       :   130573 行
+  • reneeyu_canph2345out_freqmerge.txt :   130573 行
+=====================================================================
+
+
+C:\Users\Dad\OneDrive\eyuime>convcancms_geminifilter.py
+2026-06-04 21:43:45.964918
+Python 3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]
+Name of the operating system: Windows nt
+
+=====================================================================
+啟動實驗方案確認：
+  👉 MAX_NCHAR_PER_CODE = 2
+  👉 RANK_THRESHOLD     = 65000
+=====================================================================
+
+**convering canph2...
+**convering canph3...
+**convering canph4...
+**converting canph5...
+**converting canph6,7...
+cnt= 130738 ,cntout= 130738
+cntout2= 88628 ,cnterr2= 0  cntdup2= 5968
+cntout3= 11487 ,cnterr3= 0
+cntout4= 28951 ,cnterr4= 0
+cntout5= 1661 ,cnterr5= 0
+cntout6= 4
+cntout7= 7
+reneeyu_canph2345ori.txt convert to reneeyu_canph2345out.txt OK
+階段一完成：共處理 130738 行，輸出 130738 個詞組。
+階段二完成：詞頻合併與排序成功。
+File         : reneeyu_canph2345out_freqmerge.txt
+Input lines  : 130,738
+Output lines : 130,738
+Duplicates removed : 0
+階段三完成：最終碼表已動態過濾並更新至 reneeyu_canph2345ori_final.txt，被淘汰的雙字詞已輸出至 reneeyu_canph2345_discard-2-65000.txt。
+
+--- 開始分析雙字詞重碼情況 ---
+分析完成：
+1. 雙字詞總數：88628
+2. 使用的獨立編碼數：82660
+3. 不重碼的雙字詞數：76692
+4. 發生重碼的雙字詞數：11936
+5. 雙字詞重碼率：13.47%
+6. 雙字詞編碼數重碼率：6.73%
+   詳細重碼清單已寫入：reneeyu_canph2345outdup.txt
+
+=====================================================================
+執行總結：輸入與輸出檔案資訊
+=====================================================================
+📢 成功將最終檔案更名為: reneeyu_canph2345ori_2_65000_final_130738.txt
+
+[當前執行參數設定]
+  ★ 最大同碼允許詞數 (MAX_NCHAR_PER_CODE) : 2 碼
+  ★ 罕用詞淘汰詞頻門檻 (RANK_THRESHOLD)   : 65000 名
+---------------------------------------------------------------------
+[輸入檔案]
+  • yus_candict_c.txt              :     5947 行 (編碼字典)
+  • merge_ph2.txt                  :   172246 行 (雙字詞頻率表)
+  • reneeyu_canph2345ori.txt       :   130738 行 (原始大碼表)
+
+[輸出檔案]
+  • reneeyu_canph2345ori_2_65000_final_130738.txt :   130738 行 (最終篩選碼表)
+  • reneeyu_canph2345_discard-2-65000.txt :        3 行 (已淘汰雙字詞清單)
+  • reneeyu_canph2345outdup.txt    :     5976 行 (重碼分析報告)
+
+[暫存檔案 (保留供 Debug)]
+  • reneeyu_canph2345out.txt       :   130738 行
+  • reneeyu_canph2345out_freqmerge.txt :   130738 行
+=====================================================================
+
+C:\Users\Dad\OneDrive\eyuime>convcancms.py
+2026-06-04 21:13:14.422083
+Python 3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]
+Name of the operating system: Windows nt
+**convering canph2...
+**convering canph3...
+**convering canph4...
+**converting canph5...
+**converting canph6,7...
+cnt= 130738 ,cntout= 130738
+cntout2= 88628 ,cnterr2= 0  cntdup2= 5968
+cntout3= 11487 ,cnterr3= 0
+cntout4= 28951 ,cnterr4= 0
+cntout5= 1661 ,cnterr5= 0
+cntout6= 4
+cntout7= 7
+reneeyu_canph2345ori.txt convert to reneeyu_canph2345out.txt OK
+階段一完成：共處理 130738 行，輸出 130738 個詞組。
+階段二完成：詞頻合併與排序成功。
+File         : reneeyu_canph2345out_freqmerge.txt
+Input lines  : 130,738
+Output lines : 130,738
+Duplicates removed : 0
+階段三完成：最終碼表已更新至 reneeyu_canph2345ori.txt，暫存檔已保留供 Debug 使用。
+
+--- 開始分析雙字詞重碼情況 ---
+分析完成：
+1. 雙字詞總數：88628
+2. 使用的獨立編碼數：82660
+3. 不重碼的雙字詞數：76692
+4. 發生重碼的雙字詞數：11936
+5. 雙字詞重碼率：13.47%
+6. 雙字詞編碼數重碼率：6.73%
+   詳細重碼清單已寫入：reneeyu_canph2345outdup.txt
+
+=====================================================================
+執行總結：輸入與輸出檔案資訊
+=====================================================================
+[輸入檔案]
+  • yus_candict_c.txt              :     5947 行 (編碼字典)
+  • merge_ph2.txt                  :   172246 行 (雙字詞頻率表)
+  • reneeyu_canph2345ori.txt       :   130738 行 (程式執行初期的原始行數)
+
+[輸出檔案]
+  • reneeyu_canph2345ori.txt       :   130738 行 (最終更新碼表 - 已過濾缺字)
+  • reneeyu_canph2345outdup.txt    :     5976 行 (重碼分析報告)
+
+[暫存檔案 (保留供 Debug)]
+  • reneeyu_canph2345out.txt       :   130738 行
+  • reneeyu_canph2345out_freqmerge.txt :   130738 行
+=====================================================================
+C:\Users\Dad\OneDrive\eyuime>cifu_extract_canph12.py
+✅ 處理完成！
+📄 粵語單字詞已匯出至 'cifu_ph1freq.txt' (共提取 3935 個，UTF-16 編碼)。
+📄 粵語雙字詞已匯出至 'cifu_ph2freq.txt' (共提取 37910 個，UTF-16 編碼)。
+
+C:\Users\Dad\OneDrive\eyuime>zh-50k_extract_ph12.py
+✅ 處理完成！
+📄 單字詞檔案已匯出至 'zh-50k_ph1freq.txt' (共提取 5924 個，UTF-16 編碼)。
+📄 雙字詞檔案已匯出至 'zh-50k_ph2freq.txt' (共提取 34590 個，UTF-16 編碼)。
+
+C:\Users\Dad\OneDrive\eyuime>cifu_extract_written_ph2.py
+✅ 處理完成！共提取了 35434 個具備『書面語頻率』的雙字詞。
+📄 專屬香港書面語的 Cifu 排名檔已匯出至 'cifu_written_ph2rank.txt'。
+
+C:\Users\Dad\OneDrive\eyuime>cifu_cleanto_written.py
+開始清洗口語詞彙...
+正在重新排名並匯出...
+✅ 清洗完成！
+📄 過濾後的純書面語檔案已匯出至：cifu_pure_written_ph2rank.txt
+
+C:\Users\Dad\OneDrive\eyuime>cifu_cleanto_written.py
+開始進行雙重清洗 (單字特徵 + 詞彙特徵)...
+正在重新排名並匯出...
+✅ 清洗完成！
+📄 升級版純書面語檔案已匯出至：cifu_pure_written_ph2rank.txt
+
+C:\Users\Dad\OneDrive\eyuime>cifu_cleanto_written_v3.py
+開始進行第三代深度清洗...
+正在重新排名並匯出...
+✅ 清洗完成！
+📄 V3 版純書面語檔案已匯出至：cifu_v3_written_ph2rank.txt
+
+C:\Users\Dad\OneDrive\eyuime>merge_hk_ph2_final.py
+讀取並解析三地詞庫中...
+正在進行交叉驗證與 Zipf's Law 權重計算...
+正在匯出最終成果...
+✅ 大功告成！完美整合了 56039 個香港標準書面雙字詞。
+📄 您的終極詞庫已匯出至：HK_Standard_Written_PH2.txt
+
+C:\Users\Dad\OneDrive\eyuime>cifu_convert_numbers.py
+開始進行數字轉中文查表處理...
+✅ 處理完成！共轉換了 26 個包含數字的詞彙。
+📄 轉換後的檔案已匯出至：HK_Standard_Written_PH2_ChineseNum.txt
+
+C:\Users\Dad\OneDrive\eyuime>cifu_convert_numbers.py
+開始進行綜合查表處理 (英標轉全形 + 數字轉中文)...
+✅ 處理完成！共轉換了 2 個包含數字、半形英文或標點的詞彙。
+📄 轉換後的純淨檔案已匯出至：HK_Standard_Written_PH2_FinalClean.txt
+
+**convering canph3...
+**convering canph4...
+**converting canph5...
+**converting canph6,7...
+分析完成：詳細缺字清單已寫入：missing_in_dict.txt
+cnt= 117374 ,cntout= 117294
+cntout2= 75186 ,cnterr2= 80  cntdup2= 16298
+cntout3= 11487 ,cnterr3= 0
+cntout4= 28949 ,cnterr4= 0
+cntout5= 1661 ,cnterr5= 0
+cntout6= 4
+cntout7= 7
+reneeyu_canph2345ori.txt convert to reneeyu_canph2345out.txt OK
+階段一完成：共處理 117374 行，輸出 117294 個詞組。
+階段二完成：詞頻合併與排序成功。
+File         : reneeyu_canph2345out_freqmerge.txt
+Input lines  : 117,294
+Output lines : 117,294
+Duplicates removed : 0
+階段三完成：最終碼表已更新至 reneeyu_canph2345ori.txt，暫存檔已保留供 Debug 使用。
+
+--- 開始分析雙字詞重碼情況 ---
+分析完成：
+1. 雙字詞總數：75186
+2. 使用的獨立編碼數：58888
+3. 不重碼的雙字詞數：47175
+4. 發生重碼的雙字詞數：28011
+5. 雙字詞重碼率：37.26%
+6. 雙字詞編碼數重碼率：15.58%
+   詳細重碼清單已寫入：reneeyu_canph2345outdup.txt
+
+=====================================================================
+執行總結：輸入與輸出檔案資訊
+=====================================================================
+[輸入檔案]
+  • yus_candict_c.txt              :     5946 行 (編碼字典)
+  • merge_ph2.txt                  :    56038 行 (雙字詞頻率表)
+  • reneeyu_canph2345ori.txt       :   117374 行 (程式執行初期的原始行數)
+
+[輸出檔案]
+  • reneeyu_canph2345ori.txt       :   117294 行 (最終更新碼表 - 已過濾缺字)
+  • reneeyu_canph2345outdup.txt    :    11721 行 (重碼分析報告)
+  • missing_in_dict.txt            :       69 行 (缺字分析報告)
+
+[暫存檔案 (保留供 Debug)]
+  • reneeyu_canph2345out.txt       :   117294 行
+  • reneeyu_canph2345out_freqmerge.txt :   117294 行
+=====================================================================
+
+C:\Users\Dad\OneDrive\eyuime>convcancms.py
+**convering canph2...
+**convering canph3...
+**convering canph4...
+**converting canph5...
+**converting canph6,7...
+cnt= 117294 ,cntout= 117294
+cntout2= 75186 ,cnterr2= 0  cntdup2= 16298
+cntout3= 11487 ,cnterr3= 0
+cntout4= 28949 ,cnterr4= 0
+cntout5= 1661 ,cnterr5= 0
+cntout6= 4
+cntout7= 7
+reneeyu_canph2345ori.txt convert to reneeyu_canph2345out.txt OK
+階段一完成：共處理 117294 行，輸出 117294 個詞組。
+階段二完成：詞頻合併與排序成功。
+File         : reneeyu_canph2345out_freqmerge.txt
+Input lines  : 117,294
+Output lines : 117,294
+Duplicates removed : 0
+階段三完成：最終碼表已更新至 reneeyu_canph2345ori.txt，暫存檔已保留供 Debug 使用。
+
+--- 開始分析雙字詞重碼情況 ---
+分析完成：
+1. 雙字詞總數：75186
+2. 使用的獨立編碼數：58888
+3. 不重碼的雙字詞數：47175
+4. 發生重碼的雙字詞數：28011
+5. 雙字詞重碼率：37.26%
+6. 雙字詞編碼數重碼率：15.58%
+   詳細重碼清單已寫入：reneeyu_canph2345outdup.txt
+
+=====================================================================
+執行總結：輸入與輸出檔案資訊
+=====================================================================
+[輸入檔案]
+  • yus_candict_c.txt              :     5946 行 (編碼字典)
+  • merge_ph2.txt                  :    56038 行 (雙字詞頻率表)
+  • reneeyu_canph2345ori.txt       :   117294 行 (程式執行初期的原始行數)
+
+[輸出檔案]
+  • reneeyu_canph2345ori.txt       :   117294 行 (最終更新碼表 - 已過濾缺字)
+  • reneeyu_canph2345outdup.txt    :    11721 行 (重碼分析報告)
+
+[暫存檔案 (保留供 Debug)]
+  • reneeyu_canph2345out.txt       :   117294 行
+  • reneeyu_canph2345out_freqmerge.txt :   117294 行
+=====================================================================

@@ -100,7 +100,7 @@ print(f"階段一完成：共處理 {cnt} 行，產出速成碼詞組。")
 # 第二階段：詞頻注入與排序 (Frequency & Sorting)
 # =====================================================================
 
-dictpath = 'merge_jieba.txt'
+dictpath = 'merge_ph2.txt'
 filefreqmerge = 'reneeyu_ph2345out_freqmerge.txt'
 mergedict = {}
 
@@ -114,7 +114,7 @@ with open(fileout, 'r', encoding='utf-16') as fp, \
      open(filefreqmerge, 'w', encoding='utf-16') as fom:
     for line in fp:
         word = line.strip().split()[-1]
-        freq = mergedict.get(word[:2], '888888')
+        freq = mergedict.get(word[:2], '188888')
         # 標籤格式：長度(02) + 編碼(6位) + 詞頻(6位)
         prefix = f"{len(word):02d}"
         fom.write(f"{prefix}{line[0:6]}{freq}{line[7:]}")
