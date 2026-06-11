@@ -10,14 +10,14 @@ __build_info:
     renee.custom: 0
     renee.schema: 1761630286
 ascii_composer:
-  good_old_caps_lock: false
+  good_old_caps_lock: true # 啟用傳統大寫鎖定行為（鎖定大寫，而非切換成小寫西文）
   switch_key:
-    Caps_Lock: clear
+    Caps_Lock: noop # Caps Lock 只負責改變字母大小寫，不做 Rime 內部之中西文切換
+    Shift_L: noop # 停用左 Shift 單擊切換，符合微軟速成習慣
+    Shift_R: noop # 停用右 Shift 單擊切換
     Control_L: noop
     Control_R: noop
     Eisu_toggle: clear
-    Shift_L: inline_ascii
-    Shift_R: commit_text
 engine:
   filters:
     - simplifier
@@ -42,6 +42,7 @@ engine:
     - table_translator
 key_binder:
   bindings:
+    # Emacs 風格的光標/編輯控制
     - {accept: "Control+p", send: Up, when: composing}
     - {accept: "Control+n", send: Down, when: composing}
     - {accept: "Control+b", send: Left, when: composing}
@@ -58,75 +59,18 @@ key_binder:
     - {accept: ISO_Left_Tab, send: "Shift+Left", when: composing}
     - {accept: "Shift+Tab", send: "Shift+Left", when: composing}
     - {accept: Tab, send: "Shift+Right", when: composing}
+    
+    # 翻頁鍵設定 (減號/等號、逗號/句號、方括號)
     - {accept: minus, send: Page_Up, when: has_menu}
     - {accept: equal, send: Page_Down, when: has_menu}
     - {accept: comma, send: Page_Up, when: paging}
     - {accept: period, send: Page_Down, when: has_menu}
-    - {accept: "Control+Shift+1", select: .next, when: always}
-    - {accept: "Control+Shift+2", toggle: ascii_mode, when: always}
-    - {accept: "Control+Shift+3", toggle: full_shape, when: always}
-    - {accept: "Control+Shift+4", toggle: simplification, when: always}
-    - {accept: "Control+Shift+5", toggle: extended_charset, when: always}
-    - {accept: "Control+Shift+exclam", select: .next, when: always}
-    - {accept: "Control+Shift+at", toggle: ascii_mode, when: always}
-    - {accept: "Control+Shift+numbersign", toggle: full_shape, when: always}
-    - {accept: "Control+Shift+dollar", toggle: simplification, when: always}
-    - {accept: "Control+Shift+percent", toggle: extended_charset, when: always}
-    - {accept: "Control+p", send: Up, when: composing}
-    - {accept: "Control+n", send: Down, when: composing}
-    - {accept: "Control+b", send: Left, when: composing}
-    - {accept: "Control+f", send: Right, when: composing}
-    - {accept: "Control+a", send: Home, when: composing}
-    - {accept: "Control+e", send: End, when: composing}
-    - {accept: "Control+d", send: Delete, when: composing}
-    - {accept: "Control+k", send: "Shift+Delete", when: composing}
-    - {accept: "Control+h", send: BackSpace, when: composing}
-    - {accept: "Control+g", send: Escape, when: composing}
-    - {accept: "Control+bracketleft", send: Escape, when: composing}
-    - {accept: "Alt+v", send: Page_Up, when: composing}
-    - {accept: "Control+v", send: Page_Down, when: composing}
-    - {accept: ISO_Left_Tab, send: "Shift+Left", when: composing}
-    - {accept: "Shift+Tab", send: "Shift+Left", when: composing}
-    - {accept: Tab, send: "Shift+Right", when: composing}
-    - {accept: minus, send: Page_Up, when: has_menu}
-    - {accept: equal, send: Page_Down, when: has_menu}
-    - {accept: comma, send: Page_Up, when: paging}
-    - {accept: period, send: Page_Down, when: has_menu}
-    - {accept: "Control+Shift+1", select: .next, when: always}
-    - {accept: "Control+Shift+2", toggle: ascii_mode, when: always}
-    - {accept: "Control+Shift+3", toggle: full_shape, when: always}
-    - {accept: "Control+Shift+4", toggle: simplification, when: always}
-    - {accept: "Control+Shift+5", toggle: extended_charset, when: always}
-    - {accept: "Control+Shift+exclam", select: .next, when: always}
-    - {accept: "Control+Shift+at", toggle: ascii_mode, when: always}
-    - {accept: "Control+Shift+numbersign", toggle: full_shape, when: always}
-    - {accept: "Control+Shift+dollar", toggle: simplification, when: always}
-    - {accept: "Control+Shift+percent", toggle: extended_charset, when: always}
-    - {accept: "Control+space", toggle: ascii_mode, when: always}
-    - {accept: "Control+p", send: Up, when: composing}
-    - {accept: "Control+n", send: Down, when: composing}
-    - {accept: "Control+b", send: Left, when: composing}
-    - {accept: "Control+f", send: Right, when: composing}
-    - {accept: "Control+a", send: Home, when: composing}
-    - {accept: "Control+e", send: End, when: composing}
-    - {accept: "Control+d", send: Delete, when: composing}
-    - {accept: "Control+k", send: "Shift+Delete", when: composing}
-    - {accept: "Control+h", send: BackSpace, when: composing}
-    - {accept: "Control+g", send: Escape, when: composing}
-    - {accept: "Control+bracketleft", send: Escape, when: composing}
-    - {accept: "Alt+v", send: Page_Up, when: composing}
-    - {accept: "Control+v", send: Page_Down, when: composing}
-    - {accept: ISO_Left_Tab, send: "Shift+Left", when: composing}
-    - {accept: "Shift+Tab", send: "Shift+Left", when: composing}
-    - {accept: Tab, send: "Shift+Right", when: composing}
     - {accept: bracketleft, send: Page_Up, when: has_menu}
     - {accept: bracketright, send: Page_Down, when: has_menu}
     - {accept: bracketleft, send: Page_Up, when: paging}
     - {accept: bracketright, send: Page_Down, when: paging}
-    - {accept: minus, send: Page_Up, when: has_menu}
-    - {accept: equal, send: Page_Down, when: has_menu}
-    - {accept: comma, send: Page_Up, when: paging}
-    - {accept: period, send: Page_Down, when: has_menu}
+    
+    # 狀態切換快捷鍵
     - {accept: "Control+Shift+1", select: .next, when: always}
     - {accept: "Control+Shift+2", toggle: ascii_mode, when: always}
     - {accept: "Control+Shift+3", toggle: full_shape, when: always}
@@ -137,6 +81,9 @@ key_binder:
     - {accept: "Control+Shift+numbersign", toggle: full_shape, when: always}
     - {accept: "Control+Shift+dollar", toggle: simplification, when: always}
     - {accept: "Control+Shift+percent", toggle: extended_charset, when: always}
+    
+    # 微軟風格：使用 Control + Space 切換中英文輸入狀態
+    - {accept: "Control+space", toggle: ascii_mode, when: always}
     - {accept: Return, send: space, when: has_menu}
   import_preset: default
 menu:
