@@ -1,5 +1,6 @@
 absl-py
 ai-edge-litert
+aiohappyeyeballs
 aiohttp
 annotated-doc
 anyio
@@ -249,6 +250,7 @@ tinycss2
 tokenizers
 toml
 tornado
+tqdm
 traitlets
 trio
 trio-typing
