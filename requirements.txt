@@ -87,6 +87,7 @@ jsonschema
 jsonschema-specifications
 jupyter
 jupyter-bokeh
+jupyter-builder
 jupyter-client
 jupyter-console
 jupyter-core
@@ -131,6 +132,7 @@ nbclient
 nbconvert
 nbformat
 nest-asyncio
+nest-asyncio2
 networkx
 notebook
 notebook-shim
@@ -156,7 +158,7 @@ nvidia-nvtx-cu12
 nvidia-pyindex
 onnx
 onnxconverter-common
-onnxruntime-gpu
+onnxruntime-gpu==1.26.0
 opt-einsum
 optree
 orjson
@@ -280,7 +282,7 @@ wheel
 widgetsnbextension
 wrapt
 wsproto
-xgboost
+xgboost==3.2.0
 xyzservices
 yarl
 zipp

@@ -355,7 +355,7 @@ with open(fileout, 'r', encoding='utf-16') as fp, \
      open(filefreqmerge, 'w', encoding='utf-16') as fom:
     for line in fp:
         word = line.strip().split()[-1]
-        freq = mergedict.get(word[:2], '108888')
+        freq = mergedict.get(word[:2], '018888')
         prefix = f"{len(word):02d}"
         # 此時 line[0:6] 為拼音碼(ngomoo)，freq 為從 merge_ph2 取到的頻率(000001)
         fom.write(f"{prefix}{' '}{line[0:6]}{' '}{freq}{line[7:]}")
@@ -379,12 +379,12 @@ with open(fileout, 'r', encoding='utf-16') as fp, \
         word = line.strip().split()[-1]
         prefix = f"{len(word):02d}"
         if prefix == "04":
-            freq1 = mergedict.get(word[:2], '108888')   # 默认值改为 108888
-            freq2 = mergedict.get(word[2:4], '108888')
+            freq1 = mergedict.get(word[:2], '018888')   # 默认值改为 018888
+            freq2 = mergedict.get(word[2:4], '018888')
             freq4 = int(freq1)+int(freq2)
             freq = f"{freq4:06d}"
         else:
-            freq = mergedict.get(word[:2], '108888')   # 默认值改为 108888
+            freq = mergedict.get(word[:2], '018888')   # 默认值改为 018888
         fom_line = f"{prefix} {line[0:6]} {freq} {line[7:]}"
         fom.write(fom_line)
         prev_line = line

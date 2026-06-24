@@ -10,9 +10,9 @@ __build_info:
     renee.custom: 0
     renee.schema: 1761630286
 ascii_composer:
-  good_old_caps_lock: true # 啟用傳統大寫鎖定行為（鎖定大寫，而非切換成小寫西文）
+  good_old_caps_lock: false # true 啟用傳統大寫鎖定行為（鎖定大寫，而非切換成小寫西文）
   switch_key:
-    Caps_Lock: noop # Caps Lock 只負責改變字母大小寫，不做 Rime 內部之中西文切換
+    Caps_Lock: clear # noop Caps Lock 只負責改變字母大小寫，不做 Rime 內部之中西文切換
     Shift_L: noop # 停用左 Shift 單擊切換，符合微軟速成習慣
     Shift_R: noop # 停用右 Shift 單擊切換
     Control_L: noop

@@ -1,0 +1,371 @@
+找尋在香港近50年出現在書面用的繁體雙字詞。 
+給出大約70000 至 90000個雙字詞，放在HK_PH2.TXT (UTF-16)，格式是
+000001 我們
+000002 自己
+...
+刪除人名，地名，和帶有姓氏的，如李總、黃父
+請不要RANDOM 產生雙字詞！不一定要常用，不需排序，
+請從香港近50年的書面語(網頁，政府，新聞，刊物，書本，論文等) 尋找
+
+-------------------------------
+由於系統的單次輸出字數限制，我無法直接在對話中生成並提供包含 70,000 至 90,000 行的完整文檔。
+
+要精確獲取不含人名、地名及姓氏稱謂的香港真實書面語雙字詞，最有效的方式是利用 Python 腳本對香港本地的語料庫（如香港政府新聞網開源數據、維基百科繁體香港語料、或大學的中文語料庫）進行自動化提取與清洗。
+
+以下為你提供一個自動化生成的 Python 腳本，以及符合你要求的資料輸出範例。
+
+### 1. 輸出格式範例 (HK_PH2.TXT 樣本)
+
+這是一份符合你要求的純雙字詞樣本（已排除地名如「香港」、「九龍」，以及人名或「李總」等詞彙）：
+
+```text
+000001 我們
+000002 自己
+000003 社會
+000004 發展
+000005 經濟
+000006 問題
+000007 政策
+000008 處理
+000009 討論
+000010 情況
+000011 報告
+000012 進行
+000013 提供
+000014 服務
+000015 支持
+000016 影響
+000017 要求
+000018 增加
+000019 減少
+000020 參與
+000021 管理
+000022 制度
+000023 組織
+000024 決定
+000025 表示
+000026 認為
+000027 發現
+000028 改變
+000029 建立
+000030 改善
+000031 投資
+000032 資源
+000033 環境
+000034 保護
+000035 建設
+000036 計劃
+000037 安排
+000038 準備
+000039 負責
+000040 合作
+000041 交流
+000042 溝通
+000043 了解
+000044 明白
+000045 清楚
+000046 確定
+000047 證明
+000048 說明
+000049 解釋
+000050 分析
+
+```
+
+### 2. 語料庫提取腳本 (Python)
+
+你可以使用 `jieba` 分詞庫結合詞性標注（POS tagging），從你手邊的大型語料文本（如 `corpus.txt`）中精準篩選並匯出 `UTF-16` 格式的文檔。腳本會自動排除人名（`nr`）、地名（`ns`），並用正則表達式剔除帶有常見姓氏的詞彙。
+
+```python
+import jieba
+import jieba.posseg as pseg
+import re
+
+# 請將 input_file 替換為你的香港繁體語料庫檔案路徑
+input_file = "hk_corpus_text.txt"
+output_file = "HK_PH2.TXT"
+
+def generate_hk_ph2(input_path, output_path, target_count=80000):
+    word_set = set()
+    
+    # 僅允許純中文字符（排除包含數字、英文字母或標點的詞）
+    chinese_pattern = re.compile(r'^[\u4E00-\u9FA5]{2}$')
+    
+    # 常見姓氏黑名單正則表達式，排除如「李總」、「黃父」、「陳生」等
+    surname_pattern = re.compile(r'^(陳|林|黃|吳|李|張|王|梁|劉|楊|周|鄭|何|郭|曾)[總生父哥姐媽伯叔太]')
+
+    try:
+        with open(input_path, 'r', encoding='utf-8') as f:
+            for line in f:
+                # 使用 pseg 進行分詞與詞性標注
+                words = pseg.cut(line.strip())
+                for word, flag in words:
+                    # 條件 1: 必須是雙字詞且全為中文
+                    if len(word) == 2 and chinese_pattern.match(word):
+                        # 條件 2: 排除人名(nr, nrfg, nrt)和地名(ns)
+                        if flag not in ['nr', 'ns', 'nrfg', 'nrt']:
+                            # 條件 3: 排除帶有姓氏的稱謂
+                            if not surname_pattern.match(word):
+                                word_set.add(word)
+                                
+                    # 達到目標數量即停止
+                    if len(word_set) >= target_count:
+                        break
+                if len(word_set) >= target_count:
+                    break
+                    
+    except FileNotFoundError:
+        print(f"錯誤：找不到語料庫檔案 {input_path}")
+        return
+
+    # 將結果輸出為 UTF-16 格式，並加上 6 位數流水號
+    with open(output_path, 'w', encoding='utf-16') as f:
+        # 將集合轉為列表，不強制排序（符合無需排序的要求）
+        for i, word in enumerate(list(word_set), 1):
+            f.write(f"{i:06d} {word}\n")
+            
+    print(f"成功匯出 {len(word_set)} 個雙字詞至 {output_path}")
+
+# 執行提取程式
+if __name__ == "__main__":
+    generate_hk_ph2(input_file, output_file, target_count=90000)
+
+```
+
+**運行建議：**
+
+1. 確保已安裝 jieba 函式庫：`pip install jieba`。
+2. 為了更符合香港用語習慣，建議在腳本開頭載入自定義的繁體/粵語詞典：`jieba.load_userdict("your_hk_dict.txt")`。
+
+-----------------------------------------------
+要讓 `jieba` 更精準地辨識香港的在地用詞（避免它將香港特有的雙字詞錯誤切分成兩個單字），載入自定義字典是非常關鍵的一步。
+
+以下是具體的操作步驟與格式說明：
+
+### 1. 建立字典檔案
+
+在你的 Python 腳本同一目錄下，建立一個純文字檔案，命名為 `hk_dict.txt`（檔名可以自訂，只要與程式碼中呼叫的名稱一致即可）。
+**注意：** 該檔案必須使用 **UTF-8 編碼**儲存。
+
+### 2. 了解字典檔的格式
+
+`jieba` 的自定義字典格式非常嚴格，每一行代表一個詞彙，格式如下（各元素之間用**一個空格**隔開）：
+
+> `詞語 詞頻 詞性`
+
+* **詞語：** 必填（例如：雪櫃、屋邨、巴士）。
+* **詞頻：** 選填。建議填寫 `3` 或以上的大數字，強迫 `jieba` 優先將這幾個字組合在一起。若不確定可以不填。
+* **詞性：** 選填。例如 `n` 代表名詞、`v` 代表動詞。若為了配合你之前排除人名/地名的邏輯，建議標上正確的詞性，或者統一標為 `n`。
+
+### 3. 填寫香港專屬詞彙（範例）
+
+打開 `hk_dict.txt`，輸入你想保護不被切斷的香港常見書面或口語化雙字詞。例如：
+
+```text
+雪櫃 5 n
+屋邨 5 n
+街市 5 n
+巴士 5 n
+小巴 5 n
+輕鐵 5 n
+港鐵 5 n
+的士 5 n
+單車 5 n
+冷氣 5 n
+按揭 5 n
+強積 5 n
+居屋 5 n
+地舖 5 n
+裝修 5 v
+
+```
+
+### 4. 修改 Python 程式碼
+
+將載入字典的指令加入到你原本的 Python 腳本的最前端（緊接在 `import` 之後）。
+
+```python
+import jieba
+import jieba.posseg as pseg
+import re
+
+# 載入你的自定義香港字典
+jieba.load_userdict("hk_dict.txt")
+
+# 以下是你原本的程式碼...
+input_file = "hk_corpus_text.txt"
+output_file = "HK_PH2.TXT"
+
+# ... (後續的 generate_hk_ph2 函數)
+
+```
+
+---
+
+### 💡 進階建議：如何獲取現成的香港詞典？
+
+如果你不想從零開始手動輸入幾千個詞，可以善用開源資源：
+
+* **GitHub 上的粵語/香港詞庫：** 搜尋 `rime-cantonese` (粵語拼音輸入法的詞庫) 或其他開源的繁體中文 NLP 詞庫。
+* 你可以將這些開源詞庫下載後，用 Excel 或簡單的 Python 腳本過濾出雙字詞，整理成 `詞語 3 n` 的格式，然後另存為 `hk_dict.txt` 直接餵給 `jieba` 使用。這樣能大幅提升分詞的準確度。
+
+---------------------------------------------------------------
+要產生一個能夠提煉出 70,000 至 90,000 個**不重複**雙字詞的 `hk_corpus_text.txt`，這個底層語料庫的文字量必須非常龐大（通常需要包含數千萬字、甚至上億字的文章）。因為漢字的常用雙字詞大約只有 3 到 5 萬個，要達到 7 萬以上，必須涵蓋過去 50 年大量政府公報、新聞、學術論文、書籍等各領域的罕見詞、專業術語或歷史詞彙。
+
+以下為你提供 **三種最有效且合法的管道** 來產生這個 `hk_corpus_text.txt`，並附上自動合成的 Python 腳本。
+
+---
+
+## 管道一：利用 Python 自動下載香港政府開放數據（最推薦、最純正的書面語）
+
+香港政府的「資料一線通」(DATA.GOV.HK) 開放了過去幾十年的新聞公報和政府文件，這是最標準的香港繁體書面語來源。
+
+你可以執行以下腳本，透過政府的 API 自動下載大量的新聞文本，並直接合併輸出為 `hk_corpus_text.txt`：
+
+```python
+import requests
+import json
+import os
+
+def fetch_hk_gov_data(output_file="hk_corpus_text.txt"):
+    print("正在從香港政府開放數據下載新聞公報語料...")
+    
+    # 香港政府新聞公報的 JSON API 終端（以近期數據為例，可調整參數獲取更多歷史數據）
+    url = "https://www.news.gov.hk/tc/common/html/ticker.json"
+    
+    try:
+        response = requests.get(url, timeout=15)
+        response.raise_for_status()
+        data = response.json()
+        
+        with open(output_file, "w", encoding="utf-8") as f:
+            count = 0
+            for item in data:
+                # 提取標題與內文
+                title = item.get("title", "")
+                summary = item.get("description", "")
+                
+                if title:
+                    f.write(title + "\n")
+                    count += 1
+                if summary:
+                    f.write(summary + "\n")
+                    
+        print(f"成功下載並生成 {output_file}，共寫入 {count} 條政府新聞語料。")
+        print("提示：若要達到9萬個雙字詞，建議下載更龐大的歷史封檔（Archive）或結合管道二、三。")
+        
+    except Exception as e:
+        print(f"下載失敗: {e}")
+
+if __name__ == "__main__":
+    fetch_hk_gov_data()
+
+```
+
+---
+
+## 管道二：下載現成的海量香港語料庫（最快達到 9 萬字的方法）
+
+如果你需要立即獲得數十 GB 的香港在地書面語（網頁、刊物、論文），國際學術機構有提供免費的開源純文字語料庫：
+
+1. **Leipzig Corpora Collection (萊比錫語料庫):**
+* 進入其官方網站，尋找 **`zho-hk` (Chinese - Hong Kong)** 的語料包。
+* 它們收集了香港各大報章、政府網站及網頁的純文字（例如 `zho-hk_web_2024_100K-text.tar.gz`）。
+* 下載後解壓，裡面會有名為 `zho-hk_...-sentences.txt` 的純文字檔案，直接將該檔案重新命名為 `hk_corpus_text.txt` 即可。
+
+
+2. **維基百科香港繁體中文 Dump:**
+* 維基百科記錄了大量香港歷史、政治、經濟、學術（論文類）的書面文字。
+* 下載 `zhwiki` 的最新版數據庫，使用開源工具 `WikiExtractor` 轉成純文字，再將含有大量香港條目的文本過濾出來，即是完美的書面語料庫。
+
+
+
+---
+
+## 管道三：自行搜集並合成本地文件（政府 PDF、論文、書籍）
+
+如果你手頭上已經有過去 50 年的香港電子書、政府諮詢文件 PDF、大學論文、或者從新聞網複製下來的文字檔，你可以把這些檔案通通放進同一個資料夾，用以下 Python 腳本**自動將它們合併、清洗，並轉換為標準的 `hk_corpus_text.txt**`：
+
+```python
+import os
+import re
+
+def combine_local_files(input_folder="hk_source_texts", output_file="hk_corpus_text.txt"):
+    """
+    將指定資料夾內所有的 .txt 檔案合併，並清洗乾淨成語料庫
+    """
+    if not os.path.exists(input_folder):
+        os.makedirs(input_folder)
+        print(f"已新建資料夾 '{input_folder}'。請將你的香港文章/新聞/論文 txt 檔放入該資料夾內，然後重新執行此腳本。")
+        return
+
+    print(f"正在讀取 '{input_folder}' 內的檔案...")
+    
+    with open(output_file, "w", encoding="utf-8") as outfile:
+        file_count = 0
+        for root, dirs, files in os.walk(input_folder):
+            for file in files:
+                if file.endswith(".txt"):
+                    file_path = os.path.join(root, file)
+                    try:
+                        with open(file_path, "r", encoding="utf-8") as infile:
+                            content = infile.read()
+                            
+                            # 清洗文本：只保留漢字，去除亂碼和過多的英文字元（有助於精準分詞）
+                            clean_content = re.sub(r'[^\u4E00-\u9FA5\n，。？；：！「」]', '', content)
+                            
+                            outfile.write(clean_content + "\n")
+                            file_count += 1
+                    except Exception as e:
+                        print(f"讀取檔案 {file} 時出錯: {e}")
+                        
+    print(f"【完成】已成功合併 {file_count} 個檔案至 {output_file}！")
+
+if __name__ == "__main__":
+    # 執行前，請將你的歷史文本放入名為 hk_source_texts 的資料夾中
+    combine_local_files()
+
+```
+
+### 💡 完美的執行流程建議：
+
+1. 先用 **管道二** 下載萊比錫或維基百科的香港繁體大數據，作為底層的大基數（確保能衝破 70,000 個不重複詞）。
+2. 用 **管道三** 的腳本，將你手邊珍貴的香港本地政府刊物、書籍、論文文字合併進去。
+3. 將最終合併出來的檔案命名為 `hk_corpus_text.txt`（確保是 UTF-8 編碼）。
+4. 接著執行你上一階段準備好的 `jieba` 分詞腳本（它會先讀取 `hk_dict.txt` 保護香港特有詞），最後就能精準、不重複、非隨機地導出包含 7-9 萬個雙字詞的 `HK_PH2.TXT (UTF-16)` 了！
+====================================================================================
+`hk_corpus_text.txt` 的格式非常簡單，它就是一個**普通的純文字檔（Plain Text）**。
+
+它不需要像 Excel 或 CSV 那樣有嚴格的欄位分隔，也不需要像 JSON 那樣有複雜的語法結構。以下是它的具體規格與外觀範例：
+
+### 1. 核心規格
+
+* **檔案類型：** 純文字檔 (`.txt`)。
+* **編碼格式：** **UTF-8** (不帶 BOM)。這是最關鍵的，因為 Python 腳本預設會以 UTF-8 讀取它。
+* **內容結構：** 正常的文章段落、新聞、論文或句子，每一行代表一段話或一篇文章，中間包含標點符號都沒有關係。
+
+---
+
+### 2. 檔案內容範例
+
+如果你打開 `hk_corpus_text.txt`，它看起來就像是直接從網頁、報紙或報告中複製貼上的中文字：
+
+```text
+香港特別行政區政府今日公佈，行政長官將於下週展開訪問行程。
+根據最新發佈的經濟報告指出，本港今年第一季的本地生產總值錄得顯著增長，社會各界對此表示樂觀。
+近年來，不少市民關注屋邨的冷氣與設施老化問題，房屋署已計劃逐步展開翻新工程，以改善居民的生活環境。
+這篇論文主要探討香港近五十年來在都市規劃與可持續發展方面的政策演變。
+
+```
+
+---
+
+### 3. 為什麼這種格式就可以？
+
+因為我們之前寫的 Python 腳本會自動處理這份文本：
+
+1. **逐行讀取：** 程式會一行一行讀進去。
+2. **自動切詞：** `jieba` 會自動把上面的句子切開（例如：`香港` / `特別` / `行政區` / `政府` / `今日` / `公佈`）。
+3. **自動過濾：** 腳本裡的 `pseg.cut` 和正則表達式（Regex）會自動丟棄標點符號（`，` `。`）、數字、英文，並且**只挑選長度剛好為 2 個字的中文字**塞進集合（Set）裡。
+
+所以，你只需要把收集到的香港書面語文章，毫無格式地通通貼進這個 `hk_corpus_text.txt` 檔案裡儲存即可！
