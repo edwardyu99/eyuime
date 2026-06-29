@@ -38,6 +38,7 @@ def main():
     # 自動篩選出所有符合條件的檔案（不分大小寫的 .txt）
     all_files = os.listdir(TARGET_DIR)
     poem_files = [f for f in all_files if f.startswith("《") and f.lower().endswith(".txt")]
+    #poem_files = ["《紅燭淚》 (原唱：紅線女).txt"]
     
     if not poem_files:
         print("【提示】未找到任何以《 開頭的 .TXT 檔案，請確認檔案放置的路徑是否正確。")
