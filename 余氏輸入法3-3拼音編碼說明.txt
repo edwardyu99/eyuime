@@ -1,7 +1,7 @@
 📘 余氏輸入法3+3拼音編碼說明
-    版本：二０二六年六月十日
+    版本：二０二六年七月七日
 
-    余氏詞庫雙字詞拼音是3+3編碼。在85889雙字詞中，重碼字6589，重碼率7.67%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
+    余氏詞庫雙字詞拼音是3+3編碼。在88576雙字詞中，重碼字10007，重碼率11.3%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
 
 🔤 (一) 三碼簡化
 
@@ -29,6 +29,7 @@
    胡wu，馬ma，麥mak，史sze，廖liu，林lam，白bak，蔡tso(i)，鄭che(ng)，蔣chi(ang)，朱chu，崔chu(i)，
    鍾chu(ng)，葉ip，金kam，郭國kwo(k)，關軍君kwa(n)，施史司sze，鄧tan(g)，曾tsa(ng)，謝tse，徐tsu(i)
    仔cha(i)，chi子，記kee，德tak，達tat，青tsi(ng)，荃tsu(en)，慈tsz，任yam
+   + 本bue(n)，氣hee
 
 🔹 7. 兩碼常用字：
     
@@ -52,12 +53,12 @@
 (二) 韻母
 ┌─────┬──────┬─────┬─────┬──────┬──────┐
 │ 啊#1 a   │ 矮#1 ai    │ 些   e   │ 衣#4 i/ee│ 奧#6 o/ou  │ 烏於#7 u   │
-│ 挨#2 ai/i│            │ 四   ei  │ 腰   iu  │ 柯#5 or/oh │ 煨   ui    │
-│ 啱   am  │ 庵   um    │ 尺   ek  │ 淹   im  │ 哀   oi    │ 銳   ui    │
+│ 挨#2 ai/i│            │ 四   ei  │ 腰   iu  │ 柯#5 or/oh │ 煨#b ui +uh│
+│ 啱   am  │ 庵   um    │ 尺   ek  │ 淹   im  │ 哀   oi    │ 銳#b ui +uh│
 │ 晏#3 an  │ 奀#3 en/un │ 約 euk/ek│ 煙   in  │ 安   on    │ 屋   uk    │
 │ 罌   ang │ 贏   eng   │ 靴   euh │ 英   ing │ 骯   ong   │ 碗#8 oon/un│
-│ 鶯   ang │            │ 央  eung │ 葉   ip  │ 喝   ot    │ 冤#8 uen/un│
-│ 拗   ao  │ 歐   au    │          │ 熱   it  │ 惡   ok    │ 閏   un    │
+│ 鶯   ang │            │ 央 eung  │ 葉   ip  │ 喝   ot    │ 冤#8 uen/un│
+│ 拗   ao  │ 歐   au    │+昌#a eong│ 熱   it  │ 惡   ok    │ 閏   un    │
 │          │            │          │ 益   ik  │            │ 瓮   ung   │
 │ 鴨   ap  │ 噏 ap/up   │          │          │            │ 活   ut    │
 │ 壓   at  │ 兀 at/et   │          │          │            │ 出   ut    │
@@ -81,9 +82,11 @@
       例：ci雌此/chi次似/cee持  ji之/jie只/jee志/jiz自  si師/shi使試市/see時/siz是  yi衣倚意/yee兒/yie已以/yiz二
 [#5]：柯(or/oh) 缺聲母的字拼成or。例：柯or，波bor，播boh。
 [#6]：奧(o/ou)  缺聲母的字拼成ou。例：奧澳ou
-[#7]：烏(uː)、於(u)ː音余氏合併為(u)。例：胡wu，語yu 
-[#8]：碗(un) 音余氏一般用oon，例：goon觀管貫 boon般半胖，moon們滿悶。例外：本bue 門mun 盤pun
-      冤(un) 音余氏一般用uen，例：guen捐卷眷 yuen冤院怨遠願。例外：yun元完原員園潤閏圓源
+[#7]：烏(uː)、於(u)ː余氏合併為(u)。例：胡wu，語yu 
+[#8]：碗(un) 余氏一般用oon，例：goon觀管貫 boon般半胖，moon們滿悶。例外：本bue 門mun 盤pun
+      冤(un) 余氏一般用uen，例：guen捐卷眷 yuen冤院怨遠願。例外：yun元完原員園潤閏圓源
+[#a]  央(eung) 第一聲用eo(ng) 例：yeo央 yeu樣養陽氧讓 ceo昌
+[#b]  煨銳(ui) 第一聲用uh，   例：suh需 sui水歲誰緒睡
 
 🎵 (三) 聲調
 余氏單字拼音一般不分聲調。但為了減低重碼，余氏3+3組詞方案用了聲調字母e兒,z二(代替4,6聲)。
