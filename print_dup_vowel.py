@@ -93,7 +93,8 @@ def main():
     # 第三階段：寫入檔案
     with open(output_file, "w", encoding="utf-16") as f:
         for v in sorted_vowels:
-            f.write(f'"{v}"組應是 ( 首字有"{v}")\n')
+            count = len(groups[v])
+            f.write(f'"{v}"組應是 ( 首字有"{v}") ：{count} 行\n')
             # 群組內部依編碼 A-Z 排序
             sorted_lines = sorted(groups[v], key=lambda x: x[0])
             for code, original_line in sorted_lines:

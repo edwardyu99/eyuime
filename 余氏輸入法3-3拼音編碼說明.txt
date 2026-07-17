@@ -1,7 +1,7 @@
 📘 余氏輸入法3+3拼音編碼說明
-    版本：二０二六年七月十五日
+    版本：二０二六年七月十七日
 
-    余氏詞庫雙字詞拼音是3+3編碼。在88516雙字詞中，重碼字7278，重碼率8.22%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
+    余氏詞庫雙字詞拼音是3+3編碼。在88516雙字詞中，重碼字7104，重碼率8.03%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
 
 🔤 (一) 三碼簡化
 
@@ -29,7 +29,7 @@
    胡wu，馬ma，麥mak，史sze，廖liu，林lam，白bak，蔡tso(i)，鄭che(ng)，蔣chi(ang)，朱chu，崔chu(i)，
    鍾chu(ng)，葉ip，金kam，郭國kwo(k)，關軍君kwa(n)，施史司sze，鄧tan(g)，曾tsa(ng)，謝tse，徐tsu(i)
    仔cha(i)，chi子，記kee，德tak，達tat，青tsi(ng)，荃tsu(en)，慈tsz，任yam
-   + 本bue(n)，氣hee，美mee
+   + 本bue(n)，氣hee，美mee，唔ngr，嘥sir，嘢yer
 
 🔹 7. 兩碼常用字：
     
@@ -125,12 +125,13 @@
 英(ing)  第一聲ng     例：bng兵 big丙 / yng應 yig影形認
 瓮(ung)  第一聲wg，   例：ywg翁 yug擁容勇用
 冤(uen)  第一聲oo(n)  例：coo村 joo專 soo孫 yoo冤  第4聲yun元完原員園圓源
+煙(in)   第一聲yn     例：cyn千 jyn煎 syn先 yyn煙
 
 ui poem uj sosik
 【定風波】 蘇軾
 moktig coolam da ipsng h hofon yumsiu ceh tsuhag t
 莫聽   穿林   打 葉聲 ， 何妨  吟嘯   且  徐行  。
-jukjeu moghie hngsig ma h suipa uq yetsor yinyuu yam pigsag t
+jukjeu moghie hngsig ma h suipa uq yetsor yynyuu yam pigsag t
 竹杖   芒鞋   輕勝   馬 ，誰怕  ？ 一蓑   煙雨   任  平生   。
 liuciu cunfwg cuh jausig h meilag ul santau cehjiu kek seoyig t
 料峭   春風   吹  酒醒  ， 微冷   ！ 山頭   斜照   卻  相迎   。
