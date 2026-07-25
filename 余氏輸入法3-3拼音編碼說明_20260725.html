@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>余氏輸入法 3+3 拼音編碼說明</title>
+    <style>
+        :root {
+            --primary-color: #1e293b;
+            --secondary-color: #334155;
+            --accent-color: #2563eb;
+            --accent-light: #eff6ff;
+            --tone1-color: #0d9488;
+            --tone1-bg: #ccfbf1;
+            --tone4-color: #c026d3;
+            --tone4-bg: #fae8ff;
+            --bg-color: #f8fafc;
+            --container-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --text-color: #334155;
+            --code-bg: #f1f5f9;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang TC", "Microsoft JhengHei", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            margin: 0;
+            padding: 30px 15px;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 20px;
+            margin-bottom: 35px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.2em;
+            margin: 0 0 10px 0;
+        }
+
+        .version {
+            color: #64748b;
+            font-size: 1em;
+            font-weight: 500;
+        }
+
+        .intro {
+            background-color: var(--accent-light);
+            border-left: 4px solid var(--accent-color);
+            padding: 16px 20px;
+            margin-bottom: 35px;
+            border-radius: 0 8px 8px 0;
+            color: #1e40af;
+            font-weight: 500;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-top: 40px;
+            font-size: 1.5em;
+        }
+        
+        h3 {
+            color: var(--secondary-color);
+            font-size: 1.2em;
+            margin-top: 25px;
+        }
+
+        ul, ol {
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        code, kbd {
+            background-color: var(--code-bg);
+            color: #b91c1c;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.95em;
+            border: 1px solid #e2e8f0;
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        /* 表格通用樣式 */
+        .table-container {
+            overflow-x: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95em;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: #f8fafc;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* 備註區域 */
+        .notes-section {
+            background-color: #fffbeb;
+            border: 1px solid #fde68a;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+
+        .notes-section h4 {
+            margin-top: 0;
+            color: #b45309;
+            font-size: 1.05em;
+            margin-bottom: 12px;
+        }
+
+        .note-item {
+            margin-bottom: 8px;
+        }
+
+        /* ===================================================
+           重點設計區域：(2) 其他多字母韻母的處理 專用樣式
+           =================================================== */
+        .featured-card {
+            background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+            border: 2px solid #cbd5e1;
+            border-radius: 12px;
+            padding: 28px;
+            margin-top: 40px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+        }
+
+        .featured-card h2 {
+            margin-top: 0;
+            border-bottom: none;
+            padding-bottom: 0;
+            color: #0f172a;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .featured-intro {
+            background-color: #f1f5f9;
+            padding: 12px 16px;
+            border-radius: 6px;
+            font-size: 0.95em;
+            color: #475569;
+            margin-bottom: 20px;
+        }
+
+        .rule-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #cbd5e1;
+        }
+
+        .rule-table th {
+            background-color: #1e293b;
+            color: #ffffff;
+            padding: 14px 16px;
+            font-size: 0.95em;
+            letter-spacing: 0.5px;
+        }
+
+        .rule-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #e2e8f0;
+            vertical-align: middle;
+        }
+
+        .rule-table tr:hover {
+            background-color: #f1f5f9;
+        }
+
+        .badge-t1 {
+            display: inline-block;
+            background-color: var(--tone1-bg);
+            color: var(--tone1-color);
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: 'Consolas', monospace;
+            border: 1px solid #99f6e4;
+        }
+
+        .badge-t4 {
+            display: inline-block;
+            background-color: var(--tone4-bg);
+            color: var(--tone4-color);
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: 'Consolas', monospace;
+            border: 1px solid #f5d0fe;
+        }
+
+        .empty-cell {
+            color: #cbd5e1;
+            text-align: center;
+        }
+
+        /* 詩詞展示區 */
+        .poem-section {
+            background-color: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            padding: 25px;
+            border-radius: 12px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .poem-title {
+            color: #166534;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .poem-verse {
+            margin-bottom: 18px;
+        }
+
+        .pinyin-line {
+            font-family: 'Consolas', monospace;
+            color: #15803d;
+            font-size: 0.95em;
+        }
+
+        .hanzi-line {
+            font-size: 1.25em;
+            color: #14532d;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>📘 余氏輸入法 3+3 拼音編碼說明</h1>
+            <p class="version">版本：二０二六年七月廿五日</p>
+        </header>
+
+        <section class="intro">
+            余氏詞庫雙字詞拼音是3+3編碼。在88437雙字詞中，重碼字6164，重碼率6.97%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
+        </section>
+
+        <!-- (一) 三碼簡化 -->
+        <section>
+            <h2>🔤 (一) 三碼簡化</h2>
+            <ol>
+                <li>
+                    <span class="highlight">一般情況，取頭三個字母</span><br>
+                    例：半 boon &rarr; <code>boo</code>，村 cuen &rarr; <code>cue</code>，廣 gwong &rarr; <code>gwo</code>，歸 gwai &rarr; <code>gwa</code>，骨 gwet &rarr; <code>gwe</code>，葵 kwai &rarr; <code>kwa</code>，困 kwun &rarr; <code>kwu</code>
+                </li>
+                <li>
+                    <span class="highlight">ang、eng、ing、ong、ung 簡化</span><br>
+                    改為 <code>ag</code>、<code>eg</code>、<code>ig</code>、<code>og/on</code>、<code>ug</code><br>
+                    例：等 dang &rarr; <code>dag</code>，病 beng &rarr; <code>beg</code>，定 ding &rarr; <code>dig</code>，劏 tong &rarr; <code>tog</code>，動 dung &rarr; <code>dug</code>。<br>
+                    <em>*第1聲 ong &rarr; <code>og</code>，其餘 ong &rarr; <code>on</code>。例：劏房(togfon)。 常用字：光kog</em>
+                </li>
+                <li>
+                    <span class="highlight">uet 簡化為 ut</span><br>
+                    例：月 yuet &rarr; <code>yut</code>，雪 suet &rarr; <code>sut</code>
+                </li>
+                <li>
+                    <span class="highlight">ch 和 sh 簡化為 c 和 s</span><br>
+                    但以下常用字保留 ch/sh 成三碼：茶查<code>cha</code>，長詳<code>che</code>，子<code>chi</code>(情chg)，曹<code>cho</code>，廚<code>chu</code>，沙<code>sha</code>，上常<code>she</code>，使試市<code>shi</code>(成shg)，數<code>sho</code>，信<code>shu</code>。<br>
+                    <em>*第1聲 eung &rarr; <code>eo(ng)</code>。例：昌ceo，將jeo，香heo，相seo，相信(seoshu)</em>
+                </li>
+                <li>
+                    <span class="highlight">ng- 聲母簡化</span><br>
+                    藝、額、暗、眼、咬、外、岳等字的 <code>ng-</code> 省略<br>
+                    例：藝 ngai &rarr; <code>ai</code>，愛 ngoi &rarr; <code>oi</code><br>
+                    <em>例外：銀 ngan &rarr; <code>un</code>，牛偶 ngau &rarr; <code>ngu</code></em>
+                </li>
+                <li>
+                    <span class="highlight">香港姓氏及常用字取頭三碼</span><br>
+                    例：陳 <code>cha(n)</code>，李 <code>lee</code>，張 <code>che(ung)</code>，黃 <code>won(g)</code>，何 <code>ho</code>，歐 <code>au</code>，周 <code>cho(w)</code>，胡 <code>wu</code>，馬 <code>ma</code>，麥 <code>mak</code>，史 <code>sze</code>，廖 <code>liu</code>，林 <code>lam</code>，白 <code>bak</code>，蔡 <code>tso(i)</code>，鄭 <code>che(ng)</code>，蔣 <code>chi(ang)</code>，朱 <code>chu</code>，崔 <code>chu(i)</code>，鍾 <code>chu(ng)</code>，葉 <code>ip</code>，金 <code>kam</code>，郭國 <code>kwo(k)</code>，關軍君 <code>kwa(n)</code>，施史司 <code>sze</code>，鄧 <code>tan(g)</code>，曾 <code>tsa(ng)</code>，謝 <code>tse</code>，徐 <code>tsu(i)</code>。<br>
+                    仔 <code>cha(i)</code>，chi 子，記 <code>kee</code>，德 <code>tak</code>，達 <code>tat</code>，青 <code>tsi(ng)</code>，荃 <code>tsu(en)</code>，慈 <code>tsz</code>，任 <code>yam</code>。<br>
+                    + 本 <code>bue(n)</code>，氣 <code>hee</code>，美 <code>mee</code>，唔 <code>ngr</code>，嘥 <code>sir</code>，嘢 <code>yer</code>
+                </li>
+                <li>
+                    <span class="highlight">兩碼常用字</span>
+                    <p style="font-family: monospace; line-height: 1.8;">
+                        bi拜 bo保寶 | ci此 co草 cu處 | da打 di大 | fi快 fo火 fu府苦 | gi解 gu股 | ha下 ho好<br>
+                        je這 jo組 ju主 | ka家 ke騎 ki奇 ko高 ku古 | lo勞 | ma馬 mi買 mo無毛 | na那 ni奶 no腦<br>
+                        pa怕 pi派 po普 | se寫 | ti太 to土 | wa話 wo和 wu胡 | ya也 ye夜 yi意 yu語與
+                    </p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- (二) 韻母 -->
+        <section>
+            <h2>🎵 (二) 韻母</h2>
+            <div class="table-container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>啊 #1 <code>a</code><br>挨 #2 <code>ai/i</code><br>啱 <code>am</code><br>晏 #3 <code>an</code><br>罌 <code>ang</code><br>鶯 <code>ang</code><br>拗 <code>ao</code><br><br>鴨 <code>ap</code><br>壓 <code>at</code><br>軛 <code>ak</code><br><br>唔 <code>ng</code></td>
+                            <td>矮 #1 <code>ai</code><br><br>庵 <code>um</code><br>奀 #3 <code>en/un</code><br>贏 <code>eng</code><br><br>歐 <code>au</code><br><br>噏 <code>ap/up</code><br>兀 <code>at/et</code><br>扼 <code>ak</code><br><br>吳 <code>ng</code></td>
+                            <td>些 <code>e</code><br>四 <code>ei</code><br>尺 <code>ek</code><br>約 <code>euk/ek</code><br>靴 <code>euh</code><br>央 <code>eung</code></td>
+                            <td>衣 #4 <code>i/ee</code><br>腰 <code>iu</code><br>淹 <code>im</code><br>煙 <code>in</code><br>英 <code>ing</code><br>葉 <code>ip</code><br>熱 <code>it</code><br>益 <code>ik</code></td>
+                            <td>奧 #6 <code>o/ou</code><br>柯 #5 <code>or/oh</code><br>哀 <code>oi</code><br>安 <code>on</code><br>骯 <code>ong</code><br>喝 <code>ot</code><br>惡 <code>ok</code></td>
+                            <td>烏於 #7 <code>u</code><br>煨 <code>ui</code><br>銳 <code>ui</code><br>屋 <code>uk</code><br>碗 #8 <code>oon/un</code><br>冤 #8 <code>uen/un</code><br>閏 <code>un</code><br>瓮 <code>ung</code><br>活 <code>ut</code><br>出 <code>ut</code><br>劣 <code>ut</code><br>律 <code>ut</code><br>月 <code>uet/ut</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="notes-section">
+                <h4>韻母備註</h4>
+                <div class="note-item"><strong>[#1] aa, a 長短音的分別：</strong> 余氏輸入法跟隨港式習慣，將長音[啊]aa簡化為a。短音a變為[矮]ai。例如：沙sa，西sai。</div>
+                <div class="note-item"><strong>[#2] 因[挨]ai變為[矮]ai：</strong> 原ai仍可單字與i/ie共用。例：拜bai/bi。為減少重碼，余氏用i/ie：(cjsy字不分調，例: cie猜踩柴，jie齋債寨，sie嘥徙晒)。非cjsy字1聲用i，其餘2-6聲用ie。例：bi拜bie擺敗，di大die歹帶，fi快，gi街gie解介，hi嗨hie鞋孩械，li拉lie瀨，mi買mie賣埋，ni奶nie乃，pi派pie牌排，ti太呔tie泰，wi歪wie淮懷壞。</div>
+                <div class="note-item"><strong>[#3] am, an, ao, ap, at, ak 長短音的處理：</strong> 余氏輸入法跟隨港式習慣，通常am->um，an->en，ao->au，ap->up，at->et。例：三sam心sum，山san身sen，交gao九gau，圾sap十sup，察cat七cet*，八bat不bet*一yet*，*常用字。殺sat/失set，灣患wan/溫運wen，因忍印yen。短音常用字跟隨港式習慣，例：民文man 雲wan 人仁yan，日逸yat。</div>
+                <div class="note-item"><strong>[#4] 衣(i)音的處理：</strong> 單字i/ee可互用。</div>
+                <div class="note-item"><strong>[#5] 柯(or/oh)：</strong> 缺聲母的字拼成or。例：柯or，波bor，播boh。</div>
+                <div class="note-item"><strong>[#6] 奧(o/ou)：</strong> 缺聲母的字拼成ou。例：奧澳ou。</div>
+                <div class="note-item"><strong>[#7] 烏(uː)、於(u)ː：</strong> 余氏合併為(u)。例：胡wu，語yu。</div>
+                <div class="note-item"><strong>[#8] 碗(un)：</strong> 余氏一般用oon，例：goon觀管貫 boon般半胖，moon們滿悶。例外：本bue 門mun 盤pun。 <strong>冤(un)：</strong> 余氏一般用uen，例：guen捐卷眷 yuen院怨遠願。例外：yoo冤淵 yun元完原員園圓源 yun潤閏。</div>
+            </div>
+        </section>
+
+        <!-- (三) 聲調 -->
+        <section>
+            <h2>🎶 (三) 聲調</h2>
+            <p>余氏單字拼音一般不分聲調。但為了減低重碼，余氏3+3組詞方案用了聲調字母a啞h氣e兒u雨z二(2-6聲)。</p>
+            
+            <h3>(1) 單字母韻母 (a e i o u)</h3>
+            <div class="table-container">
+                <table style="text-align: center;">
+                    <thead>
+                        <tr>
+                            <th>調類</th><th>例字</th><th>a</th><th>e</th><th>i</th><th>o</th><th>u</th><th>yu</th><th>un</th><th>or</th><th>ci</th><th>ji</th><th>si</th><th>yi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>陰平 1</td><td>分</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>於</td><td>奀</td><td>柯</td><td>痴</td><td>之</td><td>師</td><td>衣</td></tr>
+                        <tr><td>陰上 2</td><td>粉</td><td>h</td><td>h</td><td>ie</td><td>oa</td><td>ua</td><td>瘀 yua</td><td>en</td><td>oh</td><td>此 ci</td><td>只 jie</td><td>使 shi</td><td>倚 yi</td></tr>
+                        <tr><td>陰去 3</td><td>訓</td><td>h</td><td>h</td><td>ie</td><td>ou</td><td>uu</td><td>yuu</td><td>en</td><td>oh</td><td>次 chi</td><td>志 jee</td><td>試 shi</td><td>意 yi</td></tr>
+                        <tr><td>陽平 4</td><td>焚</td><td>h</td><td>h</td><td>ie</td><td>oe</td><td>uu</td><td>如 yue</td><td>en</td><td>oh</td><td>持 cee</td><td>-</td><td>時 see</td><td>兒 yee</td></tr>
+                        <tr><td>陽上 5</td><td>憤</td><td>h</td><td>h</td><td>ie</td><td>ou</td><td>uu</td><td>雨 yuu</td><td>en</td><td>oh</td><td>似 chi</td><td>-</td><td>市 shi</td><td>已 yie</td></tr>
+                        <tr><td>陽去 6</td><td>份</td><td>h</td><td>h</td><td>ie</td><td>oz</td><td>uz</td><td>預 yuz</td><td>en</td><td>oh</td><td>-</td><td>自 jiz</td><td>是 siz</td><td>二 yiz</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ===================================================
+             重點設計區域：(2) 其他多字母韻母的處理
+             =================================================== -->
+        <section class="featured-card">
+            <h2>✨ (2) 其他多字母韻母的處理</h2>
+            
+            <div class="featured-intro">
+                💡 一般單字不分聲調。組成雙字詞時為減少重碼，以下用不同拼法來突出<strong>第一聲調</strong> (通常 <code>i</code>&rarr;<code>y</code>, <code>u</code>&rarr;<code>w</code>, <code>k</code>&rarr;<code>c</code>)。部分重碼多的韻母更利用<strong>第4聲</strong>不同拼法。
+            </div>
+
+            <div style="overflow-x: auto;">
+                <table class="rule-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 15%;">韻母</th>
+                            <th style="width: 12%;">第一聲</th>
+                            <th style="width: 38%;">第一聲 例字</th>
+                            <th style="width: 12%;">第4聲</th>
+                            <th style="width: 23%;">第4聲 例字</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>矮 (ai)</strong></td>
+                            <td><span class="badge-t1">ay</span></td>
+                            <td>say西 sai洗世逝 / bay跛 bai閉幣</td>
+                            <td><span class="badge-t4">ae</span></td>
+                            <td>cae齊 mae迷 nae泥</td>
+                        </tr>
+                        <tr>
+                            <td><strong>歐 (au)</strong></td>
+                            <td><span class="badge-t1">aw</span></td>
+                            <td>yaw休 yau柚幼由有又 / caw秋 cau丑臭</td>
+                            <td><span class="badge-t4">ow</span></td>
+                            <td>cow囚 mow謀 yow由</td>
+                        </tr>
+                        <tr>
+                            <td><strong>悲 (ei)</strong></td>
+                            <td><span class="badge-t1">ey</span></td>
+                            <td>bey悲 bei比秘備</td>
+                            <td class="empty-cell">—</td>
+                            <td class="empty-cell">—</td>
+                        </tr>
+                        <tr>
+                            <td><strong>央 (eung)</strong></td>
+                            <td><span class="badge-t1">eo(ng)</span></td>
+                            <td>yeo央 yeu樣養陽氧讓 / ceo昌 ceu搶唱</td>
+                            <td class="empty-cell">—</td>
+                            <td>che長 she常</td>
+                        </tr>
+                        <tr>
+                            <td><strong>夭 (iu)</strong></td>
+                            <td><span class="badge-t1">iw</span></td>
+                            <td>biw標 biu表 / yiw腰 yiu妖要搖耀</td>
+                            <td class="empty-cell">—</td>
+                            <td class="empty-cell">—</td>
+                        </tr>
+                        <tr>
+                            <td><strong>哀 (oi)</strong></td>
+                            <td><span class="badge-t1">oy</span></td>
+                            <td>coy啋 coi採菜才 oy哀 oi愛外</td>
+                            <td class="empty-cell">—</td>
+                            <td class="empty-cell">—</td>
+                        </tr>
+                        <tr>
+                            <td><strong>煨銳 (ui)</strong></td>
+                            <td><span class="badge-t1">uy</span></td>
+                            <td>buy杯 bui背焙 / suy需 sui水歲緒睡</td>
+                            <td><span class="badge-t4">uh</span></td>
+                            <td>cuh除 muh煤 suh誰</td>
+                        </tr>
+                        <tr>
+                            <td><strong>英 (ing)</strong></td>
+                            <td><span class="badge-t1">yg</span></td>
+                            <td>cyg清 cig請秤 / yyg應 yig影認</td>
+                            <td><span class="badge-t4">ng</span></td>
+                            <td>cng程 mng明 yng形</td>
+                        </tr>
+                        <tr>
+                            <td><strong>瓮 (ung)</strong></td>
+                            <td><span class="badge-t1">wg</span></td>
+                            <td>ywg翁 yug擁勇用</td>
+                            <td><span class="badge-t4">mg</span></td>
+                            <td>cmg從 mmg蒙 ymg容</td>
+                        </tr>
+                        <tr>
+                            <td><strong>冤 (uen)</strong></td>
+                            <td><span class="badge-t1">oo(n)</span></td>
+                            <td>coo村 joo專 soo孫 yoo冤</td>
+                            <td><span class="badge-t4">yun</span></td>
+                            <td>yun元完原員園圓源</td>
+                        </tr>
+                        <tr>
+                            <td><strong>煙 (in)</strong></td>
+                            <td><span class="badge-t1">yn</span></td>
+                            <td>cyn千 jyn煎 syn先 yyn煙</td>
+                            <td class="empty-cell">—</td>
+                            <td class="empty-cell">—</td>
+                        </tr>
+                        <tr>
+                            <td><strong>扼 (ak)</strong></td>
+                            <td><span class="badge-t1">ac</span></td>
+                            <td>bac北 cac測 jac則 sac塞</td>
+                            <td class="empty-cell">—</td>
+                            <td class="empty-cell">—</td>
+                        </tr>
+                        <tr>
+                            <td><strong>益 (ik)</strong></td>
+                            <td><span class="badge-t1">ic</span></td>
+                            <td>bic迫 cic斥 jic即 sic式 yic益</td>
+                            <td class="empty-cell">—</td>
+                            <td class="empty-cell">—</td>
+                        </tr>
+                        <tr>
+                            <td><strong>屋 (uk)</strong></td>
+                            <td><span class="badge-t1">uc</span></td>
+                            <td>buc卜 cuc速 juc足 suc縮 yuc沃</td>
+                            <td class="empty-cell">—</td>
+                            <td class="empty-cell">—</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 詩詞展示 -->
+        <section class="poem-section">
+            <div class="poem-title">【定風波】 蘇軾</div>
+            
+            <div class="poem-verse">
+                <div class="pinyin-line">ui poem uj sosik</div>
+                <div class="pinyin-line">mokteg coolam da ipsyg h hofon yumsiu ceh tsuhag t</div>
+                <div class="hanzi-line">莫聽 穿林 打 葉聲 ， 何妨 吟嘯 且 徐行 。</div>
+            </div>
+
+            <div class="poem-verse">
+                <div class="pinyin-line">jucjeu moghie hygsig ma h suipa uq yetsor yynyuu yam pngsag t</div>
+                <div class="hanzi-line">竹杖 芒鞋 輕勝 馬 ， 誰怕 ？ 一蓑 煙雨 任 平生 。</div>
+            </div>
+
+            <div class="poem-verse">
+                <div class="pinyin-line">liuciu cunfwg cuh jausig h meilag ul santow cehjiu kek seoyng t</div>
+                <div class="hanzi-line">料峭 春風 吹 酒醒 ， 微冷 ！ 山頭 斜照 卻 相迎 。</div>
+            </div>
+
+            <div class="poem-verse">
+                <div class="pinyin-line">wuisau heuloi siwset cu h gwahui us yamo fwgyuu yamo cng t</div>
+                <div class="hanzi-line">回首 向來 蕭瑟 處 ， 歸去 ； 也無 風雨 也無 晴 。</div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>

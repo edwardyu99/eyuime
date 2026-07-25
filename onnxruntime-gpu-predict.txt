@@ -1,0 +1,118 @@
+import os
+import numpy as np
+import onnxruntime as ort
+import pandas as pd
+from numpy import array
+
+# ============ REMOVED: 不再需要这些环境变量 ============
+# os.environ['TF_USE_LEGACY_KERAS'] = '1'  # ❌ 删除
+# os.environ['CUDA_VISIBLE_DEVICES'] = '-1'  # ❌ 删除
+
+# ============ ONNX Model Wrapper Class with GPU Support ============
+class ONNXModelWrapper:
+    """Wrapper to make ONNX session behave like a Keras model"""
+    def __init__(self, session):
+        self.session = session
+        self.input_name = session.get_inputs()[0].name
+        self.output_name = session.get_outputs()[0].name
+        # 获取当前使用的 provider 信息
+        self.provider = session.get_providers()[0] if session.get_providers() else 'Unknown'
+        print(f"✅ ONNX model loaded with provider: {self.provider}")
+    
+    def predict(self, x, verbose=0):
+        """Predict method compatible with Keras model.predict()"""
+        if x.dtype != np.float32:
+            x = x.astype(np.float32)
+        result = self.session.run([self.output_name], {self.input_name: x})[0]
+        return result
+
+def create_onnx_session(onnx_path):
+    """
+    Create ONNX Runtime session with GPU support, fallback to CPU if needed.
+    """
+    # 检查 CUDA 是否可用（不再禁用 GPU）
+    available_providers = ort.get_available_providers()
+    print(f"Available providers: {available_providers}")
+    
+    # 优先使用 CUDA，如果不可用则使用 CPU
+    if 'CUDAExecutionProvider' in available_providers:
+        providers = [
+            ('CUDAExecutionProvider', {
+                'device_id': 0,
+                'arena_extend_strategy': 'kNextPowerOfTwo',
+                'gpu_mem_limit': 2 * 1024 * 1024 * 1024,  # 2GB
+                'cudnn_conv_algo_search': 'EXHAUSTIVE',
+                'do_copy_in_default_stream': True,
+            }),
+            'CPUExecutionProvider'
+        ]
+        print("🚀 Using GPU (CUDA) for inference")
+    else:
+        providers = ['CPUExecutionProvider']
+        print("💻 Using CPU for inference (CUDA not available)")
+    
+    # 创建 session options
+    sess_options = ort.SessionOptions()
+    sess_options.enable_cpu_mem_arena = True
+    sess_options.execution_mode = ort.ExecutionMode.ORT_SEQUENTIAL
+    sess_options.graph_optimization_level = ort.GraphOptimizationLevel.ORT_ENABLE_ALL
+    
+    # 创建 session
+    session = ort.InferenceSession(
+        onnx_path,
+        sess_options=sess_options,
+        providers=providers
+    )
+    
+    return session
+
+def load_lstm_model(ticker):
+    """Load LSTM model - tries ONNX first, falls back to Keras"""
+    CDrive = '/mnt/c' if os.sep == '/' else 'C:'
+    best_model_LSTM_path = os.path.join(CDrive, 'stock', 'best_model_LSTM', ticker)
+    onnx_path = os.path.join(best_model_LSTM_path, f"{ticker}.onnx")
+    keras_path = os.path.join(best_model_LSTM_path, f"{ticker}.keras")
+    
+    if os.path.exists(onnx_path):
+        print(f"Loading ONNX model from: {onnx_path}")
+        session = create_onnx_session(onnx_path)
+        model = ONNXModelWrapper(session)
+        return model
+    elif os.path.exists(keras_path):
+        print(f"Loading Keras model from: {keras_path}")
+        import tensorflow as tf
+        model = tf.keras.models.load_model(keras_path)
+        print("✅ Keras model loaded successfully")
+        return model
+    else:
+        raise FileNotFoundError(f"No model found for {ticker} at {best_model_LSTM_path}")
+
+def forecast(model, history, n_input=5):
+    """
+    Forecast next n_input steps using the model.
+    Works with both Keras and ONNX models.
+    """
+    data = array(history)
+    data = data.reshape((data.shape[0] * data.shape[1], data.shape[2]))
+    input_x = data[-n_input:, 0]
+    input_x = input_x.reshape((1, len(input_x), 1))
+    yhat = model.predict(input_x, verbose=0)
+    return yhat[0]
+
+# ============ Modified predict function ============
+def predict(ticker):
+    """
+    Predict stock prices using LSTM model (ONNX with GPU or Keras).
+    """
+    # ... (your existing code for data loading, preprocessing, etc.) ...
+    
+    # Load model (ONNX preferred with GPU support, Keras as fallback)
+    lstm_model = load_lstm_model(ticker)
+    
+    # ... (rest of your prediction code) ...
+    # The forecast function works the same with both model types
+    pred_price = forecast(lstm_model, history, 5)
+    prev_pred_price = forecast(lstm_model, prev, 5)
+    
+    # ... (rest of your code for inverse_transform, plotting, etc.) ...
+    return pred_price, prev_pred_price

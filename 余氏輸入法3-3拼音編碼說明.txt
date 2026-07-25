@@ -1,7 +1,7 @@
 📘 余氏輸入法3+3拼音編碼說明
-    版本：二０二六年七月十八日
+    版本：二０二六年七月廿五日
 
-    余氏詞庫雙字詞拼音是3+3編碼。在88453雙字詞中，重碼字7067，重碼率7.99%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
+    余氏詞庫雙字詞拼音是3+3編碼。在88437雙字詞中，重碼字6164，重碼率6.97%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
 
 🔤 (一) 三碼簡化
 
@@ -62,7 +62,7 @@
 │          │            │          │ 益   ik  │            │ 瓮   ung   │
 │ 鴨   ap  │ 噏 ap/up   │          │          │            │ 活   ut    │
 │ 壓   at  │ 兀 at/et   │          │          │            │ 出   ut    │
-│ 軛   ak  │ 扼 ak/et   │          │          │            │ 劣   ut    │
+│ 軛   ak  │ 扼 ak      │          │          │            │ 劣   ut    │
 │          │            │          │          │            │ 律   ut    │
 │ 唔   ng  │ 吳   ng    │          │          │            │ 月 uet/ut  │
 └─────┴──────┴─────┴─────┴──────┴──────┘
@@ -75,7 +75,7 @@
       例：bi拜bie擺敗，di大die歹帶，fi快，gi街gie解介，hi嗨hie鞋孩械，li拉lie瀨，mi買mie賣埋，
           ni奶nie乃，pi派pie牌排，ti太呔tie泰，wi歪wie淮懷壞
 [#3]：am,an,ao,ap,at,ak長短音的處理。余氏輸入法跟隨港式習慣，通常am->um，an->en，ao->au，ap->up，at->et。
-      例：三sam心sum，山san身sen，交gao九gau，圾sap十sup，察cat七cet*，八bat不bet*一yet*，百bak北bek *常用字
+      例：三sam心sum，山san身sen，交gao九gau，圾sap十sup，察cat七cet*，八bat不bet*一yet*，*常用字
           殺sat/失set，灣患wan/溫運wen，因忍印yen
       短音常用字跟隨港式習慣，例：民文man 雲wan 人仁yan，日逸yat。
 [#4]：衣(i)音的處理。單字i/ee可互用。
@@ -87,8 +87,9 @@
 
 🎵 (三) 聲調
 余氏單字拼音一般不分聲調。但為了減低重碼，余氏3+3組詞方案用了聲調字母a啞h氣e兒u雨z二(2-6聲)。
-調類  例字  
-            a e i  o  u  yu    un  or  ci    ji    si    yi 
+
+(1) 單字母韻母 (a e i o u)
+調類  例字  a e i  o  u  yu    un  or  ci    ji    si    yi 
 陰平 1  分  - - -  -  -  於    奀  柯  痴    之    師    衣     
 陰上 2  粉  h h ie oa ua 瘀yua en  oh  此ci  只jie 使shi 倚yi 
 陰去 3  訓  h h ie ou uu   yuu en  oh  次chi 志jee 試shi 意yi  
@@ -112,29 +113,35 @@
 [#14] yi衣 ci/ji/si/yi 2至6聲：為減少重碼，余氏3+3碼用聲調字母ee,iz(代替4,6聲)。特別處理：chi/jie/jee/shi/yie
       例：ci雌此/chi次似/cee持  ji之/jie只/jee志/jiz自  si師/shi使試市/see時/siz是  yi衣倚意/yee兒/yie已以/yiz二
 
-其他多字母韻母的處理
---------------------
-一般單字不分聲調。組成雙字詞時為減少重碼，以下用不同拼法來突出第一聲調 (通常i→y，u→w)
-矮(ai)   第一聲ay，   例：say西 sai洗世逝 / bay跛 bai閉幣   第4聲ae cae齊 mae迷 nae泥
-歐(au)   第一聲aw，   例：yaw休 yau柚幼由有又
-悲(ei)   第一聲ey，   例：bey悲 bei比秘備
-央(eung) 第一聲eo(ng) 例：yeo央 yeu樣養陽氧讓 / ceo昌 ceu搶唱 che長
-夭(iu)   第一聲iw，   例：biw標 biu表 / yiw腰 yiu妖要搖耀
-哀(oi)   第一聲oy，   例：coy啋 coi採菜才 oy哀 oi愛外
-煨銳(ui) 第一聲uh，   例：buh杯 bui背焙 / suh需 sui水歲誰緒睡 
-英(ing)  第一聲ng     例：bng兵 big丙 / yng應 yig影形認
-瓮(ung)  第一聲wg，   例：ywg翁 yug擁容勇用
-冤(uen)  第一聲oo(n)  例：coo村 joo專 soo孫 yoo冤  第4聲yun元完原員園圓源
-煙(in)   第一聲yn     例：cyn千 jyn煎 syn先 yyn煙
+(2) 其他多字母韻母的處理
+
+一般單字不分聲調。組成雙字詞時為減少重碼，以下用不同拼法來突出第一聲調 (通常i→y，u→w，k→c)。部分重碼多的韻母更利用第4聲不同拼法。
+
+韻母     第一聲    例字                               第4聲   例字
+
+矮(ai)   ay，   say西 sai洗世逝 / bay跛 bai閉幣       ae   cae齊 mae迷 nae泥
+歐(au)   aw，   yaw休 yau柚幼由有又 / caw秋 cau丑臭   ow   cow囚 mow謀 yow由
+悲(ei)   ey，   bey悲 bei比秘備
+央(eung) eo(ng) yeo央 yeu樣養陽氧讓 / ceo昌 ceu搶唱        che長 she常
+夭(iu)   iw，   biw標 biu表 / yiw腰 yiu妖要搖耀
+哀(oi)   oy，   coy啋 coi採菜才 oy哀 oi愛外
+煨銳(ui) uy，   buy杯 bui背焙 / suy需 sui水歲緒睡     uh   cuh除 muh煤 suh誰
+英(ing)  yg     cyg清 cig請秤 / yyg應 yig影認         ng   cng程 mng明 yng形
+瓮(ung)  wg，   ywg翁 yug擁勇用                       mg   cmg從 mmg蒙 ymg容
+冤(uen)  oo(n)  coo村 joo專 soo孫 yoo冤                    yun元完原員園圓源
+煙(in)   yn     cyn千 jyn煎 syn先 yyn煙
+扼(ak)   ac     bac北 cac測 jac則 sac塞 
+益(ik)   ic     bic迫 cic斥 jic即 sic式 yic益
+屋(uk)   uc     buc卜 cuc速 juc足 suc縮 yuc沃 
 
 ui poem uj sosik
 【定風波】 蘇軾
-moktig coolam da ipsng h hofon yumsiu ceh tsuhag t
+mokteg coolam da ipsyg h hofon yumsiu ceh tsuhag t
 莫聽   穿林   打 葉聲 ， 何妨  吟嘯   且  徐行  。
-jukjeu moghie hngsig ma h suipa uq yetsor yynyuu yam pigsag t
+jucjeu moghie hygsig ma h suipa uq yetsor yynyuu yam pngsag t
 竹杖   芒鞋   輕勝   馬 ，誰怕  ？ 一蓑   煙雨   任  平生   。
-liuciu cunfwg cuh jausig h meilag ul santau cehjiu kek seoyig t
+liuciu cunfwg cuh jausig h meilag ul santow cehjiu kek seoyng t
 料峭   春風   吹  酒醒  ， 微冷   ！ 山頭   斜照   卻  相迎   。
-wuisau heuloi siwset cu h gwahui us yamo fwgyuu yamo cig t
+wuisau heuloi siwset cu h gwahui us yamo fwgyuu yamo cng t
 回首   向來   蕭瑟   處 ，歸去   ； 也無 風雨   也無 晴  。
 
