@@ -1,7 +1,7 @@
 📘 余氏輸入法3+3拼音編碼說明
-    版本：二０二六年七月廿五日
+    版本：二０二六年七月廿七日
 
-    余氏詞庫雙字詞拼音是3+3編碼。在88437雙字詞中，重碼字6164，重碼率6.97%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
+    余氏詞庫雙字詞拼音是3+3編碼。在88391雙字詞中，重碼字6085，重碼率6.88%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
 
 🔤 (一) 三碼簡化
 
@@ -124,7 +124,7 @@
 歐(au)   aw，   yaw休 yau柚幼由有又 / caw秋 cau丑臭   ow   cow囚 mow謀 yow由
 悲(ei)   ey，   bey悲 bei比秘備
 央(eung) eo(ng) yeo央 yeu樣養陽氧讓 / ceo昌 ceu搶唱        che長 she常
-夭(iu)   iw，   biw標 biu表 / yiw腰 yiu妖要搖耀
+夭(iu)   iw，   biw標 biu表 / yiw腰 yiu妖要耀         ew   yew搖
 哀(oi)   oy，   coy啋 coi採菜才 oy哀 oi愛外
 煨銳(ui) uy，   buy杯 bui背焙 / suy需 sui水歲緒睡     uh   cuh除 muh煤 suh誰
 英(ing)  yg     cyg清 cig請秤 / yyg應 yig影認         ng   cng程 mng明 yng形
