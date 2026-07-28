@@ -1,7 +1,7 @@
 📘 余氏輸入法3+3拼音編碼說明
-    版本：二０二六年七月廿七日
+    版本：二０二六年七月廿八日
 
-    余氏詞庫雙字詞拼音是3+3編碼。在88391雙字詞中，重碼字6085，重碼率6.88%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
+    余氏詞庫雙字詞拼音是3+3編碼。在88302雙字詞中，重碼字5961，重碼率6.75%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
 
 🔤 (一) 三碼簡化
 
@@ -29,7 +29,7 @@
    胡wu，馬ma，麥mak，史sze，廖liu，林lam，白bak，蔡tso(i)，鄭che(ng)，蔣chi(ang)，朱chu，崔chu(i)，
    鍾chu(ng)，葉ip，金kam，郭國kwo(k)，關軍君kwa(n)，施史司sze，鄧tan(g)，曾tsa(ng)，謝tse，徐tsu(i)
    仔cha(i)，chi子，記kee，德tak，達tat，青tsi(ng)，荃tsu(en)，慈tsz，任yam
-   + 本bue(n)，氣hee，美mee，唔ngr，嘥sir，嘢yer
+   + 本bue(n)，起hea，氣hee，利lee，美mee，唔ngr，嘥sir，嘢yer，院yoo
 
 🔹 7. 兩碼常用字：
     
@@ -84,7 +84,7 @@
 [#6]：奧(o/ou)  缺聲母的字拼成ou。例：奧澳ou
 [#7]：烏(uː)、於(u)ː余氏合併為(u)。例：胡wu，語yu 
 [#8]：碗(un) 余氏一般用oon，例：goon觀管貫 boon般半胖，moon們滿悶。例外：本bue 門mun 盤pun
-      冤(un) 余氏一般用uen，例：guen捐卷眷 yuen院怨遠願。例外：yoo冤淵 yun元完原員園圓源 yun潤閏
+      冤(un) 余氏一般用uen，例：guen捐卷眷 yuen苑怨遠願。例外：yoo冤淵鴛院 yun元完原員園圓源 yun潤閏
 
 🎵 (三) 聲調
 余氏單字拼音一般不分聲調。但為了減低重碼，余氏3+3組詞方案用了聲調字母a啞h氣e兒u雨z二(2-6聲)。
