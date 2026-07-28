@@ -1,7 +1,7 @@
 📘 余氏輸入法3+3拼音編碼說明
     版本：二０二六年七月廿八日
 
-    余氏詞庫雙字詞拼音是3+3編碼。在88302雙字詞中，重碼字5961，重碼率6.75%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
+    余氏詞庫雙字詞拼音是3+3編碼。在88299雙字詞中，重碼字6013，重碼率6.81%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
 
 🔤 (一) 三碼簡化
 
@@ -29,7 +29,7 @@
    胡wu，馬ma，麥mak，史sze，廖liu，林lam，白bak，蔡tso(i)，鄭che(ng)，蔣chi(ang)，朱chu，崔chu(i)，
    鍾chu(ng)，葉ip，金kam，郭國kwo(k)，關軍君kwa(n)，施史司sze，鄧tan(g)，曾tsa(ng)，謝tse，徐tsu(i)
    仔cha(i)，chi子，記kee，德tak，達tat，青tsi(ng)，荃tsu(en)，慈tsz，任yam
-   + 本bue(n)，起hea，氣hee，利lee，美mee，唔ngr，嘥sir，嘢yer，院yoo
+   + 本bue(n)，氣hee，利lee，美mee，唔ngr，嘥sir，嘢yer
 
 🔹 7. 兩碼常用字：
     
