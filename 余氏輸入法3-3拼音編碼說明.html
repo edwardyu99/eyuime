@@ -157,7 +157,7 @@
             margin-bottom: 8px;
         }
 
-        /* 重點設計區域：多字母韻母專用樣式 */
+        /* 重點設計區域：多字母韻母處理 */
         .featured-card {
             background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
             border: 2px solid #cbd5e1;
@@ -281,11 +281,11 @@
     <div class="container">
         <header>
             <h1>📘 余氏輸入法 3+3 拼音編碼說明</h1>
-            <p class="version">版本：二０二六年七月廿八日</p>
+            <p class="version">版本：二０二六年七月卅一日</p>
         </header>
 
         <section class="intro">
-            余氏詞庫雙字詞拼音是3+3編碼。在88299雙字詞中，重碼字6013，重碼率6.81%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
+            余氏詞庫雙字詞拼音是3+3編碼。在88276雙字詞中，重碼字5796，重碼率6.57%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
         </section>
 
         <!-- (一) 三碼簡化 -->
@@ -320,16 +320,16 @@
                 <li>
                     <span class="highlight">香港姓氏及常用字取頭三碼</span><br>
                     例：陳 <code>cha(n)</code>，李 <code>lee</code>，張 <code>che(ung)</code>，黃 <code>won(g)</code>，何 <code>ho</code>，歐 <code>au</code>，周 <code>cho(w)</code>，胡 <code>wu</code>，馬 <code>ma</code>，麥 <code>mak</code>，史 <code>sze</code>，廖 <code>liu</code>，林 <code>lam</code>，白 <code>bak</code>，蔡 <code>tso(i)</code>，鄭 <code>che(ng)</code>，蔣 <code>chi(ang)</code>，朱 <code>chu</code>，崔 <code>chu(i)</code>，鍾 <code>chu(ng)</code>，葉 <code>ip</code>，金 <code>kam</code>，郭國 <code>kwo(k)</code>，關軍君 <code>kwa(n)</code>，施史司 <code>sze</code>，鄧 <code>tan(g)</code>，曾 <code>tsa(ng)</code>，謝 <code>tse</code>，徐 <code>tsu(i)</code>。<br>
-                    仔 <code>cha(i)</code>，chi 子，記 <code>kee</code>，德 <code>tak</code>，達 <code>tat</code>，青 <code>tsi(ng)</code>，荃 <code>tsu(en)</code>，慈 <code>tsz</code>，任 <code>yam</code>。<br>
-                    + 本 <code>bue(n)</code>，氣 <code>hee</code>，利 <code>lee</code>，美 <code>mee</code>，唔 <code>ngr</code>，嘥 <code>sir</code>，嘢 <code>yer</code>
+                    仔 <code>cha(i)</code>，記 <code>kee</code>，德 <code>tak</code>，達 <code>tat</code>，青 <code>tsi(ng)</code>，荃 <code>tsu(en)</code>，慈 <code>tsz</code>，任 <code>yam</code>。<br>
+                    + 本 <code>bue(n)</code>，起 <code>hea</code>，氣 <code>hee</code>，利 <code>lee</code>，美 <code>mee</code>，唔 <code>ngr</code>，嘥 <code>sir</code>，嘢 <code>yer</code><br>
+                    + 此 <code>cia</code>，子 <code>jia</code>，使 <code>sia</code>，意 <code>yia</code>
                 </li>
                 <li>
                     <span class="highlight">兩碼常用字</span>
                     <p style="font-family: monospace; line-height: 1.8;">
-                        bi拜 bo保寶 | ci此 co草 cu處 | da打 di大 | fi快 fo火 fu府苦 | gi解 gu股 | ha下 ho好<br>
-                        in現 | je這 jo組 ju主 | ka家 ke騎 ki奇 ko高 ku古 | lo勞 | ma馬 mi買 mo無毛<br>
-                        na那 ni奶 no腦 | pa怕 pi派 po普 | se寫 | ti太 to土 | wa話 wo和 wu胡<br>
-                        ya也 ye夜 yi意 yu語與
+                        bi拜 bo保寶 | co草 cu處 | da打 di大 | fi快 fo火 fu府苦 | gi解 gu股 | ha下 ho好 | in現 | je這 jo組 ju主<br>
+                        ka家 ke騎 ki奇 ko高 ku古 | lo勞 | ma馬 mi買 mo無毛 | na那 ni奶 no腦 | pa怕 pi派 po普 | se寫<br>
+                        ti太 to土 | wa話 wo和 wu胡 | ya也 ye夜 yu語與
                     </p>
                 </li>
             </ol>
@@ -362,7 +362,7 @@
                 <div class="note-item"><strong>[#5] 柯(or/oh)：</strong> 缺聲母的字拼成or。例：柯or，波bor，播boh。</div>
                 <div class="note-item"><strong>[#6] 奧(o/ou)：</strong> 缺聲母的字拼成ou。例：奧澳ou。</div>
                 <div class="note-item"><strong>[#7] 烏(uː)、於(u)ː：</strong> 余氏合併為(u)。例：胡wu，語yu。</div>
-                <div class="note-item"><strong>[#8] 碗(un)：</strong> 余氏一般用oon，例：goon觀管貫 boon般半胖，moon們滿悶。例外：本bue 門mun 盤pun。 <strong>冤(un)：</strong> 余氏一般用uen，例：guen捐卷眷 yuen苑怨遠願。例外：yoo冤淵鴛院 yun元完原員園圓源 yun潤閏。</div>
+                <div class="note-item"><strong>[#8] 碗(un)：</strong> 余氏一般用oon，例：goon觀管貫 boon般半胖，moon們滿悶。例外：本bue 門mun 盤pun。 <strong>冤(un)：</strong> 余氏一般用uen，例：guen捐卷眷 yuen苑怨遠願。例外：yoo冤淵鴛 yun元完原員園圓源 yun潤閏。</div>
             </div>
         </section>
 
@@ -381,8 +381,8 @@
                     </thead>
                     <tbody>
                         <tr><td>陰平 1</td><td>分</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>於</td><td>奀</td><td>柯</td><td>痴</td><td>之</td><td>師</td><td>衣</td></tr>
-                        <tr><td>陰上 2</td><td>粉</td><td>h</td><td>h</td><td>ie</td><td>oa</td><td>ua</td><td>瘀 yua</td><td>en</td><td>oh</td><td>此 ci</td><td>只 jie</td><td>使 shi</td><td>倚 yi</td></tr>
-                        <tr><td>陰去 3</td><td>訓</td><td>h</td><td>h</td><td>ie</td><td>ou</td><td>uu</td><td>yuu</td><td>en</td><td>oh</td><td>次 chi</td><td>志 jee</td><td>試 shi</td><td>意 yi</td></tr>
+                        <tr><td>陰上 2</td><td>粉</td><td>h</td><td>h</td><td>ie</td><td>oa</td><td>ua</td><td>瘀 yua</td><td>en</td><td>oh</td><td>始 ci</td><td>只 jie</td><td>使 sia</td><td>倚 yi</td></tr>
+                        <tr><td>陰去 3</td><td>訓</td><td>h</td><td>h</td><td>ie</td><td>ou</td><td>uu</td><td>yuu</td><td>en</td><td>oh</td><td>次 chi</td><td>志 jee</td><td>試 shi</td><td>意 yia</td></tr>
                         <tr><td>陽平 4</td><td>焚</td><td>h</td><td>h</td><td>ie</td><td>oe</td><td>uu</td><td>如 yue</td><td>en</td><td>oh</td><td>持 cee</td><td>-</td><td>時 see</td><td>兒 yee</td></tr>
                         <tr><td>陽上 5</td><td>憤</td><td>h</td><td>h</td><td>ie</td><td>ou</td><td>uu</td><td>雨 yuu</td><td>en</td><td>oh</td><td>似 chi</td><td>-</td><td>市 shi</td><td>已 yie</td></tr>
                         <tr><td>陽去 6</td><td>份</td><td>h</td><td>h</td><td>ie</td><td>oz</td><td>uz</td><td>預 yuz</td><td>en</td><td>oh</td><td>-</td><td>自 jiz</td><td>是 siz</td><td>二 yiz</td></tr>
@@ -391,14 +391,14 @@
             </div>
 
             <div class="notes-section">
-                <h4>聲調補充說明</h4>
+                <h4>聲調處理說明</h4>
                 <div class="note-item"><strong>[#9] a阿, e些 (2至6聲 ah, eh)：</strong> ce車ceh且，ga加gah假價，ha哈hah吓霞夏，se些seh捨卸蛇社射。</div>
-                <div class="note-item"><strong>[#10] i挨 (2至6聲用 ie)：</strong> bi拜bie擺敗，di大獃die歹帶，fi快，gi街gie解介，hi嗨hie鞋孩械，li拉lie瀨，mi買mie賣埋，ni奶nie乃，pi派pie牌排，ti太呔tie泰，wi歪wie淮懷壞。<br><em>(cjs不分調，用 ie: cie猜踩柴，jie齋債寨，sie嘥徙晒)</em></div>
-                <div class="note-item"><strong>[#11] o奧 (2至6聲 ou)：</strong> bo煲，bou補報步，pou葡tou圖，lou老。<br><em>*缺聲母的[奧澳]字拼成 ou。</em></div>
-                <div class="note-item"><strong>[#7] u烏/yu於 (2至6聲 uu, yu: 4聲 yue)：</strong> fu夫，fuu虎富乎婦父。su書suu鼠恕殊樹。yu於，yuu瘀，yue如，yuu雨預。</div>
-                <div class="note-item"><strong>[#12] un奀 (bfgs 第1聲 un，其他 en)：</strong> 例：bun奔/ben品殯笨；fun分/fen粉訓焚憤份；gun根/gen緊近；sun新/sen呻神慎；hen很痕恨。</div>
-                <div class="note-item"><strong>[#13] or柯 (1聲 or，2至6聲 oh)：</strong> cor初，coh楚錯鋤坐，sor疏，soh鎖傻。(常用字：jor左 hor可 sor所)</div>
-                <div class="note-item"><strong>[#14] yi衣 ci/ji/si/yi 2至6聲：</strong> 為減少重碼，余氏3+3碼用聲調字母 ee, iz (代替4,6聲)。特別處理：chi/jie/jee/shi/yie。<br>例：ci雌此/chi次似/cee持 ji之/jie只/jee志/jiz自 si師/shi使試市/see時/siz是 yi衣倚意/yee兒/yie已以/yiz二</div>
+                <div class="note-item"><strong>[#10] i挨 (2至6聲用 ie)：</strong> bi拜bie擺敗，di大獃die歹帶，fi快，gi街gie解介，hi嗨hie鞋孩械，li拉lie瀨，mi買mie賣埋，ni奶nie乃，pi派pie牌排，ti太呔tie泰，wi歪wie淮懷壞 (cjs不分調，用ie: cie猜踩柴，jie齋債寨，sie嘥徙晒)。</div>
+                <div class="note-item"><strong>[#11] o奧 (2至6聲 ou)：</strong> bo煲，bou補報步，pou葡tou圖，lou老 (*缺聲母的[奧澳]字拼成ou)。</div>
+                <div class="note-item"><strong>[#7] u烏 / yu於 (2至6聲 uu，yu: 4聲 yue)：</strong> fu夫，fuu虎富乎婦父。su書suu鼠恕殊樹。yu於，yuu瘀，yue如，yuu雨預。</div>
+                <div class="note-item"><strong>[#12] un奀 (bfgs第1聲 un，其他 en)：</strong> 例：bun奔/ben品殯笨；fun分/fen粉訓焚憤份；gun根/gen緊近；sun新/sen呻神慎；hen很痕恨。</div>
+                <div class="note-item"><strong>[#13] or柯 (1聲 or，2至6聲 oh)：</strong> cor初，coh楚錯鋤坐，sor疏，soh鎖傻。(常用字：jor左 hor可 sor所)。</div>
+                <div class="note-item"><strong>[#14] yi衣 ci/ji/si/yi (2至6聲)：</strong> 為減少重碼，余氏3+3碼用聲調字母ee, iz(代替4, 6聲)。例：ci雌此/chi次似/cee持，ji之/jie只/jee志/jiz自，si師/sia使/shi試市/see時/siz是，yi衣倚/yia意/yee兒/yie已以/yiz二。</div>
             </div>
         </section>
 

@@ -1,7 +1,7 @@
 📘 余氏輸入法3+3拼音編碼說明
-    版本：二０二六年七月廿八日
+    版本：二０二六年七月卅一日
 
-    余氏詞庫雙字詞拼音是3+3編碼。在88299雙字詞中，重碼字6013，重碼率6.81%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
+    余氏詞庫雙字詞拼音是3+3編碼。在88276雙字詞中，重碼字5796，重碼率6.57%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
 
 🔤 (一) 三碼簡化
 
@@ -28,13 +28,14 @@
 🔹 6.  香港姓氏及常用字取頭三碼。e.g.陳cha(n)，李lee，張che(ung)，黃won(g)，何ho，歐au，周cho(w)，
    胡wu，馬ma，麥mak，史sze，廖liu，林lam，白bak，蔡tso(i)，鄭che(ng)，蔣chi(ang)，朱chu，崔chu(i)，
    鍾chu(ng)，葉ip，金kam，郭國kwo(k)，關軍君kwa(n)，施史司sze，鄧tan(g)，曾tsa(ng)，謝tse，徐tsu(i)
-   仔cha(i)，chi子，記kee，德tak，達tat，青tsi(ng)，荃tsu(en)，慈tsz，任yam
-   + 本bue(n)，氣hee，利lee，美mee，唔ngr，嘥sir，嘢yer
+   仔cha(i)，記kee，德tak，達tat，青tsi(ng)，荃tsu(en)，慈tsz，任yam
+   本bue(n)，起hea，氣hee，利lee，美mee，唔ngr，嘥sir，嘢yer
+   此cia，子jia，使sia，意yia
 
 🔹 7. 兩碼常用字：
     
     bi拜 bo保寶
-    ci此 co草 cu處
+    co草 cu處
     da打 di大 
     fi快 fo火 fu府苦
     gi解 gu股
@@ -49,7 +50,7 @@
     se寫 
     ti太 to土
     wa話 wo和 wu胡   
-    ya也 ye夜 yi意 yu語與   
+    ya也 ye夜 yu語與   
         
 (二) 韻母
 ┌─────┬──────┬─────┬─────┬──────┬──────┐
@@ -84,7 +85,7 @@
 [#6]：奧(o/ou)  缺聲母的字拼成ou。例：奧澳ou
 [#7]：烏(uː)、於(u)ː余氏合併為(u)。例：胡wu，語yu 
 [#8]：碗(un) 余氏一般用oon，例：goon觀管貫 boon般半胖，moon們滿悶。例外：本bue 門mun 盤pun
-      冤(un) 余氏一般用uen，例：guen捐卷眷 yuen苑怨遠願。例外：yoo冤淵鴛院 yun元完原員園圓源 yun潤閏
+      冤(un) 余氏一般用uen，例：guen捐卷眷 yuen苑怨遠願。例外：yoo冤淵鴛 yun元完原員園圓源 yun潤閏
 
 🎵 (三) 聲調
 余氏單字拼音一般不分聲調。但為了減低重碼，余氏3+3組詞方案用了聲調字母a啞h氣e兒u雨z二(2-6聲)。
@@ -92,8 +93,8 @@
 (1) 單字母韻母 (a e i o u)
 調類  例字  a e i  o  u  yu    un  or  ci    ji    si    yi 
 陰平 1  分  - - -  -  -  於    奀  柯  痴    之    師    衣     
-陰上 2  粉  h h ie oa ua 瘀yua en  oh  此ci  只jie 使shi 倚yi 
-陰去 3  訓  h h ie ou uu   yuu en  oh  次chi 志jee 試shi 意yi  
+陰上 2  粉  h h ie oa ua 瘀yua en  oh  始ci  只jie 使sia 倚yi
+陰去 3  訓  h h ie ou uu   yuu en  oh  次chi 志jee 試shi 意yia
 陽平 4  焚  h h ie oe uu 如yue en  oh  持cee -     時see 兒yee
 陽上 5  憤  h h ie ou uu 雨yuu en  oh  似chi -     市shi 已yie 
 陽去 6  份  h h ie oz uz 預yuz en  oh   -    自jiz 是siz 二yiz
@@ -111,8 +112,8 @@
       yu於，yuu瘀，yue如，yuu雨預。
 [#12] un奀 (bfgs第1聲un，其他en) 例：bun奔/ben品殯笨；fun分/fen粉訓焚憤份；gun根/gen緊近；sun新/sen呻神慎；hen很痕恨
 [#13] or柯 (1聲or，2至6聲oh)：cor初，coh楚錯鋤坐，sor疏，soh鎖傻。(常用字：jor左 hor可 sor所) 
-[#14] yi衣 ci/ji/si/yi 2至6聲：為減少重碼，余氏3+3碼用聲調字母ee,iz(代替4,6聲)。特別處理：chi/jie/jee/shi/yie
-      例：ci雌此/chi次似/cee持  ji之/jie只/jee志/jiz自  si師/shi使試市/see時/siz是  yi衣倚意/yee兒/yie已以/yiz二
+[#14] yi衣 ci/ji/si/yi 2至6聲：為減少重碼，余氏3+3碼用聲調字母ee,iz(代替4,6聲)。
+      例：ci雌始/chi次似/cee持  ji之/jie只/jee志/jiz自  si師/sia使/shi試市/see時/siz是  yi衣倚/yia意/yee兒/yie已以/yiz二
 
 (2) 其他多字母韻母的處理
 
