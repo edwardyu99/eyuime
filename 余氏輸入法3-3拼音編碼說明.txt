@@ -1,7 +1,7 @@
 📘 余氏輸入法3+3拼音編碼說明
-    版本：二０二六年八月二日
+    版本：二０二六年八月五日
 
-    余氏詞庫雙字詞拼音是3+3編碼。在88273雙字詞中，重碼字5755，重碼率6.52%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
+    余氏詞庫雙字詞拼音是3+3編碼。在88274雙字詞中，重碼字5421，重碼率6.14%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
 
 🔤 (一) 三碼簡化
 
@@ -117,33 +117,37 @@
 
 (2) 其他多字母韻母的處理
 
-一般單字不分聲調。組成雙字詞時為減少重碼，以下用不同拼法來突出第一聲調 (通常i→y，u→w，k→c)。部分重碼多的韻母更利用第4聲不同拼法。
+一般單字不分聲調。組成雙字詞時為減少重碼，以下用不同拼法來表示第2至6聲調 (通常i→y，u→w，k→c)。
 
-韻母     第一聲    例字                               第4聲   例字
+韻母     1聲      2-6聲  例字                               
 
-矮(ai)   ay，   say西 sai洗世逝 / bay跛 bai閉幣       ae   cae齊 mae迷 nae泥
-歐(au)   aw，   yaw休 yau柚幼由有又 / caw秋 cau丑臭   ow   cow囚 mow謀 yow由
-悲(ei)   ey，   bey悲 bei比秘備
-央(eung) eo(ng) yeo央 yeu樣養陽氧讓 / ceo昌 ceu搶唱        che長 she常
-夭(iu)   iw，   biw標 biu表 / yiw腰 yiu妖要耀         ew   yew搖
-哀(oi)   oy，   coy啋 coi採菜才 oy哀 oi愛外
-煨銳(ui) uy，   buy杯 bui背焙 / suy需 sui水歲緒睡     uh   cuh除 muh煤 suh誰
-英(ing)  yg     cyg清 cig請秤 / yyg應 yig影認         ng   cng程 mng明 yng形
-瓮(ung)  wg，   ywg翁 yug擁勇用                       mg   cmg從 mmg蒙 ymg容
-冤(uen)  oo(n)  coo村 joo專 soo孫 yoo冤                    yun元完原員園圓源
-煙(in)   yn     cyn千 jyn煎 syn先 yyn煙
-扼(ak)   ac     bac北 cac測 jac則 sac塞 
-益(ik)   ic     bic迫 cic斥 jic即 sic式 yic益
-屋(uk)   uc     buc卜 cuc速 juc足 suc縮 yuc沃 
+悲(ei)   bei悲  ey      bey比秘備
+哀(oi)   coi啋   oy      coy採菜才    oi哀愛外
+煙(in)   bin邊   yn     byn扁變便
+扼(ak)   bak北   ac     bac百帛         pak白
+益(ik)   yik益  ic        yic亦
+屋(uk)   buk卜   uc        buc僕 
+
+為減少重碼，部分韻母更利用第4聲不同拼法。
+
+韻母     1聲    2/3/5/6聲 例字                           第4聲   例字
+
+矮(ai)   sai西   ay   say洗世逝   / bay跛 bay閉門閉幣  ae    ae危  cae齊 mae迷 nae泥
+歐(au)   yau休   aw   yaw柚幼友右 / cau秋 caw丑臭      ow   cow囚 mow謀 yow由
+夭(iu)   biu標   iw   biw表       / yiu腰 yiw妖要耀    ew   yew搖
+煨銳(ui) bui杯   uy   buy背焙     / sui需水 suy歲緒睡  uh   cuh除 muh煤 suh誰
+英(ing)  cig清   yg   cyg請秤     / yig應 yyg影認      ng   cng程 mng明 yng形
+瓮(ung)  yug翁   wg   ywg擁勇用                        mg   cmg從 mmg蒙 ymg容
+
 
 ui poem uj sosik
 【定風波】 蘇軾
-mokteg coolam da ipsyg h hofon yumsiu ceh tsuhag t
+mokteg coolam da ipsig h hofon yumsiw ceh tsuhag t
 莫聽   穿林   打 葉聲 ， 何妨  吟嘯   且  徐行  。
-jucjeu moghie hygsig ma h suhpa uq yetsor yynyuu yam pngsag t
+jukjeu moghie higsyg ma h suhpa uq yetsor yinyuu yam pngsag t
 竹杖   芒鞋   輕勝   馬 ，誰怕  ？ 一蓑   煙雨   任  平生   。
-liuciu cunfwg cuh jausig h meilag ul santow cehjiu kek seoyng t
-料峭   春風   吹  酒醒  ， 微冷   ！ 山頭   斜照   卻  相迎   。
-wuisau heuloi siwset cu h gwahui us yamo fwgyuu yamo cng t
+liwuciw cunfug cuh jausig h meilag ul santau cehjiw kek seoyng t
+料峭   春風   吹   酒醒  ， 微冷   ！ 山頭       斜照   卻  相迎   。
+wuhsaw heuloi siuset cu h gwahui us yamo fugyuu yamo cng t
 回首   向來   蕭瑟   處 ，歸去   ； 也無 風雨   也無 晴  。
 

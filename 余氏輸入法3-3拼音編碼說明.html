@@ -12,6 +12,8 @@
             --accent-light: #eff6ff;
             --tone1-color: #0d9488;
             --tone1-bg: #ccfbf1;
+            --tone26-color: #d97706;
+            --tone26-bg: #fef3c7;
             --tone4-color: #c026d3;
             --tone4-bg: #fae8ff;
             --bg-color: #f8fafc;
@@ -172,9 +174,6 @@
             border-bottom: none;
             padding-bottom: 0;
             color: #0f172a;
-            display: flex;
-            align-items: center;
-            gap: 10px;
         }
 
         .featured-intro {
@@ -194,6 +193,7 @@
             border-radius: 8px;
             overflow: hidden;
             border: 1px solid #cbd5e1;
+            margin-bottom: 25px;
         }
 
         .rule-table th {
@@ -225,6 +225,17 @@
             border: 1px solid #99f6e4;
         }
 
+        .badge-t26 {
+            display: inline-block;
+            background-color: var(--tone26-bg);
+            color: var(--tone26-color);
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: 'Consolas', monospace;
+            border: 1px solid #fde68a;
+        }
+
         .badge-t4 {
             display: inline-block;
             background-color: var(--tone4-bg);
@@ -234,11 +245,6 @@
             border-radius: 4px;
             font-family: 'Consolas', monospace;
             border: 1px solid #f5d0fe;
-        }
-
-        .empty-cell {
-            color: #cbd5e1;
-            text-align: center;
         }
 
         /* 詩詞展示區 */
@@ -281,11 +287,11 @@
     <div class="container">
         <header>
             <h1>📘 余氏輸入法 3+3 拼音編碼說明</h1>
-            <p class="version">版本：二０二六年八月二日</p>
+            <p class="version">版本：二０二六年八月五日</p>
         </header>
 
         <section class="intro">
-            余氏詞庫雙字詞拼音是3+3編碼。在88273雙字詞中，重碼字5755，重碼率6.52%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
+            余氏詞庫雙字詞拼音是3+3編碼。在88274雙字詞中，重碼字5421，重碼率6.14%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
         </section>
 
         <!-- (一) 三碼簡化 -->
@@ -407,7 +413,62 @@
             <h2>✨ (2) 其他多字母韻母的處理</h2>
             
             <div class="featured-intro">
-                💡 一般單字不分聲調。組成雙字詞時為減少重碼，以下用不同拼法來突出<strong>第一聲調</strong> (通常 <code>i</code>&rarr;<code>y</code>, <code>u</code>&rarr;<code>w</code>, <code>k</code>&rarr;<code>c</code>)。部分重碼多的韻母更利用<strong>第4聲</strong>不同拼法。
+                💡 一般單字不分聲調。組成雙字詞時為減少重碼，以下用不同拼法來表示<strong>第2至6聲調</strong> (通常 <code>i</code>&rarr;<code>y</code>, <code>u</code>&rarr;<code>w</code>, <code>k</code>&rarr;<code>c</code>)。
+            </div>
+
+            <div style="overflow-x: auto;">
+                <table class="rule-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 20%;">韻母</th>
+                            <th style="width: 20%;">1聲</th>
+                            <th style="width: 20%;">2-6聲</th>
+                            <th style="width: 40%;">例字</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>悲 (ei)</strong></td>
+                            <td>bei 悲</td>
+                            <td><span class="badge-t26">ey</span></td>
+                            <td>bey 比秘備</td>
+                        </tr>
+                        <tr>
+                            <td><strong>哀 (oi)</strong></td>
+                            <td>coi 啋</td>
+                            <td><span class="badge-t26">oy</span></td>
+                            <td>coy 採菜才 | oi 哀愛外</td>
+                        </tr>
+                        <tr>
+                            <td><strong>煙 (in)</strong></td>
+                            <td>bin 邊</td>
+                            <td><span class="badge-t26">yn</span></td>
+                            <td>byn 扁變便</td>
+                        </tr>
+                        <tr>
+                            <td><strong>扼 (ak)</strong></td>
+                            <td>bak 北</td>
+                            <td><span class="badge-t26">ac</span></td>
+                            <td>bac 百帛 | pak 白</td>
+                        </tr>
+                        <tr>
+                            <td><strong>益 (ik)</strong></td>
+                            <td>yik 益</td>
+                            <td><span class="badge-t26">ic</span></td>
+                            <td>yic 亦</td>
+                        </tr>
+                        <tr>
+                            <td><strong>屋 (uk)</strong></td>
+                            <td>buk 卜</td>
+                            <td><span class="badge-t26">uc</span></td>
+                            <td>buc 僕</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="featured-intro" style="margin-top: 30px;">
+                💡 為減少重碼，部分韻母更利用<strong>第4聲</strong>不同拼法。
             </div>
 
             <div style="overflow-x: auto;">
@@ -415,110 +476,61 @@
                     <thead>
                         <tr>
                             <th style="width: 15%;">韻母</th>
-                            <th style="width: 12%;">第一聲</th>
-                            <th style="width: 38%;">第一聲 例字</th>
-                            <th style="width: 12%;">第4聲</th>
-                            <th style="width: 23%;">第4聲 例字</th>
+                            <th style="width: 15%;">1聲</th>
+                            <th style="width: 15%;">2/3/5/6聲</th>
+                            <th style="width: 30%;">例字</th>
+                            <th style="width: 10%;">第4聲</th>
+                            <th style="width: 15%;">例字</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td><strong>矮 (ai)</strong></td>
-                            <td><span class="badge-t1">ay</span></td>
-                            <td>say西 sai洗世逝 / bay跛 bai閉幣</td>
+                            <td>sai 西</td>
+                            <td><span class="badge-t26">ay</span></td>
+                            <td>say 洗世逝 / bay 跛 bay 閉門閉幣</td>
                             <td><span class="badge-t4">ae</span></td>
-                            <td>cae齊 mae迷 nae泥</td>
+                            <td>ae 危 cae 齊 mae 迷 nae 泥</td>
                         </tr>
                         <tr>
                             <td><strong>歐 (au)</strong></td>
-                            <td><span class="badge-t1">aw</span></td>
-                            <td>yaw休 yau柚幼由有又 / caw秋 cau丑臭</td>
+                            <td>yau 休</td>
+                            <td><span class="badge-t26">aw</span></td>
+                            <td>yaw 柚幼友右 / cau 秋 caw 丑臭</td>
                             <td><span class="badge-t4">ow</span></td>
-                            <td>cow囚 mow謀 yow由</td>
-                        </tr>
-                        <tr>
-                            <td><strong>悲 (ei)</strong></td>
-                            <td><span class="badge-t1">ey</span></td>
-                            <td>bey悲 bei比秘備</td>
-                            <td class="empty-cell">—</td>
-                            <td class="empty-cell">—</td>
-                        </tr>
-                        <tr>
-                            <td><strong>央 (eung)</strong></td>
-                            <td><span class="badge-t1">eo(ng)</span></td>
-                            <td>yeo央 yeu樣養陽氧讓 / ceo昌 ceu搶唱</td>
-                            <td class="empty-cell">—</td>
-                            <td>che長 she常</td>
+                            <td>cow 囚 mow 謀 yow 由</td>
                         </tr>
                         <tr>
                             <td><strong>夭 (iu)</strong></td>
-                            <td><span class="badge-t1">iw</span></td>
-                            <td>biw標 biu表 / yiw腰 yiu妖要耀</td>
+                            <td>biu 標</td>
+                            <td><span class="badge-t26">iw</span></td>
+                            <td>biw 表 / yiu 腰 yiw 妖要耀</td>
                             <td><span class="badge-t4">ew</span></td>
-                            <td>yew搖</td>
-                        </tr>
-                        <tr>
-                            <td><strong>哀 (oi)</strong></td>
-                            <td><span class="badge-t1">oy</span></td>
-                            <td>coy啋 coi採菜才 oy哀 oi愛外</td>
-                            <td class="empty-cell">—</td>
-                            <td class="empty-cell">—</td>
+                            <td>yew 搖</td>
                         </tr>
                         <tr>
                             <td><strong>煨銳 (ui)</strong></td>
-                            <td><span class="badge-t1">uy</span></td>
-                            <td>buy杯 bui背焙 / suy需 sui水歲緒睡</td>
+                            <td>bui 杯</td>
+                            <td><span class="badge-t26">uy</span></td>
+                            <td>buy 背焙 / sui 需水 suy 歲緒睡</td>
                             <td><span class="badge-t4">uh</span></td>
-                            <td>cuh除 muh煤 suh誰</td>
+                            <td>cuh 除 muh 煤 suh 誰</td>
                         </tr>
                         <tr>
                             <td><strong>英 (ing)</strong></td>
-                            <td><span class="badge-t1">yg</span></td>
-                            <td>cyg清 cig請秤 / yyg應 yig影認</td>
+                            <td>cig 清</td>
+                            <td><span class="badge-t26">yg</span></td>
+                            <td>cyg 請秤 / yig 應 yyg 影認</td>
                             <td><span class="badge-t4">ng</span></td>
-                            <td>cng程 mng明 yng形</td>
+                            <td>cng 程 mng 明 yng 形</td>
                         </tr>
                         <tr>
                             <td><strong>瓮 (ung)</strong></td>
-                            <td><span class="badge-t1">wg</span></td>
-                            <td>ywg翁 yug擁勇用</td>
+                            <td>yug 翁</td>
+                            <td><span class="badge-t26">wg</span></td>
+                            <td>ywg 擁勇用</td>
                             <td><span class="badge-t4">mg</span></td>
-                            <td>cmg從 mmg蒙 ymg容</td>
-                        </tr>
-                        <tr>
-                            <td><strong>冤 (uen)</strong></td>
-                            <td><span class="badge-t1">oo(n)</span></td>
-                            <td>coo村 joo專 soo孫 yoo冤</td>
-                            <td><span class="badge-t4">yun</span></td>
-                            <td>yun元完原員園圓源</td>
-                        </tr>
-                        <tr>
-                            <td><strong>煙 (in)</strong></td>
-                            <td><span class="badge-t1">yn</span></td>
-                            <td>cyn千 jyn煎 syn先 yyn煙</td>
-                            <td class="empty-cell">—</td>
-                            <td class="empty-cell">—</td>
-                        </tr>
-                        <tr>
-                            <td><strong>扼 (ak)</strong></td>
-                            <td><span class="badge-t1">ac</span></td>
-                            <td>bac北 cac測 jac則 sac塞</td>
-                            <td class="empty-cell">—</td>
-                            <td class="empty-cell">—</td>
-                        </tr>
-                        <tr>
-                            <td><strong>益 (ik)</strong></td>
-                            <td><span class="badge-t1">ic</span></td>
-                            <td>bic迫 cic斥 jic即 sic式 yic益</td>
-                            <td class="empty-cell">—</td>
-                            <td class="empty-cell">—</td>
-                        </tr>
-                        <tr>
-                            <td><strong>屋 (uk)</strong></td>
-                            <td><span class="badge-t1">uc</span></td>
-                            <td>buc卜 cuc速 juc足 suc縮 yuc沃</td>
-                            <td class="empty-cell">—</td>
-                            <td class="empty-cell">—</td>
+                            <td>cmg 從 mmg 蒙 ymg 容</td>
                         </tr>
                     </tbody>
                 </table>
@@ -531,22 +543,22 @@
             
             <div class="poem-verse">
                 <div class="pinyin-line">ui poem uj sosik</div>
-                <div class="pinyin-line">mokteg coolam da ipsyg h hofon yumsiu ceh tsuhag t</div>
+                <div class="pinyin-line">mokteg coolam da ipsig h hofon yumsiw ceh tsuhag t</div>
                 <div class="hanzi-line">莫聽 穿林 打 葉聲 ， 何妨 吟嘯 且 徐行 。</div>
             </div>
 
             <div class="poem-verse">
-                <div class="pinyin-line">jucjeu moghie hygsig ma h suhpa uq yetsor yynyuu yam pngsag t</div>
+                <div class="pinyin-line">jukjeu moghie higsyg ma h suhpa uq yetsor yinyuu yam pngsag t</div>
                 <div class="hanzi-line">竹杖 芒鞋 輕勝 馬 ， 誰怕 ？ 一蓑 煙雨 任 平生 。</div>
             </div>
 
             <div class="poem-verse">
-                <div class="pinyin-line">liuciu cunfwg cuh jausig h meilag ul santow cehjiu kek seoyng t</div>
+                <div class="pinyin-line">liwuciw cunfug cuh jausig h meilag ul santau cehjiw kek seoyng t</div>
                 <div class="hanzi-line">料峭 春風 吹 酒醒 ， 微冷 ！ 山頭 斜照 卻 相迎 。</div>
             </div>
 
             <div class="poem-verse">
-                <div class="pinyin-line">wuisau heuloi siwset cu h gwahui us yamo fwgyuu yamo cng t</div>
+                <div class="pinyin-line">wuhsaw heuloi siuset cu h gwahui us yamo fugyuu yamo cng t</div>
                 <div class="hanzi-line">回首 向來 蕭瑟 處 ， 歸去 ； 也無 風雨 也無 晴 。</div>
             </div>
         </section>
