@@ -1,7 +1,7 @@
 📘 余氏輸入法3+3拼音編碼說明
-    版本：二０二六年八月五日
+    版本：二０二六年八月六日
 
-    余氏詞庫雙字詞拼音是3+3編碼。在88274雙字詞中，重碼字5421，重碼率6.14%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
+    余氏詞庫雙字詞拼音是3+3編碼。在88274雙字詞中，重碼字5417，重碼率6.14%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
 
 🔤 (一) 三碼簡化
 
@@ -85,7 +85,7 @@
 [#6]：奧(o/ou)  缺聲母的字拼成ou。例：奧澳ou
 [#7]：烏(uː)、於(u)ː余氏合併為(u)。例：胡wu，語yu 
 [#8]：碗(un) 余氏一般用oon，例：goon觀管貫 boon般半胖，moon們滿悶。例外：本bue 門mun 盤pun
-      冤(un) 余氏一般用uen，例：guen捐卷眷 yuen苑怨縣。例外：yoo冤淵鴛院遠軟願 yun元完原員園圓源 yun潤閏
+      冤(un) 余氏一般用uen，例：guen捐卷眷 yuen苑怨縣。例外：yoo冤淵鴛院遠軟 yun元完原員園圓源 yun潤閏
 
 🎵 (三) 聲調
 余氏單字拼音一般不分聲調。但為了減低重碼，余氏3+3組詞方案用了聲調字母a啞h氣e兒u雨z二(2-6聲)。
@@ -119,25 +119,27 @@
 
 一般單字不分聲調。組成雙字詞時為減少重碼，以下用不同拼法來表示第2至6聲調 (通常i→y，u→w，k→c)。
 
-韻母     1聲      2-6聲  例字                               
+韻母     1聲     2-6聲   例字                               
 
-悲(ei)   bei悲  ey      bey比秘備
+悲(ei)   bei悲    ey      bey比秘備
 哀(oi)   coi啋   oy      coy採菜才    oi哀愛外
-煙(in)   bin邊   yn     byn扁變便
-扼(ak)   bak北   ac     bac百帛         pak白
-益(ik)   yik益  ic        yic亦
-屋(uk)   buk卜   uc        buc僕 
+煙(in)   bin邊   yn       byn扁變便
+扼(ak)   bak北   ac       bac百帛         pak白
+益(ik)   yik益    ic      yic亦
+屋(uk)   buk卜   uc      buc僕 
 
 為減少重碼，部分韻母更利用第4聲不同拼法。
 
-韻母     1聲    2/3/5/6聲 例字                           第4聲   例字
+韻母     1聲/常用    2356聲 例字                           第4聲   例字
 
-矮(ai)   sai西   ay   say洗世逝   / bay跛 bay閉門閉幣  ae    ae危  cae齊 mae迷 nae泥
-歐(au)   yau休   aw   yaw柚幼友右 / cau秋 caw丑臭      ow   cow囚 mow謀 yow由
-夭(iu)   biu標   iw   biw表       / yiu腰 yiw妖要耀    ew   yew搖
-煨銳(ui) bui杯   uy   buy背焙     / sui需水 suy歲緒睡  uh   cuh除 muh煤 suh誰
-英(ing)  cig清   yg   cyg請秤     / yig應 yyg影認      ng   cng程 mng明 yng形
-瓮(ung)  yug翁   wg   ywg擁勇用                        mg   cmg從 mmg蒙 ymg容
+矮(ai)   sai西        ay   say洗世逝   / bay跛 bay閉門閉幣  ae    ae危  cae齊 mae迷 nae泥
+歐(au)   yau休/九口    aw   yaw柚幼友右 / cau秋 caw丑臭      ow   cow囚 mow謀 yow由
+央(eung) yeo央 ceo昌  eu   yeu樣養氧讓 / ceu搶唱  seu想尚   eu   yeu陽  che長 she常上
+夭(iu)   biu標        iw   biw表       / yiu腰 yiw妖要耀    ew   yew搖
+煨銳(ui) bui杯        uy   buy背焙     / sui需水 suy歲緒睡  uh   cuh除 muh煤 suh誰
+英(ing)  cig清        yg   cyg請秤     / yig應 yyg影認      ng   cng程 mng明 yng形
+瓮(ung)  yug翁        wg   ywg擁勇用                        mg   cmg從 mmg蒙 ymg容
+冤(uen)  yoo冤/院遠軟 ue   yue苑怨願                         un   yun元完原員園圓源
 
 
 ui poem uj sosik
