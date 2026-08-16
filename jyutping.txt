@@ -17797,8 +17797,8 @@ CH	UCODE	JP	INIT	FINL	TONE	DESC	DESC_JP
 痛	U+75DB	tung3	t	ung	3		
 痜	U+75DC	tuk1	t	uk	1		
 痝	U+75DD	mong4	m	ong	4		
-痞	U+75DE	pei2	p	ei	2		
 痞	U+75DE	mau1	m	au	1		
+痞	U+75DE	pei2	p	ei	2		
 痟	U+75DF	siu1	s	iu	1		
 痠	U+75E0	syun1	s	yun	1		
 痡	U+75E1	pou1	p	ou	1		
@@ -27924,7 +27924,6 @@ CH	UCODE	JP	INIT	FINL	TONE	DESC	DESC_JP
 劙	U+5299	lei4	l	ei	4		
 劚	U+529A	zuk1	z	uk	1		
 力	U+529B	lik6	l	ik	6		
-力	U+529B	lik1	l	ik	1		
 劜	U+529C	aat3		aat	3		
 劜	U+529C	ngaat3	ng	aat	3		
 劝	U+529D	hyun3	h	yun	3		
@@ -28178,7 +28177,6 @@ CH	UCODE	JP	INIT	FINL	TONE	DESC	DESC_JP
 卐	U+5350	maan6	m	aan	6		
 卑	U+5351	bei1	b	ei	1		
 卒	U+5352	zeot1	z	eot	1		
-卒	U+5352	cyut3	c	yut	3		
 卓	U+5353	coek3	c	oek	3		
 卓	U+5353	zoek3	z	oek	3		
 協	U+5354	hip3	h	ip	3		
@@ -28200,7 +28198,6 @@ CH	UCODE	JP	INIT	FINL	TONE	DESC	DESC_JP
 卙	U+5359	zap1	z	ap	1		
 博	U+535A	bok3	b	ok	3		
 卛	U+535B	seot1	s	eot	1		
-卜	U+535C	baak6	b	aak	6		
 卜	U+535C	buk1	b	uk	1		
 卝	U+535D	gwaan3	gw	aan	3		
 卝	U+535D	kong3	k	ong	3		
