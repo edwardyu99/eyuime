@@ -6,7 +6,7 @@ import glob
 
 def load_yucode_dict(filepath='yus_candict_c.txt'):
     """
-    讀取余氏碼表，建立漢字到粵拼的映射字典
+    讀取余氏碼表，建立漢字到余氏的映射字典
     """
     # 如果沒找到檔案，嘗試在程式所在目錄尋找
     if not os.path.exists(filepath):
@@ -51,9 +51,9 @@ def text_to_yucode(text, yucode_map):
     for char in text:
         if char in yucode_map:
             result.append(yucode_map[char])
-        elif char in '，。？、；：「」『』！～…—－·':
+        #elif char in '，。？、；：「」『』！～…—－·':
             # 保留中文標點符號
-            result.append(char)
+            #result.append(char)
         elif char.isspace():
             # 保留空格
             result.append(char)
@@ -325,10 +325,10 @@ def main():
                     if 'sentences' in item and item['sentences']:
                         first = item['sentences'][0]
                         print(f"   原文：{first['text']}")
-                        print(f"   粵拼：{first['yucode']}")
+                        print(f"   余氏：{first['yucode']}")
                 else:
                     print(f"{i+1}. {item.get('text', '')}")
-                    print(f"   粵拼：{item.get('yucode', '')}")
+                    print(f"   余氏：{item.get('yucode', '')}")
                 print()
             
     except Exception as e:
