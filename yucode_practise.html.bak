@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>余氏中文輸入法練習工具</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+            background: #2b2b2b; margin: 0; padding: 15px; color: #e8e6e1;
+        }
+        .container {
+            max-width: 900px; margin: 0 auto; background: #1e1e1a;
+            border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            padding: 20px; border: 1px solid #4a4a3a;
+        }
+        .selector-section {
+            text-align: center; margin-bottom: 20px; background: #2a2a20;
+            padding: 15px; border-radius: 15px; border: 1px dashed #5a5a42;
+        }
+        .selector-section label { margin-right: 10px; color: #e8d48b; font-weight: bold; }
+        #poemSelector {
+            padding: 8px 15px; border-radius: 30px; background: #3a3a30;
+            color: #f0e8d0; border: 2px solid #e8d48b; font-size: 1rem; cursor: pointer;
+        }
+        .poem-info { text-align: center; margin: 15px 0; }
+        .poem-title { font-size: 1.6rem; font-weight: bold; color: #f0e8b0; display: block; }
+        .poem-author { font-size: 0.9rem; color: #aaa97a; margin-top: 5px; display: block; }
+        .poem-block {
+            background: #2a2a22; border-left: 5px solid #c4b87a;
+            padding: 15px; border-radius: 12px; margin-bottom: 25px;
+            font-size: 1rem; line-height: 1.6; color: #e0dcb0; text-align: center;
+        }
+        .practice-area { background: #252520; border-radius: 15px; padding: 10px 5px; }
+        .sentence-card {
+            background: #2f2f28; margin-bottom: 15px; padding: 12px;
+            border-radius: 18px; border: 1px solid #4a4a3a; transition: 0.2s;
+        }
+        .sentence-card:focus-within { border-color: #e8d48b; background: #36362e; }
+        .sentence-card.correct-bg { background: #2e3e2a; border-left: 6px solid #8ab86a; }
+        .chinese-line { font-size: 1.2rem; font-weight: 500; margin-bottom: 8px; color: #f0e8b0; }
+        .yucode-hint {
+            background: #1e1e18; padding: 6px 10px; border-radius: 10px;
+            font-size: 0.85rem; color: #c4dc9a; margin-bottom: 10px;
+            font-family: monospace; border: 1px solid #3a3a2e;
+        }
+        .yucode-hint span { color: #e8d48b; font-weight: bold; }
+        .input-row { display: flex; align-items: center; gap: 10px; }
+        .input-row input {
+            flex: 1; padding: 10px 15px; font-size: 1.1rem; border: 2px solid #5a5a42;
+            border-radius: 50px; background: #3a3a30; color: #f0e8d0; outline: none;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+        .input-row input.correct-input { border-color: #8ab86a !important; background: #2a4a24 !important; }
+        .status-icon { font-size: 1.4rem; width: 30px; text-align: center; }
+        .action-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            background: #2a2a20; padding: 10px 20px; border-radius: 50px;
+            position: sticky; bottom: 10px; box-shadow: 0 -4px 15px rgba(0,0,0,0.5);
+            z-index: 100;
+        }
+        .score-panel { background: #4a6a3a; padding: 5px 12px; border-radius: 20px; font-weight: bold; font-size: 0.9rem; }
+        button { background: #5a5a3a; border: none; padding: 8px 15px; border-radius: 20px; cursor: pointer; color: #f0e8c0; font-weight: bold; }
+        @media (max-width: 600px) {
+            .input-row input { font-size: 1rem; padding: 8px 12px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="selector-section">
+        <label for="poemSelector">選擇練習曲目：</label>
+        <select id="poemSelector">
+            <option value="0">青玉案 · 元夕</option>
+	    <option value="1">定風波</option>
+            <option value="2">水調歌頭</option>
+            <option value="3">相見歡</option>
+            <option value="4">登高</option>
+            <option value="5">靜夜思</option>
+            <option value="6">花妖</option>
+            <option value="7">翩翩</option>
+            <option value="8">羅剎海市</option>
+        </select>
+    </div>
+
+    <div class="poem-info">
+        <span class="poem-title" id="displayTitle">載入中...</span>
+        <span class="poem-author" id="displayAuthor">載入中...</span>
+    </div>
+
+    <div class="poem-block" id="displayRef"></div>
+    <div class="practice-area" id="practiceArea"></div>
+
+    <div class="action-bar">
+        <div class="score-panel" id="scoreDisplay">正確: 0 / 0</div>
+        <div id="timerDisplay" style="font-family: monospace;">00:00</div>
+        <button id="resetBtn">⟳ 重來</button>
+    </div>
+</div>
+
+<script>
+    // --- 數據庫：在這裡新增或修改詩詞 ---
+    const allLibrary = 
+[
+  {
+    "title": "青玉案·元夕",
+    "author": "宋·辛棄疾",
+    "sentences": [
+      {
+        "text": "東風夜放花千樹，更吹落、星如雨。",
+        "yucode": "dugfug yefon fa cinsuz h gag cuilok uz sig yueyuu t"
+      },
+      {
+        "text": "寶馬雕車香滿路。鳳簫聲動，",
+        "yucode": "boma diuce heo mooloz t fwgsiu sigdwg h"
+      },
+      {
+        "text": "玉壺光轉，一夜魚龍舞。",
+        "yucode": "yucwua kogjue h yetye yuelmg mou t"
+      },
+      {
+        "text": "蛾兒雪柳黃金縷，笑語盈盈暗香去。",
+        "yucode": "ngoyee sutlaw wonkam law h siwyu yngyng umheo hui t"
+      },
+      {
+        "text": "眾裏尋他千百度，驀然回首，",
+        "yucode": "jwglct h macyws h"
+      },
+      {
+        "text": "那人卻在，燈火闌珊處。",
+        "yucode": "nayan kekjoi h dagfo lansan cu t"
+      }
+    ]
+  },
+  {
+    "title": "定風波",
+    "author": "蘇軾",
+    "sentences": [
+      {
+        "text": "莫聽穿林打葉聲，何妨吟嘯且徐行。",
+        "yucode": "mokteg coolam da ipsig h hofon yumsiw ceh tsuhag t"
+      },
+      {
+        "text": "竹杖芒鞋輕勝馬，誰怕？",
+        "yucode": "jukjeu moghie higsyg ma h suhpa uq"
+      },
+      {
+        "text": "一蓑煙雨任平生。",
+        "yucode": "yetsor yinyuu yam pngsag t"
+      },
+      {
+        "text": "料峭春風吹酒醒，微冷！",
+        "yucode": "liwciw cunfug cui jawsyg h meylag ul"
+      },
+      {
+        "text": "山頭斜照卻相迎。",
+        "yucode": "santau cehjiw kek seoyng t"
+      },
+      {
+        "text": "回首向來蕭瑟處，歸去；",
+        "yucode": "wuhsaw heuloi siuset cu h gwahui us"
+      },
+      {
+        "text": "也無風雨也無晴。",
+        "yucode": "yamo fugyuu yamo cng t"
+      }
+    ]
+  },
+  {
+    "title": "水調歌頭",
+    "author": "蘇軾",
+    "sentences": [
+      {
+        "text": "明月幾時有？把酒問青天。",
+        "yucode": "mngyut geysy uq bajaw men tsitin t"
+      },
+      {
+        "text": "不知天上宮闕，今夕是何年。",
+        "yucode": "betji tinshe gugkut h gumjic siz honin t"
+      },
+      {
+        "text": "我欲乘風歸去，又恐瓊樓玉宇，",
+        "yucode": "ngoyuc sngfug gwahui h yaw hwg knglyy h"
+      },
+      {
+        "text": "高處不勝寒。",
+        "yucode": "kocbsh t"
+      },
+      {
+        "text": "起舞弄清影，何似在人間。",
+        "yucode": "heamou lwgcig yyg h hochi joi yangan t"
+      },
+      {
+        "text": "轉朱閣，低綺戶，照無眠。",
+        "yucode": "jue chu gok h dai yi wuz h jiw momyn t"
+      },
+      {
+        "text": "不應有恨，何事長向別時圓？",
+        "yucode": "betyig yau hen h hosiz che heu bitsee yun uq"
+      },
+      {
+        "text": "人有悲歡離合，月有陰晴圓缺，",
+        "yucode": "yanyau beiflh h yut yau yumcyk h"
+      },
+      {
+        "text": "此事古難全。",
+        "yucode": "ciasiz ku nancue t"
+      },
+      {
+        "text": "但願人長久，千里共嬋娟。",
+        "yucode": "danyue yan chegaw h cinley gwg simgue t"
+      }
+    ]
+  },
+  {
+    "title": "相見歡",
+    "author": "李煜",
+    "sentences": [
+      {
+        "text": "無言獨上西樓，月如鉤。",
+        "yucode": "moyyn ducshe sailow h yut yue au t"
+      },
+      {
+        "text": "寂寞梧桐深院鎖清秋。",
+        "yucode": "jicmok ngtmg sum yoo soh cigcau t"
+      },
+      {
+        "text": "剪不斷，理還亂，是離愁。",
+        "yucode": "jyn betdue h ley wan lue h siz leysow t"
+      },
+      {
+        "text": "別是一般滋味在心頭。",
+        "yucode": "bitsiz yetboo jimey joist t"
+      }
+    ]
+  },
+  {
+    "title": "登高",
+    "author": "杜甫",
+    "sentences": [
+      {
+        "text": "風急天高猿嘯哀，",
+        "yucode": "fug gup tinko yun siw oi h"
+      },
+      {
+        "text": "渚清沙白鳥飛迴。",
+        "yucode": "渚 cig sha pak niu fei wuh t"
+      },
+      {
+        "text": "無邊落木蕭蕭下，",
+        "yucode": "mobin lok muk siusiu ha h"
+      },
+      {
+        "text": "不盡長江滾滾來。",
+        "yucode": "betjun chegog gwugwu loi t"
+      },
+      {
+        "text": "萬里悲秋常作客，",
+        "yucode": "manley bei cau she jokhac h"
+      },
+      {
+        "text": "百年多病獨登臺。",
+        "yucode": "bacnin dorbeg duc dag toy t"
+      },
+      {
+        "text": "艱難苦恨繁霜鬢，",
+        "yucode": "gannan fu hen fan seo ben h"
+      },
+      {
+        "text": "潦倒新停濁酒杯。",
+        "yucode": "lewdoa sun tng jucjaw bui t"
+      }
+    ]
+  },
+  {
+    "title": "靜夜思",
+    "author": "李白",
+    "sentences": [
+      {
+        "text": "床前明月光，",
+        "yucode": "concyn mngyut kog h"
+      },
+      {
+        "text": "疑是地上霜。",
+        "yucode": "yee siz deishe seo t"
+      },
+      {
+        "text": "舉頭望明月，",
+        "yucode": "guy tau mon mngyut h"
+      },
+      {
+        "text": "低頭思故鄉。",
+        "yucode": "daitau si guuheo t"
+      }
+    ]
+  },
+  {
+    "title": "花妖",
+    "author": "刀郎",
+    "sentences": [
+      {
+        "text": "我是那年輪上流浪的眼淚，",
+        "yucode": "ngosiz nanin lunshe lowlon dik anluy h"
+      },
+      {
+        "text": "妳仍然能聞到風中的胭脂味。",
+        "yucode": "nei yngyyn nag mendou fugjug dik yinji mey t"
+      },
+      {
+        "text": "我若是將諾言刻在那江畔上，",
+        "yucode": "ngoyek sizjeo nokyyn hak joina gogboo she h"
+      },
+      {
+        "text": "一江水冷月光滿城的汪洋。",
+        "yucode": "yet gogsui lag yutkog moosng dik wogyeu t"
+      },
+      {
+        "text": "我在時間的樹下等了妳很久，",
+        "yucode": "ngo joi seegan dik suzha dag liu nei hengaw h"
+      },
+      {
+        "text": "塵凡兒纏我謗我笑我白了頭。",
+        "yucode": "cen fan yee cyn ngo pon ngo siw ngo pak liu tau t"
+      },
+      {
+        "text": "妳看那天邊追逐落日的紙鳶，",
+        "yucode": "nei honna tin bin juijuc lokyat dik jieyun h"
+      },
+      {
+        "text": "像一盞回首道別夤夜的風燈。",
+        "yucode": "jeu yetjan wuhsaw dozbit yenye dik fugdag t"
+      },
+      {
+        "text": "我的心似流沙放逐在車轍旁，",
+        "yucode": "ngods chi lowsha fonjuc joi cecit pon h"
+      },
+      {
+        "text": "他日妳若再返必顛沛在世上。",
+        "yucode": "tayat nei yekjoy fanbit dinpuy joisay she t"
+      },
+      {
+        "text": "若遇那秋夜雨倦鳥也淋淋，",
+        "yucode": "yekyuz na cauye yuugue niu ya lumlum h"
+      },
+      {
+        "text": "那卻是花墻下彌留的枯黃。",
+        "yucode": "na kek siz fa 墻 ha neilow dik fuwon t"
+      },
+      {
+        "text": "君住在錢塘東，妾在臨安北。",
+        "yucode": "kwajuz joi cynton dug h cip joi lum onbak t"
+      },
+      {
+        "text": "君去時褐衣紅，小奴家腰上黃。",
+        "yucode": "kwahui see hot yi hmg h siu noeka yiushe won t"
+      },
+      {
+        "text": "尋差了羅盤經，錯投在泉亭。",
+        "yucode": "cumca liu lawpun gig h coh tow joi cue tng t"
+      },
+      {
+        "text": "奴輾轉到杭城，君又生余杭。",
+        "yucode": "noe jynjue dou hogsng h kwa yaw sag yue hog t"
+      }
+    ]
+  },
+  {
+    "title": "翩翩",
+    "author": "刀郎",
+    "sentences": [
+      {
+        "text": "誰不是錯過了四下報更的鼓聲，",
+        "yucode": "suhbs cohgl seiha bougag dik guasig h"
+      },
+      {
+        "text": "總有人偷偷撥弄鏡月的指針。",
+        "yucode": "jwgyy tautau butlwg geg yut dik jiejum t"
+      },
+      {
+        "text": "罌缶的酒瓶化來綺紈與樓閣，",
+        "yucode": "angfaw dik jawpng fahloi yiyun yu lowgok h"
+      },
+      {
+        "text": "綠芭蕉紅櫻桃孑然一身的過來人。",
+        "yucode": "luc bajiu hmg yigtoe kityys dik gwoly t"
+      },
+      {
+        "text": "未曾走到絕境路彼岸花不開，",
+        "yucode": "meytsa jaudou jutgyg loz peyon fa bethoi h"
+      },
+      {
+        "text": "辛酸只為長安遠倒臥在瓊臺。",
+        "yucode": "sunsoo jiewai che onyoo doango joi kng toy t"
+      },
+      {
+        "text": "小心那流射的海市售賣開花杖，",
+        "yucode": "siusum na low seh dik hoyshi sawmie hoifa jeu h"
+      },
+      {
+        "text": "遼遙的天河啊紛紛流淌的挽歌郎。",
+        "yucode": "lew yew dik tinhoh ah funfun lowton dik wan gor lon t"
+      },
+      {
+        "text": "藍採和啊，醉酒當歌，",
+        "yucode": "lam coy wo ah h juijaw doggor h"
+      },
+      {
+        "text": "紅顏易老轉眼桑田泛清波。",
+        "yucode": "hmgan yiz lou juean sogtyn fan cigbor t"
+      },
+      {
+        "text": "她也曾是越過了銀河萬裏的荒原，",
+        "yucode": "ta ya tsa siz yutgwo liu unhoh man lui dik fogyun h"
+      },
+      {
+        "text": "他也曾是劃破了絢爛流落在人間。",
+        "yucode": "taya tsa siz wacpoh liu huelan lowlok joi yangan t"
+      },
+      {
+        "text": "唯有那不眠的憑欄與情仇依捨，",
+        "yucode": "waeyau na bet myn dik paglan yu chgsow yi seh h"
+      },
+      {
+        "text": "是雲搖是雨散都在同一個搖籃。",
+        "yucode": "siz wan yew siz yuu san dojoi tmgyg yewlam t"
+      },
+      {
+        "text": "邯鄲夢啊古今同，",
+        "yucode": "hondan mwg ah kugum tmg h"
+      },
+      {
+        "text": "榮華易去青山處處英雄冢。",
+        "yucode": "wngwah yizhui tsisan cucu yighmg cwg t"
+      }
+    ]
+  },
+  {
+    "title": "羅剎海市",
+    "author": "刀郎",
+    "sentences": [
+      {
+        "text": "羅剎國向東兩萬六千里，",
+        "yucode": "lawsat kwo heudug leuman lukcin ley h"
+      },
+      {
+        "text": "過七沖越焦海三寸的黃泥地。",
+        "yucode": "gwocet cug yut jiu hoy samcue dik wonnai dei t"
+      },
+      {
+        "text": "只為那有一條一丘河，河水流過苟苟營。",
+        "yucode": "jiewai na yauyt yet yau hoh h hohsui lowgwo gaw gaw yng t"
+      },
+      {
+        "text": "苟苟營當家的叉桿兒喚作馬戶。",
+        "yucode": "gaw gaw yng dogka dik ca gon yee woo jok ma wuz t"
+      },
+      {
+        "text": "她兩耳傍肩三孔鼻，未曾開言先轉腚。",
+        "yucode": "ta leu yie bon gin samhwg bey h meytsa hoiyyn sinjue dyg t"
+      },
+      {
+        "text": "那馬戶不知道他是一頭驢，",
+        "yucode": "nama wuz betjd ta siz yettau loe h"
+      },
+      {
+        "text": "那又鳥不知道他是一隻雞。",
+        "yucode": "na yaw niubet jidoz ta siz yet jek gai t"
+      },
+      {
+        "text": "勾欄從來扮高雅，自古公公好威名。",
+        "yucode": "au lan cmgloi ban konga h jizku guggug ho waimng t"
+      },
+      {
+        "text": "打西邊來了一個小夥兒他叫馬驥。",
+        "yucode": "dasai bin loi liu yetgoh siu foh yee tagiw ma key t"
+      },
+      {
+        "text": "只為他人海泛舟搏風打浪，龍遊險灘流落惡地。",
+        "yucode": "jiewai tayan hoy fanjau bok fug dalon h lmg yow himtan lowlok okdei t"
+      },
+      {
+        "text": "他見這羅剎國裏常顛倒，馬戶愛聽那又鳥的曲。",
+        "yucode": "tagyn je lawsat kwo lui she dindoa h ma wuz oiteg na yaw niu dik kuk t"
+      },
+      {
+        "text": "它紅描翅那個黑畫皮，綠繡雞冠金鑲蹄。",
+        "yucode": "ta hmg mew chi nagoh hak wahpey h luc saw gaigoo kam seotae t"
+      },
+      {
+        "text": "可是那從來煤蛋兒生來就黑，不管妳咋樣洗呀那也是個臟東西。",
+        "yucode": "horsiz na cmgloi muh dan yee sagloi jaw hak h betgoo nei jahyeu say ah nays goh jon dugsai t"
+      },
+      {
+        "text": "愛字有心心有好歹，百樣愛也有千樣的壞。",
+        "yucode": "oijiz yausum sumyau hodie h bacyeu oiya yau cinyeu dik wie t"
+      },
+      {
+        "text": "西邊的歐鋼有老闆，生兒維特根斯坦。",
+        "yucode": "saibin dik au gog yau louban h sagyee waedgs t"
+      },
+      {
+        "text": "那馬戶又鳥，是我們人類根本的問題。",
+        "yucode": "nama wuz yaw niu h siznm yanlu gunbue dik mentae t"
+      }
+    ]
+  }
+]
+[
+  {
+    "title": "青玉案·元夕",
+    "author": "宋·辛棄疾",
+    "sentences": [
+      {
+        "text": "東風夜放花千樹，更吹落、星如雨。",
+        "yucode": "dugfug yefon fa cinsuz h gag cuilok uz sig yueyuu t"
+      },
+      {
+        "text": "寶馬雕車香滿路。鳳簫聲動，",
+        "yucode": "boma diuce heo mooloz t fwgsiu sigdwg h"
+      },
+      {
+        "text": "玉壺光轉，一夜魚龍舞。",
+        "yucode": "yucwua kogjue h yetye yuelmg mou t"
+      },
+      {
+        "text": "蛾兒雪柳黃金縷，笑語盈盈暗香去。",
+        "yucode": "ngoyee sutlaw wonkam law h siwyu yngyng umheo hui t"
+      },
+      {
+        "text": "眾裏尋他千百度，驀然回首，",
+        "yucode": "jwglct h macyws h"
+      },
+      {
+        "text": "那人卻在，燈火闌珊處。",
+        "yucode": "nayan kekjoi h dagfo lansan cu t"
+     
+
+      }
+    ]
+  },
+  
+  {
+    "title": "定風波",
+    "author": "蘇軾",
+    "sentences": [
+      {
+        "text": "莫聽穿林打葉聲，何妨吟嘯且徐行。",
+        "yucode": "mokteg coolam da ipsig h hofon yumsiw ceh tsuhag t"
+      },
+      {
+        "text": "竹杖芒鞋輕勝馬，誰怕？",
+        "yucode": "jukjeu moghie higsyg ma h suhpa uq"
+      },
+      {
+        "text": "一蓑煙雨任平生。",
+        "yucode": "yetsor yinyuu yam pngsag t"
+      },
+      {
+        "text": "料峭春風吹酒醒，微冷！",
+        "yucode": "liwciw cunfug cui jawsyg h meylag ul"
+      },
+      {
+        "text": "山頭斜照卻相迎。",
+        "yucode": "santau cehjiw kek seoyng t"
+      },
+      {
+        "text": "回首向來蕭瑟處，歸去；",
+        "yucode": "wuhsaw heuloi siuset cu h gwahui us"
+      },
+      {
+        "text": "也無風雨也無晴。",
+        "yucode": "yamo fugyuu yamo cng t"
+          }
+    ]
+  },
+    
+  {
+    "title": "水調歌頭",
+    "author": "蘇軾",
+    "sentences": [
+      {
+        "text": "明月幾時有？把酒問青天。",
+        "yucode": "migyut geisy uq bajau men tsitin t"
+      },
+      {
+        "text": "不知天上宮闕，今夕是何年。",
+        "yucode": "betji tinshe gugkut h gumjik siz honin t"
+      },
+      {
+        "text": "我欲乘風歸去，又恐瓊樓玉宇，",
+        "yucode": "ngoyuk sigfug gwahui h yauhug kiglyy h"
+      },
+      {
+        "text": "高處不勝寒。",
+        "yucode": "kocbsh t"
+      },
+      {
+        "text": "起舞弄清影，何似在人間。",
+        "yucode": "heimou lugcig yig h hochi joi yangan t"
+      },
+      {
+        "text": "轉朱閣，低綺戶，照無眠。",
+        "yucode": "jue chugok h dai yiwuu h jiu momin t"
+      },
+      {
+        "text": "不應有恨，何事長向別時圓？",
+        "yucode": "betyig yauhen h hosiz cheheu bitsee yun uq"
+      },
+      {
+        "text": "人有悲歡離合，月有陰晴圓缺，",
+        "yucode": "yanyau beiflh h yutyau yumcyk h"
+      },
+      {
+        "text": "此事古難全。",
+        "yucode": "cisiz ku nancue t"
+      },
+      {
+        "text": "但願人長久，千里共嬋娟。",
+        "yucode": "danyue yan chegau h cinlei gug simgue t"
+      }
+    ]
+  },
+  {
+    "title": "相見歡",
+    "author": "李煜",
+    "sentences": [
+      {
+        "text": "無言獨上西樓，月如鉤。",
+        "yucode": "moyin dukshe sailau h yut yueau t"
+      },
+      {
+        "text": "寂寞梧桐深院鎖清秋。",
+        "yucode": "jikmok ngtug sum yue sor cigcau t"
+      },
+      {
+        "text": "剪不斷，理還亂，是離愁。",
+        "yucode": "jin betdue h lei wan lue h siz leisau t"
+      },
+      {
+        "text": "別是一般滋味在心頭。",
+        "yucode": "bitsiz yetboo jimei joist t"
+      }
+    ]
+  },
+  {
+    "title": "登高",
+    "author": "杜甫",
+    "sentences": [
+      {
+        "text": "風急天高猿嘯哀，",
+        "yucode": "fug gup tinko yun siu oi h"
+      },
+      {
+        "text": "渚清沙白鳥飛迴。",
+        "yucode": "渚 cig sha bak niu fei wui t"
+      },
+      {
+        "text": "無邊落木蕭蕭下，",
+        "yucode": "mobin lok muk siusiu ha h"
+      },
+      {
+        "text": "不盡長江滾滾來。",
+        "yucode": "betjun chegog gwugwu loi t"
+      },
+      {
+        "text": "萬里悲秋常作客，",
+        "yucode": "manlei bei cau she jokhak h"
+      },
+      {
+        "text": "百年多病獨登臺。",
+        "yucode": "baknin dorbeg duk dag toi t"
+      },
+      {
+        "text": "艱難苦恨繁霜鬢，",
+        "yucode": "gannan fu hen fan seoben h"
+      },
+      {
+        "text": "潦倒新停濁酒杯。",
+        "yucode": "liudou sun tig jukjau bui t"
+      }
+    ]
+  },
+  {
+    "title": "靜夜思",
+    "author": "李白",
+    "sentences": [
+      {
+        "text": "床前明月光，",
+        "yucode": "concin migyut kog h"
+      },
+      {
+        "text": "疑是地上霜。",
+        "yucode": "yeesiz deishe seo t"
+      },
+      {
+        "text": "舉頭望明月，",
+        "yucode": "guitau monmig yut h"
+      },
+      {
+        "text": "低頭思故鄉。",
+        "yucode": "daitau si guuheo t"
+      }
+    ]
+  },
+  {
+    "title": "花妖",
+    "author": "刀郎",
+    "sentences": [
+      {
+        "text": "我是那年輪上流浪的眼淚，",
+        "yucode": "ngosiz nanin lun shelau lon dik anlui h"
+      },
+      {
+        "text": "妳仍然能聞到風中的胭脂味。",
+        "yucode": "nei yigyin nag mendou fugjug dik yinji mei t"
+      },
+      {
+        "text": "我若是將諾言刻在那江畔上，",
+        "yucode": "ngoyek siz jeo nokyin hak joina gog boo she h"
+      },
+      {
+        "text": "一江水冷月光滿城的汪洋。",
+        "yucode": "yet gogsui lag yutkog moosig dik wogyeu t"
+      },
+      {
+        "text": "我在時間的樹下等了妳很久，",
+        "yucode": "ngojoi seegan dik suuha dagliu nei hengau h"
+      },
+      {
+        "text": "塵凡兒纏我謗我笑我白了頭。",
+        "yucode": "can fan yee cin ngo pon ngo siungo bak liu tau t"
+      },
+      {
+        "text": "妳看那天邊追逐落日的紙鳶，",
+        "yucode": "nei hon natin bin juijuk lokyat dik jieyue h"
+      },
+      {
+        "text": "像一盞回首道別夤夜的風燈。",
+        "yucode": "jeu yet jan wuisau doubit yenye dik fug dag t"
+      },
+      {
+        "text": "我的心似流沙放逐在車轍旁，",
+        "yucode": "ngods chi lausha fonjuk joi ce cit pon h"
+      },
+      {
+        "text": "他日妳若再返必顛沛在世上。",
+        "yucode": "tayat nei yekjoi fan bit din pui joisai she t"
+      },
+      {
+        "text": "若遇那秋夜雨倦鳥也淋淋，",
+        "yucode": "yek yuz na cau ye yuu gue niu ya lum lum h"
+      },
+      {
+        "text": "那卻是花墻下彌留的枯黃。",
+        "yucode": "na kek siz fa 墻 ha neilau dik fuwon t"
+      },
+      {
+        "text": "君住在錢塘東，妾在臨安北。",
+        "yucode": "kwa juujoi cinton dug h cip joi lum on bek t"
+      },
+      {
+        "text": "君去時褐衣紅，小奴家腰上黃。",
+        "yucode": "kwa hui see hot yi hug h siu nouka yiu she won t"
+      },
+      {
+        "text": "尋差了羅盤經，錯投在泉亭。",
+        "yucode": "cum ca liu lawpoo gig h coh tau joi cue tig t"
+      },
+      {
+        "text": "奴輾轉到杭城，君又生余杭。",
+        "yucode": "nou jinjue dou hog sig h kwa yau sag yue hog t"
+      }
+    ]
+  },
+  {
+    "title": "翩翩",
+    "author": "刀郎",
+    "sentences": [
+      {
+        "text": "誰不是錯過了四下報更的鼓聲，",
+        "yucode": "sui betsiz cohgl seiha bougag dik guusig h"
+      },
+      {
+        "text": "總有人偷偷撥弄鏡月的指針。",
+        "yucode": "jugyau yan tautau butlug geg yut dik jiejum t"
+      },
+      {
+        "text": "罌缶的酒瓶化來綺紈與樓閣，",
+        "yucode": "angfau dik jaupig fah loi yiyun yu laugok h"
+      },
+      {
+        "text": "綠芭蕉紅櫻桃孑然一身的過來人。",
+        "yucode": "luk bajiu hug yigtou kityys dik gwoly t"
+      },
+      {
+        "text": "未曾走到絕境路彼岸花不開，",
+        "yucode": "meitsa jaudou jutgig lou peion fa bethoi h"
+      },
+      {
+        "text": "辛酸只為長安遠倒臥在瓊臺。",
+        "yucode": "sunsue jie wai cheon yue doungo joi kig toi t"
+      },
+      {
+        "text": "小心那流射的海市售賣開花杖，",
+        "yucode": "siusum na lau seh dik hoishi sau mie hoifa jeu h"
+      },
+      {
+        "text": "遼遙的天河啊紛紛流淌的挽歌郎。",
+        "yucode": "liu yiu dik tinhoh ah funfun lauton dik wangor lon t"
+      },
+      {
+        "text": "藍採和啊，醉酒當歌，",
+        "yucode": "lam coi wo ah h juijau dog gor h"
+      },
+      {
+        "text": "紅顏易老轉眼桑田泛清波。",
+        "yucode": "hugan yizlou juean sogtin fan cigbor t"
+      },
+      {
+        "text": "她也曾是越過了銀河萬裏的荒原，",
+        "yucode": "taya tsa siz yutgwo liu unhoh man lui dik fogyun h"
+      },
+      {
+        "text": "他也曾是劃破了絢爛流落在人間。",
+        "yucode": "taya tsa siz wakpoh liu huelan laulok joi yangan t"
+      },
+      {
+        "text": "唯有那不眠的憑欄與情仇依捨，",
+        "yucode": "waiyau nabet min dik pag lan yu chgsau yi seh h"
+      },
+      {
+        "text": "是雲搖是雨散都在同一個搖籃。",
+        "yucode": "siz wan yiu siz yuu san dojoi tugyg yiulam t"
+      },
+      {
+        "text": "邯鄲夢啊古今同，",
+        "yucode": "hondan mug ah kugum tug h"
+      },
+      {
+        "text": "榮華易去青山處處英雄冢。",
+        "yucode": "wigwah yizhui tsisan cucu yighug cug t"
+      }
+    ]
+  },
+  {
+    "title": "羅剎海市",
+    "author": "刀郎",
+    "sentences": [
+      {
+        "text": "羅剎國向東兩萬六千里，",
+        "yucode": "lawsat kwo heudug leuman lukcin lei h"
+      },
+      {
+        "text": "過七沖越焦海三寸的黃泥地。",
+        "yucode": "gwo cet cug yut jiu hoi samcue dik wonnai dei t"
+      },
+      {
+        "text": "只為那有一條一丘河，河水流過苟苟營。",
+        "yucode": "jie wai na yauyt yet yau hoh h hohsui laugwo gau gau yig t"
+      },
+      {
+        "text": "苟苟營當家的叉桿兒喚作馬戶。",
+        "yucode": "gau gau yig dogka dik ca gon yee woo jok ma wuu t"
+      },
+      {
+        "text": "她兩耳傍肩三孔鼻，未曾開言先轉腚。",
+        "yucode": "ta leu yie bon gin sam hug bei h meitsa hoiyin sin juedig t"
+      },
+      {
+        "text": "那馬戶不知道他是一頭驢，",
+        "yucode": "nama wuu betjd tasy tau lou h"
+      },
+      {
+        "text": "那又鳥不知道他是一隻雞。",
+        "yucode": "na yau niu betjd tasy jek gai t"
+      },
+      {
+        "text": "勾欄從來扮高雅，自古公公好威名。",
+        "yucode": "aulan cugloi ban konga h jizku guggug ho waimig t"
+      },
+      {
+        "text": "打西邊來了一個小夥兒他叫馬驥。",
+        "yucode": "dasai bin loi liu yetgoh siu for yee tagiu ma kei t"
+      },
+      {
+        "text": "只為他人海泛舟搏風打浪，龍遊險灘流落惡地。",
+        "yucode": "jie waita yanhoi fanjau bok fug da lon h lug yau himtan laulok ok dei t"
+      },
+      {
+        "text": "他見這羅剎國裏常顛倒，馬戶愛聽那又鳥的曲。",
+        "yucode": "tagin je lawsat kwo lui she dindou h ma wuu oitig na yau niu dik kuk t"
+      },
+      {
+        "text": "它紅描翅那個黑畫皮，綠繡雞冠金鑲蹄。",
+        "yucode": "ta hug miu chi nagoh hak wahpei h luk sau gaigoo kam seo tai t"
+      },
+      {
+        "text": "可是那從來煤蛋兒生來就黑，不管妳咋樣洗呀那也是個臟東西。",
+        "yucode": "horsiz na cugloi muidan yee sagloi jau hak h betgoo nei jahyeu sai nga nays goh jon dugsai t"
+      },
+      {
+        "text": "愛字有心心有好歹，百樣愛也有千樣的壞。",
+        "yucode": "oi jiz yausum sum yauho die h bakyeu oi yayau cinyeu dik wie t"
+      },
+      {
+        "text": "西邊的歐鋼有老闆，生兒維特根斯坦。",
+        "yucode": "saibin dik au gog yau louban h sag yee waidgs t"
+      },
+      {
+        "text": "那馬戶又鳥，是我們人類根本的問題。",
+        "yucode": "nama wuu yau niu h siznm yanlui gunboo dik mentai t"
+      }
+    ]
+  }
+]
+    let currentPoem = allLibrary[0];
+    let userAnswers = {};
+    let correctStatus = {};
+    let timerSeconds = 0;
+    let pendingFocusIndex = -1;
+    let compositionActive = false;
+    let inputElements = [];
+
+    function checkMatch(input, target) {
+        const cleanInput = input.trim().replace(/\s+/g, "");
+        if (!cleanInput) return false;
+        const pureInput = cleanInput.replace(/[^\u4e00-\u9fa5a-zA-Z0-9]/g, "");
+        const pureTarget = target.replace(/[^\u4e00-\u9fa5a-zA-Z0-9]/g, "");
+        const isTextCorrect = (pureInput === pureTarget);
+        const lastChar = cleanInput.slice(-1);
+        const isLastPunc = /[^\u4e00-\u9fa5a-zA-Z0-9]/.test(lastChar);
+        return isTextCorrect && isLastPunc;
+    }
+
+    function updateScore() {
+        const total = currentPoem.sentences.length;
+        const correctCount = Object.values(correctStatus).filter(v => v).length;
+        document.getElementById("scoreDisplay").innerText = `正確: ${correctCount} / ${total}`;
+    }
+
+    // 安全的焦點轉移函數，等待輸入法狀態穩定
+    function safeFocusNext(index) {
+        if (index >= currentPoem.sentences.length) return;
+        
+        // 如果正在輸入法組合中，記錄待轉移的索引
+        if (compositionActive) {
+            pendingFocusIndex = index;
+            return;
+        }
+        
+        // 使用雙重 requestAnimationFrame 確保 DOM 和輸入法狀態穩定
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                const nextInput = inputElements[index];
+                if (nextInput) {
+                    // 短暫延遲後再聚焦，避免與輸入法事件衝突
+                    setTimeout(() => {
+                        nextInput.focus();
+                        // 將游標移到末尾
+                        if (nextInput.value.length > 0) {
+                            nextInput.setSelectionRange(nextInput.value.length, nextInput.value.length);
+                        }
+                        nextInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }, 50);
+                }
+                pendingFocusIndex = -1;
+            });
+        });
+    }
+
+    function render() {
+        document.getElementById("displayTitle").innerText = currentPoem.title;
+        document.getElementById("displayAuthor").innerText = "〔" + currentPoem.author + "〕";
+        document.getElementById("displayRef").innerText = currentPoem.sentences.map(s => s.text).join("");
+
+        const area = document.getElementById("practiceArea");
+        area.innerHTML = "";
+        inputElements = [];
+        
+        currentPoem.sentences.forEach((data, i) => {
+            const card = document.createElement("div");
+            card.className = "sentence-card" + (correctStatus[i] ? " correct-bg" : "");
+            card.innerHTML = `
+                <div class="chinese-line">${data.text}</div>
+                <div class="yucode-hint">拆碼：<span>${data.yucode}</span></div>
+                <div class="input-row">
+                    <input type="text" id="input-${i}" value="${userAnswers[i] || ''}" autocomplete="off" placeholder="輸入文字+標點..." inputmode="text" enterkeyhint="done">
+                    <div class="status-icon" id="status-${i}">${correctStatus[i] ? "✔️" : "📝"}</div>
+                </div>
+            `;
+            area.appendChild(card);
+
+            const input = card.querySelector("input");
+            inputElements[i] = input;
+            
+            // 追蹤輸入法組合狀態
+            input.addEventListener('compositionstart', () => {
+                compositionActive = true;
+            });
+            
+            input.addEventListener('compositionend', (e) => {
+                compositionActive = false;
+                // 組合結束後檢查是否有待處理的焦點轉移
+                if (pendingFocusIndex >= 0) {
+                    const idx = pendingFocusIndex;
+                    pendingFocusIndex = -1;
+                    setTimeout(() => safeFocusNext(idx), 30);
+                }
+                
+                // 手動觸發一次檢查，因為某些 Android 輸入法在 compositionend 時值可能尚未完全更新
+                setTimeout(() => {
+                    const val = input.value;
+                    userAnswers[i] = val;
+                    const isMatch = checkMatch(val, data.text);
+                    correctStatus[i] = isMatch;
+                    input.className = val === "" ? "" : (isMatch ? "correct-input" : "");
+                    document.getElementById(`status-${i}`).innerText = isMatch ? "✔️" : (val === "" ? "📝" : "❌");
+                    card.classList.toggle("correct-bg", isMatch);
+                    updateScore();
+                    
+                    if (isMatch && i < currentPoem.sentences.length - 1) {
+                        pendingFocusIndex = i + 1;
+                        safeFocusNext(i + 1);
+                    }
+                }, 10);
+            });
+
+            input.addEventListener("input", (e) => {
+                const val = e.target.value;
+                userAnswers[i] = val;
+                const isMatch = checkMatch(val, data.text);
+                correctStatus[i] = isMatch;
+                input.className = val === "" ? "" : (isMatch ? "correct-input" : "");
+                document.getElementById(`status-${i}`).innerText = isMatch ? "✔️" : (val === "" ? "📝" : "❌");
+                card.classList.toggle("correct-bg", isMatch);
+                updateScore();
+                
+                // 只有在非輸入法組合狀態下才觸發焦點轉移
+                if (isMatch && i < currentPoem.sentences.length - 1 && !compositionActive) {
+                    safeFocusNext(i + 1);
+                } else if (isMatch && i < currentPoem.sentences.length - 1) {
+                    // 如果正在組合中，記錄待轉移索引
+                    pendingFocusIndex = i + 1;
+                }
+            });
+            
+            // 防止 Enter 鍵觸發意外提交
+            input.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    input.blur();
+                    setTimeout(() => input.focus(), 10);
+                }
+            });
+            
+            // 失去焦點時清除 pending 狀態
+            input.addEventListener('blur', () => {
+                // 不清除 pendingFocusIndex，因為可能是要轉移到下一個
+            });
+        });
+        updateScore();
+    }
+
+    document.getElementById("poemSelector").addEventListener("change", function(e) {
+        currentPoem = allLibrary[e.target.value];
+        userAnswers = {};
+        correctStatus = {};
+        pendingFocusIndex = -1;
+        compositionActive = false;
+        render();
+    });
+
+    document.getElementById("resetBtn").onclick = () => {
+        userAnswers = {};
+        correctStatus = {};
+        pendingFocusIndex = -1;
+        compositionActive = false;
+        render();
+    };
+
+    setInterval(() => {
+        timerSeconds++;
+        const m = Math.floor(timerSeconds / 60).toString().padStart(2, '0');
+        const s = (timerSeconds % 60).toString().padStart(2, '0');
+        document.getElementById("timerDisplay").innerText = `${m}:${s}`;
+    }, 1000);
+
+    window.onload = render;
+</script>
+
+</body>
+</html>
