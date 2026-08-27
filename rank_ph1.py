@@ -38,9 +38,13 @@ def main():
     try:
         with open(input_file, 'r', encoding='utf-16') as f:
             lines = f.readlines()
-    except FileNotFoundError:
-        print(f"錯誤：找不到輸入檔案 {input_file}")
-        return
+    except:
+        try: 
+            with open(input_file, 'r', encoding='utf-8') as f:
+                lines = f.readlines()
+        except FileNotFoundError:
+            print(f"錯誤：找不到輸入檔案 {input_file}")
+            return
 
     # 4. 定義排序規則
     def sort_key(line):

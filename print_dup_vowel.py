@@ -138,15 +138,15 @@ def main():
                 f.write(f"{original_line}\n")
             f.write("\n")
             
-        # 2. 寫入附件：首 50 個最多產生重碼的單字列表（含 YUCODE）
-        top50_dup = dup_counter.most_common(50)
+        # 2. 寫入附件：首 90 個最多產生重碼的單字列表（含 YUCODE）
+        top90_dup = dup_counter.most_common(90)
         f.write("=" * 55 + "\n")
-        f.write("附件：首 50 個最多產生重碼的單字列表\n")
+        f.write("附件：首 90 個最多產生重碼的單字列表\n")
         f.write("=" * 55 + "\n")
         f.write(f"（統計說明：共分析 {total_dup_lines} 行產生重碼的編碼組合）\n\n")
         f.write(f"{'排名':<6}{'單字':<6}{'YUCODE':<10}{'重碼出現次數':<12}\n")
         f.write("-" * 45 + "\n")
-        for rank, (char, count) in enumerate(top50_dup, 1):
+        for rank, (char, count) in enumerate(top90_dup, 1):
             yucode = char_yucode_counts[char].most_common(1)[0][0] if char_yucode_counts[char] else "未知"
             f.write(f"第 {rank:2d} 名： {char:<3} {yucode:<8} (重碼出現 {count} 次)\n")
         f.write("=" * 55 + "\n")
@@ -167,10 +167,10 @@ def main():
     print("=" * 30)
     
     print("\n" + "=" * 45)
-    print(" 附件：首 50 個最多產生重碼的單字 (含 YUCODE)")
+    print(" 附件：首 90 個最多產生重碼的單字 (含 YUCODE)")
     print("=" * 45)
-    top50_dup = dup_counter.most_common(50)
-    for rank, (char, count) in enumerate(top50_dup, 1):
+    top90_dup = dup_counter.most_common(90)
+    for rank, (char, count) in enumerate(top90_dup, 1):
         yucode = char_yucode_counts[char].most_common(1)[0][0] if char_yucode_counts[char] else "未知"
         print(f"  第 {rank:2d} 名： {char} {yucode:<5} (重碼出現 {count} 次)")
     print("=" * 45)

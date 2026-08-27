@@ -1,7 +1,7 @@
 📘 余氏輸入法3+3拼音編碼說明
-    版本：二０二六年八月廿五日
+    版本：二０二六年八月廿七日
 
-    余氏詞庫雙字詞拼音是3+3編碼。在88131雙字詞中，重碼字4701，重碼率5.33%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
+    余氏詞庫雙字詞拼音是3+3編碼。在88130雙字詞中，重碼字4857，重碼率5.51%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
 
 🔤 (一) 三碼簡化
 
@@ -30,7 +30,7 @@
    鍾chu(ng)，葉ip，金kam，郭國kwo(k)，關軍君kwa(n)，施史司sze，鄧tan(g)，曾tsa(ng)，謝tse，徐tsu(i)
    仔cha(i)，記kee，德tak，達tat，青tsi(ng)，荃tsu(en)，慈tsz，任yam
    本bue(n)，起hea，氣hee，利lee，美mee，唔ngr，嘥sir，嘢yer
-   此cia，子jia，使sia，意yia，解gia，傳coo，重cwg，事szi
+   此cia，子jia，使sia，意yia，解gia，傳coo，重cwg
 
 🔹 7. 兩碼常用字：
     
@@ -41,7 +41,7 @@
     gu股
     ha下 ho好
     in現
-    je這 jo組 ju主
+    je這 jo組
     ka家 ke騎 ki奇 ko高 ku古
     lo勞
     ma馬 mi買 mo無毛
@@ -51,7 +51,7 @@
     ti太 to土
     wa話 wo和 wu胡   
     ya也 ye夜 yu語與
-    +(新增) bt不 sz是 sh上 ch長 jg中 sn新 mn民
+    
 
 (二) 韻母
 ┌─────────┬──────────┬────────┬─────────┬─────────┬──────────┐
@@ -119,8 +119,9 @@
 (2) 其他多字母韻母的處理
 
 一般單字不分聲調。組成雙字詞時為減少重碼，以下用不同拼法來表示第2至6聲調 (通常i→y，u→w，k→c)。
-以下非1聲常用字保留不分調(1聲)的拼法：
+以下非1聲常用字保留不分調的拼法：
 才材財代對費九口去走在最醉概例麗力了來裡六面每木手四小水體慧或會有要用
++定見正流明平永然
 
 韻母     1聲     2-6聲   例字                               
 
@@ -140,14 +141,14 @@
 央(eung) yeo央   eu   yeu樣養氧讓 / ceu搶唱      eu   yeu楊 che長 she常上
 夭(iu)   yiu腰   iw   yiw妖耀    / siw少笑兆     ew   yew搖 sew韶
 煨銳(ui) sui需   uy   suy歲緒睡                 uh   cuh除 muh煤 suh誰
-英(ing)  yig應   yg   yyg影認    / syg醒性盛    ng   cng程 mng明 yng形
+英(ing)  yig應   yg   yyg影認    / syg醒性盛    ng   cng程 mng名 yng形
 瓮(ung)  yug翁   wg   ywg擁勇    / swg慫送      mg   cmg從 mmg蒙 smg崇 ymg容
 冤(uen)  yoo冤   ue   yue苑怨願                 un   yun元完原員園圓源
 
 
 ui poem uj sosik
 【定風波】 蘇軾
-mokteg coolam da ipsig h hofon yumsiw ceh tsuhag t
+moktig coolam da ipsig h hofon yumsiw ceh tsuhag t
 莫聽   穿林    打  葉聲 ， 何妨   吟嘯   且   徐行   。
 jukjeu moghie higsyg ma h suhpa uq yetsor yinyuu yam pngsag t
 竹杖   芒鞋    輕勝   馬 ，   誰怕  ？  一蓑   煙雨    任  平生   。
