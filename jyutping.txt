@@ -11682,8 +11682,8 @@ CH	UCODE	JP	INIT	FINL	TONE	DESC	DESC_JP
 菰	U+83F0	gu1	g	u	1		
 菰	U+83F0	gwu1	gw	u	1		
 菱	U+83F1	ling4	l	ing	4		
-菲	U+83F2	fei2	f	ei	2		
 菲	U+83F2	fei1	f	ei	1		
+菲	U+83F2	fei2	f	ei	2		
 菳	U+83F3	kan4	k	an	4		
 菴	U+83F4	am1		am	1		
 菴	U+83F4	ngam1	ng	am	1		
@@ -15089,8 +15089,8 @@ CH	UCODE	JP	INIT	FINL	TONE	DESC	DESC_JP
 縱	U+7E31	zung1	z	ung	1		
 縲	U+7E32	leoi4	l	eoi	4		
 縳	U+7E33	gyun3	g	yun	3		
-縴	U+7E34	hin3	h	in	3		
 縴	U+7E34	hin1	h	in	1		
+縴	U+7E34	hin3	h	in	3		
 縵	U+7E35	maan6	m	aan	6		
 縶	U+7E36	zap1	z	ap	1		
 縷	U+7E37	leoi5	l	eoi	5		
@@ -32974,8 +32974,8 @@ CH	UCODE	JP	INIT	FINL	TONE	DESC	DESC_JP
 徲	U+5FB2	tai4	t	ai	4		
 徳	U+5FB3	dak1	d	ak	1		
 徴	U+5FB4	zing1	z	ing	1		
-徵	U+5FB5	zi2	z	i	2		
 徵	U+5FB5	zing1	z	ing	1		
+徵	U+5FB5	zi2	z	i	2		
 徵	U+5FB5	cing4	c	ing	4		
 徶	U+5FB6	bit3	b	it	3		
 徶	U+5FB6	pit3	p	it	3		
@@ -33685,8 +33685,8 @@ CH	UCODE	JP	INIT	FINL	TONE	DESC	DESC_JP
 懈	U+61C8	haai6	h	aai	6		
 懈	U+61C8	haai5	h	aai	5		
 懈	U+61C8	gaai3	g	aai	3		
-應	U+61C9	jing3	j	ing	3		
 應	U+61C9	jing1	j	ing	1		
+應	U+61C9	jing3	j	ing	3		
 懊	U+61CA	ou3		ou	3		
 懊	U+61CA	ngou3	ng	ou	3		
 懋	U+61CB	mau6	m	au	6		
@@ -35758,8 +35758,8 @@ CH	UCODE	JP	INIT	FINL	TONE	DESC	DESC_JP
 望	U+671B	mong6	m	ong	6		
 望	U+671B	mong2	m	ong	2		
 朜	U+671C	tan1	t	an	1		
-朝	U+671D	ciu4	c	iu	4		
 朝	U+671D	ziu1	z	iu	1		
+朝	U+671D	ciu4	c	iu	4		
 朞	U+671E	gei1	g	ei	1		
 期	U+671F	kei4	k	ei	4		
 期	U+671F	gei1	g	ei	1		

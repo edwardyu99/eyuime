@@ -54,8 +54,8 @@ with codecs.open(filein, 'r', 'utf-16') as f_in, \
         if len(parts) >= 2:
             code = parts[0]
             char = parts[1]
-            tone = tone_map.get(char, "")
-            rank = rank_map.get(char, "")
+            tone = tone_map.get(char, 1) # "")
+            rank = rank_map.get(char, 9999)
             # code 固定 6 字符寬度，左對齊，右邊補 trailing space
             f_out.write(f"{code:<6} {char} {tone} {rank}\n")
             out_lines += 1

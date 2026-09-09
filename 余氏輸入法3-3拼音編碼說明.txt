@@ -1,7 +1,7 @@
 📘 余氏輸入法3+3拼音編碼說明
-    版本：二０二六年八月廿七日
+    版本：二０二六年九月七日
 
-    余氏詞庫雙字詞拼音是3+3編碼。在88130雙字詞中，重碼字4857，重碼率5.51%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
+    余氏詞庫雙字詞拼音是3+3編碼。在88127雙字詞中，重碼字4106，重碼率4.66%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
 
 🔤 (一) 三碼簡化
 
@@ -30,7 +30,7 @@
    鍾chu(ng)，葉ip，金kam，郭國kwo(k)，關軍君kwa(n)，施史司sze，鄧tan(g)，曾tsa(ng)，謝tse，徐tsu(i)
    仔cha(i)，記kee，德tak，達tat，青tsi(ng)，荃tsu(en)，慈tsz，任yam
    本bue(n)，起hea，氣hee，利lee，美mee，唔ngr，嘥sir，嘢yer
-   此cia，子jia，使sia，意yia，解gia，傳coo，重cwg
+   此cia，子jia，使sia，意yia，解gia，傳coo，重cwg，事szi
 
 🔹 7. 兩碼常用字：
     
@@ -51,7 +51,9 @@
     ti太 to土
     wa話 wo和 wu胡   
     ya也 ye夜 yu語與
-    
+                 
+    + bt不 ch長 ft法 gg工 hg行 jz字 mn民 oy外 sh上 sk色 sm心 st失 sw手 sz是 yz易 z之
+ 
 
 (二) 韻母
 ┌─────────┬──────────┬────────┬─────────┬─────────┬──────────┐
@@ -119,12 +121,11 @@
 (2) 其他多字母韻母的處理
 
 一般單字不分聲調。組成雙字詞時為減少重碼，以下用不同拼法來表示第2至6聲調 (通常i→y，u→w，k→c)。
-以下非1聲常用字保留不分調的拼法：
-才材財代對費九口去走在最醉概例麗力了來裡六面每木手四小水體慧或會有要用
-+定見正流明平永然
+以下非1聲次常用字(排序>600)保留不分調的拼法：
+請財醉概黎麗賴令裡麥慧永銳
 
-韻母     1聲     2-6聲   例字                               
-
+韻母     1聲     2-6聲   例字
+                               
 悲(ei)   bei悲   ey      bey比秘備
 哀(oi)   coi啋   oy      coy採菜    oi哀愛外
 煙(in)   bin邊   yn      byn扁變便
@@ -148,12 +149,12 @@
 
 ui poem uj sosik
 【定風波】 蘇軾
-moktig coolam da ipsig h hofon yumsiw ceh tsuhag t
+moktig coolam da ipsig h hofon yumsiw ceh tsuhg t
 莫聽   穿林    打  葉聲 ， 何妨   吟嘯   且   徐行   。
 jukjeu moghie higsyg ma h suhpa uq yetsor yinyuu yam pngsag t
-竹杖   芒鞋    輕勝   馬 ，   誰怕  ？  一蓑   煙雨    任  平生   。
-liwciw cunfug cuh jausig h meilag ul santau cehjiw kek seoyng t
+竹杖   芒鞋    輕勝   馬 ， 誰怕  ？  一蓑   煙雨    任  平生   。
+liwciw cunfug cuh jawsyg h meylag ul santau cehjiw kek seoyng t
 料峭   春風    吹   酒醒  ， 微冷   ！  山頭    斜照   卻  相迎   。
 wuhsaw heuloi siuset cu h gwahui us yamo fugyuu yamo cng t
-回首   向來    蕭瑟    處 ，   歸去   ； 也無  風雨   也無  晴 。
+回首   向來    蕭瑟    處 ， 歸去   ；  也無 風雨    也無 晴 。
 
