@@ -16,13 +16,20 @@ def filter_and_sort_file(input_path, output_path):
             char = parts[1]
             vowel = code[1:3]
             tone = int(parts[2])
-            # 若包含 rank 欄位，轉換為整數以進行數值排序；若無則設為 0
+            # 若包含 rank 欄位，轉換為整數以進行數值排序；若無則設為 9999
             rank = int(parts[3]) if len(parts) >= 4 else 9999
-            # 條件: code 為 3 個英文字母
-            # if len(code) == 3 and code.isalpha():
+
+#['ey','oy','yn','ac','ic','uc','ay','aw','iw','uy','yg','wg','ae','oe','ow','ew','uh','ng','mg']:
+            #  1-100 重動後就同
+            #101-200 變程前建制直總政展料命性線題提條位形由
+            #201-300 百取特調隊計極改據件器海濟證求受世少圖統回油認
+            #301-400 採鬥具系許際再眾整離名目容影研
+            #401-500 備便除格技局係值照族構歷片首細劃維液型
             
-#['ey','oy','yn','ac','ic','uc','ay','aw','iw','uy','yg','wg','ue','ae','oe','ow','ew','uh','ng','mg']:
-            if code[0] not in ['n'] and rank > 600 and rank <= 2200 and tone > 1 and vowel in ['ei','oi','in','ak','ik','uk','ai','au','iu','ui','ig','ug']:
+            # >500 請錢財材久夠救醉概賴黎麗劉另裡呂麥木皮死台慧永言銳
+            if code[0] not in ['n'] and tone > 1 \
+		and rank >= 1 and rank <= 500 and vowel in \
+['ei','oi','in','ak','ik','uk','ai','au','iu','ui','ig','ug']:
                 try:
                     parsed_records.append({
                         'code': code,

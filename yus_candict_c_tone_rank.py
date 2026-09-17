@@ -15,7 +15,7 @@ def count_lines(filepath, encoding='utf-8'):
         return f"無法讀取 ({e})"
 
 # 1. 建立聲調映射表 (從 jyutping.txt)
-tone_file = 'jyutping.txt'
+tone_file = 'jyutping_sorted.txt'
 tone_map = {}
 with codecs.open(tone_file, 'r', 'utf-8') as f:
     next(f)  # 跳過標題列
