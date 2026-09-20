@@ -1,7 +1,7 @@
 📘 余氏輸入法3+3拼音編碼說明
-    版本：二０二六年九月十六日
+    版本：二０二六年九月二十日
 
-    余氏詞庫雙字詞拼音是3+3編碼。在88125雙字詞中，重碼字4074，重碼率4.62%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
+    余氏詞庫雙字詞拼音是3+3編碼。在88103雙字詞中，重碼字4006，重碼率4.55%。方案利用三碼簡化、韻母和聲調變化以減少重碼。
 
 🔤 (一) 三碼簡化
 
@@ -52,7 +52,7 @@
     wa話 wo和 wu胡   
     ya也 ye夜 yu語與
                  
-    + bt不 ch長 ft法 gg工 hg行 jz字 mn民 oy外 sh上 sk色 sm心 st失 sw手 sz是 yz易 z之
+    + bt不 ch長 gg工 hg行 jg中 jz字 mn民 oy外 sh上 sk色 sm心 sn新 sw手 sz是 yz易 z之   
  
 
 (二) 韻母
@@ -120,19 +120,16 @@
 
 (2) 其他多字母韻母的處理
 
-一般單字不分聲調。組成雙字詞時為減少重碼，以下用不同拼法來表示第2至6聲調 (通常i→y，u→w，k→c)。
+一般單字不分聲調。組成雙字詞時為減少重碼，以下用不同拼法來表示第2至6聲調 (通常i→y，u→w)。
 以下非1聲常用及次常用字保留不分調的拼法：
-(排序1-500) 比才第地定電代對九究見叫口去走在種最例流領力連了來明面每白平手受四小水體頭為或會有又然用
-(排序 >500) 請錢財材久夠救醉概賴黎麗劉另裡呂麥木皮死台慧永言銳
+(排序1-500) 比才第地定電代對九究見叫口去走在種最例流領連了來裏明面每平手受四小水體頭為會有又然用
+(排序 >500) 請錢財材久夠救醉概賴黎麗劉另裡呂皮死台慧永言銳
 
 韻母     1聲     2-6聲   例字
                                
 悲(ei)   bei悲   ey      bey比秘備
-哀(oi)   coi啋   oy      coy採菜    oi哀愛外
+哀(oi)   coi啋   oy      coy採菜    oi哀愛 oy外
 煙(in)   bin邊   yn      byn扁變便
-扼(ak)   bak北   ac      bac百帛    pak白
-益(ik)   sik式   ic      sic食
-屋(uk)   buk卜   uc      buc僕 
 
 為減少重碼，部分韻母更利用第4聲不同拼法。
 
@@ -147,6 +144,9 @@
 瓮(ung)  yug翁   wg   ywg擁勇    / swg慫送      mg   cmg從 mmg蒙 smg崇 ymg容
 冤(uen)  yoo冤   ue   yue苑怨願                 un   yun元完原員園圓源
 
+為減少重碼，以下k/t尾音入聲字轉為c/d：
+k→c：bac白 dac特 hac客 gic極 jic直值籍 sic食 duc獨 fuc復服 juc族續 suc屬熟 yuc肉
+t→d：fad法 med物 sed實 jid節 kud決 sud說 yud越
 
 ui poem uj sosik
 【定風波】 蘇軾
@@ -154,7 +154,7 @@ moktig coolam da ipsig h hofon yumsiw ceh tsuhg t
 莫聽   穿林    打  葉聲 ， 何妨   吟嘯   且   徐行   。
 jukjeu moghie higsyg ma h suhpa uq yetsor yinyuu yam pngsag t
 竹杖   芒鞋    輕勝   馬 ， 誰怕  ？  一蓑   煙雨    任  平生   。
-liwciw cunfug cuh jawsyg h meylag ul santau cehjiw kek seoyng t
+liwciw cunfug cui jawsyg h meylag ul santau cehjiw kek seoyng t
 料峭   春風    吹   酒醒  ， 微冷   ！  山頭    斜照   卻  相迎   。
 wuhsaw heuloi siuset cu h gwahui us yamo fugyuu yamo cng t
 回首   向來    蕭瑟    處 ， 歸去   ；  也無 風雨    也無 晴 。
