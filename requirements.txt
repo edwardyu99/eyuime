@@ -32,6 +32,7 @@ cloudpickle
 cmdstanpy
 coloredlogs
 comm
+contourpy
 crashtest
 debugpy
 decorator
@@ -49,6 +50,7 @@ fastrlock
 filelock
 flatbuffers
 fonttools
+formulaic
 fqdn
 frozenlist
 fsspec
@@ -72,6 +74,7 @@ immutabledict
 importlib-metadata
 importlib-resources
 iniconfig
+interface-meta
 ipykernel
 ipython
 ipython-pygments-lexers
@@ -106,6 +109,7 @@ keras
 keras-core
 keras-cv
 keras-tuner
+kiwisolver
 kt-legacy
 lark
 libclang
@@ -192,6 +196,7 @@ pyarrow
 pycparser
 pygments
 pymeeus
+pyparsing
 pyproject-hooks
 pyside6
 pyside6
