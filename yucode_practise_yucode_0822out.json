@@ -21,7 +21,7 @@
             },
             {
                 "text": "眾裏尋他千百度，驀然回首，",
-                "yucode": "jwglct h makyws h"
+                "yucode": "juglct h macyws h"
             },
             {
                 "text": "那人卻在，燈火闌珊處。",
@@ -43,7 +43,7 @@
             },
             {
                 "text": "一蓑煙雨任平生。",
-                "yucode": "yetsor yinyuu yam pigsag t"
+                "yucode": "yetsor yinyuu yam pigseg t"
             },
             {
                 "text": "料峭春風吹酒醒，微冷！",
@@ -69,7 +69,7 @@
         "sentences": [
             {
                 "text": "明月幾時有？把酒問青天。",
-                "yucode": "migyut geysy uq bajaw men tsitin t"
+                "yucode": "mngyut geisy uq bajaw men tsitin t"
             },
             {
                 "text": "不知天上宮闕，今夕是何年。",
@@ -77,7 +77,7 @@
             },
             {
                 "text": "我欲乘風歸去，又恐瓊樓玉宇，",
-                "yucode": "ngoyuk sngfug gwahui h yau hwg knglyy h"
+                "yucode": "ngoyuc sngfug gwahui h yau hwg knglyy h"
             },
             {
                 "text": "高處不勝寒。",
@@ -85,7 +85,7 @@
             },
             {
                 "text": "起舞弄清影，何似在人間。",
-                "yucode": "heamou lwgcig yyg h hochi joi yangan t"
+                "yucode": "heamou lugcig yyg h hochi joi yangan t"
             },
             {
                 "text": "轉朱閣，低綺戶，照無眠。",
@@ -105,7 +105,7 @@
             },
             {
                 "text": "但願人長久，千里共嬋娟。",
-                "yucode": "danyue yan chgau h cinley gwg simgue t"
+                "yucode": "danyue yan chgau h cinlei gug simgue t"
             }
         ]
     },
@@ -115,11 +115,11 @@
         "sentences": [
             {
                 "text": "無言獨上西樓，月如鉤。",
-                "yucode": "moyin duksh sailow h yut yue au t"
+                "yucode": "moyin ducsh sailow h yut yue au t"
             },
             {
                 "text": "寂寞梧桐深院鎖清秋。",
-                "yucode": "jikmok ngtmg sum yoo soh cigcau t"
+                "yucode": "jicmok ngtmg sum yoo soh cigcau t"
             },
             {
                 "text": "剪不斷，理還亂，是離愁。",
@@ -141,7 +141,7 @@
             },
             {
                 "text": "渚清沙白鳥飛迴。",
-                "yucode": "渚 cig sha bac niu fei wuh t"
+                "yucode": "渚 cig sha bak niu fei wuh t"
             },
             {
                 "text": "無邊落木蕭蕭下，",
@@ -153,11 +153,11 @@
             },
             {
                 "text": "萬里悲秋常作客，",
-                "yucode": "manley bei cau she jokhac h"
+                "yucode": "manlei bei cau she jokhac h"
             },
             {
                 "text": "百年多病獨登臺。",
-                "yucode": "baknin dorbeg duk dag toy t"
+                "yucode": "bacnin dorbeg duc dag toy t"
             },
             {
                 "text": "艱難苦恨繁霜鬢，",
@@ -165,7 +165,7 @@
             },
             {
                 "text": "潦倒新停濁酒杯。",
-                "yucode": "lewdoa sn tng jukjaw bui t"
+                "yucode": "lewdoa sn tng jucjaw bui t"
             }
         ]
     },
@@ -175,7 +175,7 @@
         "sentences": [
             {
                 "text": "床前明月光，",
-                "yucode": "concyn migyut kog h"
+                "yucode": "concyn mngyut kog h"
             },
             {
                 "text": "疑是地上霜。",
@@ -183,7 +183,7 @@
             },
             {
                 "text": "舉頭望明月，",
-                "yucode": "guy tau mon migyut h"
+                "yucode": "guy tau mon mngyut h"
             },
             {
                 "text": "低頭思故鄉。",
@@ -217,11 +217,11 @@
             },
             {
                 "text": "塵凡兒纏我謗我笑我白了頭。",
-                "yucode": "cen fan yee cyn ngo pon ngo siw ngo bac liu tau t"
+                "yucode": "cen fan yee cyn ngo pon ngo siw ngo bak liu tau t"
             },
             {
                 "text": "妳看那天邊追逐落日的紙鳶，",
-                "yucode": "nei honna tin bin juijuk lokyat dik jieyun h"
+                "yucode": "nei honna tin bin juijuc lokyat dik jieyun h"
             },
             {
                 "text": "像一盞回首道別夤夜的風燈。",
@@ -229,11 +229,11 @@
             },
             {
                 "text": "我的心似流沙放逐在車轍旁，",
-                "yucode": "ngods chi lausha fonjuk joi cecit pon h"
+                "yucode": "ngods chi lausha fonjuc joi cecit pon h"
             },
             {
                 "text": "他日妳若再返必顛沛在世上。",
-                "yucode": "tayat nei yekjoy fanbit dinpuy joisay sh t"
+                "yucode": "tayat nei yekjoy fanbit dinpuy joisai sh t"
             },
             {
                 "text": "若遇那秋夜雨倦鳥也淋淋，",
@@ -241,7 +241,7 @@
             },
             {
                 "text": "那卻是花墻下彌留的枯黃。",
-                "yucode": "na kek sz fa 墻 ha neilow dik fuwon t"
+                "yucode": "na kek sz fa 墻 ha neilau dik fuwon t"
             },
             {
                 "text": "君住在錢塘東，妾在臨安北。",
@@ -253,11 +253,11 @@
             },
             {
                 "text": "尋差了羅盤經，錯投在泉亭。",
-                "yucode": "cumca liu lawpun gig h coh tow joi cue tng t"
+                "yucode": "cumca liu lawpun gig h coh tow joi cue tig t"
             },
             {
                 "text": "奴輾轉到杭城，君又生余杭。",
-                "yucode": "noe jynjue dou hogsng h kwa yau sag yue hog t"
+                "yucode": "noe jynjue dou hogsng h kwa yau seg yue hog t"
             }
         ]
     },
@@ -271,19 +271,19 @@
             },
             {
                 "text": "總有人偷偷撥弄鏡月的指針。",
-                "yucode": "jwgyy tautau butlwg geg yut dik jiejum t"
+                "yucode": "jwgyy tautau butlug geg yut dik jiejum t"
             },
             {
                 "text": "罌缶的酒瓶化來綺紈與樓閣，",
-                "yucode": "angfaw dik jawpng fahloi yiyun yu lowgok h"
+                "yucode": "angfau dik jawpng fahloi yiyun yu lowgok h"
             },
             {
                 "text": "綠芭蕉紅櫻桃孑然一身的過來人。",
-                "yucode": "luk bajiu hmg yigtoe kityys dik gwoly t"
+                "yucode": "luc bajiu hmg yigtoe kityys dik gwoly t"
             },
             {
                 "text": "未曾走到絕境路彼岸花不開，",
-                "yucode": "meytsa jaudou jutgyg loz peyon fa bthoi h"
+                "yucode": "meitsa jaudou jutgyg loz peyon fa bthoi h"
             },
             {
                 "text": "辛酸只為長安遠倒臥在瓊臺。",
@@ -299,11 +299,11 @@
             },
             {
                 "text": "藍採和啊，醉酒當歌，",
-                "yucode": "lam coy wo ah h juijaw doggor h"
+                "yucode": "lam coy wo ah h juyjaw doggor h"
             },
             {
                 "text": "紅顏易老轉眼桑田泛清波。",
-                "yucode": "hmgan yz lou juean sogtyn fan cigbor t"
+                "yucode": "hmgan yz lou juean sogtin fan cigbor t"
             },
             {
                 "text": "她也曾是越過了銀河萬裏的荒原，",
@@ -311,7 +311,7 @@
             },
             {
                 "text": "他也曾是劃破了絢爛流落在人間。",
-                "yucode": "taya tsa sz wakpoh liu huelan laulok joi yangan t"
+                "yucode": "taya tsa sz wacpoh liu huelan laulok joi yangan t"
             },
             {
                 "text": "唯有那不眠的憑欄與情仇依捨，",
@@ -319,11 +319,11 @@
             },
             {
                 "text": "是雲搖是雨散都在同一個搖籃。",
-                "yucode": "sz wan yew sz yuu san dojoi tmgyg yewlam t"
+                "yucode": "sz wan yew sz yuu san dojoi tugyg yewlam t"
             },
             {
                 "text": "邯鄲夢啊古今同，",
-                "yucode": "hondan mwg ah kugum tmg h"
+                "yucode": "hondan mug ah kugum tug h"
             },
             {
                 "text": "榮華易去青山處處英雄冢。",
@@ -337,7 +337,7 @@
         "sentences": [
             {
                 "text": "羅剎國向東兩萬六千里，",
-                "yucode": "lawsat kwo heudug leuman lukcin ley h"
+                "yucode": "lawsat kwo heudug leuman lukcin lei h"
             },
             {
                 "text": "過七沖越焦海三寸的黃泥地。",
@@ -353,7 +353,7 @@
             },
             {
                 "text": "她兩耳傍肩三孔鼻，未曾開言先轉腚。",
-                "yucode": "ta leu yie bon gin samhwg bey h meytsa hoiyin sinjue dyg t"
+                "yucode": "ta leu yie bon gin samhwg bey h meitsa hoiyin sinjue dyg t"
             },
             {
                 "text": "那馬戶不知道他是一頭驢，",
@@ -365,7 +365,7 @@
             },
             {
                 "text": "勾欄從來扮高雅，自古公公好威名。",
-                "yucode": "au lan cmgloi ban konga h jizku guggug ho waimng t"
+                "yucode": "au lan cmgloi ban konga h jizku guggug ho waimig t"
             },
             {
                 "text": "打西邊來了一個小夥兒他叫馬驥。",
@@ -381,19 +381,19 @@
             },
             {
                 "text": "它紅描翅那個黑畫皮，綠繡雞冠金鑲蹄。",
-                "yucode": "ta hmg mew chi nagoh hak wahpei h luk saw gaigoo kam seotae t"
+                "yucode": "ta hmg mew chi nagoh hak wahpei h luc saw gaigoo kam seotae t"
             },
             {
                 "text": "可是那從來煤蛋兒生來就黑，不管妳咋樣洗呀那也是個臟東西。",
-                "yucode": "horsz na cmgloi muh dan yee sagloi jaw hak h btgoo nei jahyeu say ah nays goh jon dugsai t"
+                "yucode": "horsz na cmgloi muh dan yee segloi jaw hak h btgoo nei jahyeu say ah nays goh jon dugsai t"
             },
             {
                 "text": "愛字有心心有好歹，百樣愛也有千樣的壞。",
-                "yucode": "oijz yausm smyau hodie h bakyeu oiya yau cinyeu dik wie t"
+                "yucode": "oijz yausm smyau hodie h bacyeu oiya yau cinyeu dik wie t"
             },
             {
                 "text": "西邊的歐鋼有老闆，生兒維特根斯坦。",
-                "yucode": "saibin dik au gog yau louban h sagyee waedgs t"
+                "yucode": "saibin dik au gog yau louban h segyee waedgs t"
             },
             {
                 "text": "那馬戶又鳥，是我們人類根本的問題。",

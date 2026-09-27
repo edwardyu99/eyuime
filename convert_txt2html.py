@@ -1,6 +1,6 @@
-import re
 import sys
 import os
+import re 
 
 def get_output_filename(input_file):
     base, _ = os.path.splitext(input_file)
@@ -130,22 +130,32 @@ def parse_tone_matrix_table(t_text):
     return '\n'.join(html)
 
 def parse_plain_table(table_text):
-    """將多空格對齊的文本表格轉為 HTML 表格"""
+    """將多空格或 Tab 對齊的文本表格轉為 HTML 表格"""
     lines = [l.strip() for l in table_text.strip().split('\n') if l.strip()]
     if not lines:
         return ""
     
     html = ['<div class="table-container"><table class="rule-table">', '<thead><tr>']
-    headers = re.split(r'\s{2,}', lines[0])
+    
+    # 支援 Tab 或多個空格分隔欄位
+    if '\t' in lines[0]:
+        headers = [h.strip() for h in lines[0].split('\t')]
+    else:
+        headers = [h.strip() for h in re.split(r'\s{2,}', lines[0])]
+        
     for h in headers:
         html.append(f'  <th>{h}</th>')
     html.append('</tr></thead><tbody>')
     
     for line in lines[1:]:
-        cells = re.split(r'\s{2,}', line)
+        if '\t' in line:
+            cells = [c.strip() for c in line.split('\t')]
+        else:
+            cells = [c.strip() for c in re.split(r'\s{2,}', line)]
+            
         html.append('<tr>')
         for cell in cells:
-            formatted = re.sub(r'([a-zA-Z0-9]+)', r'<code>\1</code>', cell)
+            formatted = re.sub(r'([a-zA-Z0-9]+)', r'<code>\1</code>', cell) if cell else ""
             html.append(f'  <td>{formatted}</td>')
         html.append('</tr>')
         
@@ -178,25 +188,23 @@ def parse_section_three(sec_text):
     
     sec2_m = re.search(r'\(2\) 其他多字母韻母的處理(.*)', sec_text, re.DOTALL)
     if sec2_m:
-        body = sec2_m.group(1)
-        t2_pos = body.find('韻母     1聲')
-        t3_intro_pos = body.find('為減少重碼')
-        
-        if t2_pos != -1 and t3_intro_pos != -1:
-            p1 = body[:t2_pos].strip()
-            p1_fmt = re.sub(r'([a-zA-Z0-9\->]+)', r'<code>\1</code>', p1).replace('\n', '<br>')
-            html.append(f'    <p>{p1_fmt}</p>')
+        body = sec2_m.group(1).strip()
+        # 相容空格與 Tab 分隔的表頭匹配
+        header_match = re.search(r'韻母[\t ]+1聲', body)
+        if header_match:
+            table_start = header_match.start()
+            intro_text = body[:table_start].strip()
+            table_text = body[table_start:].strip()
             
-            t2_text = body[t2_pos:t3_intro_pos].strip()
-            html.append(parse_plain_table(t2_text))
+            if intro_text:
+                intro_fmt = re.sub(r'([a-zA-Z0-9\->]+)', r'<code>\1</code>', intro_text).replace('\n', '<br>')
+                html.append(f'    <p>{intro_fmt}</p>')
             
-            t3_table_pos = body.find('韻母     1聲', t3_intro_pos)
-            p2 = body[t3_intro_pos:t3_table_pos].strip()
-            p2_fmt = re.sub(r'([a-zA-Z0-9]+)', r'<code>\1</code>', p2)
-            html.append(f'    <p>{p2_fmt}</p>')
-            
-            t3_text = body[t3_table_pos:].strip()
-            html.append(parse_plain_table(t3_text))
+            if table_text:
+                html.append(parse_plain_table(table_text))
+        else:
+            body_fmt = re.sub(r'([a-zA-Z0-9\->]+)', r'<code>\1</code>', body).replace('\n', '<br>')
+            html.append(f'    <p>{body_fmt}</p>')
 
     html.append('</section>')
     return '\n'.join(html)

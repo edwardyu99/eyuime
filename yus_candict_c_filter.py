@@ -18,18 +18,16 @@ def filter_and_sort_file(input_path, output_path):
             tone = int(parts[2])
             # 若包含 rank 欄位，轉換為整數以進行數值排序；若無則設為 9999
             rank = int(parts[3]) if len(parts) >= 4 else 9999
-
-#['ey','oy','yn','ay','aw','iw','uy','yg','wg','ae','oe','ow','ew','uh','ng','mg']:
-            #  1-100 重動後就同
-            #101-200 變程前建制直總政展料命性線題提條位形由
-            #201-300 百取特調隊計極改據件器海濟證求受世少圖統回油認
-            #301-400 採鬥具系許際再眾整離名目容影研
-            #401-500 備便除格技局係值照族構歷片首細劃維液型
-            
-            # >500 請錢財材久夠救醉概賴黎麗劉另令裡呂皮死台慧永言銳
+#符合條件行數: 37 行  rank<=300 
+#比變第地定電代對九見口去展在最流了來裏命面平世手受四小水體頭同為會有又然用
+#符合條件行數: 110 行  重碼：3951
+#比丙秉並變背貝呈錢才財采材第豆鬥地定典電吊代對兌否九究久夠救景竟見叫具巨系口后喜豈亥去祭走展召在眾最契企喬瞿賴黎麗流劉里吏另了來弄雷累裏裡呂某眉未命名面免夢每皮平片世手受死四小兆宋水歲垂體頭亭田台同為慧韋永會有又然言堯用
             if code[0] not in ['n'] and tone > 1 \
-		and rank >= 501 and rank <= 2500 and vowel in \
+		and rank >= 1 and rank <= 300 and vowel in \
 ['ei','oi','in','ai','au','iu','ui','ig','ug']:
+#            if code[0] not in ['n'] and tone == 4 \
+#and rank >= 1 and rank <= 3000 and vowel in \
+#['ey','oy','yn','ay','aw','iw','uy','yg','wg','ae','oe','ow','ew','uh','ng','mg']:
                 try:
                     parsed_records.append({
                         'code': code,
